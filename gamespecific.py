@@ -7,49 +7,44 @@ SCOUT_FIELDS = {
     "Match": 0,
     "Fouls": 0,
     "TechFouls": 0,
-    "AutoGears": 0,
-    "AutoBaseline": 0,
-    "AutoLowBalls": 0,
-    "AutoHighBalls": 0,
-    "FloorIntake": 0,
-    "Feeder": 0,
-    "Defense": 0,
-    "Defended": 0,
-    "TeleopGears": 0,
-    "TeleopGearDrops": 0,
-    "TeleopLowBalls": 0,
-    "TeleopHighBalls": 0,
-    "Hang": 0,
-    "FailedHang": 0,
-    "Replay": 0,
-    "AutoSideAttempt": 0,
-    "AutoSideSuccess": 0,
-    "AutoCenterAttempt": 0,
-    "AutoCenterSuccess": 0,
+    "AutoCross": 0,
+    "AutoSwitch": 0,
+    "AutoScale": 0,
+    "AutoXchange": 0,
+    "AllianceColor": 0,
+    "StartPos": 0,
+    "NumDelToScale": 0,
+    "NumDelToSwitch":0,
+    "NumDelToXchange": 0,
+    "NumDelToOppSwitch": 0,
+    "Climb": 0,
+    "SupportOthers": 0,
+    "FieldScaleLeft": 0,
+    "FieldScaleRight": 0,
+    "FieldSwitchLeft": 0,
+    "FieldSwitchRight": 0,
+    "AutoCross": 0,
+    "SpareField1": 0,
+    "SpareField2": 0,
     "Flag": 0
 }
 
 #Defines the fields that are stored in the "averages" and similar tables of the database. These are the fields displayed on the home page of the website.
 AVERAGE_FIELDS = {
     "team": 0,
-    "apr": 0,
-    "autogear": 0,
-    "teleopgear": 0,
-    "geardrop": 0,
-    "autoballs": 0,
-    "teleopballs": 0,
-    "end": 0,
-    "defense": 0
+    "NumDelToScale": 0,
+    "NumDelToSwitch": 0,
+    "NumDelToXchange": 0,
+    "NumDelToOppSwitch": 0
 }
 
 #Defines the fields displayed on the charts on the team and compare pages
 CHART_FIELDS = {
     "match": 0,
-    "autoshoot": 0,
-    "autogears": 0,
-    "gears": 0,
-    "geardrop": 0,
-    "shoot": 0
+    "NumDelToScale": 0,
+    "NumDelToSwitch": 0,
+    "NumDelToXchange": 0,
+    "NumDelToOppSwitch": 0
 }
 
 
@@ -72,45 +67,49 @@ def processSheet(scout):
         match3 = scout.rangefield('AB-7', 0, 9)
         scout.set("Match", 100 * match1 + 10 * match2 + match3)
 
-        scout.set("Fouls", scout.rangefield('L-16', 1, 4))
-        scout.set("TechFouls", scout.rangefield('L-17', 1, 4))
+        scout.set("Fouls", int(0))
+        scout.set("TechFouls", int(0))
 
-        scout.set("AutoGears", scout.boolfield('O-11'))
-        scout.set("AutoBaseline", int(0))
+        scout.set("AutoCross", scout.boolfield('I-11'))
+        scout.set("AutoSwitch", scout.boolfield('J-11'))
+        scout.set("AutoScale", scout.boolfield('K-11'))
+        scout.set("AutoXchange", scout.boolfield('L-11'))
+        scout.set("AllianceColor", scout.rangefield('O-11, 0, 1'))
+        scout.set("StartPos", scout.rangefield('O-13, 0, 2'))
 
-        highGoal = scout.boolfield('V-13')
-        lowGoal = scout.boolfield('V-14')
-        balls1 = scout.rangefield('F-12', 0, 9)
-        balls2 = scout.rangefield('F-13', 0, 9)
-        scout.set("AutoLowBalls", lowGoal * (balls1 * 10 + balls2))
-        scout.set("AutoHighBalls", highGoal * (balls1 * 10 + balls2))
+        scout.set("NumDelToScale", scout.rangefield('AB-13', 0, 9))
+        scout.set("NumDelToXchange", scout.rangefield('AB-14', 0, 9))
 
-        scout.set("FloorIntake", scout.boolfield('V-11'))
-        scout.set("Feeder", 0)  #9
-        scout.set("Defense", scout.boolfield('V-17'))
-        scout.set("Defended", scout.boolfield('AB-17'))
-        scout.set("TeleopGears", scout.rangefield('AB-10', 1, 9))
-        scout.set("TeleopGearDrops", scout.rangefield('AB-11', 1, 9))
 
-        balls1 = scout.rangefield('AA-13', 1, 10)
-        balls2 = scout.rangefield('AA-14', 11, 20)
-        balls3 = scout.rangefield('AA-15', 21, 30)
-        scout.set("TeleopLowBalls", lowGoal * 5 * (balls1 + balls2 + balls3))
-        scout.set("TeleopHighBalls", highGoal * 5 * (balls1 + balls2 + balls3))
+        numallsw1 = scout.rangefield('AB-9', 0, 9)
+        numallsw2 = scout.rangefield('AB-10', 0, 9)
+        scout.set("NumDeltoSwitch", numallsw1 * 10 + numallsw2)
 
-        scout.set("Hang", scout.boolfield('G-16'))
-        scout.set("FailedHang", scout.boolfield('G-17'))
+        numoppsw1 = scout.rangefield('AB-11', 0, 9)
+        numoppsw2 = scout.rangefield('AB-12', 0, 9)
+        scout.set("NumDeltoOppSwitch", numoppsw1 * 10 + numoppsw2)
+
+        scout.set("Climb", scout.boolfield('AC-17'))
+        scout.set("SupportOthers", scout.boolfield('AJ-17'))
+        scout.set("FieldScaleLeft", scout.boolfield('I-17'))
+        scout.set("FieldScaleRight", scout.boolfield('J-17'))
+        scout.set("FieldSwitchLeft", scout.boolfield('I-18'))
+        scout.set("FieldSwitchRight", scout.boolfield('J-18'))
+        scout.set("AutoCross", scout.boolfield('J-18'))
+
+
+
 
         scout.set("Replay", scout.boolfield('AK-5'))
 
-        sideAttempt = scout.boolfield('F-11') and not scout.boolfield('O-11')
-        centerAttempt = scout.boolfield('J-11') and not scout.boolfield('O-11')
-        sideSuccess = scout.boolfield('F-11') and scout.boolfield('O-11')
-        centerSuccess = scout.boolfield('J-11') and scout.boolfield('O-11')
-        scout.set("AutoSideAttempt", int(sideAttempt))
-        scout.set("AutoCenterAttempt", int(centerAttempt))
-        scout.set("AutoSideSuccess", int(sideSuccess))
-        scout.set("AutoCenterSuccess", int(centerSuccess))
+#        sideAttempt = scout.boolfield('F-11') and not scout.boolfield('O-11')
+#        centerAttempt = scout.boolfield('J-11') and not scout.boolfield('O-11')
+#        sideSuccess = scout.boolfield('F-11') and scout.boolfield('O-11')
+#        centerSuccess = scout.boolfield('J-11') and scout.boolfield('O-11')
+#        scout.set("AutoSideAttempt", int(sideAttempt))
+#        scout.set("AutoCenterAttempt", int(centerAttempt))
+#        scout.set("AutoSideSuccess", int(sideSuccess))
+#        scout.set("AutoCenterSuccess", int(centerSuccess))
 
         scout.submit()
 

@@ -23,15 +23,17 @@ SCOUT_FIELDS = {
     "FieldScaleRight": 0,
     "FieldSwitchLeft": 0,
     "FieldSwitchRight": 0,
-    "AutoCross": 0,
+    "AutoCrossField": 0,
     "SpareField1": 0,
     "SpareField2": 0,
+    "Replay":0,
     "Flag": 0
 }
 
 #Defines the fields that are stored in the "averages" and similar tables of the database. These are the fields displayed on the home page of the website.
 AVERAGE_FIELDS = {
     "team": 0,
+    "apr":0,
     "NumDelToScale": 0,
     "NumDelToSwitch": 0,
     "NumDelToXchange": 0,
@@ -71,11 +73,14 @@ def processSheet(scout):
         scout.set("TechFouls", int(0))
 
         scout.set("AutoCross", scout.boolfield('I-11'))
-        scout.set("AutoSwitch", scout.boolfield('J-11'))
-        scout.set("AutoScale", scout.boolfield('K-11'))
-        scout.set("AutoXchange", scout.boolfield('L-11'))
-        scout.set("AllianceColor", scout.rangefield('O-11, 0, 1'))
-        scout.set("StartPos", scout.rangefield('O-13, 0, 2'))
+        scout.set("AutoSwitch", scout.boolfield('I-12'))
+        aswitch = scout.boolfield('I-12')
+        scout.set("AutoScale", scout.boolfield('I-13'))
+        ascale = scout.boolfield('I-13')
+        scout.set("AutoXchange", scout.boolfield('I-14'))
+        scout.set("AllianceColor", scout.rangefield('O-11', 0, 1))
+        scout.set("StartPos", scout.rangefield('O-13', 0, 2))
+        stpos = scout.rangefield('O-13', 0, 2)
 
         scout.set("NumDelToScale", scout.rangefield('AB-13', 0, 9))
         scout.set("NumDelToXchange", scout.rangefield('AB-14', 0, 9))
@@ -83,21 +88,34 @@ def processSheet(scout):
 
         numallsw1 = scout.rangefield('AB-9', 0, 9)
         numallsw2 = scout.rangefield('AB-10', 0, 9)
-        scout.set("NumDeltoSwitch", numallsw1 * 10 + numallsw2)
+        scout.set("NumDelToSwitch", numallsw1 * 10 + numallsw2)
 
         numoppsw1 = scout.rangefield('AB-11', 0, 9)
         numoppsw2 = scout.rangefield('AB-12', 0, 9)
-        scout.set("NumDeltoOppSwitch", numoppsw1 * 10 + numoppsw2)
+        scout.set("NumDelToOppSwitch", numoppsw1 * 10 + numoppsw2)
 
         scout.set("Climb", scout.boolfield('AC-17'))
         scout.set("SupportOthers", scout.boolfield('AJ-17'))
         scout.set("FieldScaleLeft", scout.boolfield('I-17'))
+        fscleft = scout.boolfield('I-17')
         scout.set("FieldScaleRight", scout.boolfield('J-17'))
+        fscright = scout.boolfield('J-17')
         scout.set("FieldSwitchLeft", scout.boolfield('I-18'))
+        fswleft = scout.boolfield('I-18')
         scout.set("FieldSwitchRight", scout.boolfield('J-18'))
-        scout.set("AutoCross", scout.boolfield('J-18'))
-
-
+        fswright = scout.boolfield('J-18')
+        scout.set("AutoCrossField", 0)
+        across = 0
+        print(stpos, ascale, aswitch, fscleft, fscright, fswleft, fswright)
+        if stpos == 0 and ascale and fscright:
+            across = 1
+        if stpos == 0 and aswitch and fswright:
+            across = 1
+        if stpos == 2 and ascale and fscleft:
+            across = 1
+        if stpos == 2 and aswitch and fswleft:
+            across = 1
+        scout.set("AutoCrossField", across)
 
 
         scout.set("Replay", scout.boolfield('AK-5'))
@@ -215,12 +233,12 @@ def predictScore(datapath, teams, level='quals'):
 
 #Takes an entry from the Scout table and returns whether or not the entry should be flagged based on contradictory data.
 def autoFlag(entry):
-    if (entry['AutoHighBalls']
-            or entry['TeleopHighBalls']) and (entry['AutoLowBalls']
-                                              or entry['AutoHighBalls']):
-        return 1
-    if entry['Hang'] and entry['FailedHang']:
-        return 1
+#    if (entry['AutoHighBalls']
+#            or entry['TeleopHighBalls']) and (entry['AutoLowBalls']
+#                                              or entry['AutoHighBalls']):
+#        return 1
+#    if entry['Hang'] and entry['FailedHang']:
+#        return 1
     return 0
 
 
@@ -235,35 +253,16 @@ def calcTotals(entries):
         sums[key] = []
     #For each entry, add components to the running total if appropriate
     for i, e in enumerate(entries):
-        sums['autogear'].append(e['AutoGears'])
-        sums['teleopgear'].append(e['TeleopGears'])
-        sums['autoballs'].append(e['AutoLowBalls'] / 3 + e['AutoHighBalls'])
-        sums['teleopballs'].append(
-            e['TeleopLowBalls'] / 9 + e['TeleopHighBalls'] / 3)
-        sums['geardrop'].append(e['TeleopGearDrops'])
-        sums['end'].append(e['Hang'] * 50)
-        sums['defense'].append(e['Defense'])
-        if not e['Defense']:
-            noDefense['autogear'] += e['AutoGears']
-            noDefense['teleopgear'] += e['TeleopGears']
-            noDefense[
-                'autoballs'] += e['AutoLowBalls'] / 3 + e['AutoHighBalls']
-            noDefense[
-                'teleopballs'] += e['TeleopLowBalls'] / 9 + e['TeleopHighBalls'] / 3
-            noDefense['geardrop'] += e['TeleopGearDrops']
-            noDefense['end'] += e['Hang'] * 50
-            noDefense['defense'] += e['Defense']
-            noDCount += 1
+        sums['NumDelToScale'].append(e['NumDelToScale'])
+        sums['NumDelToSwitch'].append(e['NumDelToSwitch'])
+        sums['NumDelToXchange'].append(e['NumDelToXchange'])
+        sums['NumDelToOppSwitch'].append(e['NumDelToOppSwitch'])
+
         if i < 3:
-            lastThree['autogear'] += e['AutoGears']
-            lastThree['teleopgear'] += e['TeleopGears']
-            lastThree[
-                'autoballs'] += e['AutoLowBalls'] / 3 + e['AutoHighBalls']
-            lastThree[
-                'teleopballs'] += e['TeleopLowBalls'] / 9 + e['TeleopHighBalls'] / 3
-            lastThree['geardrop'] += e['TeleopGearDrops']
-            lastThree['end'] += e['Hang'] * 50
-            lastThree['defense'] += e['Defense']
+            lastThree['NumDelToScale'] += e['NumDelToScale']
+            lastThree['NumDelToSwitch'] += e['NumDelToSwitch']
+            lastThree['NumDelToXchange'] += e['NumDelToXchange']
+            lastThree['NumDelToOppSwitch'] += e['NumDelToOppSwitch']
             lastThreeCount += 1
 
     #If there is data, average out the last 3 or less matches
@@ -294,21 +293,21 @@ def calcTotals(entries):
 
     #Calculate APRs. This is an approximate average points contribution to the match
     for key in retVal:
-        apr = retVal[key]['autoballs'] + retVal[key]['teleopballs'] + retVal[key]['end']
-        if retVal[key]['autogear']:
-            apr += 20 * min(retVal[key]['autogear'], 1)
-        if retVal[key]['autogear'] > 1:
-            apr += (retVal[key]['autogear'] - 1) * 10
-
-        apr += max(
-            min(retVal[key]['teleopgear'], 2 - retVal[key]['autogear']) * 20,
-            0)
-        if retVal[key]['autogear'] + retVal[key]['teleopgear'] > 2:
-            apr += min(retVal[key]['teleopgear'] + retVal[key]['autogear'] - 2,
-                       4) * 10
-        if retVal[key]['autogear'] + retVal[key]['teleopgear'] > 6:
-            apr += min(retVal[key]['teleopgear'] + retVal[key]['autogear'] - 6,
-                       6) * 7
+        apr = 100
+#        apr = retVal[key]['autoballs'] + retVal[key]['teleopballs'] + retVal[key]['end']
+#        if retVal[key]['autogear']:
+#            apr += 20 * min(retVal[key]['autogear'], 1)
+#        if retVal[key]['autogear'] > 1:
+#            apr += (retVal[key]['autogear'] - 1) * 10
+#
+#            min(retVal[key]['teleopgear'], 2 - retVal[key]['autogear']) * 20,
+#            0)
+#        if retVal[key]['autogear'] + retVal[key]['teleopgear'] > 2:
+#            apr += min(retVal[key]['teleopgear'] + retVal[key]['autogear'] - 2,
+#                       4) * 10
+#        if retVal[key]['autogear'] + retVal[key]['teleopgear'] > 6:
+#            apr += min(retVal[key]['teleopgear'] + retVal[key]['autogear'] - 6,
+#                       6) * 7
         apr = int(apr)
         retVal[key]['apr'] = apr
 

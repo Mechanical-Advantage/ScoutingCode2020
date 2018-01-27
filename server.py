@@ -679,6 +679,7 @@ class ScoutServer(object):
             for key in totals:
                 totals[key]['team'] = n
                 #replace the data entries with new ones
+
                 cursor.execute('INSERT INTO ' + key + ' VALUES (' +
                                ','.join([str(a)
                                          for a in totals[key].values()]) + ')')

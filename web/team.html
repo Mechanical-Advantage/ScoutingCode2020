@@ -11,13 +11,13 @@
         <script src="./static/js/jquery.tablesorter.js"></script>
         <script src="./static/js/amcharts.js"></script>
         <script src="./static/js/serial.js"></script>
-        
+
         <script>
             var chart;
             var graph;
 
             var chartData = {10}
-            
+
             //Sample data[{{"match": 9, "autoshoot": 20.0, "shoot": 40.0, "autogears": 1, "gears": 4, "geardrop": 1}}, {{"match": 22, "autoshoot": 24.0, "shoot": 23.33, "autogears": 1, "gears": 2, "geardrop": 0}}, {{"match": 40, "autoshoot": 36.0, "shoot": 25.0, "autogears": 0, "gears": 3, "geardrop": 0}}, {{"match": 51, "autoshoot": 0.0, "shoot": 45.0, "autogears": 0, "gears": 0, "geardrop": 0}}, {{"match": 71, "autoshoot": 43.0, "shoot": 23.33, "autogears": 1, "gears": 2, "geardrop": 0}}, {{"match": 91, "autoshoot": 35.0, "shoot": 30.0, "autogears": 1, "gears": 3, "geardrop": 0}}, {{"match": 96, "autoshoot": 0.0, "shoot": 0.0, "autogears": 1, "gears": 2, "geardrop": 0}}, {{"match": 107, "autoshoot": 0.0, "shoot": 60.0, "autogears": 1, "gears": 0, "geardrop": 0}}];
 
             AmCharts.ready(function () {{
@@ -125,7 +125,7 @@
                 graph5.valueField = "geardrop";
                 graph5.balloonText = "Dropped Gears:<br><b><span style='font-size:14px;'>[[value]]</span></b>";
                 chart.addGraph(graph5);
-                
+
                 // CURSOR
                 var chartCursor = new AmCharts.ChartCursor();
                 chartCursor.cursorAlpha = 0;
@@ -157,7 +157,7 @@
             <div class="container">
                 <img src="./static/img/default-logo.png" align="left" hspace="10" vspace="5"></img>
                     <span style="display:inline-block; padding-top:10px;">PiScout<br>
-                    FRC Team 238/2067</span>
+                    FRC Team 6328</span>
                 <br clear="left">
             </div>
         </div>
@@ -190,7 +190,7 @@
                             <li class="dropdown">
                               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Matches<span class="caret"></span></a>
                               <ul class="dropdown-menu">
-                                <li><a href="/matches?n=238">238 Matches</a></li>
+                                <li><a href="/matches?n=6328">6328 Matches</a></li>
                                 <li><a href="/matches">All Matches</a></li>
                               </ul>
                             </li>
@@ -246,20 +246,20 @@
                     </div>
                 </div>
                 <div id="chartdiv" style="height:400px; margin: 0 auto;"></div>
-                <div id="table_container" class="team_table">                
+                <div id="table_container" class="team_table">
                     <table class="table table-striped table-hover text-center" role="grid">
                         <thead>
                             <tr role="row">
                                 <th class="hidden-xs col-sm-1 text-center" data-column="0" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" style="-moz-user-select: none;" aria-label="Match"><div class="tablesorter-header-inner">Match</div></th>
                                 <th class="col-xs-3 hidden-sm hidden-md hidden-lg hidden-xl text-center" data-column="0" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" style="-moz-user-select: none;" aria-label="Match"><div class="tablesorter-header-inner">M</div></th>
-                                
-                                
+
+
                                 <th class="col-xs-3 col-sm-1 text-center" data-column="1" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" style="-moz-user-select: none;" aria-label="Auto"><div class="tablesorter-header-inner">Auto</div></th>
                                 <th class="col-xs-3 col-sm-1 text-center" data-column="2" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" style="-moz-user-select: none;" aria-label="Gears"><div class="tablesorter-header-inner">Gears</div></th>
                                 <th class="hidden-xs col-sm-1 text-center" data-column="3" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" style="-moz-user-select: none;" aria-label="Shooting"><div class="tablesorter-header-inner">Shooting</div></th>
                                 <th class="col-xs-3 hidden-sm hidden-md hidden-lg hidden-xl text-center" data-column="3" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" style="-moz-user-select: none;" aria-label="Shooting"><div class="tablesorter-header-inner">Shoot</div></th>
-                                
-                                
+
+
                                 <th class="col-xs-3 col-sm-1 text-center" data-column="4" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" style="-moz-user-select: none;" aria-label="Match"><div class="tablesorter-header-inner">Other</div></th>
                                 <th class="col-xs-3 col-sm-1 text-center" data-column="5" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" style="-moz-user-select: none;" aria-label="Match"><div class="tablesorter-header-inner">Flag</div></th>
                                 <th class="hidden-xs col-sm-1 text-center" data-column="6" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" style="-moz-user-select: none;" aria-label="Match"><div class="tablesorter-header-inner">Edit</div></th>
@@ -299,10 +299,10 @@
             </div>
             <div id="footer" class="container hidden-sm hidden-xs">
                 <p>
-                <em>FIRST</em> Robotics Competition Team 238<br>
-                1 Crusader Way<br>
-                Manchester, NH 03103</p>
-                <p>&copy; Team 238 | <a href="http://frc238.org/legal/">Privacy and Tracking Policy</a></p>
+                <em>FIRST</em> Robotics Competition Team 6328<br>
+                20 Harvard Road<br>
+                Littleton, MA 01460</p>
+                <p>&copy; Team 6328 | <a href="http://littletonrobotics.org/">Privacy and Tracking Policy</a></p>
             </div>
         </div>
         <div id="bottom_border"></div>

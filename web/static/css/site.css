@@ -11,7 +11,7 @@
   #page_header
   {
     background-attachment:scroll;
-    background-color:#fff;
+    background-color:#333;
     background-image:url(../img/bg-header.png);
     background-repeat:repeat;
     color:#ee0;
@@ -33,7 +33,7 @@
   #top_menu
   {
     background-attachment:scroll;
-    background-color:#fff;
+    background-color:#333;
     background-image:url(../img/bg-nav.gif);
     background-repeat:repeat-x;
     border-bottom-color:#EE0;
@@ -72,7 +72,7 @@
   /* Sets the background and text colors of the table headers */
   th
   {
-    background:#000;
+    background:#333;
     border:1px solid #000;
     color:#FFF;
     padding:4px;
@@ -97,7 +97,7 @@
     text-decoration:underline;
   }
 
-/* End Team specific section */ 
+/* End Team specific section */
 
 
 #alliance_compare_container
@@ -347,7 +347,7 @@ td
   {
     display:none;
   }
-  
+
   a[href]:after
   {
     content:none;
@@ -360,25 +360,25 @@ td
   {
     display:block;
   }
-  
+
   .alliance_compare_cell,.edit_compare_cell
   {
     display:block;
     margin-bottom:10px;
   }
-  
+
   .comparebox_container
   {
     margin:0;
   }
-  
+
   .navbar-collapse
   {
     background-color:#000;
     position:relative;
     z-index:1000;
   }
-  
+
   .team_table
   {
     font-size:8pt;

@@ -227,6 +227,15 @@ class ScoutServer(object):
 
         with open('web/team.html', 'r') as file:
             page = file.read()
+            lastEventCode='1'
+            print (dataset)
+            print (*s[1:])
+            print (*oldData[1:])
+            print (output)
+            print (commentstr)
+            print (imcode)
+            print (hidden)
+
         return page.format(n, output, *s[1:],
                            str(dataset).replace("'", '"'), imcode, commentstr,
                            hidden, *oldData[1:], lastEventCode)

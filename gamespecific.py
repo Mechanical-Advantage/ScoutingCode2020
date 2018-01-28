@@ -26,8 +26,10 @@ SCOUT_FIELDS = {
     "AutoCrossField": 0,
     "SpareField1": 0,
     "SpareField2": 0,
-    "Replay":0,
-    "Flag": 0
+    "Replay": 0,
+    "Flag": 0,
+    "troubleWithField": 0,
+    "park": 0
 }
 
 #Defines the fields that are stored in the "averages" and similar tables of the database. These are the fields displayed on the home page of the website.
@@ -95,7 +97,9 @@ def processSheet(scout):
         scout.set("NumDelToOppSwitch", numoppsw1 * 10 + numoppsw2)
 
         scout.set("Climb", scout.boolfield('AC-17'))
+        scout.set("botPark", scout.boolfield('AC-18'))
         scout.set("SupportOthers", scout.boolfield('AJ-17'))
+        scout.set("troubleWithField", scout.boolfield('AJ-18'))
         scout.set("FieldScaleLeft", scout.boolfield('I-17'))
         fscleft = scout.boolfield('I-17')
         scout.set("FieldScaleRight", scout.boolfield('J-17'))

@@ -26,8 +26,10 @@ SCOUT_FIELDS = {
     "AutoCrossField": 0,
     "SpareField1": 0,
     "SpareField2": 0,
-    "Replay":0,
-    "Flag": 0
+    "Replay": 0,
+    "Flag": 0,
+    "troubleWithField": 0,
+    "botPark": 0
 }
 
 #Defines the fields that are stored in the "averages" and similar tables of the database. These are the fields displayed on the home page of the website.
@@ -95,7 +97,9 @@ def processSheet(scout):
         scout.set("NumDelToOppSwitch", numoppsw1 * 10 + numoppsw2)
 
         scout.set("Climb", scout.boolfield('AC-17'))
+        scout.set("botPark", scout.boolfield('AC-18'))
         scout.set("SupportOthers", scout.boolfield('AJ-17'))
+        scout.set("troubleWithField", scout.boolfield('AJ-18'))
         scout.set("FieldScaleLeft", scout.boolfield('I-17'))
         fscleft = scout.boolfield('I-17')
         scout.set("FieldScaleRight", scout.boolfield('J-17'))
@@ -135,34 +139,21 @@ def processSheet(scout):
 #Takes an entry from the Scout database table and generates text for display on the team page. This page has 4 columns, currently used for auto, 2 teleop, and other (like fouls and end game)
 def generateTeamText(e):
     text = {'auto': "", 'teleop1': "", 'teleop2': "", 'other': ""}
-    text['auto'] += 'baseline, ' if e['AutoBaseline'] else ''
-    text['auto'] += 'side try, ' if e['AutoSideAttempt'] else ''
-    text['auto'] += 'center try, ' if e['AutoCenterAttempt'] else ''
-    text['auto'] += 'side peg, ' if e['AutoSideSuccess'] else ''
-    text['auto'] += 'center peg, ' if e['AutoCenterSuccess'] else ''
-    text['auto'] += str(
-        e['AutoLowBalls']) + 'x low goal, ' if e['AutoLowBalls'] else ''
-    text['auto'] += str(
-        e['AutoHighBalls']) + 'x high goal, ' if e['AutoHighBalls'] else ''
+    text['auto'] += 'baseline, ' if e['AutoCross'] else ''
+    text['auto'] += 'Switch try, ' if e['AutoSwitch'] else ''
+    text['auto'] += 'Scale try, ' if e['AutoScale'] else ''
+    text['auto'] += 'Exchange try, ' if e['AutoXchange'] else ''
 
     text['teleop1'] += str(
-        e['TeleopGears']) + 'x gears, ' if e['TeleopGears'] else ''
-    text['teleop1'] += str(e['TeleopGearDrops']) + 'x gears dropped, ' if e[
-        'TeleopGearDrops'] else ''
+        e['NumDelToScale']) + 'x to scale, ' if e['NumDelToScale'] else ''
 
     text['teleop2'] += str(
-        e['TeleopLowBalls']) + 'x low goal, ' if e['TeleopLowBalls'] else ''
+        e['NumDelToSwitch']) + 'to switch, ' if e['NumDelToSwitch'] else ''
     text['teleop2'] += str(
-        e['TeleopHighBalls']) + 'x high goal, ' if e['TeleopHighBalls'] else ''
+        e['NumDelToOppSwitch']) + 'to opp switch, ' if e['NumDelToOppSwitch'] else ''
 
-    text['other'] = 'hang, ' if e['Hang'] else 'failed hang, ' if e[
-        'FailedHang'] else ''
-    text['other'] += str(e['Fouls']) + 'x foul, ' if e['Fouls'] else ''
-    text['other'] += str(
-        e['TechFouls']) + 'x tech foul, ' if e['TechFouls'] else ''
-    text['other'] += 'defense, ' if e['Defense'] else ''
-    text['other'] += 'feeder, ' if e['Feeder'] else ''
-    text['other'] += 'defended, ' if e['Defended'] else ''
+    text['other'] = 'Climb, ' if e['Climb'] else ' '
+
 
     return text
 
@@ -172,13 +163,10 @@ def generateChartData(e):
     dp = dict(CHART_FIELDS)
     dp["match"] = e['match']
 
-    dp['autoshoot'] += e['AutoLowBalls'] / 3 + e['AutoHighBalls']
-    dp['autogears'] += e['AutoGears']
-
-    dp['gears'] += e['TeleopGears']
-    dp['geardrop'] += e['TeleopGearDrops']
-
-    dp['shoot'] += e['TeleopLowBalls'] / 9 + e['TeleopHighBalls'] / 3
+    dp['NumDelToScale'] += e['NumDelToScale']
+    dp['NumDelToSwitch'] += e['NumDelToSwitch']
+    dp['NumDelToOppSwitch'] += e['NumDelToOppSwitch']
+    dp['NumDelToXchange'] += e['NumDelToXchange']
 
     return dp
 

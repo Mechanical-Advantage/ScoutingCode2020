@@ -628,8 +628,10 @@ class ScoutServer(object):
 
             #If replay is marked, replace previous data
             if d['Replay']:  #replay
+#                print (str(d[0]))
+                print (d)
                 cursor.execute('DELETE from scout WHERE Team=? AND Match=?',
-                               (str(d[0]), str(d[1])))
+                               (str(d['Team']), str(d['Match'])))
 
             #Insert data into database
             cursor.execute('INSERT INTO scout VALUES (NULL,' +

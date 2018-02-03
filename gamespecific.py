@@ -121,7 +121,6 @@ def processSheet(scout):
             across = 1
         scout.set("AutoCrossField", across)
 
-
         scout.set("Replay", scout.boolfield('AK-5'))
 
 #        sideAttempt = scout.boolfield('F-11') and not scout.boolfield('O-11')

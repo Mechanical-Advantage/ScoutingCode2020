@@ -28,6 +28,7 @@ SCOUT_FIELDS = {
     "SpareField2": 0,
     "Replay": 0,
     "Flag": 0,
+    "wonMatch": 0,
     "troubleWithField": 0,
     "botPark": 0
 }
@@ -96,10 +97,11 @@ def processSheet(scout):
         numoppsw2 = scout.rangefield('AB-12', 0, 9)
         scout.set("NumDelToOppSwitch", numoppsw1 * 10 + numoppsw2)
 
-        scout.set("Climb", scout.boolfield('AC-17'))
-        scout.set("botPark", scout.boolfield('AC-18'))
-        scout.set("SupportOthers", scout.boolfield('AJ-17'))
-        scout.set("troubleWithField", scout.boolfield('AJ-18'))
+        scout.set("Climb", scout.boolfield('AC-16'))
+        scout.set("botPark", scout.boolfield('AC-17'))
+        scout.set("wonMatch", scout.boolfield('AC-18'))
+        scout.set("SupportOthers", scout.boolfield('AJ-16'))
+        scout.set("troubleWithField", scout.boolfield('AJ-17'))
         scout.set("FieldScaleLeft", scout.boolfield('I-17'))
         fscleft = scout.boolfield('I-17')
         scout.set("FieldScaleRight", scout.boolfield('J-17'))

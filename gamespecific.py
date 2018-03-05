@@ -30,7 +30,10 @@ SCOUT_FIELDS = {
     "Flag": 0,
     "wonMatch": 0,
     "troubleWithField": 0,
-    "botPark": 0
+    "botPark": 0,
+    "switchEfficiency": 0,
+    "oppswitchEfficiency": 0,
+    "scaleEfficiency": 0
 }
 
 #Defines the fields that are stored in the "averages" and similar tables of the database. These are the fields displayed on the home page of the website.

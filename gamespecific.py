@@ -31,9 +31,15 @@ SCOUT_FIELDS = {
     "wonMatch": 0,
     "troubleWithField": 0,
     "botPark": 0,
+    "intakeEfficiency": 0,
     "switchEfficiency": 0,
-    "oppswitchEfficiency": 0,
-    "scaleEfficiency": 0
+    "scaleEfficiency": 0,
+    "xchngEfficiency": 0,
+    "driveEfficiency" :0,
+    "cantIntake": 0,
+    "cantDelToSwitch": 0,
+    "cantDelToScale": 0,
+    "cantDelToXchng": 0
 }
 
 #Defines the fields that are stored in the "averages" and similar tables of the database. These are the fields displayed on the home page of the website.
@@ -84,8 +90,8 @@ def processSheet(scout):
         scout.set("AutoScale", scout.boolfield('I-13'))
         ascale = scout.boolfield('I-13')
         scout.set("AutoXchange", scout.boolfield('I-14'))
-        scout.set("AllianceColor", scout.rangefield('O-11', 0, 1))
-        scout.set("StartPos", scout.rangefield('O-13', 0, 2))
+        scout.set("AllianceColor", scout.rangefield('M-11', 0, 1))
+        scout.set("StartPos", scout.rangefield('M-13', 0, 2))
         stpos = scout.rangefield('O-13', 0, 2)
 
         scout.set("NumDelToScale", scout.rangefield('AB-13', 0, 9))
@@ -105,6 +111,15 @@ def processSheet(scout):
         scout.set("wonMatch", scout.boolfield('AC-18'))
         scout.set("SupportOthers", scout.boolfield('AJ-16'))
         scout.set("troubleWithField", scout.boolfield('AJ-17'))
+        scout.set("intakeEfficiency", scout.rangefield('S-10', 1, 3))
+        scout.set("switchEfficiency", scout.rangefield('R-11', 0, 3))
+        scout.set("scaleEfficiency", scout.rangefield('R-12', 0, 3))
+        scout.set("xchngEfficiency", scout.rangefield('R-13', 0, 3))
+        scout.set("driveEfficiency", scout.rangefield('S-14', 1, 3))
+        scout.set("cantIntake", scout.boolfield('V-10'))
+        scout.set("cantDelToSwitch", scout.boolfield('V-11'))
+        scout.set("cantDelToScale", scout.boolfield('V-12'))
+        scout.set("cantDelToXchng", scout.boolfield('V-13'))
         scout.set("FieldScaleLeft", scout.boolfield('I-17'))
         fscleft = scout.boolfield('I-17')
         scout.set("FieldScaleRight", scout.boolfield('J-17'))

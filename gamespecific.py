@@ -115,7 +115,7 @@ def processSheet(scout):
         scout.set("switchEfficiency", scout.rangefield('R-11', 0, 3))
         scout.set("scaleEfficiency", scout.rangefield('R-12', 0, 3))
         scout.set("xchngEfficiency", scout.rangefield('R-13', 0, 3))
-        scout.set("driveEfficiency", scout.rangefield('S-14', 1, 3))
+        scout.set("driveEfficiency", scout.rangefield('R-14', 1, 5))
         scout.set("cantIntake", scout.boolfield('V-10'))
         scout.set("cantDelToSwitch", scout.boolfield('V-11'))
         scout.set("cantDelToScale", scout.boolfield('V-12'))

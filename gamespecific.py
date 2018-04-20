@@ -9,8 +9,11 @@ SCOUT_FIELDS = {
     "TechFouls": 0,
     "AutoCross": 0,
     "AutoSwitch": 0,
+    "AttemptAutoSwitch": 0,
     "AutoScale": 0,
+    "AttemptAutoScale": 0,
     "AutoXchange": 0,
+    "AttemptAutoXchange": 0,
     "AllianceColor": 0,
     "StartPos": 0,
     "NumDelToScale": 0,
@@ -18,6 +21,7 @@ SCOUT_FIELDS = {
     "NumDelToXchange": 0,
     "NumDelToOppSwitch": 0,
     "Climb": 0,
+    "AttemptClimb": 0,
     "SupportOthers": 0,
     "FieldScaleLeft": 0,
     "FieldScaleRight": 0,
@@ -30,6 +34,7 @@ SCOUT_FIELDS = {
     "Flag": 0,
     "wonMatch": 0,
     "troubleWithField": 0,
+    "disabled": 0,
     "botPark": 0,
     "intakeEfficiency": 0,
     "switchEfficiency": 0,
@@ -86,10 +91,13 @@ def processSheet(scout):
 
         scout.set("AutoCross", scout.boolfield('I-11'))
         scout.set("AutoSwitch", scout.boolfield('I-12'))
+        scout.set("AttemptAutoSwitch", scout.boolfield('J-12'))
         aswitch = scout.boolfield('I-12')
         scout.set("AutoScale", scout.boolfield('I-13'))
+        scout.set("AttemptAutoScale", scout.boolfield('J-13'))
         ascale = scout.boolfield('I-13')
         scout.set("AutoXchange", scout.boolfield('I-14'))
+        scout.set("AttemptAutoXchange", scout.boolfield('J-14'))
         scout.set("AllianceColor", scout.rangefield('M-11', 0, 1))
         scout.set("StartPos", scout.rangefield('M-13', 0, 2))
         stpos = scout.rangefield('O-13', 0, 2)
@@ -107,10 +115,12 @@ def processSheet(scout):
         scout.set("NumDelToOppSwitch", numoppsw1 * 10 + numoppsw2)
 
         scout.set("Climb", scout.boolfield('AC-16'))
+        scout.set("AttemptClimb", scout.boolfield('AB-16'))
         scout.set("botPark", scout.boolfield('AC-17'))
         scout.set("wonMatch", scout.boolfield('AC-18'))
         scout.set("SupportOthers", scout.boolfield('AJ-16'))
         scout.set("troubleWithField", scout.boolfield('AJ-17'))
+        scout.set("disabled", scout.boolfield('AJ-18'))
         scout.set("intakeEfficiency", scout.rangefield('S-10', 1, 3))
         scout.set("switchEfficiency", scout.rangefield('R-11', 0, 3))
         scout.set("scaleEfficiency", scout.rangefield('R-12', 0, 3))

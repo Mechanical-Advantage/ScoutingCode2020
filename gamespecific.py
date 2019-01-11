@@ -7,48 +7,54 @@ SCOUT_FIELDS = {
     "Match": 0,
     "Fouls": 0,
     "TechFouls": 0,
-    "AutoCross": 0,
-    "AutoSwitch": 0,
-    "AutoScale": 0,
-    "AutoXchange": 0,
-    "AllianceColor": 0,
-    "StartPos": 0,
-    "NumDelToScale": 0,
-    "NumDelToSwitch":0,
-    "NumDelToXchange": 0,
-    "NumDelToOppSwitch": 0,
-    "Climb": 0,
-    "SupportOthers": 0,
-    "FieldScaleLeft": 0,
-    "FieldScaleRight": 0,
-    "FieldSwitchLeft": 0,
-    "FieldSwitchRight": 0,
-    "AutoCrossField": 0,
-    "SpareField1": 0,
-    "SpareField2": 0,
     "Replay": 0,
     "Flag": 0,
-    "troubleWithField": 0,
-    "botPark": 0
+    "AllianceColor": 0,
+    "StartPos": 0,
+    "StartLevel": 0,
+    "CrossedLine": 0,
+    "AutoShipHatch": 0,
+    "AutoShipCargo": 0,
+    "AutoRocketHatch": 0,
+    "AutoRocketCargo": 0,
+    "RocketL1Hatch": 0,
+    "RocketL1Cargo": 0,
+    "RocketL2Hatch": 0,
+    "RocketL2Cargo": 0,
+    "RocketL3Hatch": 0,
+    "RocketL3Cargo": 0,
+    "ShipHatch": 0,
+    "ShipCargo": 0,
+    "ClimbLevel": 0,
+    "WonMatch": 0,
+    "LiftedOthers": 0,
+    "Disabled": 0,
+    "DriverRating": 0,
+    "HatchColRating": 0,
+    "HatchDelRating": 0,
+    "CargoColRating": 0,
+    "CargoDelRating": 0,
+    "DefenseRating": 0,
+    "AvoidDefenseRating": 0
 }
 
 #Defines the fields that are stored in the "averages" and similar tables of the database. These are the fields displayed on the home page of the website.
 AVERAGE_FIELDS = {
     "team": 0,
     "apr":0,
-    "NumDelToScale": 0,
-    "NumDelToSwitch": 0,
-    "NumDelToXchange": 0,
-    "NumDelToOppSwitch": 0
+    "RocketL1Hatch": 0,
+    "RocketL1Cargo": 0,
+    "RocketL2Hatch": 0,
+    "RocketL2Cargo": 0
 }
 
 #Defines the fields displayed on the charts on the team and compare pages
 CHART_FIELDS = {
     "match": 0,
-    "NumDelToScale": 0,
-    "NumDelToSwitch": 0,
-    "NumDelToXchange": 0,
-    "NumDelToOppSwitch": 0
+    "RocketL1Hatch": 0,
+    "RocketL1Cargo": 0,
+    "RocketL2Hatch": 0,
+    "RocketL2Cargo": 0
 }
 
 
@@ -56,7 +62,7 @@ CHART_FIELDS = {
 # Submits three times, because there are three matches on one sheet
 # The sheet is developed in Google Sheets and the coordinates are defined in terms on the row and column numbers from the sheet.
 def processSheet(scout):
-    for s in (0, 16, 32):
+    for s in (0, 23):
         #Sets the shift value (used when turning cell coordinates into pixel coordinates)
         scout.shiftDown(s)
 
@@ -74,64 +80,41 @@ def processSheet(scout):
         scout.set("Fouls", int(0))
         scout.set("TechFouls", int(0))
 
-        scout.set("AutoCross", scout.boolfield('I-11'))
-        scout.set("AutoSwitch", scout.boolfield('I-12'))
-        aswitch = scout.boolfield('I-12')
-        scout.set("AutoScale", scout.boolfield('I-13'))
-        ascale = scout.boolfield('I-13')
-        scout.set("AutoXchange", scout.boolfield('I-14'))
-        scout.set("AllianceColor", scout.rangefield('O-11', 0, 1))
-        scout.set("StartPos", scout.rangefield('O-13', 0, 2))
-        stpos = scout.rangefield('O-13', 0, 2)
 
-        scout.set("NumDelToScale", scout.rangefield('AB-13', 0, 9))
-        scout.set("NumDelToXchange", scout.rangefield('AB-14', 0, 9))
+        scout.set("AllianceColor", scout.rangefield('I-10', 0, 1))
+        scout.set("StartPos", scout.rangefield('O-10', 0, 2))
+        scout.set("StartLevel", scout.rangefield('P-12', 1, 2))
+        scout.set("CrossedLine", scout.boolfield('V-11'))
+        scout.set("AutoShipHatch", scout.rangefield('AA-10', 0, 2))
+        scout.set("AutoShipCargo", scout.rangefield('AA-11', 0, 2))
+        scout.set("AutoRocketHatch", scout.rangefield('AI-10', 0, 2))
+        scout.set("AutoRocketCargo", scout.rangefield('AI-11', 0, 2))
 
+        scout.set("RocketL1Hatch", scout.rangefield('H-14', 0, 4))
+        scout.set("RocketL2Hatch", scout.rangefield('H-15', 0, 4))
+        scout.set("RocketL3Hatch", scout.rangefield('H-16', 0, 4))
 
-        numallsw1 = scout.rangefield('AB-9', 0, 9)
-        numallsw2 = scout.rangefield('AB-10', 0, 9)
-        scout.set("NumDelToSwitch", numallsw1 * 10 + numallsw2)
+        scout.set("RocketL1Cargo", scout.rangefield('R-14', 0, 4))
+        scout.set("RocketL2Cargo", scout.rangefield('R-15', 0, 4))
+        scout.set("RocketL3Cargo", scout.rangefield('R-16', 0, 4))
 
-        numoppsw1 = scout.rangefield('AB-11', 0, 9)
-        numoppsw2 = scout.rangefield('AB-12', 0, 9)
-        scout.set("NumDelToOppSwitch", numoppsw1 * 10 + numoppsw2)
+        scout.set("ShipHatch", scout.rangefield('AA-14', 0, 8))
+        scout.set("ShipCargo", scout.rangefield('AA-15', 0, 8))
 
-        scout.set("Climb", scout.boolfield('AC-17'))
-        scout.set("botPark", scout.boolfield('AC-18'))
-        scout.set("SupportOthers", scout.boolfield('AJ-17'))
-        scout.set("troubleWithField", scout.boolfield('AJ-18'))
-        scout.set("FieldScaleLeft", scout.boolfield('I-17'))
-        fscleft = scout.boolfield('I-17')
-        scout.set("FieldScaleRight", scout.boolfield('J-17'))
-        fscright = scout.boolfield('J-17')
-        scout.set("FieldSwitchLeft", scout.boolfield('I-18'))
-        fswleft = scout.boolfield('I-18')
-        scout.set("FieldSwitchRight", scout.boolfield('J-18'))
-        fswright = scout.boolfield('J-18')
-        scout.set("AutoCrossField", 0)
-        across = 0
-        print(stpos, ascale, aswitch, fscleft, fscright, fswleft, fswright)
-        if stpos == 0 and ascale and fscright:
-            across = 1
-        if stpos == 0 and aswitch and fswright:
-            across = 1
-        if stpos == 2 and ascale and fscleft:
-            across = 1
-        if stpos == 2 and aswitch and fswleft:
-            across = 1
-        scout.set("AutoCrossField", across)
+        scout.set("ClimbLevel", scout.rangefield('K-19', 0, 3))
+        scout.set("WonMatch", scout.rangefield('K-21', 0, 1))
+        scout.set("LiftedOthers", scout.boolfield('S-19'))
+        scout.set("Disabled", scout.boolfield('S-20'))
 
+        scout.set("DriverRating", scout.rangefield('W-19', 0, 5))
+        scout.set("HatchColRating", scout.rangefield('W-20', 0, 5))
+        scout.set("HatchDelRating", scout.rangefield('W-21', 0, 5))
+        scout.set("CargoColRating", scout.rangefield('AF-18', 0, 5))
+        scout.set("CargoDelRating", scout.rangefield('AF-19', 0, 5))
+        scout.set("DefenseRating", scout.rangefield('AF-20', 0, 5))
+        scout.set("AvoidDefenseRating", scout.rangefield('AF-21', 0, 5))
 
         scout.set("Replay", scout.boolfield('AK-5'))
-
-#        sideAttempt = scout.boolfield('F-11') and not scout.boolfield('O-11')
-#        centerAttempt = scout.boolfield('J-11') and not scout.boolfield('O-11')
-#        sideSuccess = scout.boolfield('F-11') and scout.boolfield('O-11')
-#        centerSuccess = scout.boolfield('J-11') and scout.boolfield('O-11')
-#        scout.set("AutoSideAttempt", int(sideAttempt))
-#        scout.set("AutoCenterAttempt", int(centerAttempt))
-#        scout.set("AutoSideSuccess", int(sideSuccess))
-#        scout.set("AutoCenterSuccess", int(centerSuccess))
 
         scout.submit()
 
@@ -139,18 +122,18 @@ def processSheet(scout):
 #Takes an entry from the Scout database table and generates text for display on the team page. This page has 4 columns, currently used for auto, 2 teleop, and other (like fouls and end game)
 def generateTeamText(e):
     text = {'auto': "", 'teleop1': "", 'teleop2': "", 'other': ""}
-    text['auto'] += 'baseline, ' if e['AutoCross'] else ''
-    text['auto'] += 'Switch try, ' if e['AutoSwitch'] else ''
-    text['auto'] += 'Scale try, ' if e['AutoScale'] else ''
-    text['auto'] += 'Exchange try, ' if e['AutoXchange'] else ''
+    text['auto'] += 'baseline, ' if e['RocketL1Hatch'] else ''
+    text['auto'] += 'Switch try, ' if e['RocketL1Cargo'] else ''
+    text['auto'] += 'Scale try, ' if e['RocketL2Hatch'] else ''
+    text['auto'] += 'Exchange try, ' if e['RocketL2Cargo'] else ''
 
     text['teleop1'] += str(
-        e['NumDelToScale']) + 'x to scale, ' if e['NumDelToScale'] else ''
+        e['RocketL1Hatch']) + 'x to scale, ' if e['RocketL1Hatch'] else ''
 
     text['teleop2'] += str(
-        e['NumDelToSwitch']) + 'to switch, ' if e['NumDelToSwitch'] else ''
+        e['RocketL1Cargo']) + 'to switch, ' if e['RocketL1Cargo'] else ''
     text['teleop2'] += str(
-        e['NumDelToOppSwitch']) + 'to opp switch, ' if e['NumDelToOppSwitch'] else ''
+        e['RocketL2Hatch']) + 'to opp switch, ' if e['RocketL2Hatch'] else ''
 
     text['other'] = 'Climb, ' if e['Climb'] else ' '
 
@@ -163,10 +146,10 @@ def generateChartData(e):
     dp = dict(CHART_FIELDS)
     dp["match"] = e['match']
 
-    dp['NumDelToScale'] += e['NumDelToScale']
-    dp['NumDelToSwitch'] += e['NumDelToSwitch']
-    dp['NumDelToOppSwitch'] += e['NumDelToOppSwitch']
-    dp['NumDelToXchange'] += e['NumDelToXchange']
+    dp['RocketL1Hatch'] += e['RocketL1Hatch']
+    dp['RocketL1Cargo'] += e['RocketL1Cargo']
+    dp['RocketL2Hatch'] += e['RocketL2Hatch']
+    dp['RocketL2Cargo'] += e['RocketL2Cargo']
 
     return dp
 
@@ -241,16 +224,16 @@ def calcTotals(entries):
         sums[key] = []
     #For each entry, add components to the running total if appropriate
     for i, e in enumerate(entries):
-        sums['NumDelToScale'].append(e['NumDelToScale'])
-        sums['NumDelToSwitch'].append(e['NumDelToSwitch'])
-        sums['NumDelToXchange'].append(e['NumDelToXchange'])
-        sums['NumDelToOppSwitch'].append(e['NumDelToOppSwitch'])
+        sums['RocketL1Hatch'].append(e['RocketL1Hatch'])
+        sums['RocketL1Cargo'].append(e['RocketL1Cargo'])
+        sums['RocketL2Hatch'].append(e['RocketL2Hatch'])
+        sums['RocketL2Cargo'].append(e['RocketL2Cargo'])
 
         if i < 3:
-            lastThree['NumDelToScale'] += e['NumDelToScale']
-            lastThree['NumDelToSwitch'] += e['NumDelToSwitch']
-            lastThree['NumDelToXchange'] += e['NumDelToXchange']
-            lastThree['NumDelToOppSwitch'] += e['NumDelToOppSwitch']
+            lastThree['RocketL1Hatch'] += e['RocketL1Hatch']
+            lastThree['RocketL1Cargo'] += e['RocketL1Cargo']
+            lastThree['RocketL2Hatch'] += e['RocketL2Hatch']
+            lastThree['RocketL2Cargo'] += e['RocketL2Cargo']
             lastThreeCount += 1
 
     #If there is data, average out the last 3 or less matches

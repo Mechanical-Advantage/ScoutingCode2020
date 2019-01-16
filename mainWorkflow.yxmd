@@ -1,0 +1,755 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2018.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">D:\mascout\FRCKrawler2019\csvexport.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>csvexport.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Team Number" size="254" source="File: D:\mascout\FRCKrawler2019\csvexport.csv" type="V_String" />
+            <Field name="Match Number" size="254" source="File: D:\mascout\FRCKrawler2019\csvexport.csv" type="V_String" />
+            <Field name="Alliance Color" size="254" source="File: D:\mascout\FRCKrawler2019\csvexport.csv" type="V_String" />
+            <Field name="Start Position" size="254" source="File: D:\mascout\FRCKrawler2019\csvexport.csv" type="V_String" />
+            <Field name="Start Level" size="254" source="File: D:\mascout\FRCKrawler2019\csvexport.csv" type="V_String" />
+            <Field name="Crossed Line" size="254" source="File: D:\mascout\FRCKrawler2019\csvexport.csv" type="V_String" />
+            <Field name="Hatch To Ship" size="254" source="File: D:\mascout\FRCKrawler2019\csvexport.csv" type="V_String" />
+            <Field name="Cargo To Ship" size="254" source="File: D:\mascout\FRCKrawler2019\csvexport.csv" type="V_String" />
+            <Field name="Hatch To Rocket" size="254" source="File: D:\mascout\FRCKrawler2019\csvexport.csv" type="V_String" />
+            <Field name="Cargo To Rocket" size="254" source="File: D:\mascout\FRCKrawler2019\csvexport.csv" type="V_String" />
+            <Field name="Rocket L1 Hatch" size="254" source="File: D:\mascout\FRCKrawler2019\csvexport.csv" type="V_String" />
+            <Field name="Rocket L2 Hatch" size="254" source="File: D:\mascout\FRCKrawler2019\csvexport.csv" type="V_String" />
+            <Field name="Rocket L3 Hatch" size="254" source="File: D:\mascout\FRCKrawler2019\csvexport.csv" type="V_String" />
+            <Field name="Rocket L1 Cargo" size="254" source="File: D:\mascout\FRCKrawler2019\csvexport.csv" type="V_String" />
+            <Field name="Rocket L2 Cargo" size="254" source="File: D:\mascout\FRCKrawler2019\csvexport.csv" type="V_String" />
+            <Field name="Rocket L3 Cargo" size="254" source="File: D:\mascout\FRCKrawler2019\csvexport.csv" type="V_String" />
+            <Field name="Ship Hatch" size="254" source="File: D:\mascout\FRCKrawler2019\csvexport.csv" type="V_String" />
+            <Field name="Ship Cargo" size="254" source="File: D:\mascout\FRCKrawler2019\csvexport.csv" type="V_String" />
+            <Field name="Climb Level" size="254" source="File: D:\mascout\FRCKrawler2019\csvexport.csv" type="V_String" />
+            <Field name="Lifted Others" size="254" source="File: D:\mascout\FRCKrawler2019\csvexport.csv" type="V_String" />
+            <Field name="Disabled/Fell" size="254" source="File: D:\mascout\FRCKrawler2019\csvexport.csv" type="V_String" />
+            <Field name="Won Match" size="254" source="File: D:\mascout\FRCKrawler2019\csvexport.csv" type="V_String" />
+            <Field name="Driver" size="254" source="File: D:\mascout\FRCKrawler2019\csvexport.csv" type="V_String" />
+            <Field name="Hatch Coll" size="254" source="File: D:\mascout\FRCKrawler2019\csvexport.csv" type="V_String" />
+            <Field name="Hatch Del" size="254" source="File: D:\mascout\FRCKrawler2019\csvexport.csv" type="V_String" />
+            <Field name="Cargo Coll" size="254" source="File: D:\mascout\FRCKrawler2019\csvexport.csv" type="V_String" />
+            <Field name="Cargo Del" size="254" source="File: D:\mascout\FRCKrawler2019\csvexport.csv" type="V_String" />
+            <Field name="How Def" size="254" source="File: D:\mascout\FRCKrawler2019\csvexport.csv" type="V_String" />
+            <Field name="Under Def" size="254" source="File: D:\mascout\FRCKrawler2019\csvexport.csv" type="V_String" />
+            <Field name="Match Comment" size="254" source="File: D:\mascout\FRCKrawler2019\csvexport.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="198" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\MA\AppData\Local\Temp\Engine_864_f66b0fa816bf48ab8d103b50ffe2cba5_\Engine_6912_c0d89c7185cb40ab984a8710936aa389_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="66" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="36">D:\mascout\ScoutingCode2019\data_2019Beta1.db|||scout</File>
+          <FormatSpecificOptions>
+            <NoProgress>True</NoProgress>
+            <PreSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>data_2019Beta1.db
+Table=scout</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="key" source="File: D:\mascout\ScoutingCode2019\data_2019Beta1.db|||scout" type="Int64" />
+            <Field name="Team" source="File: D:\mascout\ScoutingCode2019\data_2019Beta1.db|||scout" type="Int64" />
+            <Field name="Match" source="File: D:\mascout\ScoutingCode2019\data_2019Beta1.db|||scout" type="Int64" />
+            <Field name="Fouls" source="File: D:\mascout\ScoutingCode2019\data_2019Beta1.db|||scout" type="Int64" />
+            <Field name="TechFouls" source="File: D:\mascout\ScoutingCode2019\data_2019Beta1.db|||scout" type="Int64" />
+            <Field name="Replay" source="File: D:\mascout\ScoutingCode2019\data_2019Beta1.db|||scout" type="Int64" />
+            <Field name="Flag" source="File: D:\mascout\ScoutingCode2019\data_2019Beta1.db|||scout" type="Int64" />
+            <Field name="AllianceColor" source="File: D:\mascout\ScoutingCode2019\data_2019Beta1.db|||scout" type="Int64" />
+            <Field name="StartPos" source="File: D:\mascout\ScoutingCode2019\data_2019Beta1.db|||scout" type="Int64" />
+            <Field name="StartLevel" source="File: D:\mascout\ScoutingCode2019\data_2019Beta1.db|||scout" type="Int64" />
+            <Field name="CrossedLine" source="File: D:\mascout\ScoutingCode2019\data_2019Beta1.db|||scout" type="Int64" />
+            <Field name="AutoShipHatch" source="File: D:\mascout\ScoutingCode2019\data_2019Beta1.db|||scout" type="Int64" />
+            <Field name="AutoShipCargo" source="File: D:\mascout\ScoutingCode2019\data_2019Beta1.db|||scout" type="Int64" />
+            <Field name="AutoRocketHatch" source="File: D:\mascout\ScoutingCode2019\data_2019Beta1.db|||scout" type="Int64" />
+            <Field name="AutoRocketCargo" source="File: D:\mascout\ScoutingCode2019\data_2019Beta1.db|||scout" type="Int64" />
+            <Field name="RocketL1Hatch" source="File: D:\mascout\ScoutingCode2019\data_2019Beta1.db|||scout" type="Int64" />
+            <Field name="RocketL1Cargo" source="File: D:\mascout\ScoutingCode2019\data_2019Beta1.db|||scout" type="Int64" />
+            <Field name="RocketL2Hatch" source="File: D:\mascout\ScoutingCode2019\data_2019Beta1.db|||scout" type="Int64" />
+            <Field name="RocketL2Cargo" source="File: D:\mascout\ScoutingCode2019\data_2019Beta1.db|||scout" type="Int64" />
+            <Field name="RocketL3Hatch" source="File: D:\mascout\ScoutingCode2019\data_2019Beta1.db|||scout" type="Int64" />
+            <Field name="RocketL3Cargo" source="File: D:\mascout\ScoutingCode2019\data_2019Beta1.db|||scout" type="Int64" />
+            <Field name="ShipHatch" source="File: D:\mascout\ScoutingCode2019\data_2019Beta1.db|||scout" type="Int64" />
+            <Field name="ShipCargo" source="File: D:\mascout\ScoutingCode2019\data_2019Beta1.db|||scout" type="Int64" />
+            <Field name="ClimbLevel" source="File: D:\mascout\ScoutingCode2019\data_2019Beta1.db|||scout" type="Int64" />
+            <Field name="WonMatch" source="File: D:\mascout\ScoutingCode2019\data_2019Beta1.db|||scout" type="Int64" />
+            <Field name="LiftedOthers" source="File: D:\mascout\ScoutingCode2019\data_2019Beta1.db|||scout" type="Int64" />
+            <Field name="Disabled" source="File: D:\mascout\ScoutingCode2019\data_2019Beta1.db|||scout" type="Int64" />
+            <Field name="DriverRating" source="File: D:\mascout\ScoutingCode2019\data_2019Beta1.db|||scout" type="Int64" />
+            <Field name="HatchColRating" source="File: D:\mascout\ScoutingCode2019\data_2019Beta1.db|||scout" type="Int64" />
+            <Field name="HatchDelRating" source="File: D:\mascout\ScoutingCode2019\data_2019Beta1.db|||scout" type="Int64" />
+            <Field name="CargoColRating" source="File: D:\mascout\ScoutingCode2019\data_2019Beta1.db|||scout" type="Int64" />
+            <Field name="CargoDelRating" source="File: D:\mascout\ScoutingCode2019\data_2019Beta1.db|||scout" type="Int64" />
+            <Field name="DefenseRating" source="File: D:\mascout\ScoutingCode2019\data_2019Beta1.db|||scout" type="Int64" />
+            <Field name="AvoidDefenseRating" source="File: D:\mascout\ScoutingCode2019\data_2019Beta1.db|||scout" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="198" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\MA\AppData\Local\Temp\Engine_864_f66b0fa816bf48ab8d103b50ffe2cba5_\Engine_6912_85d94d5c282d4e558531c2e7372306ff_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="198" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Team Number" selected="True" rename="Team" type="Int16" size="2" />
+            <SelectField field="Match Number" selected="True" rename="Match" type="Int16" size="2" />
+            <SelectField field="Hatch To Ship" selected="True" rename="AutoShipHatch" type="Int16" size="2" />
+            <SelectField field="Cargo To Ship" selected="True" rename="AutoShipCargo" type="Int16" size="2" />
+            <SelectField field="Hatch To Rocket" selected="True" rename="AutoRocketHatch" type="Int16" size="2" />
+            <SelectField field="Cargo To Rocket" selected="True" rename="AutoRocketCargo" type="Int16" size="2" />
+            <SelectField field="Rocket L1 Hatch" selected="True" rename="RocketL1Hatch" type="Int16" size="2" />
+            <SelectField field="Rocket L2 Hatch" selected="True" rename="RocketL2Hatch" type="Int16" size="2" />
+            <SelectField field="Rocket L3 Hatch" selected="True" rename="RocketL3Hatch" type="Int16" size="2" />
+            <SelectField field="Rocket L1 Cargo" selected="True" rename="RocketL1Cargo" type="Int16" size="2" />
+            <SelectField field="Rocket L2 Cargo" selected="True" rename="RocketL2Cargo" type="Int16" size="2" />
+            <SelectField field="Rocket L3 Cargo" selected="True" rename="RocketL3Cargo" type="Int16" size="2" />
+            <SelectField field="Ship Hatch" selected="True" rename="ShipHatch" type="Int16" size="2" />
+            <SelectField field="Ship Cargo" selected="True" rename="ShipCargo" type="Int16" size="2" />
+            <SelectField field="Climb Level" selected="True" rename="ClimbLevel" type="Int16" size="2" />
+            <SelectField field="Driver" selected="True" rename="DriverRating" type="Int16" size="2" />
+            <SelectField field="Hatch Coll" selected="True" rename="HatchColRating" type="Int16" size="2" />
+            <SelectField field="Hatch Del" selected="True" rename="HatchDelRating" type="Int16" size="2" />
+            <SelectField field="Cargo Coll" selected="True" rename="CargoColRating" type="Int16" size="2" />
+            <SelectField field="Cargo Del" selected="True" rename="CargoDelRating" type="Int16" size="2" />
+            <SelectField field="How Def" selected="True" rename="DefenseRating" type="Int16" size="2" />
+            <SelectField field="Under Def" selected="True" rename="AvoidDefenseRating" type="Int16" size="2" />
+            <SelectField field="Match Comment" selected="True" rename="Comment" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="282" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="if [Alliance Color] = '&quot;Red&quot;' THEN 0 ELSE 1 ENDIF" field="AllianceColor" size="2" type="Int16" />
+            <FormulaField expression="if [Start Position] = '&quot;Left&quot;' THEN 0 ELSEIF [Start Position] = '&quot;Center&quot;' THEN 1 ELSE 2 ENDIF" field="StartPos" size="2" type="Int16" />
+            <FormulaField expression="if [Start Level] = '&quot;Level 1&quot;' THEN 1 ELSE 2 ENDIF" field="StartLevel" size="2" type="Int16" />
+            <FormulaField expression="if [Crossed Line] = 'true' THEN 1 ELSE 0 ENDIF" field="CrossedLine" size="2" type="Int16" />
+            <FormulaField expression="if [Won Match] = 'true' THEN 1 ELSE 0 ENDIF" field="WonMatch" size="2" type="Int16" />
+            <FormulaField expression="if [Lifted Others] = 'true' THEN 1 ELSE 0 ENDIF" field="LiftedOthers" size="2" type="Int16" />
+            <FormulaField expression="if [Disabled/Fell] = 'true' THEN 1 ELSE 0 ENDIF" field="Disabled" size="2" type="Int16" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>AllianceColor = if [Alliance Color] = '"Red"' THEN 0 ELSE 1 ENDIF
+StartPos = if ...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="294" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="402" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="key" selected="False" />
+            <SelectField field="Fouls" selected="False" />
+            <SelectField field="TechFouls" selected="False" />
+            <SelectField field="Replay" selected="False" />
+            <SelectField field="Flag" selected="False" />
+            <SelectField field="Alliance Color" selected="False" />
+            <SelectField field="Start Position" selected="False" />
+            <SelectField field="Start Level" selected="False" />
+            <SelectField field="Crossed Line" selected="False" />
+            <SelectField field="Lifted Others" selected="False" />
+            <SelectField field="Disabled/Fell" selected="False" />
+            <SelectField field="Won Match" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="498" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\MA\AppData\Local\Temp\Engine_864_f66b0fa816bf48ab8d103b50ffe2cba5_\Engine_6912_8a21d3ba09ae4ef6b15459dd494aaf6e_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="594" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Team" action="GroupBy" rename="Team" />
+            <SummarizeField field="Match" action="Count" rename="MatchCount" />
+            <SummarizeField field="DriverRating" action="AvgNo0" rename="AvgNo0_DriverRating" />
+            <SummarizeField field="HatchColRating" action="AvgNo0" rename="AvgNo0_HatchColRating" />
+            <SummarizeField field="HatchDelRating" action="AvgNo0" rename="AvgNo0_HatchDelRating" />
+            <SummarizeField field="CargoColRating" action="AvgNo0" rename="AvgNo0_CargoColRating" />
+            <SummarizeField field="CargoDelRating" action="AvgNo0" rename="AvgNo0_CargoDelRating" />
+            <SummarizeField field="DefenseRating" action="AvgNo0" rename="AvgNo0_DefenseRating" />
+            <SummarizeField field="AvoidDefenseRating" action="AvgNo0" rename="AvgNo0_AvoidDefenseRating" />
+            <SummarizeField field="AutoShipHatch" action="Avg" rename="Avg_AutoShipHatch" />
+            <SummarizeField field="AutoShipCargo" action="Avg" rename="Avg_AutoShipCargo" />
+            <SummarizeField field="AutoRocketHatch" action="Avg" rename="Avg_AutoRocketHatch" />
+            <SummarizeField field="AutoRocketCargo" action="Avg" rename="Avg_AutoRocketCargo" />
+            <SummarizeField field="RocketL1Hatch" action="AvgNo0" rename="AvgNo0_RocketL1Hatch" />
+            <SummarizeField field="RocketL1Cargo" action="AvgNo0" rename="AvgNo0_RocketL1Cargo" />
+            <SummarizeField field="RocketL2Hatch" action="AvgNo0" rename="AvgNo0_RocketL2Hatch" />
+            <SummarizeField field="RocketL2Cargo" action="AvgNo0" rename="AvgNo0_RocketL2Cargo" />
+            <SummarizeField field="RocketL3Hatch" action="AvgNo0" rename="AvgNo0_RocketL3Hatch" />
+            <SummarizeField field="RocketL3Cargo" action="AvgNo0" rename="AvgNo0_RocketL3Cargo" />
+            <SummarizeField field="ShipHatch" action="AvgNo0" rename="AvgNo0_ShipHatch" />
+            <SummarizeField field="ShipCargo" action="AvgNo0" rename="AvgNo0_ShipCargo" />
+            <SummarizeField field="AutoShipHatch" action="Max" rename="Max_AutoShipHatch" />
+            <SummarizeField field="AutoShipCargo" action="Max" rename="Max_AutoShipCargo" />
+            <SummarizeField field="AutoRocketHatch" action="Max" rename="Max_AutoRocketHatch" />
+            <SummarizeField field="AutoRocketCargo" action="Max" rename="Max_AutoRocketCargo" />
+            <SummarizeField field="RocketL1Hatch" action="Max" rename="Max_RocketL1Hatch" />
+            <SummarizeField field="RocketL1Cargo" action="Max" rename="Max_RocketL1Cargo" />
+            <SummarizeField field="RocketL2Hatch" action="Max" rename="Max_RocketL2Hatch" />
+            <SummarizeField field="RocketL2Cargo" action="Max" rename="Max_RocketL2Cargo" />
+            <SummarizeField field="RocketL3Hatch" action="Max" rename="Max_RocketL3Hatch" />
+            <SummarizeField field="RocketL3Cargo" action="Max" rename="Max_RocketL3Cargo" />
+            <SummarizeField field="ShipHatch" action="Max" rename="Max_ShipHatch" />
+            <SummarizeField field="ShipCargo" action="Max" rename="Max_ShipCargo" />
+            <SummarizeField field="CrossedLine" action="Sum" rename="Sum_CrossedLine" />
+            <SummarizeField field="StartLevel1" action="Sum" rename="Sum_StartLevel1" />
+            <SummarizeField field="StartLevel2" action="Sum" rename="Sum_StartLevel2" />
+            <SummarizeField field="ClimbLevel0" action="Sum" rename="Sum_ClimbLevel0" />
+            <SummarizeField field="ClimbLevel1" action="Sum" rename="Sum_ClimbLevel1" />
+            <SummarizeField field="ClimbLevel2" action="Sum" rename="Sum_ClimbLevel2" />
+            <SummarizeField field="ClimbLevel3" action="Sum" rename="Sum_ClimbLevel3" />
+            <SummarizeField field="RocketHatch" action="Avg" rename="Avg_RocketHatch" />
+            <SummarizeField field="RocketCargo" action="Avg" rename="Avg_RocketCargo" />
+            <SummarizeField field="RocketHatch" action="Max" rename="Max_RocketHatch" />
+            <SummarizeField field="RocketCargo" action="Max" rename="Max_RocketCargo" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="498" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="if [StartLevel] = 1 THEN 1 ELSE 0 ENDIF" field="StartLevel1" size="2" type="Int16" />
+            <FormulaField expression="if [StartLevel] = 2 THEN 1 ELSE 0 ENDIF" field="StartLevel2" size="2" type="Int16" />
+            <FormulaField expression="if [ClimbLevel] = 0 THEN 1 ELSE 0 ENDIF" field="ClimbLevel0" size="2" type="Int16" />
+            <FormulaField expression="if [ClimbLevel] = 1 THEN 1 ELSE 0 ENDIF" field="ClimbLevel1" size="2" type="Int16" />
+            <FormulaField expression="if [ClimbLevel] = 2 THEN 1 ELSE 0 ENDIF" field="ClimbLevel2" size="2" type="Int16" />
+            <FormulaField expression="if [ClimbLevel] = 3 THEN 1 ELSE 0 ENDIF" field="ClimbLevel3" size="2" type="Int16" />
+            <FormulaField expression="[RocketL1Hatch] + [RocketL2Hatch] + [RocketL3Hatch]" field="RocketHatch" size="2" type="Int16" />
+            <FormulaField expression="[RocketL1Cargo] + [RocketL2Cargo] + [RocketL3Cargo]" field="RocketCargo" size="2" type="Int16" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>StartLevel1 = if [StartLevel] = 1 THEN 1 ELSE 0 ENDIF
+StartLevel2 = if [StartLev...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="714" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Team] = 6328</Expression>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Team</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2019-01-09 20:05:05</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>6328</Operand>
+              <StartDate>2019-01-09 20:05:05</StartDate>
+              <EndDate>2019-01-09 20:05:05</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Team] = 6328</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="810" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Team" selected="False" />
+            <SelectField field="MatchCount" selected="False" />
+            <SelectField field="AvgNo0_DriverRating" selected="False" />
+            <SelectField field="AvgNo0_HatchColRating" selected="False" />
+            <SelectField field="AvgNo0_HatchDelRating" selected="False" />
+            <SelectField field="AvgNo0_CargoColRating" selected="False" />
+            <SelectField field="AvgNo0_CargoDelRating" selected="False" />
+            <SelectField field="AvgNo0_DefenseRating" selected="False" />
+            <SelectField field="AvgNo0_AvoidDefenseRating" selected="False" />
+            <SelectField field="Avg_AutoShipHatch" selected="False" />
+            <SelectField field="Avg_AutoShipCargo" selected="False" />
+            <SelectField field="Avg_AutoRocketHatch" selected="False" />
+            <SelectField field="Avg_AutoRocketCargo" selected="False" />
+            <SelectField field="AvgNo0_RocketL1Hatch" selected="False" />
+            <SelectField field="AvgNo0_RocketL1Cargo" selected="False" />
+            <SelectField field="AvgNo0_RocketL2Hatch" selected="False" />
+            <SelectField field="AvgNo0_RocketL2Cargo" selected="False" />
+            <SelectField field="AvgNo0_RocketL3Hatch" selected="False" />
+            <SelectField field="AvgNo0_RocketL3Cargo" selected="False" />
+            <SelectField field="AvgNo0_ShipHatch" selected="True" rename="6328_AvgNo0_ShipHatch" />
+            <SelectField field="AvgNo0_ShipCargo" selected="True" rename="6328_AvgNo0_ShipCargo" />
+            <SelectField field="Max_AutoShipHatch" selected="False" />
+            <SelectField field="Max_AutoShipCargo" selected="False" />
+            <SelectField field="Max_AutoRocketHatch" selected="False" />
+            <SelectField field="Max_AutoRocketCargo" selected="False" />
+            <SelectField field="Max_RocketL1Hatch" selected="False" />
+            <SelectField field="Max_RocketL1Cargo" selected="False" />
+            <SelectField field="Max_RocketL2Hatch" selected="False" />
+            <SelectField field="Max_RocketL2Cargo" selected="False" />
+            <SelectField field="Max_RocketL3Hatch" selected="False" />
+            <SelectField field="Max_RocketL3Cargo" selected="False" />
+            <SelectField field="Max_ShipHatch" selected="False" />
+            <SelectField field="Max_ShipCargo" selected="False" />
+            <SelectField field="Sum_CrossedLine" selected="False" />
+            <SelectField field="Sum_StartLevel1" selected="False" />
+            <SelectField field="Sum_StartLevel2" selected="False" />
+            <SelectField field="Sum_ClimbLevel0" selected="False" />
+            <SelectField field="Sum_ClimbLevel1" selected="False" />
+            <SelectField field="Sum_ClimbLevel2" selected="False" />
+            <SelectField field="Sum_ClimbLevel3" selected="False" />
+            <SelectField field="Avg_RocketHatch" selected="True" rename="6328_Avg_RocketHatch" />
+            <SelectField field="Avg_RocketCargo" selected="True" rename="6328_Avg_RocketCargo" />
+            <SelectField field="Max_RocketHatch" selected="True" rename="6328_Max_RocketHatch" />
+            <SelectField field="Max_RocketCargo" selected="True" rename="6328_Max_RocketCargo" />
+            <SelectField field="Avg_Team" selected="False" />
+            <SelectField field="Max_Team" selected="False" />
+            <SelectField field="Avg_Sum_RocketHatch" selected="False" rename="6328_" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="798" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="906" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[AvgNo0_ShipHatch] / [6328_AvgNo0_ShipHatch]" field="6328relative_AvgNo0_ShipHatch" size="8" type="Double" />
+            <FormulaField expression="[AvgNo0_ShipCargo] / [6328_AvgNo0_ShipCargo]" field="6328relative_AvgNo0_ShipCargo" size="8" type="Double" />
+            <FormulaField expression="[Avg_RocketHatch] / [6328_Avg_RocketHatch]" field="6328relative_Avg_RocketHatch" size="8" type="Double" />
+            <FormulaField expression="[Avg_RocketCargo] / [6328_Avg_RocketCargo]" field="6328relative_Avg_RocketCargo" size="8" type="Double" />
+            <FormulaField expression="[Max_RocketHatch] / [6328_Max_RocketHatch]" field="6328relative_Max_RocketHatch" size="8" type="Double" />
+            <FormulaField expression="[Max_RocketCargo] / [6328_Max_RocketCargo]" field="6328relative_Max_RocketCargo" size="8" type="Double" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>6328relative_AvgNo0_ShipHatch = [AvgNo0_ShipHatch] / [6328_AvgNo0_ShipHatch]
+632...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="990" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="6328_AvgNo0_ShipHatch" selected="False" />
+            <SelectField field="6328_AvgNo0_ShipCargo" selected="False" />
+            <SelectField field="6328_Avg_RocketHatch" selected="False" />
+            <SelectField field="6328_Avg_RocketCargo" selected="False" />
+            <SelectField field="6328_Max_RocketHatch" selected="False" />
+            <SelectField field="6328_Max_RocketCargo" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1086" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\MA\AppData\Local\Temp\Engine_864_f66b0fa816bf48ab8d103b50ffe2cba5_\Engine_6912_aa33a4ce1a6045fe8accdda7c7c54afd_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1122" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="25" MaxRecords="">D:\mascout\AlteryxExport\SummaryExport.xlsx|||Scout</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>SummaryExport.xlsx
+Table=Scout</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="22" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="22" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="True" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>mainWorkflow</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

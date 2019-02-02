@@ -1,0 +1,3075 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20183.18.1219.1533                               -->
+<workbook original-version='18.1' source-build='2018.3.2 (20183.18.1219.1533)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Scout (SummaryExport)' inline='true' name='federated.1l5wjqy1h5jxlz1dkhjct1xwufnp' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='SummaryExport' name='excel-direct.16fdwot11hp2y21e6wtlt0lzbrut'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='D:/mascout/AlteryxExport/SummaryExport.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.16fdwot11hp2y21e6wtlt0lzbrut' name='Scout' table='[Scout$]' type='table'>
+          <columns gridOrigin='A1:BF14:no:A1:BF14:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Team' ordinal='0' />
+            <column datatype='integer' name='MatchCount' ordinal='1' />
+            <column datatype='integer' name='AvgNo0_DriverRating' ordinal='2' />
+            <column datatype='real' name='AvgNo0_HatchColRating' ordinal='3' />
+            <column datatype='integer' name='AvgNo0_HatchDelRating' ordinal='4' />
+            <column datatype='integer' name='AvgNo0_CargoColRating' ordinal='5' />
+            <column datatype='integer' name='AvgNo0_CargoDelRating' ordinal='6' />
+            <column datatype='integer' name='AvgNo0_DefenseRating' ordinal='7' />
+            <column datatype='integer' name='AvgNo0_AvoidDefenseRating' ordinal='8' />
+            <column datatype='integer' name='Avg_AutoShipHatch' ordinal='9' />
+            <column datatype='integer' name='Avg_AutoShipCargo' ordinal='10' />
+            <column datatype='integer' name='Avg_AutoRocketHatch' ordinal='11' />
+            <column datatype='integer' name='Avg_AutoRocketCargo' ordinal='12' />
+            <column datatype='integer' name='AvgNo0_RocketL1Hatch' ordinal='13' />
+            <column datatype='integer' name='AvgNo0_RocketL1Cargo' ordinal='14' />
+            <column datatype='real' name='AvgNo0_RocketL2Hatch' ordinal='15' />
+            <column datatype='integer' name='AvgNo0_RocketL2Cargo' ordinal='16' />
+            <column datatype='integer' name='AvgNo0_RocketL3Hatch' ordinal='17' />
+            <column datatype='integer' name='AvgNo0_RocketL3Cargo' ordinal='18' />
+            <column datatype='integer' name='AvgNo0_ShipHatch' ordinal='19' />
+            <column datatype='integer' name='AvgNo0_ShipCargo' ordinal='20' />
+            <column datatype='integer' name='Max_AutoShipHatch' ordinal='21' />
+            <column datatype='integer' name='Max_AutoShipCargo' ordinal='22' />
+            <column datatype='integer' name='Max_AutoRocketHatch' ordinal='23' />
+            <column datatype='integer' name='Max_AutoRocketCargo' ordinal='24' />
+            <column datatype='integer' name='Max_RocketL1Hatch' ordinal='25' />
+            <column datatype='integer' name='Max_RocketL1Cargo' ordinal='26' />
+            <column datatype='integer' name='Max_RocketL2Hatch' ordinal='27' />
+            <column datatype='integer' name='Max_RocketL2Cargo' ordinal='28' />
+            <column datatype='integer' name='Max_RocketL3Hatch' ordinal='29' />
+            <column datatype='integer' name='Max_RocketL3Cargo' ordinal='30' />
+            <column datatype='integer' name='Max_ShipHatch' ordinal='31' />
+            <column datatype='integer' name='Max_ShipCargo' ordinal='32' />
+            <column datatype='integer' name='Sum_CrossedLine' ordinal='33' />
+            <column datatype='integer' name='Sum_StartLevel1' ordinal='34' />
+            <column datatype='integer' name='Sum_StartLevel2' ordinal='35' />
+            <column datatype='integer' name='Sum_ClimbLevel0' ordinal='36' />
+            <column datatype='integer' name='Sum_ClimbLevel1' ordinal='37' />
+            <column datatype='integer' name='Sum_ClimbLevel2' ordinal='38' />
+            <column datatype='integer' name='Sum_ClimbLevel3' ordinal='39' />
+            <column datatype='integer' name='AvgNo0_RocketHatch' ordinal='40' />
+            <column datatype='integer' name='AvgNo0_RocketCargo' ordinal='41' />
+            <column datatype='integer' name='Max_RocketHatch' ordinal='42' />
+            <column datatype='integer' name='Max_RocketCargo' ordinal='43' />
+            <column datatype='integer' name='Avg_StartLevel' ordinal='44' />
+            <column datatype='integer' name='Avg_ClimbLevel' ordinal='45' />
+            <column datatype='integer' name='Sum_LiftedOthers' ordinal='46' />
+            <column datatype='integer' name='Sum_Disabled' ordinal='47' />
+            <column datatype='integer' name='ProRating' ordinal='48' />
+            <column datatype='string' name='Comments' ordinal='49' />
+            <column datatype='real' name='6328relative_ShipHatch' ordinal='50' />
+            <column datatype='real' name='6328relative_ShipCargo' ordinal='51' />
+            <column datatype='real' name='6328relative_RocketL1Hatch' ordinal='52' />
+            <column datatype='real' name='6328relative_RocketL1Cargo' ordinal='53' />
+            <column datatype='real' name='6328relative_RocketL2Hatch' ordinal='54' />
+            <column datatype='real' name='6328relative_RocketL2Cargo' ordinal='55' />
+            <column datatype='real' name='6328relative_RocketL3Hatch' ordinal='56' />
+            <column datatype='real' name='6328relative_RocketL3Cargo' ordinal='57' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Team</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Team]</local-name>
+            <parent-name>[Scout]</parent-name>
+            <remote-alias>Team</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MatchCount</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MatchCount]</local-name>
+            <parent-name>[Scout]</parent-name>
+            <remote-alias>MatchCount</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AvgNo0_DriverRating</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AvgNo0_DriverRating]</local-name>
+            <parent-name>[Scout]</parent-name>
+            <remote-alias>AvgNo0_DriverRating</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AvgNo0_HatchColRating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AvgNo0_HatchColRating]</local-name>
+            <parent-name>[Scout]</parent-name>
+            <remote-alias>AvgNo0_HatchColRating</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AvgNo0_HatchDelRating</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AvgNo0_HatchDelRating]</local-name>
+            <parent-name>[Scout]</parent-name>
+            <remote-alias>AvgNo0_HatchDelRating</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AvgNo0_CargoColRating</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AvgNo0_CargoColRating]</local-name>
+            <parent-name>[Scout]</parent-name>
+            <remote-alias>AvgNo0_CargoColRating</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AvgNo0_CargoDelRating</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AvgNo0_CargoDelRating]</local-name>
+            <parent-name>[Scout]</parent-name>
+            <remote-alias>AvgNo0_CargoDelRating</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AvgNo0_DefenseRating</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AvgNo0_DefenseRating]</local-name>
+            <parent-name>[Scout]</parent-name>
+            <remote-alias>AvgNo0_DefenseRating</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AvgNo0_AvoidDefenseRating</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AvgNo0_AvoidDefenseRating]</local-name>
+            <parent-name>[Scout]</parent-name>
+            <remote-alias>AvgNo0_AvoidDefenseRating</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg_AutoShipHatch</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Avg_AutoShipHatch]</local-name>
+            <parent-name>[Scout]</parent-name>
+            <remote-alias>Avg_AutoShipHatch</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg_AutoShipCargo</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Avg_AutoShipCargo]</local-name>
+            <parent-name>[Scout]</parent-name>
+            <remote-alias>Avg_AutoShipCargo</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg_AutoRocketHatch</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Avg_AutoRocketHatch]</local-name>
+            <parent-name>[Scout]</parent-name>
+            <remote-alias>Avg_AutoRocketHatch</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg_AutoRocketCargo</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Avg_AutoRocketCargo]</local-name>
+            <parent-name>[Scout]</parent-name>
+            <remote-alias>Avg_AutoRocketCargo</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AvgNo0_RocketL1Hatch</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AvgNo0_RocketL1Hatch]</local-name>
+            <parent-name>[Scout]</parent-name>
+            <remote-alias>AvgNo0_RocketL1Hatch</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AvgNo0_RocketL1Cargo</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AvgNo0_RocketL1Cargo]</local-name>
+            <parent-name>[Scout]</parent-name>
+            <remote-alias>AvgNo0_RocketL1Cargo</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AvgNo0_RocketL2Hatch</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AvgNo0_RocketL2Hatch]</local-name>
+            <parent-name>[Scout]</parent-name>
+            <remote-alias>AvgNo0_RocketL2Hatch</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AvgNo0_RocketL2Cargo</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AvgNo0_RocketL2Cargo]</local-name>
+            <parent-name>[Scout]</parent-name>
+            <remote-alias>AvgNo0_RocketL2Cargo</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AvgNo0_RocketL3Hatch</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AvgNo0_RocketL3Hatch]</local-name>
+            <parent-name>[Scout]</parent-name>
+            <remote-alias>AvgNo0_RocketL3Hatch</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AvgNo0_RocketL3Cargo</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AvgNo0_RocketL3Cargo]</local-name>
+            <parent-name>[Scout]</parent-name>
+            <remote-alias>AvgNo0_RocketL3Cargo</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AvgNo0_ShipHatch</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AvgNo0_ShipHatch]</local-name>
+            <parent-name>[Scout]</parent-name>
+            <remote-alias>AvgNo0_ShipHatch</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AvgNo0_ShipCargo</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AvgNo0_ShipCargo]</local-name>
+            <parent-name>[Scout]</parent-name>
+            <remote-alias>AvgNo0_ShipCargo</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Max_AutoShipHatch</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Max_AutoShipHatch]</local-name>
+            <parent-name>[Scout]</parent-name>
+            <remote-alias>Max_AutoShipHatch</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Max_AutoShipCargo</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Max_AutoShipCargo]</local-name>
+            <parent-name>[Scout]</parent-name>
+            <remote-alias>Max_AutoShipCargo</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Max_AutoRocketHatch</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Max_AutoRocketHatch]</local-name>
+            <parent-name>[Scout]</parent-name>
+            <remote-alias>Max_AutoRocketHatch</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Max_AutoRocketCargo</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Max_AutoRocketCargo]</local-name>
+            <parent-name>[Scout]</parent-name>
+            <remote-alias>Max_AutoRocketCargo</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Max_RocketL1Hatch</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Max_RocketL1Hatch]</local-name>
+            <parent-name>[Scout]</parent-name>
+            <remote-alias>Max_RocketL1Hatch</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Max_RocketL1Cargo</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Max_RocketL1Cargo]</local-name>
+            <parent-name>[Scout]</parent-name>
+            <remote-alias>Max_RocketL1Cargo</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Max_RocketL2Hatch</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Max_RocketL2Hatch]</local-name>
+            <parent-name>[Scout]</parent-name>
+            <remote-alias>Max_RocketL2Hatch</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Max_RocketL2Cargo</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Max_RocketL2Cargo]</local-name>
+            <parent-name>[Scout]</parent-name>
+            <remote-alias>Max_RocketL2Cargo</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Max_RocketL3Hatch</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Max_RocketL3Hatch]</local-name>
+            <parent-name>[Scout]</parent-name>
+            <remote-alias>Max_RocketL3Hatch</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Max_RocketL3Cargo</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Max_RocketL3Cargo]</local-name>
+            <parent-name>[Scout]</parent-name>
+            <remote-alias>Max_RocketL3Cargo</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Max_ShipHatch</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Max_ShipHatch]</local-name>
+            <parent-name>[Scout]</parent-name>
+            <remote-alias>Max_ShipHatch</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Max_ShipCargo</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Max_ShipCargo]</local-name>
+            <parent-name>[Scout]</parent-name>
+            <remote-alias>Max_ShipCargo</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sum_CrossedLine</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sum_CrossedLine]</local-name>
+            <parent-name>[Scout]</parent-name>
+            <remote-alias>Sum_CrossedLine</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sum_StartLevel1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sum_StartLevel1]</local-name>
+            <parent-name>[Scout]</parent-name>
+            <remote-alias>Sum_StartLevel1</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sum_StartLevel2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sum_StartLevel2]</local-name>
+            <parent-name>[Scout]</parent-name>
+            <remote-alias>Sum_StartLevel2</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sum_ClimbLevel0</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sum_ClimbLevel0]</local-name>
+            <parent-name>[Scout]</parent-name>
+            <remote-alias>Sum_ClimbLevel0</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sum_ClimbLevel1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sum_ClimbLevel1]</local-name>
+            <parent-name>[Scout]</parent-name>
+            <remote-alias>Sum_ClimbLevel1</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sum_ClimbLevel2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sum_ClimbLevel2]</local-name>
+            <parent-name>[Scout]</parent-name>
+            <remote-alias>Sum_ClimbLevel2</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sum_ClimbLevel3</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sum_ClimbLevel3]</local-name>
+            <parent-name>[Scout]</parent-name>
+            <remote-alias>Sum_ClimbLevel3</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AvgNo0_RocketHatch</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AvgNo0_RocketHatch]</local-name>
+            <parent-name>[Scout]</parent-name>
+            <remote-alias>AvgNo0_RocketHatch</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AvgNo0_RocketCargo</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AvgNo0_RocketCargo]</local-name>
+            <parent-name>[Scout]</parent-name>
+            <remote-alias>AvgNo0_RocketCargo</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Max_RocketHatch</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Max_RocketHatch]</local-name>
+            <parent-name>[Scout]</parent-name>
+            <remote-alias>Max_RocketHatch</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Max_RocketCargo</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Max_RocketCargo]</local-name>
+            <parent-name>[Scout]</parent-name>
+            <remote-alias>Max_RocketCargo</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg_StartLevel</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Avg_StartLevel]</local-name>
+            <parent-name>[Scout]</parent-name>
+            <remote-alias>Avg_StartLevel</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg_ClimbLevel</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Avg_ClimbLevel]</local-name>
+            <parent-name>[Scout]</parent-name>
+            <remote-alias>Avg_ClimbLevel</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sum_LiftedOthers</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sum_LiftedOthers]</local-name>
+            <parent-name>[Scout]</parent-name>
+            <remote-alias>Sum_LiftedOthers</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sum_Disabled</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sum_Disabled]</local-name>
+            <parent-name>[Scout]</parent-name>
+            <remote-alias>Sum_Disabled</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ProRating</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ProRating]</local-name>
+            <parent-name>[Scout]</parent-name>
+            <remote-alias>ProRating</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Comments</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Comments]</local-name>
+            <parent-name>[Scout]</parent-name>
+            <remote-alias>Comments</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>6328relative_ShipHatch</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[6328relative_ShipHatch]</local-name>
+            <parent-name>[Scout]</parent-name>
+            <remote-alias>6328relative_ShipHatch</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>6328relative_ShipCargo</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[6328relative_ShipCargo]</local-name>
+            <parent-name>[Scout]</parent-name>
+            <remote-alias>6328relative_ShipCargo</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>6328relative_RocketL1Hatch</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[6328relative_RocketL1Hatch]</local-name>
+            <parent-name>[Scout]</parent-name>
+            <remote-alias>6328relative_RocketL1Hatch</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>6328relative_RocketL1Cargo</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[6328relative_RocketL1Cargo]</local-name>
+            <parent-name>[Scout]</parent-name>
+            <remote-alias>6328relative_RocketL1Cargo</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>6328relative_RocketL2Hatch</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[6328relative_RocketL2Hatch]</local-name>
+            <parent-name>[Scout]</parent-name>
+            <remote-alias>6328relative_RocketL2Hatch</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>6328relative_RocketL2Cargo</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[6328relative_RocketL2Cargo]</local-name>
+            <parent-name>[Scout]</parent-name>
+            <remote-alias>6328relative_RocketL2Cargo</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>6328relative_RocketL3Hatch</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[6328relative_RocketL3Hatch]</local-name>
+            <parent-name>[Scout]</parent-name>
+            <remote-alias>6328relative_RocketL3Hatch</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>6328relative_RocketL3Cargo</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[6328relative_RocketL3Cargo]</local-name>
+            <parent-name>[Scout]</parent-name>
+            <remote-alias>6328relative_RocketL3Cargo</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Scout]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:BF14:no:A1:BF14:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='6328relative RocketL1Cargo' datatype='real' name='[6328relative_RocketL1Cargo]' role='measure' type='quantitative' />
+      <column caption='6328relative RocketL1Hatch' datatype='real' name='[6328relative_RocketL1Hatch]' role='measure' type='quantitative' />
+      <column caption='6328relative RocketL2Cargo' datatype='real' name='[6328relative_RocketL2Cargo]' role='measure' type='quantitative' />
+      <column caption='6328relative RocketL2Hatch' datatype='real' name='[6328relative_RocketL2Hatch]' role='measure' type='quantitative' />
+      <column caption='6328relative RocketL3Cargo' datatype='real' name='[6328relative_RocketL3Cargo]' role='measure' type='quantitative' />
+      <column caption='6328relative RocketL3Hatch' datatype='real' name='[6328relative_RocketL3Hatch]' role='measure' type='quantitative' />
+      <column caption='6328relative ShipCargo' datatype='real' name='[6328relative_ShipCargo]' role='measure' type='quantitative' />
+      <column caption='6328relative ShipHatch' datatype='real' name='[6328relative_ShipHatch]' role='measure' type='quantitative' />
+      <column caption='AvgNo0 AvoidDefenseRating' datatype='integer' name='[AvgNo0_AvoidDefenseRating]' role='measure' type='quantitative' />
+      <column caption='AvgNo0 CargoColRating' datatype='integer' name='[AvgNo0_CargoColRating]' role='measure' type='quantitative' />
+      <column caption='AvgNo0 CargoDelRating' datatype='integer' name='[AvgNo0_CargoDelRating]' role='measure' type='quantitative' />
+      <column caption='AvgNo0 DefenseRating' datatype='integer' name='[AvgNo0_DefenseRating]' role='measure' type='quantitative' />
+      <column caption='AvgNo0 DriverRating' datatype='integer' name='[AvgNo0_DriverRating]' role='measure' type='quantitative' />
+      <column caption='AvgNo0 HatchColRating' datatype='real' name='[AvgNo0_HatchColRating]' role='measure' type='quantitative' />
+      <column caption='AvgNo0 HatchDelRating' datatype='integer' name='[AvgNo0_HatchDelRating]' role='measure' type='quantitative' />
+      <column caption='AvgNo0 RocketCargo' datatype='integer' name='[AvgNo0_RocketCargo]' role='measure' type='quantitative' />
+      <column caption='AvgNo0 RocketHatch' datatype='integer' name='[AvgNo0_RocketHatch]' role='measure' type='quantitative' />
+      <column caption='AvgNo0 RocketL1Cargo' datatype='integer' name='[AvgNo0_RocketL1Cargo]' role='measure' type='quantitative' />
+      <column caption='AvgNo0 RocketL1Hatch' datatype='integer' name='[AvgNo0_RocketL1Hatch]' role='measure' type='quantitative' />
+      <column caption='AvgNo0 RocketL2Cargo' datatype='integer' name='[AvgNo0_RocketL2Cargo]' role='measure' type='quantitative' />
+      <column caption='AvgNo0 RocketL2Hatch' datatype='real' name='[AvgNo0_RocketL2Hatch]' role='measure' type='quantitative' />
+      <column caption='AvgNo0 RocketL3Cargo' datatype='integer' name='[AvgNo0_RocketL3Cargo]' role='measure' type='quantitative' />
+      <column caption='AvgNo0 RocketL3Hatch' datatype='integer' name='[AvgNo0_RocketL3Hatch]' role='measure' type='quantitative' />
+      <column caption='AvgNo0 ShipCargo' datatype='integer' name='[AvgNo0_ShipCargo]' role='measure' type='quantitative' />
+      <column caption='AvgNo0 ShipHatch' datatype='integer' name='[AvgNo0_ShipHatch]' role='measure' type='quantitative' />
+      <column caption='Avg AutoRocketCargo' datatype='integer' name='[Avg_AutoRocketCargo]' role='measure' type='quantitative' />
+      <column caption='Avg AutoRocketHatch' datatype='integer' name='[Avg_AutoRocketHatch]' role='measure' type='quantitative' />
+      <column caption='Avg AutoShipCargo' datatype='integer' name='[Avg_AutoShipCargo]' role='measure' type='quantitative' />
+      <column caption='Avg AutoShipHatch' datatype='integer' name='[Avg_AutoShipHatch]' role='measure' type='quantitative' />
+      <column caption='Avg ClimbLevel' datatype='integer' name='[Avg_ClimbLevel]' role='measure' type='quantitative' />
+      <column caption='Avg StartLevel' datatype='integer' name='[Avg_StartLevel]' role='measure' type='quantitative' />
+      <column caption='Sort_Ship' datatype='integer' name='[Calculation_492581227015766016]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[AvgNo0_ShipCargo] + [AvgNo0_ShipHatch]' />
+      </column>
+      <column caption='Sort_RocketL1' datatype='integer' name='[Calculation_492581227016101889]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[AvgNo0_RocketL1Cargo] + [AvgNo0_RocketL1Hatch]' />
+      </column>
+      <column aggregation='CountD' datatype='string' default-role='measure' default-type='quantitative' name='[Comments]' role='dimension' type='nominal' />
+      <column caption='Match Count' datatype='integer' name='[MatchCount]' role='measure' type='quantitative' />
+      <column caption='Max AutoRocketCargo' datatype='integer' name='[Max_AutoRocketCargo]' role='measure' type='quantitative' />
+      <column caption='Max AutoRocketHatch' datatype='integer' name='[Max_AutoRocketHatch]' role='measure' type='quantitative' />
+      <column caption='Max AutoShipCargo' datatype='integer' name='[Max_AutoShipCargo]' role='measure' type='quantitative' />
+      <column caption='Max AutoShipHatch' datatype='integer' name='[Max_AutoShipHatch]' role='measure' type='quantitative' />
+      <column caption='Max RocketCargo' datatype='integer' name='[Max_RocketCargo]' role='measure' type='quantitative' />
+      <column caption='Max RocketHatch' datatype='integer' name='[Max_RocketHatch]' role='measure' type='quantitative' />
+      <column caption='Max RocketL1Cargo' datatype='integer' name='[Max_RocketL1Cargo]' role='measure' type='quantitative' />
+      <column caption='Max RocketL1Hatch' datatype='integer' name='[Max_RocketL1Hatch]' role='measure' type='quantitative' />
+      <column caption='Max RocketL2Cargo' datatype='integer' name='[Max_RocketL2Cargo]' role='measure' type='quantitative' />
+      <column caption='Max RocketL2Hatch' datatype='integer' name='[Max_RocketL2Hatch]' role='measure' type='quantitative' />
+      <column caption='Max RocketL3Cargo' datatype='integer' name='[Max_RocketL3Cargo]' role='measure' type='quantitative' />
+      <column caption='Max RocketL3Hatch' datatype='integer' name='[Max_RocketL3Hatch]' role='measure' type='quantitative' />
+      <column caption='Max ShipCargo' datatype='integer' name='[Max_ShipCargo]' role='measure' type='quantitative' />
+      <column caption='Max ShipHatch' datatype='integer' name='[Max_ShipHatch]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Pro Rating' datatype='integer' name='[ProRating]' role='measure' type='quantitative' />
+      <column caption='Sort_AutoShip' datatype='integer' name='[Sort_AutoRocket (copy)]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Avg_AutoShipCargo] + [Avg_AutoShipHatch]' />
+      </column>
+      <column caption='Sort_RocketL3' datatype='integer' name='[Sort_RocketL1 (copy) (copy)]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[AvgNo0_RocketL3Cargo] + [AvgNo0_RocketL3Hatch]' />
+      </column>
+      <column caption='Sort_RocketL2' datatype='real' name='[Sort_RocketL1 (copy)]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[AvgNo0_RocketL2Cargo] + [AvgNo0_RocketL2Hatch]' />
+      </column>
+      <column caption='Sort_AutoRocket' datatype='integer' name='[Sort_RocketL3 (copy)]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Avg_AutoRocketCargo] + [Avg_AutoRocketHatch]' />
+      </column>
+      <column caption='Sum ClimbLevel0' datatype='integer' name='[Sum_ClimbLevel0]' role='measure' type='quantitative' />
+      <column caption='Sum ClimbLevel1' datatype='integer' name='[Sum_ClimbLevel1]' role='measure' type='quantitative' />
+      <column caption='Sum ClimbLevel2' datatype='integer' name='[Sum_ClimbLevel2]' role='measure' type='quantitative' />
+      <column caption='Sum ClimbLevel3' datatype='integer' name='[Sum_ClimbLevel3]' role='measure' type='quantitative' />
+      <column caption='Sum CrossedLine' datatype='integer' name='[Sum_CrossedLine]' role='measure' type='quantitative' />
+      <column caption='Sum Disabled' datatype='integer' name='[Sum_Disabled]' role='measure' type='quantitative' />
+      <column caption='Sum LiftedOthers' datatype='integer' name='[Sum_LiftedOthers]' role='measure' type='quantitative' />
+      <column caption='Sum StartLevel1' datatype='integer' name='[Sum_StartLevel1]' role='measure' type='quantitative' />
+      <column caption='Sum StartLevel2' datatype='integer' name='[Sum_StartLevel2]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='integer' name='[Team]' role='dimension' type='ordinal' />
+      <column-instance column='[6328relative_ShipCargo]' derivation='Sum' name='[sum:6328relative_ShipCargo:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[AvgNo0_DefenseRating]' derivation='Sum' name='[sum:AvgNo0_DefenseRating:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[AvgNo0_RocketL1Cargo]' derivation='Sum' name='[sum:AvgNo0_RocketL1Cargo:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[AvgNo0_RocketL1Hatch]' derivation='Sum' name='[sum:AvgNo0_RocketL1Hatch:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[AvgNo0_RocketL2Cargo]' derivation='Sum' name='[sum:AvgNo0_RocketL2Cargo:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[AvgNo0_RocketL2Hatch]' derivation='Sum' name='[sum:AvgNo0_RocketL2Hatch:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[AvgNo0_RocketL3Cargo]' derivation='Sum' name='[sum:AvgNo0_RocketL3Cargo:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[AvgNo0_RocketL3Hatch]' derivation='Sum' name='[sum:AvgNo0_RocketL3Hatch:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[AvgNo0_ShipCargo]' derivation='Sum' name='[sum:AvgNo0_ShipCargo:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[AvgNo0_ShipHatch]' derivation='Sum' name='[sum:AvgNo0_ShipHatch:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Avg_AutoRocketCargo]' derivation='Sum' name='[sum:Avg_AutoRocketCargo:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Avg_AutoRocketHatch]' derivation='Sum' name='[sum:Avg_AutoRocketHatch:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Avg_AutoShipCargo]' derivation='Sum' name='[sum:Avg_AutoShipCargo:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Avg_AutoShipHatch]' derivation='Sum' name='[sum:Avg_AutoShipHatch:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Avg_ClimbLevel]' derivation='Sum' name='[sum:Avg_ClimbLevel:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[ProRating]' derivation='Sum' name='[sum:ProRating:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Sort_RocketL3 (copy)]' derivation='Sum' name='[sum:Sort_RocketL3 (copy):qk]' pivot='key' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.140881' measure-ordering='alphabetic' measure-percentage='0.859119' show-structure='true' user-set-layout='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:Avg_AutoRocketHatch:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:Avg_AutoShipHatch:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:Avg_ClimbLevel:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:AvgNo0_DefenseRating:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:AvgNo0_RocketL1Hatch:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:AvgNo0_RocketL2Hatch:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:AvgNo0_RocketL3Hatch:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:AvgNo0_ShipHatch:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:ProRating:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:6328relative_ShipCargo:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:Sort_RocketL3 (copy):qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:Avg_AutoRocketCargo:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:Avg_AutoShipCargo:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:AvgNo0_RocketL1Cargo:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:AvgNo0_RocketL2Cargo:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:AvgNo0_RocketL3Cargo:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:AvgNo0_ShipCargo:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='AutoRocket'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Auto Rocket</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Scout (SummaryExport)' name='federated.1l5wjqy1h5jxlz1dkhjct1xwufnp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1l5wjqy1h5jxlz1dkhjct1xwufnp'>
+            <column caption='Avg AutoRocketCargo' datatype='integer' name='[Avg_AutoRocketCargo]' role='measure' type='quantitative' />
+            <column caption='Avg AutoRocketHatch' datatype='integer' name='[Avg_AutoRocketHatch]' role='measure' type='quantitative' />
+            <column caption='Sort_AutoRocket' datatype='integer' name='[Sort_RocketL3 (copy)]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Avg_AutoRocketCargo] + [Avg_AutoRocketHatch]' />
+            </column>
+            <column aggregation='Sum' datatype='integer' name='[Team]' role='dimension' type='ordinal' />
+            <column-instance column='[Team]' derivation='None' name='[none:Team:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Avg_AutoRocketCargo]' derivation='Sum' name='[sum:Avg_AutoRocketCargo:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Avg_AutoRocketHatch]' derivation='Sum' name='[sum:Avg_AutoRocketHatch:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sort_RocketL3 (copy)]' derivation='Sum' name='[sum:Sort_RocketL3 (copy):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:Avg_AutoRocketCargo:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:Avg_AutoRocketHatch:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[none:Team:ok]' direction='DESC' using='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:Sort_RocketL3 (copy):qk]' />
+          <filter class='quantitative' column='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:Sort_RocketL3 (copy):qk]' included-values='in-range'>
+            <min>1</min>
+          </filter>
+          <slices>
+            <column>[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[:Measure Names]</column>
+            <column>[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:Sort_RocketL3 (copy):qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[Multiple Values]' scope='rows' value='' />
+            <encoding attr='space' class='0' field='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[Multiple Values]' field-type='quantitative' min='0.0' range-type='fixedmin' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:Avg_AutoRocketCargo:qk]' value='n#,##0.0;-#,##0.0' />
+            <format attr='text-format' field='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:Avg_AutoRocketHatch:qk]' value='n#,##0.0;-#,##0.0' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[Multiple Values]</rows>
+        <cols>[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[none:Team:ok]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='AutoShip'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Auto Ship</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Scout (SummaryExport)' name='federated.1l5wjqy1h5jxlz1dkhjct1xwufnp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1l5wjqy1h5jxlz1dkhjct1xwufnp'>
+            <column caption='Avg AutoShipCargo' datatype='integer' name='[Avg_AutoShipCargo]' role='measure' type='quantitative' />
+            <column caption='Avg AutoShipHatch' datatype='integer' name='[Avg_AutoShipHatch]' role='measure' type='quantitative' />
+            <column caption='Sort_AutoShip' datatype='integer' name='[Sort_AutoRocket (copy)]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Avg_AutoShipCargo] + [Avg_AutoShipHatch]' />
+            </column>
+            <column aggregation='Sum' datatype='integer' name='[Team]' role='dimension' type='ordinal' />
+            <column-instance column='[Team]' derivation='None' name='[none:Team:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Avg_AutoShipCargo]' derivation='Sum' name='[sum:Avg_AutoShipCargo:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Avg_AutoShipHatch]' derivation='Sum' name='[sum:Avg_AutoShipHatch:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sort_AutoRocket (copy)]' derivation='Sum' name='[sum:Sort_AutoRocket (copy):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:Avg_AutoShipCargo:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:Avg_AutoShipHatch:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[none:Team:ok]' direction='DESC' using='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:Sort_AutoRocket (copy):qk]' />
+          <filter class='quantitative' column='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:Sort_AutoRocket (copy):qk]' included-values='in-range'>
+            <min>1</min>
+          </filter>
+          <slices>
+            <column>[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[:Measure Names]</column>
+            <column>[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:Sort_AutoRocket (copy):qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[Multiple Values]' scope='rows' value='' />
+            <encoding attr='space' class='0' field='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[Multiple Values]' field-type='quantitative' min='0.0' range-type='fixedmin' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:Avg_AutoShipCargo:qk]' value='n#,##0.0;-#,##0.0' />
+            <format attr='text-format' field='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:Avg_AutoShipHatch:qk]' value='n#,##0.0;-#,##0.0' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[Multiple Values]</rows>
+        <cols>[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[none:Team:ok]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Climb'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Avg. Climb Level</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Scout (SummaryExport)' name='federated.1l5wjqy1h5jxlz1dkhjct1xwufnp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1l5wjqy1h5jxlz1dkhjct1xwufnp'>
+            <column caption='Avg ClimbLevel' datatype='integer' name='[Avg_ClimbLevel]' role='measure' type='quantitative' />
+            <column aggregation='Sum' datatype='integer' name='[Team]' role='dimension' type='ordinal' />
+            <column-instance column='[Team]' derivation='None' name='[none:Team:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Avg_ClimbLevel]' derivation='Sum' name='[sum:Avg_ClimbLevel:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[:Measure Names]'>
+            <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:Avg_ClimbLevel:qk]&quot;' user:op='manual' />
+          </filter>
+          <computed-sort column='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[none:Team:ok]' direction='DESC' using='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:Avg_ClimbLevel:qk]' />
+          <filter class='quantitative' column='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:Avg_ClimbLevel:qk]' included-values='in-range'>
+            <min>1</min>
+          </filter>
+          <slices>
+            <column>[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[:Measure Names]</column>
+            <column>[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:Avg_ClimbLevel:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[Multiple Values]' scope='rows' value='' />
+            <encoding attr='space' class='0' field='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[Multiple Values]' field-type='quantitative' max='3.0' min='0.0' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:Avg_ClimbLevel:qk]' value='n#,##0.0;-#,##0.0' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[Multiple Values]</rows>
+        <cols>[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[none:Team:ok]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Defense'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Defense Rating</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Scout (SummaryExport)' name='federated.1l5wjqy1h5jxlz1dkhjct1xwufnp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1l5wjqy1h5jxlz1dkhjct1xwufnp'>
+            <column caption='AvgNo0 DefenseRating' datatype='integer' name='[AvgNo0_DefenseRating]' role='measure' type='quantitative' />
+            <column aggregation='Sum' datatype='integer' name='[Team]' role='dimension' type='ordinal' />
+            <column-instance column='[Team]' derivation='None' name='[none:Team:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[AvgNo0_DefenseRating]' derivation='Sum' name='[sum:AvgNo0_DefenseRating:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[:Measure Names]'>
+            <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:AvgNo0_DefenseRating:qk]&quot;' user:op='manual' />
+          </filter>
+          <computed-sort column='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[none:Team:ok]' direction='DESC' using='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:AvgNo0_DefenseRating:qk]' />
+          <filter class='quantitative' column='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:AvgNo0_DefenseRating:qk]' included-values='in-range'>
+            <min>1</min>
+          </filter>
+          <slices>
+            <column>[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[:Measure Names]</column>
+            <column>[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:AvgNo0_DefenseRating:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[Multiple Values]' scope='rows' value='' />
+            <encoding attr='space' class='0' field='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[Multiple Values]' field-type='quantitative' max='5.0' min='0.0' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:AvgNo0_DefenseRating:qk]' value='n#,##0.0;-#,##0.0' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[Multiple Values]</rows>
+        <cols>[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[none:Team:ok]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='ProRating'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Pro Rating</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Scout (SummaryExport)' name='federated.1l5wjqy1h5jxlz1dkhjct1xwufnp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1l5wjqy1h5jxlz1dkhjct1xwufnp'>
+            <column caption='Pro Rating' datatype='integer' name='[ProRating]' role='measure' type='quantitative' />
+            <column aggregation='Sum' datatype='integer' name='[Team]' role='dimension' type='ordinal' />
+            <column-instance column='[Team]' derivation='None' name='[none:Team:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[ProRating]' derivation='Sum' name='[sum:ProRating:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[:Measure Names]'>
+            <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:ProRating:qk]&quot;' user:op='manual' />
+          </filter>
+          <computed-sort column='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[none:Team:ok]' direction='DESC' using='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:ProRating:qk]' />
+          <filter class='quantitative' column='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:ProRating:qk]' included-values='in-range'>
+            <min>1</min>
+          </filter>
+          <slices>
+            <column>[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[:Measure Names]</column>
+            <column>[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:ProRating:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[Multiple Values]' scope='rows' value='' />
+            <encoding attr='space' class='0' field='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[Multiple Values]' field-type='quantitative' min='0.0' range-type='fixedmin' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:ProRating:qk]' value='n#,##0.0;-#,##0.0' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[Multiple Values]</rows>
+        <cols>[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[none:Team:ok]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='RocketL1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Rocket (Level 1)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Scout (SummaryExport)' name='federated.1l5wjqy1h5jxlz1dkhjct1xwufnp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1l5wjqy1h5jxlz1dkhjct1xwufnp'>
+            <column caption='AvgNo0 RocketL1Cargo' datatype='integer' name='[AvgNo0_RocketL1Cargo]' role='measure' type='quantitative' />
+            <column caption='AvgNo0 RocketL1Hatch' datatype='integer' name='[AvgNo0_RocketL1Hatch]' role='measure' type='quantitative' />
+            <column caption='Sort_RocketL1' datatype='integer' name='[Calculation_492581227016101889]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[AvgNo0_RocketL1Cargo] + [AvgNo0_RocketL1Hatch]' />
+            </column>
+            <column aggregation='Sum' datatype='integer' name='[Team]' role='dimension' type='ordinal' />
+            <column-instance column='[Team]' derivation='None' name='[none:Team:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[AvgNo0_RocketL1Cargo]' derivation='Sum' name='[sum:AvgNo0_RocketL1Cargo:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[AvgNo0_RocketL1Hatch]' derivation='Sum' name='[sum:AvgNo0_RocketL1Hatch:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_492581227016101889]' derivation='Sum' name='[sum:Calculation_492581227016101889:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:AvgNo0_RocketL1Cargo:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:AvgNo0_RocketL1Hatch:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[none:Team:ok]' direction='DESC' using='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:Calculation_492581227016101889:qk]' />
+          <filter class='quantitative' column='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:Calculation_492581227016101889:qk]' included-values='in-range'>
+            <min>1</min>
+          </filter>
+          <slices>
+            <column>[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[:Measure Names]</column>
+            <column>[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:Calculation_492581227016101889:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[Multiple Values]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:AvgNo0_RocketL1Cargo:qk]' value='n#,##0.0;-#,##0.0' />
+            <format attr='text-format' field='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:AvgNo0_RocketL1Hatch:qk]' value='n#,##0.0;-#,##0.0' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[Multiple Values]</rows>
+        <cols>[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[none:Team:ok]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='RocketL2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Rocket (Level 2)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Scout (SummaryExport)' name='federated.1l5wjqy1h5jxlz1dkhjct1xwufnp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1l5wjqy1h5jxlz1dkhjct1xwufnp'>
+            <column caption='AvgNo0 RocketL2Cargo' datatype='integer' name='[AvgNo0_RocketL2Cargo]' role='measure' type='quantitative' />
+            <column caption='AvgNo0 RocketL2Hatch' datatype='real' name='[AvgNo0_RocketL2Hatch]' role='measure' type='quantitative' />
+            <column caption='Sort_RocketL2' datatype='real' name='[Sort_RocketL1 (copy)]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[AvgNo0_RocketL2Cargo] + [AvgNo0_RocketL2Hatch]' />
+            </column>
+            <column aggregation='Sum' datatype='integer' name='[Team]' role='dimension' type='ordinal' />
+            <column-instance column='[Team]' derivation='None' name='[none:Team:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[AvgNo0_RocketL2Cargo]' derivation='Sum' name='[sum:AvgNo0_RocketL2Cargo:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[AvgNo0_RocketL2Hatch]' derivation='Sum' name='[sum:AvgNo0_RocketL2Hatch:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sort_RocketL1 (copy)]' derivation='Sum' name='[sum:Sort_RocketL1 (copy):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:AvgNo0_RocketL2Cargo:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:AvgNo0_RocketL2Hatch:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[none:Team:ok]' direction='DESC' using='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:Sort_RocketL1 (copy):qk]' />
+          <filter class='quantitative' column='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:Sort_RocketL1 (copy):qk]' included-values='in-range'>
+            <min>1.0</min>
+          </filter>
+          <slices>
+            <column>[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[:Measure Names]</column>
+            <column>[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:Sort_RocketL1 (copy):qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[Multiple Values]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:AvgNo0_RocketL2Cargo:qk]' value='n#,##0.0;-#,##0.0' />
+            <format attr='text-format' field='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:AvgNo0_RocketL2Hatch:qk]' value='n#,##0.0;-#,##0.0' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[Multiple Values]</rows>
+        <cols>[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[none:Team:ok]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='RocketL3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Rocket (Level 3)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Scout (SummaryExport)' name='federated.1l5wjqy1h5jxlz1dkhjct1xwufnp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1l5wjqy1h5jxlz1dkhjct1xwufnp'>
+            <column caption='AvgNo0 RocketL3Cargo' datatype='integer' name='[AvgNo0_RocketL3Cargo]' role='measure' type='quantitative' />
+            <column caption='AvgNo0 RocketL3Hatch' datatype='integer' name='[AvgNo0_RocketL3Hatch]' role='measure' type='quantitative' />
+            <column caption='Sort_RocketL3' datatype='integer' name='[Sort_RocketL1 (copy) (copy)]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[AvgNo0_RocketL3Cargo] + [AvgNo0_RocketL3Hatch]' />
+            </column>
+            <column aggregation='Sum' datatype='integer' name='[Team]' role='dimension' type='ordinal' />
+            <column-instance column='[Team]' derivation='None' name='[none:Team:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[AvgNo0_RocketL3Cargo]' derivation='Sum' name='[sum:AvgNo0_RocketL3Cargo:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[AvgNo0_RocketL3Hatch]' derivation='Sum' name='[sum:AvgNo0_RocketL3Hatch:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sort_RocketL1 (copy) (copy)]' derivation='Sum' name='[sum:Sort_RocketL1 (copy) (copy):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:AvgNo0_RocketL3Cargo:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:AvgNo0_RocketL3Hatch:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[none:Team:ok]' direction='DESC' using='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:Sort_RocketL1 (copy) (copy):qk]' />
+          <filter class='quantitative' column='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:Sort_RocketL1 (copy) (copy):qk]' included-values='in-range'>
+            <min>1</min>
+          </filter>
+          <slices>
+            <column>[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[:Measure Names]</column>
+            <column>[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:Sort_RocketL1 (copy) (copy):qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[Multiple Values]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:AvgNo0_RocketL3Cargo:qk]' value='n#,##0.0;-#,##0.0' />
+            <format attr='text-format' field='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:AvgNo0_RocketL3Hatch:qk]' value='n#,##0.0;-#,##0.0' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[Multiple Values]</rows>
+        <cols>[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[none:Team:ok]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Ship'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Scout (SummaryExport)' name='federated.1l5wjqy1h5jxlz1dkhjct1xwufnp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1l5wjqy1h5jxlz1dkhjct1xwufnp'>
+            <column caption='AvgNo0 ShipCargo' datatype='integer' name='[AvgNo0_ShipCargo]' role='measure' type='quantitative' />
+            <column caption='AvgNo0 ShipHatch' datatype='integer' name='[AvgNo0_ShipHatch]' role='measure' type='quantitative' />
+            <column caption='Sort_Ship' datatype='integer' name='[Calculation_492581227015766016]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[AvgNo0_ShipCargo] + [AvgNo0_ShipHatch]' />
+            </column>
+            <column aggregation='Sum' datatype='integer' name='[Team]' role='dimension' type='ordinal' />
+            <column-instance column='[Team]' derivation='None' name='[none:Team:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[AvgNo0_ShipCargo]' derivation='Sum' name='[sum:AvgNo0_ShipCargo:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[AvgNo0_ShipHatch]' derivation='Sum' name='[sum:AvgNo0_ShipHatch:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_492581227015766016]' derivation='Sum' name='[sum:Calculation_492581227015766016:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:AvgNo0_ShipCargo:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:AvgNo0_ShipHatch:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[none:Team:ok]' direction='DESC' using='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:Calculation_492581227015766016:qk]' />
+          <filter class='quantitative' column='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:Calculation_492581227015766016:qk]' included-values='in-range'>
+            <min>1</min>
+          </filter>
+          <slices>
+            <column>[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[:Measure Names]</column>
+            <column>[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:Calculation_492581227015766016:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[Multiple Values]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:AvgNo0_ShipCargo:qk]' value='n#,##0.0;-#,##0.0' />
+            <format attr='text-format' field='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[sum:AvgNo0_ShipHatch:qk]' value='n#,##0.0;-#,##0.0' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[Multiple Values]</rows>
+        <cols>[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[none:Team:ok]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Auto'>
+      <style>
+        <style-rule element='dash-subtitle'>
+          <format attr='background-color' value='#ffffff' />
+        </style-rule>
+      </style>
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='98000' id='1' param='vert' type='layout-flow' w='98400' x='800' y='1000'>
+          <zone h='49000' id='2' name='AutoShip' w='98400' x='800' y='1000'>
+            <layout-cache minheight='164' type-h='scalable' type-w='fixed' />
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='49000' id='3' name='AutoRocket' w='98400' x='800' y='50000'>
+            <layout-cache minheight='164' type-h='scalable' type-w='fixed' />
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+        </zone>
+      </zones>
+    </dashboard>
+    <dashboard name='Rocket'>
+      <style>
+        <style-rule element='dash-subtitle'>
+          <format attr='background-color' value='#ffffff' />
+        </style-rule>
+      </style>
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='98546' id='1' param='vert' type='layout-flow' w='98118' x='941' y='727'>
+          <zone h='32848' id='7' name='RocketL1' w='98118' x='941' y='727'>
+            <layout-cache minheight='164' type-h='scalable' type-w='cell' />
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='32848' id='8' name='RocketL2' w='98118' x='941' y='33575'>
+            <layout-cache minheight='164' type-h='scalable' type-w='cell' />
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='32848' id='9' name='RocketL3' w='98118' x='941' y='66423'>
+            <layout-cache minheight='164' type-h='scalable' type-w='cell' />
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+        </zone>
+      </zones>
+    </dashboard>
+    <dashboard name='Story' type='storyboard'>
+      <style />
+      <size maxheight='864' maxwidth='1016' minheight='864' minwidth='1016' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98148' id='7' param='vert' removable='false' type='layout-flow' w='98426' x='787' y='926'>
+            <zone h='98148' id='1' param='vert' removable='false' type='layout-flow' w='98426' x='787' y='926'>
+              <zone h='11690' id='4' is-fixed='true' paired-zone-id='5' removable='false' type='flipboard-nav' w='98426' x='787' y='926' />
+              <zone h='86458' id='5' paired-zone-id='4' removable='false' type='flipboard' w='98426' x='787' y='12616'>
+                <flipboard active-id='2' nav-type='caption' show-nav-arrows='false'>
+                  <story-points>
+                    <story-point caption='Pro Rating' captured-sheet='ProRating' id='5'>
+                      <capturedDeltas>
+                        <worksheet name='ProRating'>
+                          <highlight field='[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[none:Team:ok]' pattern='' type='highlight'>
+                            <color-one-way>
+                              <field>[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[:Measure Names]</field>
+                              <field>[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[none:Team:ok]</field>
+                            </color-one-way>
+                            <bucket-selection>
+                              <bucket>9999</bucket>
+                            </bucket-selection>
+                          </highlight>
+                        </worksheet>
+                      </capturedDeltas>
+                    </story-point>
+                    <story-point caption='Auto Scores' captured-sheet='Auto' id='6' />
+                    <story-point caption='Ship Scores' captured-sheet='Ship' id='1' />
+                    <story-point caption='Rocket Scores' captured-sheet='Rocket' id='2' />
+                    <story-point caption='Climb Level' captured-sheet='Climb' id='3' />
+                    <story-point caption='Defense Rating' captured-sheet='Defense' id='4' />
+                  </story-points>
+                </flipboard>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='dashboard' maximized='true' name='Story'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{37FF0FCD-4ACC-4704-9828-392FCD910A78}' />
+    </window>
+    <window class='worksheet' name='ProRating'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[:Measure Names]</field>
+            <field>[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[none:Team:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F0D4886B-4CAA-469A-9E23-8DE910148F7C}' />
+    </window>
+    <window class='dashboard' name='Auto'>
+      <viewpoints>
+        <viewpoint name='AutoRocket'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='AutoShip'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='2' />
+      <simple-id uuid='{B175889F-A02C-4810-B64D-D55C583F7587}' />
+    </window>
+    <window class='worksheet' name='AutoShip'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[:Measure Names]</field>
+            <field>[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[none:Team:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{5566E6B0-F411-4A5A-BFB2-426464B07F10}' />
+    </window>
+    <window class='worksheet' name='AutoRocket'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[:Measure Names]</field>
+            <field>[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[none:Team:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{8C052DC0-06BA-4F6C-94A3-591C3F768039}' />
+    </window>
+    <window class='worksheet' name='Ship'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[:Measure Names]</field>
+            <field>[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[none:Team:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{BC16AB85-D017-4798-BF97-D386D8DFF26A}' />
+    </window>
+    <window class='dashboard' name='Rocket'>
+      <viewpoints>
+        <viewpoint name='RocketL1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='RocketL2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='RocketL3'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{BBBE192A-031E-40A2-8941-E76EC1FA3838}' />
+    </window>
+    <window class='worksheet' name='RocketL1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[:Measure Names]</field>
+            <field>[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[none:Team:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{126EBA72-E4D5-4365-A5C1-35E921E905E2}' />
+    </window>
+    <window class='worksheet' name='RocketL2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[:Measure Names]</field>
+            <field>[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[none:Team:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A0FCE43F-8217-4C93-9A3A-C8A6199C827D}' />
+    </window>
+    <window class='worksheet' name='RocketL3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[:Measure Names]</field>
+            <field>[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[none:Team:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{2C7E37FE-CB17-4381-8B0A-AAF2C7A87893}' />
+    </window>
+    <window class='worksheet' name='Climb'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[:Measure Names]</field>
+            <field>[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[none:Team:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{9314A2D5-BAF7-453C-ADD4-43360FFC0687}' />
+    </window>
+    <window class='worksheet' name='Defense'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[:Measure Names]</field>
+            <field>[federated.1l5wjqy1h5jxlz1dkhjct1xwufnp].[none:Team:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{17635809-541F-4A03-B35D-D89FDDCF5D67}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Auto' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='AutoRocket' width='192'>
+      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
+      ef8PvYQygaXYrV0AAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='AutoShip' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Climb' width='192'>
+      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
+      AAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Defense' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='ProRating' width='192'>
+      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
+      gg==
+    </thumbnail>
+    <thumbnail height='192' name='Rocket' width='192'>
+      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
+      SUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='RocketL1' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='RocketL2' width='192'>
+      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
+      Y8wmygAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='RocketL3' width='192'>
+      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
+      aIgAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Ship' width='192'>
+      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
+      6jAvv5pvPQAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Story' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>

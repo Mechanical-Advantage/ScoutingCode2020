@@ -770,7 +770,7 @@ class ScoutServer(object):
             cursor.execute('''CREATE TABLE noDefense ''' + tableCreate)
             cursor.execute('''CREATE TABLE median ''' + tableCreate)
             cursor.execute(
-                '''CREATE TABLE comments (team integer, comment text)''')
+                '''CREATE TABLE comments (team integer, match integer, comment text)''')
             conn.close()
         #next check for the global database
         if not os.path.isfile('global.db'):

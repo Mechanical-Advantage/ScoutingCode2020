@@ -3,7 +3,7 @@
   <Nodes>
     <Node ToolID="1">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="174" y="90" />
+        <Position x="174" y="174" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -78,11 +78,11 @@
     </Node>
     <Node ToolID="3">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="258" y="210" />
+        <Position x="258" y="258" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\MA\AppData\Local\Temp\Engine_12400_304a8bc0ab9148fe870e41e2a88dbdcd_\Engine_10236_48cd3aae3a5441439cd24261393b8545_.yxdb</TempFile>
+          <TempFile>C:\Users\MA\AppData\Local\Temp\Engine_7672_7ed4005c4eb64d468cf00cce2ee047fa_\Engine_3264_c8e9c157e7834bdd99658889af0a2727_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -106,7 +106,7 @@
     </Node>
     <Node ToolID="4">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="174" y="246" />
+        <Position x="174" y="294" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -180,11 +180,11 @@ Table=scout</DefaultAnnotationText>
     </Node>
     <Node ToolID="5">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="258" y="54" />
+        <Position x="258" y="126" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\MA\AppData\Local\Temp\Engine_12400_304a8bc0ab9148fe870e41e2a88dbdcd_\Engine_10236_d25d034780ed4cae9860c00b1a7b6a29_.yxdb</TempFile>
+          <TempFile>C:\Users\MA\AppData\Local\Temp\Engine_7672_7ed4005c4eb64d468cf00cce2ee047fa_\Engine_3264_b36907fa5532414a9e50c1d3bd6d8635_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -208,7 +208,7 @@ Table=scout</DefaultAnnotationText>
     </Node>
     <Node ToolID="7">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="402" y="126" />
+        <Position x="462" y="150" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -225,7 +225,7 @@ Table=scout</DefaultAnnotationText>
             <FormulaField expression="if [Lifted Others Attempted Level] = '&quot;None&quot;' THEN 0 ELSEIF [Lifted Others Attempted Level] = '&quot;Level 2&quot;' THEN 2 ELSE 3 ENDIF" field="LiftedOthersAttempted" size="2" type="Int16" />
           </FormulaFields>
         </Configuration>
-        <Annotation DisplayMode="0">
+        <Annotation DisplayMode="2">
           <Name />
           <DefaultAnnotationText>AllianceColor = if [Alliance Color] = '"Red"' THEN 0 ELSE 1 ENDIF
 StartPos = if ...</DefaultAnnotationText>
@@ -293,7 +293,7 @@ StartPos = if ...</DefaultAnnotationText>
     </Node>
     <Node ToolID="9">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
-        <Position x="414" y="246" />
+        <Position x="414" y="282" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -302,7 +302,7 @@ StartPos = if ...</DefaultAnnotationText>
           <Mode>ByName</Mode>
           <SetOutputOrder value="False" />
         </Configuration>
-        <Annotation DisplayMode="0">
+        <Annotation DisplayMode="2">
           <Name />
           <DefaultAnnotationText />
           <Left value="False" />
@@ -374,7 +374,7 @@ StartPos = if ...</DefaultAnnotationText>
     </Node>
     <Node ToolID="11">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="522" y="246" />
+        <Position x="522" y="294" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -460,11 +460,11 @@ StartPos = if ...</DefaultAnnotationText>
     </Node>
     <Node ToolID="12">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="606" y="354" />
+        <Position x="606" y="402" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\MA\AppData\Local\Temp\Engine_12400_304a8bc0ab9148fe870e41e2a88dbdcd_\Engine_10236_d60d0b5ef51046edb3e9dc52c90735aa_.yxdb</TempFile>
+          <TempFile>C:\Users\MA\AppData\Local\Temp\Engine_7672_7ed4005c4eb64d468cf00cce2ee047fa_\Engine_3264_0d567d6c84c84d16bc1556b06174f6a3_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -488,7 +488,7 @@ StartPos = if ...</DefaultAnnotationText>
     </Node>
     <Node ToolID="13">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="1398" y="294" />
+        <Position x="1398" y="342" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -622,7 +622,7 @@ StartPos = if ...</DefaultAnnotationText>
     </Node>
     <Node ToolID="15">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="822" y="270" />
+        <Position x="834" y="282" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -644,11 +644,11 @@ StartPos = if ...</DefaultAnnotationText>
             <FormulaField expression="if [LiftedOthersAttempted] = 3 THEN 1 ELSE 0 ENDIF" field="LiftedOthers3Attempted" size="2" type="Int16" />
           </FormulaFields>
         </Configuration>
-        <Annotation DisplayMode="0">
+        <Annotation DisplayMode="2">
           <Name />
           <DefaultAnnotationText>RocketHatch = [RocketL1Hatch] + [RocketL2Hatch] + [RocketL3Hatch]
 RocketCargo = ...</DefaultAnnotationText>
-          <Left value="False" />
+          <Left value="True" />
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
@@ -721,7 +721,7 @@ RocketCargo = ...</DefaultAnnotationText>
     </Node>
     <Node ToolID="16">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="1686" y="234" />
+        <Position x="1650" y="246" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -873,7 +873,7 @@ RocketCargo = ...</DefaultAnnotationText>
     </Node>
     <Node ToolID="18">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="1782" y="210" />
+        <Position x="1734" y="234" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -916,7 +916,7 @@ RocketCargo = ...</DefaultAnnotationText>
     </Node>
     <Node ToolID="24">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="1938" y="354" />
+        <Position x="1938" y="330" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1018,7 +1018,7 @@ RocketCargo = ...</DefaultAnnotationText>
     </Node>
     <Node ToolID="25">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="2034" y="354" />
+        <Position x="2034" y="330" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1120,7 +1120,7 @@ RocketCargo = ...</DefaultAnnotationText>
     </Node>
     <Node ToolID="27">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-        <Position x="2802" y="318" />
+        <Position x="2802" y="366" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1145,7 +1145,7 @@ Table=Scout</DefaultAnnotationText>
     </Node>
     <Node ToolID="28">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="378" y="78" width="100" height="40" />
+        <Position x="390" y="330" width="100" height="40" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1165,11 +1165,11 @@ Table=Scout</DefaultAnnotationText>
     </Node>
     <Node ToolID="29">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="450" y="366" width="100" height="36" />
+        <Position x="678" y="414" width="100" height="36" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Text>Cleaned up data &gt;</Text>
+          <Text>&lt; Cleaned up data</Text>
           <Font name="Arial" size="8.25" style="0" />
           <TextColor name="Black" />
           <FillColor name="White" />
@@ -1185,7 +1185,7 @@ Table=Scout</DefaultAnnotationText>
     </Node>
     <Node ToolID="30">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="54" y="258" width="100" height="40" />
+        <Position x="54" y="306" width="100" height="40" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1205,7 +1205,7 @@ Table=Scout</DefaultAnnotationText>
     </Node>
     <Node ToolID="31">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="54" y="102" width="100" height="40" />
+        <Position x="54" y="186" width="100" height="40" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1225,31 +1225,11 @@ Table=Scout</DefaultAnnotationText>
     </Node>
     <Node ToolID="32">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="822" y="174" width="76" height="84" />
+        <Position x="822" y="150" width="76" height="120" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Text>Converts start level and climb level to multiple fields</Text>
-          <Font name="Arial" size="8.25" style="0" />
-          <TextColor name="Black" />
-          <FillColor name="White" />
-          <Shape shape="0" />
-          <Justification Justification="4" />
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-    </Node>
-    <Node ToolID="33">
-      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="1734" y="162" width="100" height="40" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Text>Calculates raw relative to 6328</Text>
+          <Text>Converts start level and climb level to multiple fields and calculates total for all rocket levels</Text>
           <Font name="Arial" size="8.25" style="0" />
           <TextColor name="Black" />
           <FillColor name="White" />
@@ -1278,7 +1258,7 @@ Table=Scout</DefaultAnnotationText>
     </Node>
     <Node ToolID="40">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
-        <Position x="1302" y="294" />
+        <Position x="1302" y="342" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1362,11 +1342,11 @@ Table=Scout</DefaultAnnotationText>
     </Node>
     <Node ToolID="50">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="978" y="438" width="100" height="40" />
+        <Position x="954" y="594" width="84" height="40" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Text>Comments</Text>
+          <Text>Removes any entries without comments</Text>
           <Font name="Arial" size="8.25" style="0" />
           <TextColor name="Black" />
           <FillColor name="White" />
@@ -1382,7 +1362,7 @@ Table=Scout</DefaultAnnotationText>
     </Node>
     <Node ToolID="54">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="210" y="822" />
+        <Position x="210" y="966" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1413,7 +1393,7 @@ Table=Scout</DefaultAnnotationText>
     </Node>
     <Node ToolID="57">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="294" y="822" />
+        <Position x="294" y="966" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1467,7 +1447,7 @@ Table=Scout</DefaultAnnotationText>
     </Node>
     <Node ToolID="58">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="390" y="822" />
+        <Position x="390" y="954" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1497,7 +1477,7 @@ Table=Scout</DefaultAnnotationText>
     </Node>
     <Node ToolID="62">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="486" y="822" />
+        <Position x="486" y="954" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1528,7 +1508,7 @@ Table=Scout</DefaultAnnotationText>
     </Node>
     <Node ToolID="64">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="78" y="834" width="100" height="40" />
+        <Position x="78" y="978" width="100" height="40" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1548,7 +1528,7 @@ Table=Scout</DefaultAnnotationText>
     </Node>
     <Node ToolID="65">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="210" y="978" />
+        <Position x="210" y="1122" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1684,7 +1664,7 @@ Table=Scout</DefaultAnnotationText>
     </Node>
     <Node ToolID="67">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="294" y="978" />
+        <Position x="294" y="1110" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1754,7 +1734,7 @@ Table=Scout</DefaultAnnotationText>
     </Node>
     <Node ToolID="69">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="390" y="978" />
+        <Position x="390" y="1110" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1827,7 +1807,7 @@ Table=Scout</DefaultAnnotationText>
     </Node>
     <Node ToolID="71">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="78" y="990" width="100" height="40" />
+        <Position x="78" y="1134" width="100" height="40" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1847,7 +1827,7 @@ Table=Scout</DefaultAnnotationText>
     </Node>
     <Node ToolID="72">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
-        <Position x="606" y="942" />
+        <Position x="750" y="1026" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1866,6 +1846,7 @@ Table=Scout</DefaultAnnotationText>
             <Field name="Match" source="(Multiple Sources)" type="Int64" />
             <Field name="Errors" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
             <Field name="Team" source="(Multiple Sources)" type="Int64" />
+            <Field name="Target Match Count" source="TextInput:" type="Byte" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -1873,11 +1854,11 @@ Table=Scout</DefaultAnnotationText>
     </Node>
     <Node ToolID="76">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="978" y="942" />
+        <Position x="1122" y="1026" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\MA\AppData\Local\Temp\Engine_12400_304a8bc0ab9148fe870e41e2a88dbdcd_\Engine_10236_4c13244c261543759008cd59eb9d87f9_.yxdb</TempFile>
+          <TempFile>C:\Users\MA\AppData\Local\Temp\Engine_7672_7ed4005c4eb64d468cf00cce2ee047fa_\Engine_3264_c25dd8edad8a4801ad3f31b9cb32f339_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -1901,7 +1882,7 @@ Table=Scout</DefaultAnnotationText>
     </Node>
     <Node ToolID="78">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
-        <Position x="690" y="942" />
+        <Position x="834" y="1026" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1921,6 +1902,7 @@ Team - Ascending</DefaultAnnotationText>
             <Field name="Match" source="(Multiple Sources)" type="Int64" />
             <Field name="Errors" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
             <Field name="Team" source="(Multiple Sources)" type="Int64" />
+            <Field name="Target Match Count" source="TextInput:" type="Byte" />
           </RecordInfo>
           <SortInfo locale="0">
             <Field field="Match" order="Ascending" />
@@ -1932,7 +1914,7 @@ Team - Ascending</DefaultAnnotationText>
     </Node>
     <Node ToolID="79">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="1050" y="954" width="100" height="40" />
+        <Position x="1194" y="1038" width="100" height="40" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1952,7 +1934,7 @@ Team - Ascending</DefaultAnnotationText>
     </Node>
     <Node ToolID="84">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="78" y="1170" width="100" height="40" />
+        <Position x="78" y="1314" width="100" height="40" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1972,7 +1954,7 @@ Team - Ascending</DefaultAnnotationText>
     </Node>
     <Node ToolID="85">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="210" y="1158" />
+        <Position x="210" y="1302" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2000,12 +1982,12 @@ Team - Ascending</DefaultAnnotationText>
     </Node>
     <Node ToolID="87">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="294" y="1158" />
+        <Position x="402" y="1290" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Expression>[Count] &lt; 6</Expression>
-          <Mode>Simple</Mode>
+          <Expression>[Count] &lt; [Target Match Count]</Expression>
+          <Mode>Custom</Mode>
           <Simple>
             <Operator>&lt;</Operator>
             <Field>Count</Field>
@@ -2016,7 +1998,8 @@ Team - Ascending</DefaultAnnotationText>
               <PeriodType>
               </PeriodType>
               <PeriodCount>0</PeriodCount>
-              <Operand>6</Operand>
+              <Operand>
+              </Operand>
               <StartDate>2019-01-11 21:05:15</StartDate>
               <EndDate>2019-01-11 21:05:15</EndDate>
             </Operands>
@@ -2024,33 +2007,29 @@ Team - Ascending</DefaultAnnotationText>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
-          <DefaultAnnotationText>[Count] &lt; 6</DefaultAnnotationText>
+          <DefaultAnnotationText>[Count] &lt; [Target Match Count]</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
         <MetaInfo connection="True">
           <RecordInfo>
+            <Field name="Target Match Count" source="TextInput:" type="Byte" />
             <Field name="Team" source="Summarize: GroupBy - Team" type="Int64" />
             <Field name="Count" source="Summarize: Count" type="Int64" />
           </RecordInfo>
-          <SortInfo>
-            <Field field="Team" order="Asc" />
-          </SortInfo>
         </MetaInfo>
         <MetaInfo connection="False">
           <RecordInfo>
+            <Field name="Target Match Count" source="TextInput:" type="Byte" />
             <Field name="Team" source="Summarize: GroupBy - Team" type="Int64" />
             <Field name="Count" source="Summarize: Count" type="Int64" />
           </RecordInfo>
-          <SortInfo>
-            <Field field="Team" order="Asc" />
-          </SortInfo>
         </MetaInfo>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
     </Node>
     <Node ToolID="88">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="378" y="1158" />
+        <Position x="486" y="1278" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2065,20 +2044,18 @@ Team - Ascending</DefaultAnnotationText>
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
+            <Field name="Target Match Count" source="TextInput:" type="Byte" />
             <Field name="Team" source="Summarize: GroupBy - Team" type="Int64" />
             <Field name="Count" source="Summarize: Count" type="Int64" />
             <Field name="Errors" size="1073741823" source="Formula: &quot;Team &quot; + ToString([Team]) + &quot; only has &quot; + ToString([Count]) + &quot; match&quot; + if [Count] = 1 THEN &quot;&quot; ELSE &quot;es&quot; ENDIF" type="V_WString" />
           </RecordInfo>
-          <SortInfo>
-            <Field field="Team" order="Asc" />
-          </SortInfo>
         </MetaInfo>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
     </Node>
     <Node ToolID="89">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="462" y="1158" />
+        <Position x="582" y="1278" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2096,19 +2073,17 @@ Team - Ascending</DefaultAnnotationText>
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
+            <Field name="Target Match Count" source="TextInput:" type="Byte" />
             <Field name="Team" source="Summarize: GroupBy - Team" type="Int64" />
             <Field name="Errors" size="1073741823" source="Formula: &quot;Team &quot; + ToString([Team]) + &quot; only has &quot; + ToString([Count]) + &quot; match&quot; + if [Count] = 1 THEN &quot;&quot; ELSE &quot;es&quot; ENDIF" type="V_WString" />
           </RecordInfo>
-          <SortInfo>
-            <Field field="Team" order="Asc" />
-          </SortInfo>
         </MetaInfo>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
     </Node>
     <Node ToolID="90">
       <GuiSettings>
-        <Position x="2706" y="318" />
+        <Position x="2706" y="366" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2129,9 +2104,6 @@ Team - Ascending</DefaultAnnotationText>
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
         <MetaInfo connection="Output26">
           <RecordInfo>
             <Field name="Team" source="Formula: IF [_CurrentFieldName_] IN(&quot;Team&quot;,&quot;MatchCount&quot;,&quot;AvgNo0_DriverRating&quot;,&quot;AvgNo0_HatchColRating&quot;,&quot;AvgNo0_HatchDelRating&quot;,&quot;AvgNo0_CargoColRating&quot;,&quot;AvgNo0_CargoDelRating&quot;,&quot;AvgNo0_DefenseRating&quot;,&quot;AvgNo0_AvoidDefenseRating&quot;,&quot;Avg_AutoShipHatch&quot;,&quot;Avg_AutoShipCargo&quot;,&quot;Avg_AutoRocketHatch&quot;,&quot;Avg_AutoRocketCargo&quot;,&quot;AvgNo0_RocketL1Hatch&quot;,&quot;AvgNo0_RocketL1Cargo&quot;,&quot;AvgNo0_RocketL2Hatch&quot;,&quot;AvgNo0_RocketL2Cargo&quot;,&quot;AvgNo0_RocketL3Hatch&quot;,&quot;AvgNo0_RocketL3Cargo&quot;,&quot;AvgNo0_ShipHatch&quot;,&quot;AvgNo0_ShipCargo&quot;,&quot;Max_AutoShipHatch&quot;,&quot;Max_AutoShipCargo&quot;,&quot;Max_AutoRocketHatch&quot;,&quot;Max_AutoRocketCargo&quot;,&quot;Max_RocketL1Hatch&quot;,&quot;Max_RocketL1Cargo&quot;,&quot;Max_RocketL2Hatch&quot;,&quot;Max_RocketL2Cargo&quot;,&quot;Max_RocketL3Hatch&quot;,&quot;Max_RocketL3Cargo&quot;,&quot;Max_ShipHatch&quot;,&quot;Max_ShipCargo&quot;,&quot;Sum_CrossedLine&quot;,&quot;Sum_StartLevel1&quot;,&quot;Sum_StartLevel2&quot;,&quot;Sum_ClimbLevel0&quot;,&quot;Sum_ClimbLevel1&quot;,&quot;Sum_ClimbLevel2&quot;,&quot;Sum_ClimbLevel3&quot;,&quot;Sum_ClimbLevel1Attempted&quot;,&quot;Sum_ClimbLevel2Attempted&quot;,&quot;Sum_ClimbLevel3Attempted&quot;,&quot;AvgNo0_RocketHatch&quot;,&quot;AvgNo0_RocketCargo&quot;,&quot;Max_RocketHatch&quot;,&quot;Max_RocketCargo&quot;,&quot;Avg_StartLevel&quot;,&quot;Avg_ClimbLevel&quot;,&quot;Sum_Disabled&quot;,&quot;ProRating&quot;,&quot;Comments&quot;,&quot;6328relative_ShipHatch&quot;,&quot;6328relative_ShipCargo&quot;,&quot;6328relative_RocketL1Hatch&quot;,&quot;6328relative_RocketL1Cargo&quot;,&quot;6328relative_RocketL2Hatch&quot;,&quot;6328relative_RocketL2Cargo&quot;,&quot;6328relative_RocketL3Hatch&quot;,&quot;6328relative_RocketL3Cargo&quot;) THEN   &#xA;       IF IsNull([_CurrentField_]) THEN &#xA;	    IF ( [_CurrentFieldType_] IN ('Byte', 'Int16', 'Int32', 'Int64', 'Float', 'Double', 'FixedDecimal')) THEN&#xA;       	0&#xA;    	    ELSE [_CurrentField_]&#xA;	    ENDIF&#xA;	ELSE [_CurrentField_]&#xA;	ENDIF&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Int64" />
@@ -2205,11 +2177,11 @@ Team - Ascending</DefaultAnnotationText>
     </Node>
     <Node ToolID="92">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="2742" y="246" width="100" height="40" />
+        <Position x="2694" y="294" width="84" height="60" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Text>Tableu export</Text>
+          <Text>Converts nulls to 0s (avoids errors in Tableu)</Text>
           <Font name="Arial" size="8.25" style="0" />
           <TextColor name="Black" />
           <FillColor name="White" />
@@ -2225,7 +2197,7 @@ Team - Ascending</DefaultAnnotationText>
     </Node>
     <Node ToolID="93">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="1050" y="210" />
+        <Position x="1050" y="258" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2233,7 +2205,7 @@ Team - Ascending</DefaultAnnotationText>
             <FormulaField expression="[CrossedLine]*0.5+[AutoRocketHatch]*1.5+[AutoRocketCargo]*1.5+[AutoShipHatch]*1.5+[AutoShipCargo]*1.5+[StartLevel2]*2+[RocketL1Hatch]*1.1+[RocketL2Hatch]*1.5+[RocketL3Hatch]*2+[RocketL1Cargo]*1.1+[RocketL2Cargo]*1.5+[RocketL3Cargo]*2+[ShipHatch]+[ShipCargo]+[ClimbLevel]*4+[LiftedOthers]*3+[Disabled]*(-10)" field="MatchRating" size="8" type="Int64" />
           </FormulaFields>
         </Configuration>
-        <Annotation DisplayMode="0">
+        <Annotation DisplayMode="2">
           <Name />
           <DefaultAnnotationText>MatchRating = [CrossedLine]*0.5+[AutoRocketHatch]*1.5+[AutoRocketCargo]*1.5+[Aut...</DefaultAnnotationText>
           <Left value="False" />
@@ -2306,7 +2278,7 @@ Team - Ascending</DefaultAnnotationText>
     </Node>
     <Node ToolID="94">
       <GuiSettings>
-        <Position x="954" y="210" />
+        <Position x="954" y="258" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2394,7 +2366,7 @@ Team - Ascending</DefaultAnnotationText>
     </Node>
     <Node ToolID="95">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-        <Position x="1206" y="294" />
+        <Position x="1206" y="342" />
       </GuiSettings>
       <Properties>
         <Configuration joinByRecordPos="False">
@@ -2568,11 +2540,11 @@ Team - Ascending</DefaultAnnotationText>
     </Node>
     <Node ToolID="96">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="978" y="150" width="100" height="40" />
+        <Position x="930" y="186" width="84" height="64" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Text>Calculated match ratings</Text>
+          <Text>Converts nulls to 0s, to avoid errors during calculation</Text>
           <Font name="Arial" size="8.25" style="0" />
           <TextColor name="Black" />
           <FillColor name="White" />
@@ -2588,7 +2560,7 @@ Team - Ascending</DefaultAnnotationText>
     </Node>
     <Node ToolID="97">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="1146" y="210" />
+        <Position x="1146" y="258" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2672,11 +2644,11 @@ Team - Ascending</DefaultAnnotationText>
     </Node>
     <Node ToolID="98">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="1350" y="234" width="100" height="40" />
+        <Position x="1374" y="186" width="100" height="144" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Text>Basic analysis (avg, max, etc.)</Text>
+          <Text>Calculates: averages for most fields, number of times from each starting level, number of times climbed to each level, and pro rating (average match rating)</Text>
           <Font name="Arial" size="8.25" style="0" />
           <TextColor name="Black" />
           <FillColor name="White" />
@@ -2692,7 +2664,7 @@ Team - Ascending</DefaultAnnotationText>
     </Node>
     <Node ToolID="100">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="210" y="1326" />
+        <Position x="210" y="1470" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2720,7 +2692,7 @@ Team - Ascending</DefaultAnnotationText>
     </Node>
     <Node ToolID="101">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="78" y="1326" width="100" height="40" />
+        <Position x="78" y="1470" width="100" height="40" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2740,7 +2712,7 @@ Team - Ascending</DefaultAnnotationText>
     </Node>
     <Node ToolID="103">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="294" y="1326" />
+        <Position x="294" y="1470" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2790,7 +2762,7 @@ Team - Ascending</DefaultAnnotationText>
     </Node>
     <Node ToolID="104">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="378" y="1326" />
+        <Position x="378" y="1458" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2818,7 +2790,7 @@ Team - Ascending</DefaultAnnotationText>
     </Node>
     <Node ToolID="105">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="462" y="1326" />
+        <Position x="462" y="1458" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2848,7 +2820,7 @@ Team - Ascending</DefaultAnnotationText>
     </Node>
     <Node ToolID="106">
       <GuiSettings Plugin="PortfolioPluginsGui.ComposerTable.PortfolioComposerTable">
-        <Position x="786" y="942" />
+        <Position x="930" y="1026" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2891,7 +2863,7 @@ Team - Ascending</DefaultAnnotationText>
     </Node>
     <Node ToolID="107">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="210" y="1494" />
+        <Position x="210" y="1638" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2922,7 +2894,7 @@ Team - Ascending</DefaultAnnotationText>
     </Node>
     <Node ToolID="108">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="78" y="1494" width="100" height="40" />
+        <Position x="78" y="1638" width="100" height="40" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2942,7 +2914,7 @@ Team - Ascending</DefaultAnnotationText>
     </Node>
     <Node ToolID="109">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="294" y="1494" />
+        <Position x="294" y="1638" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2950,6 +2922,8 @@ Team - Ascending</DefaultAnnotationText>
           <Mode>Custom</Mode>
           <Simple>
             <Operator>=</Operator>
+            <Field>
+            </Field>
             <Operands>
               <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
               <DateType>fixed</DateType>
@@ -2957,10 +2931,10 @@ Team - Ascending</DefaultAnnotationText>
               <PeriodType>
               </PeriodType>
               <PeriodCount>0</PeriodCount>
-              <StartDate>2019-01-12 15:36:36</StartDate>
-              <EndDate>2019-01-12 15:36:36</EndDate>
               <Operand>
               </Operand>
+              <StartDate>2019-01-12 15:36:36</StartDate>
+              <EndDate>2019-01-12 15:36:36</EndDate>
             </Operands>
           </Simple>
         </Configuration>
@@ -2996,7 +2970,7 @@ Team - Ascending</DefaultAnnotationText>
     </Node>
     <Node ToolID="110">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="378" y="1494" />
+        <Position x="402" y="1626" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -3026,7 +3000,7 @@ Team - Ascending</DefaultAnnotationText>
     </Node>
     <Node ToolID="111">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="462" y="1494" />
+        <Position x="498" y="1626" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -3057,7 +3031,7 @@ Team - Ascending</DefaultAnnotationText>
     </Node>
     <Node ToolID="113">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
-        <Position x="762" y="498" />
+        <Position x="762" y="534" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -3137,7 +3111,7 @@ Team - Ascending</DefaultAnnotationText>
     </Node>
     <Node ToolID="114">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="174" y="498" />
+        <Position x="174" y="546" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -3166,7 +3140,7 @@ Table=comments</DefaultAnnotationText>
     </Node>
     <Node ToolID="116">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="882" y="498" />
+        <Position x="882" y="534" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -3196,7 +3170,7 @@ Table=comments</DefaultAnnotationText>
     </Node>
     <Node ToolID="117">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="690" y="438" />
+        <Position x="654" y="642" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -3268,7 +3242,7 @@ Table=comments</DefaultAnnotationText>
     </Node>
     <Node ToolID="119">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="330" y="726" width="100" height="40" />
+        <Position x="318" y="834" width="100" height="40" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -3288,7 +3262,7 @@ Table=comments</DefaultAnnotationText>
     </Node>
     <Node ToolID="120">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="966" y="498" />
+        <Position x="966" y="534" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -3335,7 +3309,7 @@ Table=comments</DefaultAnnotationText>
     </Node>
     <Node ToolID="121">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="1146" y="498" />
+        <Position x="1146" y="522" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -3367,7 +3341,7 @@ Table=comments</DefaultAnnotationText>
     </Node>
     <Node ToolID="122">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="1062" y="498" />
+        <Position x="1062" y="522" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -3392,7 +3366,7 @@ Table=comments</DefaultAnnotationText>
     </Node>
     <Node ToolID="123">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="666" y="678" />
+        <Position x="666" y="738" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -3548,7 +3522,7 @@ Table=comments</DefaultAnnotationText>
     </Node>
     <Node ToolID="124">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="762" y="678" />
+        <Position x="762" y="726" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -3633,7 +3607,7 @@ Table=comments</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <CartesianMode>Error</CartesianMode>
+          <CartesianMode>Allow</CartesianMode>
           <SelectConfiguration>
             <Configuration outputConnection="Output">
               <OrderChanged value="False" />
@@ -3722,7 +3696,7 @@ Table=comments</DefaultAnnotationText>
     </Node>
     <Node ToolID="129">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-        <Position x="1494" y="294" />
+        <Position x="1494" y="354" />
       </GuiSettings>
       <Properties>
         <Configuration joinByRecordPos="False">
@@ -3887,7 +3861,7 @@ Table=comments</DefaultAnnotationText>
     </Node>
     <Node ToolID="137">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
-        <Position x="1590" y="294" />
+        <Position x="1590" y="342" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -3966,11 +3940,11 @@ Table=comments</DefaultAnnotationText>
     </Node>
     <Node ToolID="139">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="1518" y="234" width="100" height="40" />
+        <Position x="1494" y="270" width="72" height="72" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Text>Join in comments</Text>
+          <Text>Join in comments based on team number</Text>
           <Font name="Arial" size="8.25" style="0" />
           <TextColor name="Black" />
           <FillColor name="White" />
@@ -3986,7 +3960,7 @@ Table=comments</DefaultAnnotationText>
     </Node>
     <Node ToolID="140">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="2226" y="270" />
+        <Position x="2226" y="330" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -4039,7 +4013,7 @@ Table=comments</DefaultAnnotationText>
     </Node>
     <Node ToolID="141">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
-        <Position x="2418" y="354" />
+        <Position x="2334" y="426" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -4156,7 +4130,7 @@ Table=comments</DefaultAnnotationText>
     </Node>
     <Node ToolID="142">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="2334" y="270" />
+        <Position x="2334" y="330" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -4209,7 +4183,7 @@ Table=comments</DefaultAnnotationText>
     </Node>
     <Node ToolID="144">
       <GuiSettings>
-        <Position x="1878" y="222" />
+        <Position x="1806" y="234" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -4247,7 +4221,7 @@ Table=comments</DefaultAnnotationText>
     </Node>
     <Node ToolID="145">
       <GuiSettings>
-        <Position x="2130" y="270" />
+        <Position x="2130" y="330" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -4341,11 +4315,11 @@ Table=comments</DefaultAnnotationText>
     </Node>
     <Node ToolID="146">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="2202" y="210" width="100" height="40" />
+        <Position x="2118" y="258" width="84" height="60" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Text>Calculates range of relatives</Text>
+          <Text>Converts nulls to 0s (avoid errors in summarize)</Text>
           <Font name="Arial" size="8.25" style="0" />
           <TextColor name="Black" />
           <FillColor name="White" />
@@ -4361,7 +4335,7 @@ Table=comments</DefaultAnnotationText>
     </Node>
     <Node ToolID="147">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="2514" y="354" />
+        <Position x="2514" y="426" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -4470,11 +4444,11 @@ Table=comments</DefaultAnnotationText>
     </Node>
     <Node ToolID="148">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="2706" y="414" />
+        <Position x="2706" y="462" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\MA\AppData\Local\Temp\Engine_12400_304a8bc0ab9148fe870e41e2a88dbdcd_\Engine_10236_f8518194b3b6454387c285f6c272193e_.yxdb</TempFile>
+          <TempFile>C:\Users\MA\AppData\Local\Temp\Engine_7672_7ed4005c4eb64d468cf00cce2ee047fa_\Engine_3264_2773e45efbfc4c1a96b372eba0a87c68_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -4498,7 +4472,7 @@ Table=comments</DefaultAnnotationText>
     </Node>
     <Node ToolID="149">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="2610" y="354" />
+        <Position x="2610" y="426" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -4602,11 +4576,11 @@ Table=comments</DefaultAnnotationText>
     </Node>
     <Node ToolID="150">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="2514" y="282" width="100" height="40" />
+        <Position x="2502" y="306" width="84" height="108" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Text>Calculates relatives from 0 to 1</Text>
+          <Text>Calculates final 6328 relative from 0 to 1 by finding where raw relative falls in calculated range</Text>
           <Font name="Arial" size="8.25" style="0" />
           <TextColor name="Black" />
           <FillColor name="White" />
@@ -4622,7 +4596,7 @@ Table=comments</DefaultAnnotationText>
     </Node>
     <Node ToolID="155">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="54" y="510" width="100" height="40" />
+        <Position x="54" y="558" width="100" height="40" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -4642,11 +4616,11 @@ Table=comments</DefaultAnnotationText>
     </Node>
     <Node ToolID="156">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="258" y="462" />
+        <Position x="258" y="510" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\MA\AppData\Local\Temp\Engine_12400_304a8bc0ab9148fe870e41e2a88dbdcd_\Engine_10236_cae6234b17a44fa58e0cbcbd9d979995_.yxdb</TempFile>
+          <TempFile>C:\Users\MA\AppData\Local\Temp\Engine_7672_7ed4005c4eb64d468cf00cce2ee047fa_\Engine_3264_55e4bdca3b1d45a7ae7ca799b633c078_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -4670,11 +4644,11 @@ Table=comments</DefaultAnnotationText>
     </Node>
     <Node ToolID="157">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="558" y="450" width="100" height="40" />
+        <Position x="510" y="642" width="124" height="60" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Text>From FRC Krawler &gt;</Text>
+          <Text>Removes all fields from FRC Krawler data except team, match, and comments</Text>
           <Font name="Arial" size="8.25" style="0" />
           <TextColor name="Black" />
           <FillColor name="White" />
@@ -4690,11 +4664,11 @@ Table=comments</DefaultAnnotationText>
     </Node>
     <Node ToolID="158">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="546" y="690" width="100" height="40" />
+        <Position x="630" y="798" width="100" height="40" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Text>From summarized data &gt;</Text>
+          <Text>Find teams that have fallen</Text>
           <Font name="Arial" size="8.25" style="0" />
           <TextColor name="Black" />
           <FillColor name="White" />
@@ -4710,11 +4684,11 @@ Table=comments</DefaultAnnotationText>
     </Node>
     <Node ToolID="159">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="1470" y="594" width="100" height="40" />
+        <Position x="1470" y="654" width="100" height="72" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Text>Output match specific data</Text>
+          <Text>Removes all fields except team, match, and calculated text fields</Text>
           <Font name="Arial" size="8.25" style="0" />
           <TextColor name="Black" />
           <FillColor name="White" />
@@ -4730,7 +4704,7 @@ Table=comments</DefaultAnnotationText>
     </Node>
     <Node ToolID="160">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="1278" y="702" />
+        <Position x="1278" y="750" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -4824,7 +4798,7 @@ Table=comments</DefaultAnnotationText>
     </Node>
     <Node ToolID="161">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="1494" y="702" />
+        <Position x="1494" y="750" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -4910,7 +4884,7 @@ Table=comments</DefaultAnnotationText>
     </Node>
     <Node ToolID="163">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-        <Position x="1602" y="702" />
+        <Position x="1602" y="750" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -4932,7 +4906,7 @@ Table=Scout</DefaultAnnotationText>
     </Node>
     <Node ToolID="166">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
-        <Position x="1386" y="702" />
+        <Position x="1386" y="750" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -5016,7 +4990,7 @@ Match - Ascending</DefaultAnnotationText>
     </Node>
     <Node ToolID="168">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="294" y="114" />
+        <Position x="366" y="150" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -5118,7 +5092,7 @@ Match - Ascending</DefaultAnnotationText>
     </Node>
     <Node ToolID="171">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="210" y="1662" />
+        <Position x="210" y="1806" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -5253,7 +5227,7 @@ Match - Ascending</DefaultAnnotationText>
     </Node>
     <Node ToolID="172">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="294" y="1662" />
+        <Position x="294" y="1794" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -5323,7 +5297,7 @@ Match - Ascending</DefaultAnnotationText>
     </Node>
     <Node ToolID="173">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="378" y="1662" />
+        <Position x="378" y="1794" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -5357,7 +5331,7 @@ Match - Ascending</DefaultAnnotationText>
     </Node>
     <Node ToolID="174">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="210" y="1818" />
+        <Position x="210" y="1962" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -5492,7 +5466,7 @@ Match - Ascending</DefaultAnnotationText>
     </Node>
     <Node ToolID="175">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="294" y="1818" />
+        <Position x="294" y="1950" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -5562,7 +5536,7 @@ Match - Ascending</DefaultAnnotationText>
     </Node>
     <Node ToolID="176">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="378" y="1818" />
+        <Position x="378" y="1950" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -5596,11 +5570,11 @@ Match - Ascending</DefaultAnnotationText>
     </Node>
     <Node ToolID="177">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="258" y="342" />
+        <Position x="258" y="390" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\MA\AppData\Local\Temp\Engine_12400_304a8bc0ab9148fe870e41e2a88dbdcd_\Engine_10236_c663450c37e54199a986f50dd1d01d28_.yxdb</TempFile>
+          <TempFile>C:\Users\MA\AppData\Local\Temp\Engine_7672_7ed4005c4eb64d468cf00cce2ee047fa_\Engine_3264_40a205beb6d54fb58f9e7cd5e677240b_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -5624,7 +5598,7 @@ Match - Ascending</DefaultAnnotationText>
     </Node>
     <Node ToolID="178">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="174" y="378" />
+        <Position x="174" y="426" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -5698,7 +5672,7 @@ Table=scout</DefaultAnnotationText>
     </Node>
     <Node ToolID="179">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
-        <Position x="726" y="258" />
+        <Position x="726" y="294" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -5707,7 +5681,7 @@ Table=scout</DefaultAnnotationText>
             <Field field="Match" />
           </UniqueFields>
         </Configuration>
-        <Annotation DisplayMode="0">
+        <Annotation DisplayMode="2">
           <Name />
           <DefaultAnnotationText>Unique: Team, Match</DefaultAnnotationText>
           <Left value="False" />
@@ -5819,7 +5793,7 @@ Table=scout</DefaultAnnotationText>
     </Node>
     <Node ToolID="180">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
-        <Position x="630" y="246" />
+        <Position x="630" y="294" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -5828,7 +5802,7 @@ Table=scout</DefaultAnnotationText>
             <Field field="Match" order="Ascending" />
           </SortInfo>
         </Configuration>
-        <Annotation DisplayMode="0">
+        <Annotation DisplayMode="2">
           <Name />
           <DefaultAnnotationText>Team - Ascending
 Match - Ascending</DefaultAnnotationText>
@@ -5890,7 +5864,7 @@ Match - Ascending</DefaultAnnotationText>
     </Node>
     <Node ToolID="181">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="666" y="198" width="100" height="40" />
+        <Position x="726" y="234" width="64" height="40" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -5910,7 +5884,7 @@ Match - Ascending</DefaultAnnotationText>
     </Node>
     <Node ToolID="182">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="78" y="1650" width="100" height="72" />
+        <Position x="78" y="1794" width="100" height="72" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -5930,7 +5904,7 @@ Match - Ascending</DefaultAnnotationText>
     </Node>
     <Node ToolID="183">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="78" y="1806" width="100" height="72" />
+        <Position x="78" y="1950" width="100" height="72" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -5950,7 +5924,7 @@ Match - Ascending</DefaultAnnotationText>
     </Node>
     <Node ToolID="184">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="174" y="618" />
+        <Position x="174" y="666" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -5979,7 +5953,7 @@ Table=comments</DefaultAnnotationText>
     </Node>
     <Node ToolID="185">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
-        <Position x="390" y="498" />
+        <Position x="390" y="546" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -6005,7 +5979,7 @@ Table=comments</DefaultAnnotationText>
     </Node>
     <Node ToolID="186">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
-        <Position x="510" y="498" />
+        <Position x="510" y="546" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -6046,7 +6020,7 @@ Table=comments</DefaultAnnotationText>
     </Node>
     <Node ToolID="187">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="54" y="390" width="100" height="40" />
+        <Position x="54" y="438" width="100" height="40" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -6066,11 +6040,1335 @@ Table=comments</DefaultAnnotationText>
     </Node>
     <Node ToolID="188">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="66" y="630" width="100" height="40" />
+        <Position x="54" y="678" width="100" height="40" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <Text>Scantron input secondary (comments) &gt;</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="189">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="258" y="618" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\MA\AppData\Local\Temp\Engine_7672_7ed4005c4eb64d468cf00cce2ee047fa_\Engine_3264_ff228a6ffc084780bf5a487f582a9848_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="190">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="354" y="102" width="84" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Renames fields to match scantron</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="191">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="450" y="102" width="100" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Changes booleans from strings to numbers</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="192">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="498" y="246" width="100" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Removes unneeded fields</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="193">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="618" y="246" width="84" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Orders by team</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="194">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1038" y="198" width="72" height="52" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Calculates ratings for each match</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="195">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1122" y="174" width="100" height="72" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Removes all fields except team, match number, and calculated match rating</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="196">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1170" y="402" width="100" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Adds match ratings to original data based on team and match</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="197">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="918" y="390" width="148" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Original data preserved, so that nulls can be kept (these cause errors in the match rating calculation)</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="198">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1278" y="294" width="72" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Orders by team</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="199">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="366" y="498" width="100" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Combines data from scantron inputs</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="200">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="498" y="498" width="100" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Removes duplicate entries</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="201">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="750" y="786" width="100" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Creates comment based on # of falls</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="202">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="702" y="474" width="148" height="52" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Combines comments from scantron, FRC Krawler, and automated fallen comments</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="204">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="846" y="594" width="100" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Removes all fields except team, match, and comments</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="205">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1050" y="582" width="84" height="96" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Adds bullet points and match number to start of comments where available</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="206">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1146" y="582" width="84" height="72" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Concatenates all comments for each team using newlines</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="207">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1254" y="666" width="100" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Creates text fields showing successes out of attempts</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="208">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1386" y="666" width="60" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Order by team and match</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="209">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1590" y="678" width="84" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Saves to 'MatchExport'</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="210">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1578" y="402" width="100" height="120" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Combine left, joined, and right (this means all records are included, regardless of whether they have both data and comments)</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="211">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1638" y="186" width="72" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Finds record for 6328</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="212">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1734" y="150" width="72" height="64" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Adds '6328_' to start of each field</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="213">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1818" y="150" width="96" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Converts nulls to 0s to avoid errors in future calculations</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="214">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1818" y="390" width="88" height="48" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Adds 6328 records to end of each entry</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="216">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1914" y="246" width="88" height="72" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Calculates 'rawRelatives' (differnce between them and us)</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="217">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="2022" y="246" width="72" height="72" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Removes 6328 records from each entry</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="218">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="2214" y="258" width="96" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Finds minimum and maximum for each relative field</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="219">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="2322" y="222" width="144" height="96" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Calculates range of relatives for each field (absolute value of min or max, depending on which is farther from 0). This is the farthest anyone is from us.</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="220">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="2298" y="486" width="108" height="48" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Adds range for each field onto the end of all entries</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="221">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="2598" y="354" width="72" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Removes ranges and raw relative fields</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="222">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="2766" y="474" width="100" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>&lt; Results</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="223">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="2790" y="306" width="96" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Saves to 'SummaryExport'</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="224">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="186" y="894" width="84" height="52" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Counts # of teams on each alliance per match</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="225">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="282" y="894" width="84" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Finds matches with less than 3 teams on an alliance</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="226">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="378" y="894" width="84" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Creates text error message</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="227">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="474" y="882" width="100" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Filters out irrelevant data (leaves team and error)</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="228">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="198" y="1062" width="84" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Finds entries that match error</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="229">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="294" y="1050" width="84" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Creates text error message</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="230">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="390" y="1038" width="100" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Filters out irrelevant data (leaves team, match, and error)</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="231">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="198" y="1242" width="72" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Counts # of matches per team</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="232">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="402" y="1206" width="72" height="72" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Finds teams with fewer than specified # of matches</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="233">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="486" y="1218" width="84" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Creates text error message</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="234">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="582" y="1206" width="84" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Filters out irrelevant data (leaves team and error)</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="235">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="186" y="1398" width="84" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Sums # of wins per match</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="236">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="282" y="1374" width="72" height="72" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Finds matches where more or less than 3 teams won</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="237">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="366" y="1398" width="84" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Creates text error message</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="238">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="462" y="1386" width="84" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Filters out irrelevant data (leaves team and error)</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="239">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="198" y="1566" width="88" height="52" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Sums # of wins on each alliance per match</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="240">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="294" y="1542" width="84" height="84" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Finds alliances where wins aren't 3 or 0 (checks that all entries are consistent)</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="241">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="390" y="1566" width="84" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Creates text error message</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="242">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="486" y="1554" width="84" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Filters out irrelevant data (leaves team and error)</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="243">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="282" y="1734" width="84" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Creates text error message</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="244">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="378" y="1722" width="100" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Filters out irrelevant data (leaves team, match, and error)</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="245">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="282" y="1890" width="84" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Creates text error message</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="246">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="378" y="1878" width="100" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Filters out irrelevant data (leaves team, match, and error)</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="247">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="186" y="1746" width="84" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Finds entries that match error</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="248">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="186" y="1890" width="84" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Finds entries that match error</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="249">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="726" y="978" width="88" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Combines all errors to create master list</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="250">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="822" y="978" width="84" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Sorts by match, then team</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="251">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="918" y="966" width="84" height="48" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Creates table, organized by match</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="252">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="174" y="750" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="1" />
+          <Fields>
+            <Field name="Target Match Count" />
+          </Fields>
+          <Data>
+            <r>
+              <c>1</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Target Match Count" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="253">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="762" width="100" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Select # of matches per team &gt;</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="255">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="306" y="1290" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Target Match Count" source="TextInput:" type="Byte" />
+            <Field name="Team" source="Summarize: GroupBy - Team" type="Int64" />
+            <Field name="Count" source="Summarize: Count" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="256">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="294" y="1218" width="88" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Adds target match count to end of each entry</Text>
           <Font name="Arial" size="8.25" style="0" />
           <TextColor name="Black" />
           <FillColor name="White" />
@@ -6104,10 +7402,6 @@ Table=comments</DefaultAnnotationText>
     </Connection>
     <Connection name="#1">
       <Origin ToolID="4" Connection="Output" />
-      <Destination ToolID="9" Connection="Input" />
-    </Connection>
-    <Connection name="#2">
-      <Origin ToolID="7" Connection="Output" />
       <Destination ToolID="9" Connection="Input" />
     </Connection>
     <Connection name="#3">
@@ -6232,7 +7526,11 @@ Table=comments</DefaultAnnotationText>
     </Connection>
     <Connection>
       <Origin ToolID="85" Connection="Output" />
-      <Destination ToolID="87" Connection="Input" />
+      <Destination ToolID="255" Connection="Source" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="252" Connection="Output" />
+      <Destination ToolID="255" Connection="Targets" />
     </Connection>
     <Connection>
       <Origin ToolID="87" Connection="True" />
@@ -6463,15 +7761,23 @@ Table=comments</DefaultAnnotationText>
       <Destination ToolID="179" Connection="Input" />
     </Connection>
     <Connection>
+      <Origin ToolID="184" Connection="Output" />
+      <Destination ToolID="189" Connection="Input" />
+    </Connection>
+    <Connection>
       <Origin ToolID="185" Connection="Output" />
       <Destination ToolID="186" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="255" Connection="Output" />
+      <Destination ToolID="87" Connection="Input" />
     </Connection>
   </Connections>
   <Properties>
     <Memory default="True" />
     <GlobalRecordLimit value="0" />
     <TempFiles default="True" />
-    <Annotation on="True" includeToolName="False" />
+    <Annotation on="False" includeToolName="False" />
     <ConvErrorLimit value="10" />
     <ConvErrorLimit_Stop value="False" />
     <CancelOnError value="False" />
@@ -6538,6 +7844,7 @@ Table=comments</DefaultAnnotationText>
         <Tool ToolId="163" Selected="True" />
         <Tool ToolId="156" Selected="False" />
         <Tool ToolId="177" Selected="False" />
+        <Tool ToolId="189" Selected="False" />
       </Wiz_OpenOutputTools>
       <Wiz_OutputMessage />
       <Wiz_NoOutputFilesMessage />

@@ -1,2 +1,2 @@
-SERVER = "http://123.123.123.123" # or "http://scout.MyTeamDomain.org, etc.
+SERVER = "http://192.168.1.148:8001" # or "http://scout.MyTeamDomain.org, etc.
 AUTH = "XXXXXXXXXX"

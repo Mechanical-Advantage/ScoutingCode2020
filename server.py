@@ -706,6 +706,7 @@ class ScoutServer(object):
         return cherrypy.session['event']
 
     def getMatches(self, event, team=''):
+        """
         headers = {"X-TBA-App-Id": "frc2067:scouting-system:v02"}
         try:
             if team:
@@ -734,6 +735,8 @@ class ScoutServer(object):
                     m = json.load(matches_data)
             except:
                 m = []
+        """
+        m = []
         return m
 
     # Wrapper for requests, ensuring nothing goes terribly wrong

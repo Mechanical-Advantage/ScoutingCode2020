@@ -213,9 +213,7 @@ class PiScout:
 
         values = [self.getvalue((val, loc[1])) for val in range(loc[0], end)]
         retval = 0
-        print()
         for el, box in enumerate(values):
-            print(str(el) + "-" + str(box))
             if box < 45000:
                 retval = startval + el
         if retval:
@@ -234,7 +232,7 @@ class PiScout:
     # Opens the GUI, preparing the data for submission
     def submit(self):
         #If the match is empty, reset the data and display fields
-        if self.data['Team'] == 0:
+        if self.data['StartPos'] == -1 and self.data['StartLevel'] == 0 and self.data['DriverRating'] == 0:
             print("Found an empty match, skipping")
             self.data = dict(game.SCOUT_FIELDS)
             self.display = cv2.cvtColor(self.sheet, cv2.COLOR_GRAY2BGR)

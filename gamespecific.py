@@ -96,7 +96,7 @@ def processSheet(scout):
 
 
         scout.set("AllianceColor", scout.rangefield('L-10', 0, 1))
-        scout.set("StartPos", scout.rangefield('F-10', 0, 2))
+        scout.set("StartPos", scout.rangefield('F-10', 1, 3)-1)
         scout.set("StartLevel", scout.rangefield('G-12', 1, 2))
         scout.set("CrossedLine", scout.boolfield('M-12'))
         scout.set("AutoShipHatch", scout.countfield('T-10', 1, 2))

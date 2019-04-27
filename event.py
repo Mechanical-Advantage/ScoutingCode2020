@@ -1,1 +1,1 @@
-CURRENT_EVENT = '2019macma'
+CURRENT_EVENT = '2019tes'

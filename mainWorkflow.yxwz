@@ -82,7 +82,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\MA\AppData\Local\Temp\Engine_4928_e288f6a1a7214954a7fe424d588eb843_\Engine_3732_0754076ba9784c3c9eddb8d1f757f518_.yxdb</TempFile>
+          <TempFile>C:\Users\MA\AppData\Local\Temp\Engine_1664_ed5b46f213b14bfe834de314c00e59b1_\Engine_5480_5c7818da0a15417c93e737e611f1f69b_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -111,7 +111,7 @@
       <Properties>
         <Configuration>
           <Passwords />
-          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="36">D:\mascout\ScoutingCode2019\data_2019macma.db|||scout</File>
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="36">D:\mascout\ScoutingCode2019\data_2019tes.db|||scout</File>
           <FormatSpecificOptions>
             <NoProgress>True</NoProgress>
             <PreSQL />
@@ -119,60 +119,60 @@
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
-          <DefaultAnnotationText>data_2019macma.db
+          <DefaultAnnotationText>data_2019tes.db
 Table=scout</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="key" source="File: D:\mascout\ScoutingCode2019\data_2019macma.db|||scout" type="Int64" />
-            <Field name="Team" source="File: D:\mascout\ScoutingCode2019\data_2019macma.db|||scout" type="Int64" />
-            <Field name="Match" source="File: D:\mascout\ScoutingCode2019\data_2019macma.db|||scout" type="Int64" />
-            <Field name="Fouls" source="File: D:\mascout\ScoutingCode2019\data_2019macma.db|||scout" type="Int64" />
-            <Field name="TechFouls" source="File: D:\mascout\ScoutingCode2019\data_2019macma.db|||scout" type="Int64" />
-            <Field name="Replay" source="File: D:\mascout\ScoutingCode2019\data_2019macma.db|||scout" type="Int64" />
-            <Field name="Flag" source="File: D:\mascout\ScoutingCode2019\data_2019macma.db|||scout" type="Int64" />
-            <Field name="AllianceColor" source="File: D:\mascout\ScoutingCode2019\data_2019macma.db|||scout" type="Int64" />
-            <Field name="StartPos" source="File: D:\mascout\ScoutingCode2019\data_2019macma.db|||scout" type="Int64" />
-            <Field name="StartLevel" source="File: D:\mascout\ScoutingCode2019\data_2019macma.db|||scout" type="Int64" />
-            <Field name="CrossedLine" source="File: D:\mascout\ScoutingCode2019\data_2019macma.db|||scout" type="Int64" />
-            <Field name="AutoShipHatch" source="File: D:\mascout\ScoutingCode2019\data_2019macma.db|||scout" type="Int64" />
-            <Field name="AutoShipHatchFailures" source="File: D:\mascout\ScoutingCode2019\data_2019macma.db|||scout" type="Int64" />
-            <Field name="AutoShipCargo" source="File: D:\mascout\ScoutingCode2019\data_2019macma.db|||scout" type="Int64" />
-            <Field name="AutoShipCargoFailures" source="File: D:\mascout\ScoutingCode2019\data_2019macma.db|||scout" type="Int64" />
-            <Field name="AutoRocketHatch" source="File: D:\mascout\ScoutingCode2019\data_2019macma.db|||scout" type="Int64" />
-            <Field name="AutoRocketHatchFailures" source="File: D:\mascout\ScoutingCode2019\data_2019macma.db|||scout" type="Int64" />
-            <Field name="AutoRocketCargo" source="File: D:\mascout\ScoutingCode2019\data_2019macma.db|||scout" type="Int64" />
-            <Field name="AutoRocketCargoFailures" source="File: D:\mascout\ScoutingCode2019\data_2019macma.db|||scout" type="Int64" />
-            <Field name="RocketL1Hatch" source="File: D:\mascout\ScoutingCode2019\data_2019macma.db|||scout" type="Int64" />
-            <Field name="RocketL1HatchFailures" source="File: D:\mascout\ScoutingCode2019\data_2019macma.db|||scout" type="Int64" />
-            <Field name="RocketL1Cargo" source="File: D:\mascout\ScoutingCode2019\data_2019macma.db|||scout" type="Int64" />
-            <Field name="RocketL1CargoFailures" source="File: D:\mascout\ScoutingCode2019\data_2019macma.db|||scout" type="Int64" />
-            <Field name="RocketL2Hatch" source="File: D:\mascout\ScoutingCode2019\data_2019macma.db|||scout" type="Int64" />
-            <Field name="RocketL2HatchFailures" source="File: D:\mascout\ScoutingCode2019\data_2019macma.db|||scout" type="Int64" />
-            <Field name="RocketL2Cargo" source="File: D:\mascout\ScoutingCode2019\data_2019macma.db|||scout" type="Int64" />
-            <Field name="RocketL2CargoFailures" source="File: D:\mascout\ScoutingCode2019\data_2019macma.db|||scout" type="Int64" />
-            <Field name="RocketL3Hatch" source="File: D:\mascout\ScoutingCode2019\data_2019macma.db|||scout" type="Int64" />
-            <Field name="RocketL3HatchFailures" source="File: D:\mascout\ScoutingCode2019\data_2019macma.db|||scout" type="Int64" />
-            <Field name="RocketL3Cargo" source="File: D:\mascout\ScoutingCode2019\data_2019macma.db|||scout" type="Int64" />
-            <Field name="RocketL3CargoFailures" source="File: D:\mascout\ScoutingCode2019\data_2019macma.db|||scout" type="Int64" />
-            <Field name="ShipHatch" source="File: D:\mascout\ScoutingCode2019\data_2019macma.db|||scout" type="Int64" />
-            <Field name="ShipHatchFailures" source="File: D:\mascout\ScoutingCode2019\data_2019macma.db|||scout" type="Int64" />
-            <Field name="ShipCargo" source="File: D:\mascout\ScoutingCode2019\data_2019macma.db|||scout" type="Int64" />
-            <Field name="ShipCargoFailures" source="File: D:\mascout\ScoutingCode2019\data_2019macma.db|||scout" type="Int64" />
-            <Field name="ClimbLevel" source="File: D:\mascout\ScoutingCode2019\data_2019macma.db|||scout" type="Int64" />
-            <Field name="ClimbLevelAttempted" source="File: D:\mascout\ScoutingCode2019\data_2019macma.db|||scout" type="Int64" />
-            <Field name="WonMatch" source="File: D:\mascout\ScoutingCode2019\data_2019macma.db|||scout" type="Int64" />
-            <Field name="LiftedOthers" source="File: D:\mascout\ScoutingCode2019\data_2019macma.db|||scout" type="Int64" />
-            <Field name="LiftedOthersAttempted" source="File: D:\mascout\ScoutingCode2019\data_2019macma.db|||scout" type="Int64" />
-            <Field name="Disabled" source="File: D:\mascout\ScoutingCode2019\data_2019macma.db|||scout" type="Int64" />
-            <Field name="DriverRating" source="File: D:\mascout\ScoutingCode2019\data_2019macma.db|||scout" type="Int64" />
-            <Field name="HatchColRating" source="File: D:\mascout\ScoutingCode2019\data_2019macma.db|||scout" type="Int64" />
-            <Field name="HatchDelRating" source="File: D:\mascout\ScoutingCode2019\data_2019macma.db|||scout" type="Int64" />
-            <Field name="CargoColRating" source="File: D:\mascout\ScoutingCode2019\data_2019macma.db|||scout" type="Int64" />
-            <Field name="CargoDelRating" source="File: D:\mascout\ScoutingCode2019\data_2019macma.db|||scout" type="Int64" />
-            <Field name="DefenseRating" source="File: D:\mascout\ScoutingCode2019\data_2019macma.db|||scout" type="Int64" />
-            <Field name="AvoidDefenseRating" source="File: D:\mascout\ScoutingCode2019\data_2019macma.db|||scout" type="Int64" />
+            <Field name="key" source="File: D:\mascout\ScoutingCode2019\data_2019tes.db|||scout" type="Int64" />
+            <Field name="Team" source="File: D:\mascout\ScoutingCode2019\data_2019tes.db|||scout" type="Int64" />
+            <Field name="Match" source="File: D:\mascout\ScoutingCode2019\data_2019tes.db|||scout" type="Int64" />
+            <Field name="Fouls" source="File: D:\mascout\ScoutingCode2019\data_2019tes.db|||scout" type="Int64" />
+            <Field name="TechFouls" source="File: D:\mascout\ScoutingCode2019\data_2019tes.db|||scout" type="Int64" />
+            <Field name="Replay" source="File: D:\mascout\ScoutingCode2019\data_2019tes.db|||scout" type="Int64" />
+            <Field name="Flag" source="File: D:\mascout\ScoutingCode2019\data_2019tes.db|||scout" type="Int64" />
+            <Field name="AllianceColor" source="File: D:\mascout\ScoutingCode2019\data_2019tes.db|||scout" type="Int64" />
+            <Field name="StartPos" source="File: D:\mascout\ScoutingCode2019\data_2019tes.db|||scout" type="Int64" />
+            <Field name="StartLevel" source="File: D:\mascout\ScoutingCode2019\data_2019tes.db|||scout" type="Int64" />
+            <Field name="CrossedLine" source="File: D:\mascout\ScoutingCode2019\data_2019tes.db|||scout" type="Int64" />
+            <Field name="AutoShipHatch" source="File: D:\mascout\ScoutingCode2019\data_2019tes.db|||scout" type="Int64" />
+            <Field name="AutoShipHatchFailures" source="File: D:\mascout\ScoutingCode2019\data_2019tes.db|||scout" type="Int64" />
+            <Field name="AutoShipCargo" source="File: D:\mascout\ScoutingCode2019\data_2019tes.db|||scout" type="Int64" />
+            <Field name="AutoShipCargoFailures" source="File: D:\mascout\ScoutingCode2019\data_2019tes.db|||scout" type="Int64" />
+            <Field name="AutoRocketHatch" source="File: D:\mascout\ScoutingCode2019\data_2019tes.db|||scout" type="Int64" />
+            <Field name="AutoRocketHatchFailures" source="File: D:\mascout\ScoutingCode2019\data_2019tes.db|||scout" type="Int64" />
+            <Field name="AutoRocketCargo" source="File: D:\mascout\ScoutingCode2019\data_2019tes.db|||scout" type="Int64" />
+            <Field name="AutoRocketCargoFailures" source="File: D:\mascout\ScoutingCode2019\data_2019tes.db|||scout" type="Int64" />
+            <Field name="RocketL1Hatch" source="File: D:\mascout\ScoutingCode2019\data_2019tes.db|||scout" type="Int64" />
+            <Field name="RocketL1HatchFailures" source="File: D:\mascout\ScoutingCode2019\data_2019tes.db|||scout" type="Int64" />
+            <Field name="RocketL1Cargo" source="File: D:\mascout\ScoutingCode2019\data_2019tes.db|||scout" type="Int64" />
+            <Field name="RocketL1CargoFailures" source="File: D:\mascout\ScoutingCode2019\data_2019tes.db|||scout" type="Int64" />
+            <Field name="RocketL2Hatch" source="File: D:\mascout\ScoutingCode2019\data_2019tes.db|||scout" type="Int64" />
+            <Field name="RocketL2HatchFailures" source="File: D:\mascout\ScoutingCode2019\data_2019tes.db|||scout" type="Int64" />
+            <Field name="RocketL2Cargo" source="File: D:\mascout\ScoutingCode2019\data_2019tes.db|||scout" type="Int64" />
+            <Field name="RocketL2CargoFailures" source="File: D:\mascout\ScoutingCode2019\data_2019tes.db|||scout" type="Int64" />
+            <Field name="RocketL3Hatch" source="File: D:\mascout\ScoutingCode2019\data_2019tes.db|||scout" type="Int64" />
+            <Field name="RocketL3HatchFailures" source="File: D:\mascout\ScoutingCode2019\data_2019tes.db|||scout" type="Int64" />
+            <Field name="RocketL3Cargo" source="File: D:\mascout\ScoutingCode2019\data_2019tes.db|||scout" type="Int64" />
+            <Field name="RocketL3CargoFailures" source="File: D:\mascout\ScoutingCode2019\data_2019tes.db|||scout" type="Int64" />
+            <Field name="ShipHatch" source="File: D:\mascout\ScoutingCode2019\data_2019tes.db|||scout" type="Int64" />
+            <Field name="ShipHatchFailures" source="File: D:\mascout\ScoutingCode2019\data_2019tes.db|||scout" type="Int64" />
+            <Field name="ShipCargo" source="File: D:\mascout\ScoutingCode2019\data_2019tes.db|||scout" type="Int64" />
+            <Field name="ShipCargoFailures" source="File: D:\mascout\ScoutingCode2019\data_2019tes.db|||scout" type="Int64" />
+            <Field name="ClimbLevel" source="File: D:\mascout\ScoutingCode2019\data_2019tes.db|||scout" type="Int64" />
+            <Field name="ClimbLevelAttempted" source="File: D:\mascout\ScoutingCode2019\data_2019tes.db|||scout" type="Int64" />
+            <Field name="WonMatch" source="File: D:\mascout\ScoutingCode2019\data_2019tes.db|||scout" type="Int64" />
+            <Field name="LiftedOthers" source="File: D:\mascout\ScoutingCode2019\data_2019tes.db|||scout" type="Int64" />
+            <Field name="LiftedOthersAttempted" source="File: D:\mascout\ScoutingCode2019\data_2019tes.db|||scout" type="Int64" />
+            <Field name="Disabled" source="File: D:\mascout\ScoutingCode2019\data_2019tes.db|||scout" type="Int64" />
+            <Field name="DriverRating" source="File: D:\mascout\ScoutingCode2019\data_2019tes.db|||scout" type="Int64" />
+            <Field name="HatchColRating" source="File: D:\mascout\ScoutingCode2019\data_2019tes.db|||scout" type="Int64" />
+            <Field name="HatchDelRating" source="File: D:\mascout\ScoutingCode2019\data_2019tes.db|||scout" type="Int64" />
+            <Field name="CargoColRating" source="File: D:\mascout\ScoutingCode2019\data_2019tes.db|||scout" type="Int64" />
+            <Field name="CargoDelRating" source="File: D:\mascout\ScoutingCode2019\data_2019tes.db|||scout" type="Int64" />
+            <Field name="DefenseRating" source="File: D:\mascout\ScoutingCode2019\data_2019tes.db|||scout" type="Int64" />
+            <Field name="AvoidDefenseRating" source="File: D:\mascout\ScoutingCode2019\data_2019tes.db|||scout" type="Int64" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -184,7 +184,7 @@ Table=scout</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\MA\AppData\Local\Temp\Engine_4928_e288f6a1a7214954a7fe424d588eb843_\Engine_3732_47eb1f39014d4d358e2ac9c8fee2f88c_.yxdb</TempFile>
+          <TempFile>C:\Users\MA\AppData\Local\Temp\Engine_1664_ed5b46f213b14bfe834de314c00e59b1_\Engine_5480_4b46c6edac5a41df93610a56e8c55d5c_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -440,7 +440,7 @@ StartPos = if ...</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\MA\AppData\Local\Temp\Engine_4928_e288f6a1a7214954a7fe424d588eb843_\Engine_3732_bfa87a90e2484b0bbea23d61f1dddd67_.yxdb</TempFile>
+          <TempFile>C:\Users\MA\AppData\Local\Temp\Engine_1664_ed5b46f213b14bfe834de314c00e59b1_\Engine_5480_ce8f143541374473ab8b152479223625_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -1839,7 +1839,7 @@ Table=Scout</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\MA\AppData\Local\Temp\Engine_4928_e288f6a1a7214954a7fe424d588eb843_\Engine_3732_3a46552edcfc4ad596de14061043c1de_.yxdb</TempFile>
+          <TempFile>C:\Users\MA\AppData\Local\Temp\Engine_1664_ed5b46f213b14bfe834de314c00e59b1_\Engine_5480_9cfa760dbd40422dac21b1f66dd91739_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -3107,7 +3107,7 @@ Team - Ascending</DefaultAnnotationText>
       <Properties>
         <Configuration>
           <Passwords />
-          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="36">D:\mascout\ScoutingCode2019\data_2019macma.db|||comments</File>
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="36">D:\mascout\ScoutingCode2019\data_2019tes.db|||comments</File>
           <FormatSpecificOptions>
             <NoProgress>True</NoProgress>
             <PreSQL />
@@ -3115,15 +3115,15 @@ Team - Ascending</DefaultAnnotationText>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
-          <DefaultAnnotationText>data_2019macma.db
+          <DefaultAnnotationText>data_2019tes.db
 Table=comments</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="team" source="File: D:\mascout\ScoutingCode2019\data_2019macma.db|||comments" type="Int64" />
-            <Field name="match" source="File: D:\mascout\ScoutingCode2019\data_2019macma.db|||comments" type="Int64" />
-            <Field name="comment" size="1073741823" source="File: D:\mascout\ScoutingCode2019\data_2019macma.db|||comments" type="V_WString" />
+            <Field name="team" source="File: D:\mascout\ScoutingCode2019\data_2019tes.db|||comments" type="Int64" />
+            <Field name="match" source="File: D:\mascout\ScoutingCode2019\data_2019tes.db|||comments" type="Int64" />
+            <Field name="comment" size="1073741823" source="File: D:\mascout\ScoutingCode2019\data_2019tes.db|||comments" type="V_WString" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -4439,7 +4439,7 @@ Table=comments</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\MA\AppData\Local\Temp\Engine_4928_e288f6a1a7214954a7fe424d588eb843_\Engine_3732_3c0dbf1fd6d74df6be9781e1367a9ad7_.yxdb</TempFile>
+          <TempFile>C:\Users\MA\AppData\Local\Temp\Engine_1664_ed5b46f213b14bfe834de314c00e59b1_\Engine_5480_1e47267486f44888899e74fb9955316b_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -4611,7 +4611,7 @@ Table=comments</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\MA\AppData\Local\Temp\Engine_4928_e288f6a1a7214954a7fe424d588eb843_\Engine_3732_2630c1fc60624308acdbaedb5c881321_.yxdb</TempFile>
+          <TempFile>C:\Users\MA\AppData\Local\Temp\Engine_1664_ed5b46f213b14bfe834de314c00e59b1_\Engine_5480_7e1b2a3500814516b7a42842f802d770_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -5529,7 +5529,7 @@ Match - Ascending</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\MA\AppData\Local\Temp\Engine_4928_e288f6a1a7214954a7fe424d588eb843_\Engine_3732_f9a9249be7ba4251a15719c82077e04d_.yxdb</TempFile>
+          <TempFile>C:\Users\MA\AppData\Local\Temp\Engine_1664_ed5b46f213b14bfe834de314c00e59b1_\Engine_5480_b83380938c584700a60ad1f92c741da1_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -5558,7 +5558,7 @@ Match - Ascending</DefaultAnnotationText>
       <Properties>
         <Configuration>
           <Passwords />
-          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="36">D:\mascout\ScoutingCode2019\data_2019macma_sys2.db|||scout</File>
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="36">D:\mascout\ScoutingCode2019\data_2019tes_sys2.db|||scout</File>
           <FormatSpecificOptions>
             <NoProgress>True</NoProgress>
             <PreSQL />
@@ -5566,60 +5566,60 @@ Match - Ascending</DefaultAnnotationText>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
-          <DefaultAnnotationText>data_2019macma_sys2.db
+          <DefaultAnnotationText>data_2019tes_sys2.db
 Table=scout</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="key" source="File: D:\mascout\ScoutingCode2019\data_2019macma_sys2.db|||scout" type="Int64" />
-            <Field name="Team" source="File: D:\mascout\ScoutingCode2019\data_2019macma_sys2.db|||scout" type="Int64" />
-            <Field name="Match" source="File: D:\mascout\ScoutingCode2019\data_2019macma_sys2.db|||scout" type="Int64" />
-            <Field name="Fouls" source="File: D:\mascout\ScoutingCode2019\data_2019macma_sys2.db|||scout" type="Int64" />
-            <Field name="TechFouls" source="File: D:\mascout\ScoutingCode2019\data_2019macma_sys2.db|||scout" type="Int64" />
-            <Field name="Replay" source="File: D:\mascout\ScoutingCode2019\data_2019macma_sys2.db|||scout" type="Int64" />
-            <Field name="Flag" source="File: D:\mascout\ScoutingCode2019\data_2019macma_sys2.db|||scout" type="Int64" />
-            <Field name="AllianceColor" source="File: D:\mascout\ScoutingCode2019\data_2019macma_sys2.db|||scout" type="Int64" />
-            <Field name="StartPos" source="File: D:\mascout\ScoutingCode2019\data_2019macma_sys2.db|||scout" type="Int64" />
-            <Field name="StartLevel" source="File: D:\mascout\ScoutingCode2019\data_2019macma_sys2.db|||scout" type="Int64" />
-            <Field name="CrossedLine" source="File: D:\mascout\ScoutingCode2019\data_2019macma_sys2.db|||scout" type="Int64" />
-            <Field name="AutoShipHatch" source="File: D:\mascout\ScoutingCode2019\data_2019macma_sys2.db|||scout" type="Int64" />
-            <Field name="AutoShipHatchFailures" source="File: D:\mascout\ScoutingCode2019\data_2019macma_sys2.db|||scout" type="Int64" />
-            <Field name="AutoShipCargo" source="File: D:\mascout\ScoutingCode2019\data_2019macma_sys2.db|||scout" type="Int64" />
-            <Field name="AutoShipCargoFailures" source="File: D:\mascout\ScoutingCode2019\data_2019macma_sys2.db|||scout" type="Int64" />
-            <Field name="AutoRocketHatch" source="File: D:\mascout\ScoutingCode2019\data_2019macma_sys2.db|||scout" type="Int64" />
-            <Field name="AutoRocketHatchFailures" source="File: D:\mascout\ScoutingCode2019\data_2019macma_sys2.db|||scout" type="Int64" />
-            <Field name="AutoRocketCargo" source="File: D:\mascout\ScoutingCode2019\data_2019macma_sys2.db|||scout" type="Int64" />
-            <Field name="AutoRocketCargoFailures" source="File: D:\mascout\ScoutingCode2019\data_2019macma_sys2.db|||scout" type="Int64" />
-            <Field name="RocketL1Hatch" source="File: D:\mascout\ScoutingCode2019\data_2019macma_sys2.db|||scout" type="Int64" />
-            <Field name="RocketL1HatchFailures" source="File: D:\mascout\ScoutingCode2019\data_2019macma_sys2.db|||scout" type="Int64" />
-            <Field name="RocketL1Cargo" source="File: D:\mascout\ScoutingCode2019\data_2019macma_sys2.db|||scout" type="Int64" />
-            <Field name="RocketL1CargoFailures" source="File: D:\mascout\ScoutingCode2019\data_2019macma_sys2.db|||scout" type="Int64" />
-            <Field name="RocketL2Hatch" source="File: D:\mascout\ScoutingCode2019\data_2019macma_sys2.db|||scout" type="Int64" />
-            <Field name="RocketL2HatchFailures" source="File: D:\mascout\ScoutingCode2019\data_2019macma_sys2.db|||scout" type="Int64" />
-            <Field name="RocketL2Cargo" source="File: D:\mascout\ScoutingCode2019\data_2019macma_sys2.db|||scout" type="Int64" />
-            <Field name="RocketL2CargoFailures" source="File: D:\mascout\ScoutingCode2019\data_2019macma_sys2.db|||scout" type="Int64" />
-            <Field name="RocketL3Hatch" source="File: D:\mascout\ScoutingCode2019\data_2019macma_sys2.db|||scout" type="Int64" />
-            <Field name="RocketL3HatchFailures" source="File: D:\mascout\ScoutingCode2019\data_2019macma_sys2.db|||scout" type="Int64" />
-            <Field name="RocketL3Cargo" source="File: D:\mascout\ScoutingCode2019\data_2019macma_sys2.db|||scout" type="Int64" />
-            <Field name="RocketL3CargoFailures" source="File: D:\mascout\ScoutingCode2019\data_2019macma_sys2.db|||scout" type="Int64" />
-            <Field name="ShipHatch" source="File: D:\mascout\ScoutingCode2019\data_2019macma_sys2.db|||scout" type="Int64" />
-            <Field name="ShipHatchFailures" source="File: D:\mascout\ScoutingCode2019\data_2019macma_sys2.db|||scout" type="Int64" />
-            <Field name="ShipCargo" source="File: D:\mascout\ScoutingCode2019\data_2019macma_sys2.db|||scout" type="Int64" />
-            <Field name="ShipCargoFailures" source="File: D:\mascout\ScoutingCode2019\data_2019macma_sys2.db|||scout" type="Int64" />
-            <Field name="ClimbLevel" source="File: D:\mascout\ScoutingCode2019\data_2019macma_sys2.db|||scout" type="Int64" />
-            <Field name="ClimbLevelAttempted" source="File: D:\mascout\ScoutingCode2019\data_2019macma_sys2.db|||scout" type="Int64" />
-            <Field name="WonMatch" source="File: D:\mascout\ScoutingCode2019\data_2019macma_sys2.db|||scout" type="Int64" />
-            <Field name="LiftedOthers" source="File: D:\mascout\ScoutingCode2019\data_2019macma_sys2.db|||scout" type="Int64" />
-            <Field name="LiftedOthersAttempted" source="File: D:\mascout\ScoutingCode2019\data_2019macma_sys2.db|||scout" type="Int64" />
-            <Field name="Disabled" source="File: D:\mascout\ScoutingCode2019\data_2019macma_sys2.db|||scout" type="Int64" />
-            <Field name="DriverRating" source="File: D:\mascout\ScoutingCode2019\data_2019macma_sys2.db|||scout" type="Int64" />
-            <Field name="HatchColRating" source="File: D:\mascout\ScoutingCode2019\data_2019macma_sys2.db|||scout" type="Int64" />
-            <Field name="HatchDelRating" source="File: D:\mascout\ScoutingCode2019\data_2019macma_sys2.db|||scout" type="Int64" />
-            <Field name="CargoColRating" source="File: D:\mascout\ScoutingCode2019\data_2019macma_sys2.db|||scout" type="Int64" />
-            <Field name="CargoDelRating" source="File: D:\mascout\ScoutingCode2019\data_2019macma_sys2.db|||scout" type="Int64" />
-            <Field name="DefenseRating" source="File: D:\mascout\ScoutingCode2019\data_2019macma_sys2.db|||scout" type="Int64" />
-            <Field name="AvoidDefenseRating" source="File: D:\mascout\ScoutingCode2019\data_2019macma_sys2.db|||scout" type="Int64" />
+            <Field name="key" source="File: D:\mascout\ScoutingCode2019\data_2019tes_sys2.db|||scout" type="Int64" />
+            <Field name="Team" source="File: D:\mascout\ScoutingCode2019\data_2019tes_sys2.db|||scout" type="Int64" />
+            <Field name="Match" source="File: D:\mascout\ScoutingCode2019\data_2019tes_sys2.db|||scout" type="Int64" />
+            <Field name="Fouls" source="File: D:\mascout\ScoutingCode2019\data_2019tes_sys2.db|||scout" type="Int64" />
+            <Field name="TechFouls" source="File: D:\mascout\ScoutingCode2019\data_2019tes_sys2.db|||scout" type="Int64" />
+            <Field name="Replay" source="File: D:\mascout\ScoutingCode2019\data_2019tes_sys2.db|||scout" type="Int64" />
+            <Field name="Flag" source="File: D:\mascout\ScoutingCode2019\data_2019tes_sys2.db|||scout" type="Int64" />
+            <Field name="AllianceColor" source="File: D:\mascout\ScoutingCode2019\data_2019tes_sys2.db|||scout" type="Int64" />
+            <Field name="StartPos" source="File: D:\mascout\ScoutingCode2019\data_2019tes_sys2.db|||scout" type="Int64" />
+            <Field name="StartLevel" source="File: D:\mascout\ScoutingCode2019\data_2019tes_sys2.db|||scout" type="Int64" />
+            <Field name="CrossedLine" source="File: D:\mascout\ScoutingCode2019\data_2019tes_sys2.db|||scout" type="Int64" />
+            <Field name="AutoShipHatch" source="File: D:\mascout\ScoutingCode2019\data_2019tes_sys2.db|||scout" type="Int64" />
+            <Field name="AutoShipHatchFailures" source="File: D:\mascout\ScoutingCode2019\data_2019tes_sys2.db|||scout" type="Int64" />
+            <Field name="AutoShipCargo" source="File: D:\mascout\ScoutingCode2019\data_2019tes_sys2.db|||scout" type="Int64" />
+            <Field name="AutoShipCargoFailures" source="File: D:\mascout\ScoutingCode2019\data_2019tes_sys2.db|||scout" type="Int64" />
+            <Field name="AutoRocketHatch" source="File: D:\mascout\ScoutingCode2019\data_2019tes_sys2.db|||scout" type="Int64" />
+            <Field name="AutoRocketHatchFailures" source="File: D:\mascout\ScoutingCode2019\data_2019tes_sys2.db|||scout" type="Int64" />
+            <Field name="AutoRocketCargo" source="File: D:\mascout\ScoutingCode2019\data_2019tes_sys2.db|||scout" type="Int64" />
+            <Field name="AutoRocketCargoFailures" source="File: D:\mascout\ScoutingCode2019\data_2019tes_sys2.db|||scout" type="Int64" />
+            <Field name="RocketL1Hatch" source="File: D:\mascout\ScoutingCode2019\data_2019tes_sys2.db|||scout" type="Int64" />
+            <Field name="RocketL1HatchFailures" source="File: D:\mascout\ScoutingCode2019\data_2019tes_sys2.db|||scout" type="Int64" />
+            <Field name="RocketL1Cargo" source="File: D:\mascout\ScoutingCode2019\data_2019tes_sys2.db|||scout" type="Int64" />
+            <Field name="RocketL1CargoFailures" source="File: D:\mascout\ScoutingCode2019\data_2019tes_sys2.db|||scout" type="Int64" />
+            <Field name="RocketL2Hatch" source="File: D:\mascout\ScoutingCode2019\data_2019tes_sys2.db|||scout" type="Int64" />
+            <Field name="RocketL2HatchFailures" source="File: D:\mascout\ScoutingCode2019\data_2019tes_sys2.db|||scout" type="Int64" />
+            <Field name="RocketL2Cargo" source="File: D:\mascout\ScoutingCode2019\data_2019tes_sys2.db|||scout" type="Int64" />
+            <Field name="RocketL2CargoFailures" source="File: D:\mascout\ScoutingCode2019\data_2019tes_sys2.db|||scout" type="Int64" />
+            <Field name="RocketL3Hatch" source="File: D:\mascout\ScoutingCode2019\data_2019tes_sys2.db|||scout" type="Int64" />
+            <Field name="RocketL3HatchFailures" source="File: D:\mascout\ScoutingCode2019\data_2019tes_sys2.db|||scout" type="Int64" />
+            <Field name="RocketL3Cargo" source="File: D:\mascout\ScoutingCode2019\data_2019tes_sys2.db|||scout" type="Int64" />
+            <Field name="RocketL3CargoFailures" source="File: D:\mascout\ScoutingCode2019\data_2019tes_sys2.db|||scout" type="Int64" />
+            <Field name="ShipHatch" source="File: D:\mascout\ScoutingCode2019\data_2019tes_sys2.db|||scout" type="Int64" />
+            <Field name="ShipHatchFailures" source="File: D:\mascout\ScoutingCode2019\data_2019tes_sys2.db|||scout" type="Int64" />
+            <Field name="ShipCargo" source="File: D:\mascout\ScoutingCode2019\data_2019tes_sys2.db|||scout" type="Int64" />
+            <Field name="ShipCargoFailures" source="File: D:\mascout\ScoutingCode2019\data_2019tes_sys2.db|||scout" type="Int64" />
+            <Field name="ClimbLevel" source="File: D:\mascout\ScoutingCode2019\data_2019tes_sys2.db|||scout" type="Int64" />
+            <Field name="ClimbLevelAttempted" source="File: D:\mascout\ScoutingCode2019\data_2019tes_sys2.db|||scout" type="Int64" />
+            <Field name="WonMatch" source="File: D:\mascout\ScoutingCode2019\data_2019tes_sys2.db|||scout" type="Int64" />
+            <Field name="LiftedOthers" source="File: D:\mascout\ScoutingCode2019\data_2019tes_sys2.db|||scout" type="Int64" />
+            <Field name="LiftedOthersAttempted" source="File: D:\mascout\ScoutingCode2019\data_2019tes_sys2.db|||scout" type="Int64" />
+            <Field name="Disabled" source="File: D:\mascout\ScoutingCode2019\data_2019tes_sys2.db|||scout" type="Int64" />
+            <Field name="DriverRating" source="File: D:\mascout\ScoutingCode2019\data_2019tes_sys2.db|||scout" type="Int64" />
+            <Field name="HatchColRating" source="File: D:\mascout\ScoutingCode2019\data_2019tes_sys2.db|||scout" type="Int64" />
+            <Field name="HatchDelRating" source="File: D:\mascout\ScoutingCode2019\data_2019tes_sys2.db|||scout" type="Int64" />
+            <Field name="CargoColRating" source="File: D:\mascout\ScoutingCode2019\data_2019tes_sys2.db|||scout" type="Int64" />
+            <Field name="CargoDelRating" source="File: D:\mascout\ScoutingCode2019\data_2019tes_sys2.db|||scout" type="Int64" />
+            <Field name="DefenseRating" source="File: D:\mascout\ScoutingCode2019\data_2019tes_sys2.db|||scout" type="Int64" />
+            <Field name="AvoidDefenseRating" source="File: D:\mascout\ScoutingCode2019\data_2019tes_sys2.db|||scout" type="Int64" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -5884,7 +5884,7 @@ Match - Ascending</DefaultAnnotationText>
       <Properties>
         <Configuration>
           <Passwords />
-          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="36">D:\mascout\ScoutingCode2019\data_2019macma_sys2.db|||comments</File>
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="36">D:\mascout\ScoutingCode2019\data_2019tes_sys2.db|||comments</File>
           <FormatSpecificOptions>
             <NoProgress>True</NoProgress>
             <PreSQL />
@@ -5892,15 +5892,15 @@ Match - Ascending</DefaultAnnotationText>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
-          <DefaultAnnotationText>data_2019macma_sys2.db
+          <DefaultAnnotationText>data_2019tes_sys2.db
 Table=comments</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="team" source="File: D:\mascout\ScoutingCode2019\data_2019macma_sys2.db|||comments" type="Int64" />
-            <Field name="match" source="File: D:\mascout\ScoutingCode2019\data_2019macma_sys2.db|||comments" type="Int64" />
-            <Field name="comment" size="1073741823" source="File: D:\mascout\ScoutingCode2019\data_2019macma_sys2.db|||comments" type="V_WString" />
+            <Field name="team" source="File: D:\mascout\ScoutingCode2019\data_2019tes_sys2.db|||comments" type="Int64" />
+            <Field name="match" source="File: D:\mascout\ScoutingCode2019\data_2019tes_sys2.db|||comments" type="Int64" />
+            <Field name="comment" size="1073741823" source="File: D:\mascout\ScoutingCode2019\data_2019tes_sys2.db|||comments" type="V_WString" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -6019,7 +6019,7 @@ Table=comments</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\MA\AppData\Local\Temp\Engine_4928_e288f6a1a7214954a7fe424d588eb843_\Engine_3732_d7375e6a4e0c46468f4ce317decedcce_.yxdb</TempFile>
+          <TempFile>C:\Users\MA\AppData\Local\Temp\Engine_1664_ed5b46f213b14bfe834de314c00e59b1_\Engine_5480_b3498c2258644b209979a75a4015c1b4_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -7253,7 +7253,7 @@ Table=comments</DefaultAnnotationText>
           </Fields>
           <Data>
             <r>
-              <c>12</c>
+              <c>10</c>
             </r>
           </Data>
         </Configuration>
@@ -7772,7 +7772,7 @@ Match - Ascending</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\MA\AppData\Local\Temp\Engine_4928_e288f6a1a7214954a7fe424d588eb843_\Engine_3732_ea07f280b2a146899d2d96e699c81299_.yxdb</TempFile>
+          <TempFile>C:\Users\MA\AppData\Local\Temp\Engine_1664_ed5b46f213b14bfe834de314c00e59b1_\Engine_5480_140f5d49797540be853335e50b96354c_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -7800,7 +7800,7 @@ Match - Ascending</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\MA\AppData\Local\Temp\Engine_4928_e288f6a1a7214954a7fe424d588eb843_\Engine_3732_e352adab7283425d809afd0b51fb78b9_.yxdb</TempFile>
+          <TempFile>C:\Users\MA\AppData\Local\Temp\Engine_1664_ed5b46f213b14bfe834de314c00e59b1_\Engine_5480_ed97542ba34e49699dd0d54b762cf999_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -7879,7 +7879,7 @@ Match - Ascending</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\MA\AppData\Local\Temp\Engine_4928_e288f6a1a7214954a7fe424d588eb843_\Engine_3732_17f1e706973d49f99332b2723aa0cd9f_.yxdb</TempFile>
+          <TempFile>C:\Users\MA\AppData\Local\Temp\Engine_1664_ed5b46f213b14bfe834de314c00e59b1_\Engine_5480_eed2c03339644997919278659169f240_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -7961,7 +7961,7 @@ Match - Ascending</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <File FileFormat="25" MaxRecords="">D:\mascout\AlteryxExport\RawExport_2019macma.xlsx|||Sheet1</File>
+          <File FileFormat="25" MaxRecords="">D:\mascout\AlteryxExport\RawExport_2019tes.xlsx|||Sheet1</File>
           <Passwords />
           <FormatSpecificOptions>
             <OutputOption>Overwrite</OutputOption>
@@ -7970,7 +7970,7 @@ Match - Ascending</DefaultAnnotationText>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
-          <DefaultAnnotationText>RawExport_2019macma.xlsx
+          <DefaultAnnotationText>RawExport_2019tes.xlsx
 Table=Sheet1</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
@@ -8612,8 +8612,8 @@ Table=scout</DefaultAnnotationText>
             <SummarizeField field="ShipHatchFailures" action="Avg" rename="ShipHatchFailures" />
             <SummarizeField field="ShipCargo" action="Avg" rename="ShipCargo" />
             <SummarizeField field="ShipCargoFailures" action="Avg" rename="ShipCargoFailures" />
-            <SummarizeField field="ClimbLevel" action="Avg" rename="ClimbLevel" />
-            <SummarizeField field="ClimbLevelAttempted" action="Avg" rename="ClimbLevelAttempted" />
+            <SummarizeField field="ClimbLevel" action="Mode" rename="ClimbLevel" />
+            <SummarizeField field="ClimbLevelAttempted" action="Mode" rename="ClimbLevelAttempted" />
             <SummarizeField field="WonMatch" action="Avg" rename="WonMatch" />
             <SummarizeField field="LiftedOthers" action="Avg" rename="LiftedOthers" />
             <SummarizeField field="LiftedOthersAttempted" action="Avg" rename="LiftedOthersAttempted" />
@@ -8659,8 +8659,8 @@ Table=scout</DefaultAnnotationText>
             <Field name="ShipHatchFailures" source="Summarize: Avg - ShipHatchFailures" type="Double" />
             <Field name="ShipCargo" source="Summarize: Avg - ShipCargo" type="Double" />
             <Field name="ShipCargoFailures" source="Summarize: Avg - ShipCargoFailures" type="Double" />
-            <Field name="ClimbLevel" source="Summarize: Avg - ClimbLevel" type="Double" />
-            <Field name="ClimbLevelAttempted" source="Summarize: Avg - ClimbLevelAttempted" type="Double" />
+            <Field name="ClimbLevel" source="Summarize: Mode - ClimbLevel" type="Int64" />
+            <Field name="ClimbLevelAttempted" source="Summarize: Mode - ClimbLevelAttempted" type="Int64" />
             <Field name="WonMatch" source="Summarize: Avg - WonMatch" type="Double" />
             <Field name="LiftedOthers" source="Summarize: Avg - LiftedOthers" type="Double" />
             <Field name="LiftedOthersAttempted" source="Summarize: Avg - LiftedOthersAttempted" type="Double" />
@@ -8731,8 +8731,8 @@ Disabled = 0
             <Field name="ShipHatchFailures" source="Summarize: Avg - ShipHatchFailures" type="Double" />
             <Field name="ShipCargo" source="Summarize: Avg - ShipCargo" type="Double" />
             <Field name="ShipCargoFailures" source="Summarize: Avg - ShipCargoFailures" type="Double" />
-            <Field name="ClimbLevel" source="Summarize: Avg - ClimbLevel" type="Double" />
-            <Field name="ClimbLevelAttempted" source="Summarize: Avg - ClimbLevelAttempted" type="Double" />
+            <Field name="ClimbLevel" source="Summarize: Mode - ClimbLevel" type="Int64" />
+            <Field name="ClimbLevelAttempted" source="Summarize: Mode - ClimbLevelAttempted" type="Int64" />
             <Field name="WonMatch" source="Summarize: Avg - WonMatch" type="Double" />
             <Field name="LiftedOthers" source="Summarize: Avg - LiftedOthers" type="Double" />
             <Field name="LiftedOthersAttempted" source="Summarize: Avg - LiftedOthersAttempted" type="Double" />
@@ -8790,8 +8790,6 @@ Disabled = 0
             <SelectField field="ShipHatchFailures" selected="True" type="Int64" size="8" />
             <SelectField field="ShipCargo" selected="True" type="Int64" size="8" />
             <SelectField field="ShipCargoFailures" selected="True" type="Int64" size="8" />
-            <SelectField field="ClimbLevel" selected="True" type="Int64" size="8" />
-            <SelectField field="ClimbLevelAttempted" selected="True" type="Int64" size="8" />
             <SelectField field="WonMatch" selected="True" type="Int64" size="8" />
             <SelectField field="LiftedOthers" selected="True" type="Int64" size="8" />
             <SelectField field="LiftedOthersAttempted" selected="True" type="Int64" size="8" />
@@ -8831,8 +8829,8 @@ Disabled = 0
             <Field name="ShipHatchFailures" source="Formula: ROUND([_CurrentField_], 1)" type="Int64" />
             <Field name="ShipCargo" source="Formula: ROUND([_CurrentField_], 1)" type="Int64" />
             <Field name="ShipCargoFailures" source="Formula: ROUND([_CurrentField_], 1)" type="Int64" />
-            <Field name="ClimbLevel" source="Formula: ROUND([_CurrentField_], 1)" type="Int64" />
-            <Field name="ClimbLevelAttempted" source="Formula: ROUND([_CurrentField_], 1)" type="Int64" />
+            <Field name="ClimbLevel" source="Summarize: Mode - ClimbLevel" type="Int64" />
+            <Field name="ClimbLevelAttempted" source="Summarize: Mode - ClimbLevelAttempted" type="Int64" />
             <Field name="WonMatch" source="Formula: ROUND([_CurrentField_], 1)" type="Int64" />
             <Field name="LiftedOthers" source="Formula: ROUND([_CurrentField_], 1)" type="Int64" />
             <Field name="LiftedOthersAttempted" source="Formula: ROUND([_CurrentField_], 1)" type="Int64" />
@@ -8889,19 +8887,19 @@ Disabled = 0
             <Field name="ShipHatchFailures" />
             <Field name="ShipCargo" />
             <Field name="ShipCargoFailures" />
-            <Field name="ClimbLevel" />
-            <Field name="ClimbLevelAttempted" />
             <Field name="WonMatch" />
             <Field name="LiftedOthers" />
             <Field name="LiftedOthersAttempted" />
             <Field name="Team" selected="False" />
+            <Field name="ClimbLevel" selected="False" />
+            <Field name="ClimbLevelAttempted" selected="False" />
             <Field name="DriverRating" selected="False" />
             <Field name="HatchColRating" selected="False" />
             <Field name="HatchDelRating" selected="False" />
             <Field name="CargoColRating" selected="False" />
             <Field name="CargoDelRating" selected="False" />
             <Field name="DefenseRating" selected="False" />
-            <Field name="Avg_AvoidDefenseRating" selected="False" />
+            <Field name="AvoidDefenseRating" selected="False" />
             <Field name="Match" selected="False" />
             <Field name="AllianceColor" selected="False" />
             <Field name="StartPos" selected="False" />
@@ -8946,8 +8944,8 @@ Disabled = 0
             <Field name="ShipHatchFailures" source="Formula: ROUND([_CurrentField_], 1)" type="Double" />
             <Field name="ShipCargo" source="Formula: ROUND([_CurrentField_], 1)" type="Double" />
             <Field name="ShipCargoFailures" source="Formula: ROUND([_CurrentField_], 1)" type="Double" />
-            <Field name="ClimbLevel" source="Formula: ROUND([_CurrentField_], 1)" type="Double" />
-            <Field name="ClimbLevelAttempted" source="Formula: ROUND([_CurrentField_], 1)" type="Double" />
+            <Field name="ClimbLevel" source="Summarize: Mode - ClimbLevel" type="Int64" />
+            <Field name="ClimbLevelAttempted" source="Summarize: Mode - ClimbLevelAttempted" type="Int64" />
             <Field name="WonMatch" source="Formula: ROUND([_CurrentField_], 1)" type="Double" />
             <Field name="LiftedOthers" source="Formula: ROUND([_CurrentField_], 1)" type="Double" />
             <Field name="LiftedOthersAttempted" source="Formula: ROUND([_CurrentField_], 1)" type="Double" />
@@ -9519,7 +9517,7 @@ Disabled = 0
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\MA\AppData\Local\Temp\Engine_4928_e288f6a1a7214954a7fe424d588eb843_\Engine_3732_7570a1d064204cddbf8b21821f634e2a_.yxdb</TempFile>
+          <TempFile>C:\Users\MA\AppData\Local\Temp\Engine_1664_ed5b46f213b14bfe834de314c00e59b1_\Engine_5480_3c22cbb1093a4a5b99ef146bbed433ca_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -9567,7 +9565,7 @@ Disabled = 0
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\MA\AppData\Local\Temp\Engine_4928_e288f6a1a7214954a7fe424d588eb843_\Engine_3732_22f9f7904003401dab5099c79de36fc9_.yxdb</TempFile>
+          <TempFile>C:\Users\MA\AppData\Local\Temp\Engine_1664_ed5b46f213b14bfe834de314c00e59b1_\Engine_5480_08024dfc06114d569b856423e908bb72_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -10861,12 +10859,10 @@ Table=comments</DefaultAnnotationText>
           <JoinInfo connection="Left">
             <Field field="Team" />
             <Field field="Match" />
-            <Field field="AllianceColor" />
           </JoinInfo>
           <JoinInfo connection="Right">
             <Field field="Team" />
             <Field field="Match" />
-            <Field field="AllianceColor" />
           </JoinInfo>
           <SelectConfiguration>
             <Configuration outputConnection="Join">
@@ -10889,12 +10885,10 @@ Table=comments</DefaultAnnotationText>
           <RecordInfo>
             <Field name="Team" source="(Multiple Sources)" type="Int64" />
             <Field name="Match" source="(Multiple Sources)" type="Int64" />
-            <Field name="AllianceColor" source="(Multiple Sources)" type="Int64" />
           </RecordInfo>
           <SortInfo noProgress="True">
             <Field field="Team" />
             <Field field="Match" />
-            <Field field="AllianceColor" />
           </SortInfo>
         </MetaInfo>
         <MetaInfo connection="Join">
@@ -10909,14 +10903,12 @@ Table=comments</DefaultAnnotationText>
         </MetaInfo>
         <MetaInfo connection="Right">
           <RecordInfo>
-            <Field name="Team" source="File: D:\mascout\ScoutAssignmentCode\NE Central MA Event Schedule.xlsx|||`Matches_long$`" type="Int64" />
-            <Field name="Match" source="File: D:\mascout\ScoutAssignmentCode\NE Central MA Event Schedule.xlsx|||`Matches_long$`" type="Int64" />
-            <Field name="AllianceColor" source="File: D:\mascout\ScoutAssignmentCode\NE Central MA Event Schedule.xlsx|||`Matches_long$`" type="Int64" />
+            <Field name="Team" source="File: D:\mascout\ScoutAssignmentCode\Tesla Division Schedule.xlsx|||`Matches_long$`" type="Int64" />
+            <Field name="Match" source="File: D:\mascout\ScoutAssignmentCode\Tesla Division Schedule.xlsx|||`Matches_long$`" type="Int64" />
           </RecordInfo>
           <SortInfo noProgress="True">
             <Field field="Team" />
             <Field field="Match" />
-            <Field field="AllianceColor" />
           </SortInfo>
         </MetaInfo>
       </Properties>
@@ -10929,7 +10921,7 @@ Table=comments</DefaultAnnotationText>
       <Properties>
         <Configuration>
           <Passwords />
-          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">D:\mascout\ScoutAssignmentCode\NE Central MA Event Schedule.xlsx|||`Matches_long$`</File>
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">D:\mascout\ScoutAssignmentCode\Tesla Division Schedule.xlsx|||`Matches_long$`</File>
           <FormatSpecificOptions>
             <FirstRowData>True</FirstRowData>
             <ImportLine>1</ImportLine>
@@ -10937,15 +10929,15 @@ Table=comments</DefaultAnnotationText>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
-          <DefaultAnnotationText>NE Central MA Event Schedule.xlsx
+          <DefaultAnnotationText>Tesla Division Schedule.xlsx
 Table=`Matches_long$`</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="F1" source="File: D:\mascout\ScoutAssignmentCode\NE Central MA Event Schedule.xlsx|||`Matches_long$`" type="Double" />
-            <Field name="F2" source="File: D:\mascout\ScoutAssignmentCode\NE Central MA Event Schedule.xlsx|||`Matches_long$`" type="Double" />
-            <Field name="F3" source="File: D:\mascout\ScoutAssignmentCode\NE Central MA Event Schedule.xlsx|||`Matches_long$`" type="Double" />
+            <Field name="F1" source="File: D:\mascout\ScoutAssignmentCode\Tesla Division Schedule.xlsx|||`Matches_long$`" type="Double" />
+            <Field name="F2" source="File: D:\mascout\ScoutAssignmentCode\Tesla Division Schedule.xlsx|||`Matches_long$`" type="Double" />
+            <Field name="F3" source="File: D:\mascout\ScoutAssignmentCode\Tesla Division Schedule.xlsx|||`Matches_long$`" type="Double" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -10957,7 +10949,7 @@ Table=`Matches_long$`</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\MA\AppData\Local\Temp\Engine_4928_e288f6a1a7214954a7fe424d588eb843_\Engine_3732_a6f73aaf375442e89cab87301a4642c0_.yxdb</TempFile>
+          <TempFile>C:\Users\MA\AppData\Local\Temp\Engine_1664_ed5b46f213b14bfe834de314c00e59b1_\Engine_5480_7a22b29fd83c428daa50d83ae674e424_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -10985,7 +10977,7 @@ Table=`Matches_long$`</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\MA\AppData\Local\Temp\Engine_4928_e288f6a1a7214954a7fe424d588eb843_\Engine_3732_116546c5fa4f44bba7d96ea6a7ef844c_.yxdb</TempFile>
+          <TempFile>C:\Users\MA\AppData\Local\Temp\Engine_1664_ed5b46f213b14bfe834de314c00e59b1_\Engine_5480_cd330acd86754f139a55a3eeb0a3e4f7_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -11192,7 +11184,7 @@ Table=`Matches_long$`</DefaultAnnotationText>
           <SelectFields>
             <SelectField field="F1" selected="True" rename="Team" type="Int64" size="8" />
             <SelectField field="F2" selected="True" rename="Match" type="Int64" size="8" />
-            <SelectField field="F3" selected="True" rename="AllianceColor" type="Int64" size="8" />
+            <SelectField field="F3" selected="False" rename="AllianceColor" type="Int64" size="8" />
             <SelectField field="*Unknown" selected="True" />
           </SelectFields>
         </Configuration>
@@ -11203,9 +11195,8 @@ Table=`Matches_long$`</DefaultAnnotationText>
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="Team" source="File: D:\mascout\ScoutAssignmentCode\NE Central MA Event Schedule.xlsx|||`Matches_long$`" type="Int64" />
-            <Field name="Match" source="File: D:\mascout\ScoutAssignmentCode\NE Central MA Event Schedule.xlsx|||`Matches_long$`" type="Int64" />
-            <Field name="AllianceColor" source="File: D:\mascout\ScoutAssignmentCode\NE Central MA Event Schedule.xlsx|||`Matches_long$`" type="Int64" />
+            <Field name="Team" source="File: D:\mascout\ScoutAssignmentCode\Tesla Division Schedule.xlsx|||`Matches_long$`" type="Int64" />
+            <Field name="Match" source="File: D:\mascout\ScoutAssignmentCode\Tesla Division Schedule.xlsx|||`Matches_long$`" type="Int64" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -11222,7 +11213,6 @@ Table=`Matches_long$`</DefaultAnnotationText>
           <SelectFields>
             <SelectField field="Team" selected="True" />
             <SelectField field="Match" selected="True" />
-            <SelectField field="AllianceColor" selected="True" />
             <SelectField field="*Unknown" selected="False" />
           </SelectFields>
         </Configuration>
@@ -11235,7 +11225,6 @@ Table=`Matches_long$`</DefaultAnnotationText>
           <RecordInfo>
             <Field name="Team" source="(Multiple Sources)" type="Int64" />
             <Field name="Match" source="(Multiple Sources)" type="Int64" />
-            <Field name="AllianceColor" source="(Multiple Sources)" type="Int64" />
           </RecordInfo>
           <SortInfo>
             <Field field="Team" order="Asc" />
@@ -11279,7 +11268,7 @@ Table=`Matches_long$`</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\MA\AppData\Local\Temp\Engine_4928_e288f6a1a7214954a7fe424d588eb843_\Engine_3732_e7884a02551347af8f3cbab810a8a57a_.yxdb</TempFile>
+          <TempFile>C:\Users\MA\AppData\Local\Temp\Engine_1664_ed5b46f213b14bfe834de314c00e59b1_\Engine_5480_bbc399a5b50b4603989e78eb082a93ca_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -11310,30 +11299,683 @@ Table=`Matches_long$`</DefaultAnnotationText>
           <SortInfo locale="0">
             <Field field="Match" order="Ascending" />
             <Field field="Team" order="Ascending" />
-            <Field field="AllianceColor" order="Ascending" />
           </SortInfo>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
           <DefaultAnnotationText>Match - Ascending
-Team - Ascending
-AllianceColor - Ascending</DefaultAnnotationText>
+Team - Ascending</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="Team" source="File: D:\mascout\ScoutAssignmentCode\NE Central MA Event Schedule.xlsx|||`Matches_long$`" type="Int64" />
-            <Field name="Match" source="File: D:\mascout\ScoutAssignmentCode\NE Central MA Event Schedule.xlsx|||`Matches_long$`" type="Int64" />
-            <Field name="AllianceColor" source="File: D:\mascout\ScoutAssignmentCode\NE Central MA Event Schedule.xlsx|||`Matches_long$`" type="Int64" />
+            <Field name="Team" source="File: D:\mascout\ScoutAssignmentCode\Tesla Division Schedule.xlsx|||`Matches_long$`" type="Int64" />
+            <Field name="Match" source="File: D:\mascout\ScoutAssignmentCode\Tesla Division Schedule.xlsx|||`Matches_long$`" type="Int64" />
           </RecordInfo>
           <SortInfo locale="0">
             <Field field="Match" order="Ascending" />
             <Field field="Team" order="Ascending" />
-            <Field field="AllianceColor" order="Ascending" />
           </SortInfo>
         </MetaInfo>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="412">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="474" y="618" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="36">D:\mascout\ScoutingCode2019\db_archive\data_2019macma.db|||scout</File>
+          <FormatSpecificOptions>
+            <NoProgress>True</NoProgress>
+            <PreSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>data_2019macma.db
+Table=scout</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="key" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma.db|||scout" type="Int64" />
+            <Field name="Team" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma.db|||scout" type="Int64" />
+            <Field name="Match" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma.db|||scout" type="Int64" />
+            <Field name="Fouls" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma.db|||scout" type="Int64" />
+            <Field name="TechFouls" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma.db|||scout" type="Int64" />
+            <Field name="Replay" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma.db|||scout" type="Int64" />
+            <Field name="Flag" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma.db|||scout" type="Int64" />
+            <Field name="AllianceColor" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma.db|||scout" type="Int64" />
+            <Field name="StartPos" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma.db|||scout" type="Int64" />
+            <Field name="StartLevel" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma.db|||scout" type="Int64" />
+            <Field name="CrossedLine" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma.db|||scout" type="Int64" />
+            <Field name="AutoShipHatch" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma.db|||scout" type="Int64" />
+            <Field name="AutoShipHatchFailures" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma.db|||scout" type="Int64" />
+            <Field name="AutoShipCargo" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma.db|||scout" type="Int64" />
+            <Field name="AutoShipCargoFailures" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma.db|||scout" type="Int64" />
+            <Field name="AutoRocketHatch" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma.db|||scout" type="Int64" />
+            <Field name="AutoRocketHatchFailures" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma.db|||scout" type="Int64" />
+            <Field name="AutoRocketCargo" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma.db|||scout" type="Int64" />
+            <Field name="AutoRocketCargoFailures" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma.db|||scout" type="Int64" />
+            <Field name="RocketL1Hatch" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma.db|||scout" type="Int64" />
+            <Field name="RocketL1HatchFailures" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma.db|||scout" type="Int64" />
+            <Field name="RocketL1Cargo" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma.db|||scout" type="Int64" />
+            <Field name="RocketL1CargoFailures" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma.db|||scout" type="Int64" />
+            <Field name="RocketL2Hatch" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma.db|||scout" type="Int64" />
+            <Field name="RocketL2HatchFailures" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma.db|||scout" type="Int64" />
+            <Field name="RocketL2Cargo" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma.db|||scout" type="Int64" />
+            <Field name="RocketL2CargoFailures" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma.db|||scout" type="Int64" />
+            <Field name="RocketL3Hatch" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma.db|||scout" type="Int64" />
+            <Field name="RocketL3HatchFailures" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma.db|||scout" type="Int64" />
+            <Field name="RocketL3Cargo" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma.db|||scout" type="Int64" />
+            <Field name="RocketL3CargoFailures" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma.db|||scout" type="Int64" />
+            <Field name="ShipHatch" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma.db|||scout" type="Int64" />
+            <Field name="ShipHatchFailures" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma.db|||scout" type="Int64" />
+            <Field name="ShipCargo" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma.db|||scout" type="Int64" />
+            <Field name="ShipCargoFailures" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma.db|||scout" type="Int64" />
+            <Field name="ClimbLevel" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma.db|||scout" type="Int64" />
+            <Field name="ClimbLevelAttempted" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma.db|||scout" type="Int64" />
+            <Field name="WonMatch" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma.db|||scout" type="Int64" />
+            <Field name="LiftedOthers" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma.db|||scout" type="Int64" />
+            <Field name="LiftedOthersAttempted" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma.db|||scout" type="Int64" />
+            <Field name="Disabled" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma.db|||scout" type="Int64" />
+            <Field name="DriverRating" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma.db|||scout" type="Int64" />
+            <Field name="HatchColRating" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma.db|||scout" type="Int64" />
+            <Field name="HatchDelRating" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma.db|||scout" type="Int64" />
+            <Field name="CargoColRating" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma.db|||scout" type="Int64" />
+            <Field name="CargoDelRating" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma.db|||scout" type="Int64" />
+            <Field name="DefenseRating" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma.db|||scout" type="Int64" />
+            <Field name="AvoidDefenseRating" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma.db|||scout" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="413">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="474" y="666" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="36">D:\mascout\ScoutingCode2019\db_archive\data_2019macma_sys2.db|||scout</File>
+          <FormatSpecificOptions>
+            <NoProgress>True</NoProgress>
+            <PreSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>data_2019macma_sys2.db
+Table=scout</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="key" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma_sys2.db|||scout" type="Int64" />
+            <Field name="Team" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma_sys2.db|||scout" type="Int64" />
+            <Field name="Match" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma_sys2.db|||scout" type="Int64" />
+            <Field name="Fouls" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma_sys2.db|||scout" type="Int64" />
+            <Field name="TechFouls" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma_sys2.db|||scout" type="Int64" />
+            <Field name="Replay" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma_sys2.db|||scout" type="Int64" />
+            <Field name="Flag" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma_sys2.db|||scout" type="Int64" />
+            <Field name="AllianceColor" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma_sys2.db|||scout" type="Int64" />
+            <Field name="StartPos" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma_sys2.db|||scout" type="Int64" />
+            <Field name="StartLevel" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma_sys2.db|||scout" type="Int64" />
+            <Field name="CrossedLine" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma_sys2.db|||scout" type="Int64" />
+            <Field name="AutoShipHatch" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma_sys2.db|||scout" type="Int64" />
+            <Field name="AutoShipHatchFailures" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma_sys2.db|||scout" type="Int64" />
+            <Field name="AutoShipCargo" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma_sys2.db|||scout" type="Int64" />
+            <Field name="AutoShipCargoFailures" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma_sys2.db|||scout" type="Int64" />
+            <Field name="AutoRocketHatch" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma_sys2.db|||scout" type="Int64" />
+            <Field name="AutoRocketHatchFailures" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma_sys2.db|||scout" type="Int64" />
+            <Field name="AutoRocketCargo" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma_sys2.db|||scout" type="Int64" />
+            <Field name="AutoRocketCargoFailures" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma_sys2.db|||scout" type="Int64" />
+            <Field name="RocketL1Hatch" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma_sys2.db|||scout" type="Int64" />
+            <Field name="RocketL1HatchFailures" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma_sys2.db|||scout" type="Int64" />
+            <Field name="RocketL1Cargo" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma_sys2.db|||scout" type="Int64" />
+            <Field name="RocketL1CargoFailures" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma_sys2.db|||scout" type="Int64" />
+            <Field name="RocketL2Hatch" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma_sys2.db|||scout" type="Int64" />
+            <Field name="RocketL2HatchFailures" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma_sys2.db|||scout" type="Int64" />
+            <Field name="RocketL2Cargo" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma_sys2.db|||scout" type="Int64" />
+            <Field name="RocketL2CargoFailures" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma_sys2.db|||scout" type="Int64" />
+            <Field name="RocketL3Hatch" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma_sys2.db|||scout" type="Int64" />
+            <Field name="RocketL3HatchFailures" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma_sys2.db|||scout" type="Int64" />
+            <Field name="RocketL3Cargo" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma_sys2.db|||scout" type="Int64" />
+            <Field name="RocketL3CargoFailures" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma_sys2.db|||scout" type="Int64" />
+            <Field name="ShipHatch" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma_sys2.db|||scout" type="Int64" />
+            <Field name="ShipHatchFailures" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma_sys2.db|||scout" type="Int64" />
+            <Field name="ShipCargo" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma_sys2.db|||scout" type="Int64" />
+            <Field name="ShipCargoFailures" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma_sys2.db|||scout" type="Int64" />
+            <Field name="ClimbLevel" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma_sys2.db|||scout" type="Int64" />
+            <Field name="ClimbLevelAttempted" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma_sys2.db|||scout" type="Int64" />
+            <Field name="WonMatch" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma_sys2.db|||scout" type="Int64" />
+            <Field name="LiftedOthers" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma_sys2.db|||scout" type="Int64" />
+            <Field name="LiftedOthersAttempted" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma_sys2.db|||scout" type="Int64" />
+            <Field name="Disabled" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma_sys2.db|||scout" type="Int64" />
+            <Field name="DriverRating" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma_sys2.db|||scout" type="Int64" />
+            <Field name="HatchColRating" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma_sys2.db|||scout" type="Int64" />
+            <Field name="HatchDelRating" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma_sys2.db|||scout" type="Int64" />
+            <Field name="CargoColRating" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma_sys2.db|||scout" type="Int64" />
+            <Field name="CargoDelRating" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma_sys2.db|||scout" type="Int64" />
+            <Field name="DefenseRating" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma_sys2.db|||scout" type="Int64" />
+            <Field name="AvoidDefenseRating" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma_sys2.db|||scout" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="414">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="474" y="714" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="36">D:\mascout\ScoutingCode2019\data_2019tes_pre.db|||scout</File>
+          <FormatSpecificOptions>
+            <NoProgress>True</NoProgress>
+            <PreSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>data_2019tes_pre.db
+Table=scout</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="key" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre.db|||scout" type="Int64" />
+            <Field name="Team" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre.db|||scout" type="Int64" />
+            <Field name="Match" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre.db|||scout" type="Int64" />
+            <Field name="Fouls" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre.db|||scout" type="Int64" />
+            <Field name="TechFouls" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre.db|||scout" type="Int64" />
+            <Field name="Replay" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre.db|||scout" type="Int64" />
+            <Field name="Flag" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre.db|||scout" type="Int64" />
+            <Field name="AllianceColor" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre.db|||scout" type="Int64" />
+            <Field name="StartPos" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre.db|||scout" type="Int64" />
+            <Field name="StartLevel" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre.db|||scout" type="Int64" />
+            <Field name="CrossedLine" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre.db|||scout" type="Int64" />
+            <Field name="AutoShipHatch" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre.db|||scout" type="Int64" />
+            <Field name="AutoShipHatchFailures" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre.db|||scout" type="Int64" />
+            <Field name="AutoShipCargo" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre.db|||scout" type="Int64" />
+            <Field name="AutoShipCargoFailures" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre.db|||scout" type="Int64" />
+            <Field name="AutoRocketHatch" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre.db|||scout" type="Int64" />
+            <Field name="AutoRocketHatchFailures" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre.db|||scout" type="Int64" />
+            <Field name="AutoRocketCargo" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre.db|||scout" type="Int64" />
+            <Field name="AutoRocketCargoFailures" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre.db|||scout" type="Int64" />
+            <Field name="RocketL1Hatch" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre.db|||scout" type="Int64" />
+            <Field name="RocketL1HatchFailures" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre.db|||scout" type="Int64" />
+            <Field name="RocketL1Cargo" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre.db|||scout" type="Int64" />
+            <Field name="RocketL1CargoFailures" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre.db|||scout" type="Int64" />
+            <Field name="RocketL2Hatch" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre.db|||scout" type="Int64" />
+            <Field name="RocketL2HatchFailures" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre.db|||scout" type="Int64" />
+            <Field name="RocketL2Cargo" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre.db|||scout" type="Int64" />
+            <Field name="RocketL2CargoFailures" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre.db|||scout" type="Int64" />
+            <Field name="RocketL3Hatch" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre.db|||scout" type="Int64" />
+            <Field name="RocketL3HatchFailures" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre.db|||scout" type="Int64" />
+            <Field name="RocketL3Cargo" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre.db|||scout" type="Int64" />
+            <Field name="RocketL3CargoFailures" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre.db|||scout" type="Int64" />
+            <Field name="ShipHatch" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre.db|||scout" type="Int64" />
+            <Field name="ShipHatchFailures" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre.db|||scout" type="Int64" />
+            <Field name="ShipCargo" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre.db|||scout" type="Int64" />
+            <Field name="ShipCargoFailures" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre.db|||scout" type="Int64" />
+            <Field name="ClimbLevel" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre.db|||scout" type="Int64" />
+            <Field name="ClimbLevelAttempted" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre.db|||scout" type="Int64" />
+            <Field name="WonMatch" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre.db|||scout" type="Int64" />
+            <Field name="LiftedOthers" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre.db|||scout" type="Int64" />
+            <Field name="LiftedOthersAttempted" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre.db|||scout" type="Int64" />
+            <Field name="Disabled" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre.db|||scout" type="Int64" />
+            <Field name="DriverRating" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre.db|||scout" type="Int64" />
+            <Field name="HatchColRating" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre.db|||scout" type="Int64" />
+            <Field name="HatchDelRating" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre.db|||scout" type="Int64" />
+            <Field name="CargoColRating" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre.db|||scout" type="Int64" />
+            <Field name="CargoDelRating" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre.db|||scout" type="Int64" />
+            <Field name="DefenseRating" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre.db|||scout" type="Int64" />
+            <Field name="AvoidDefenseRating" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre.db|||scout" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="415">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="450" y="1410" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="36">D:\mascout\ScoutingCode2019\db_archive\data_2019macma.db|||comments</File>
+          <FormatSpecificOptions>
+            <NoProgress>True</NoProgress>
+            <PreSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>data_2019macma.db
+Table=comments</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="team" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma.db|||comments" type="Int64" />
+            <Field name="match" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma.db|||comments" type="Int64" />
+            <Field name="comment" size="1073741823" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma.db|||comments" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="416">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="450" y="1458" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="36">D:\mascout\ScoutingCode2019\db_archive\data_2019macma_sys2.db|||comments</File>
+          <FormatSpecificOptions>
+            <NoProgress>True</NoProgress>
+            <PreSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>data_2019macma_sys2.db
+Table=comments</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="team" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma_sys2.db|||comments" type="Int64" />
+            <Field name="match" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma_sys2.db|||comments" type="Int64" />
+            <Field name="comment" size="1073741823" source="File: D:\mascout\ScoutingCode2019\db_archive\data_2019macma_sys2.db|||comments" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="417">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="450" y="1506" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="36">D:\mascout\ScoutingCode2019\data_2019tes_pre_comments.db|||comments</File>
+          <FormatSpecificOptions>
+            <NoProgress>True</NoProgress>
+            <PreSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>data_2019tes_pre_comments.db
+Table=comments</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="team" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre_comments.db|||comments" type="Int64" />
+            <Field name="match" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre_comments.db|||comments" type="Int64" />
+            <Field name="comment" size="1073741823" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre_comments.db|||comments" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="418">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="474" y="762" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="36">D:\mascout\ScoutingCode2019\data_2019tes_pre_sys2.db|||scout</File>
+          <FormatSpecificOptions>
+            <NoProgress>True</NoProgress>
+            <PreSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>data_2019tes_pre_sys2.db
+Table=scout</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="key" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre_sys2.db|||scout" type="Int64" />
+            <Field name="Team" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre_sys2.db|||scout" type="Int64" />
+            <Field name="Match" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre_sys2.db|||scout" type="Int64" />
+            <Field name="Fouls" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre_sys2.db|||scout" type="Int64" />
+            <Field name="TechFouls" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre_sys2.db|||scout" type="Int64" />
+            <Field name="Replay" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre_sys2.db|||scout" type="Int64" />
+            <Field name="Flag" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre_sys2.db|||scout" type="Int64" />
+            <Field name="AllianceColor" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre_sys2.db|||scout" type="Int64" />
+            <Field name="StartPos" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre_sys2.db|||scout" type="Int64" />
+            <Field name="StartLevel" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre_sys2.db|||scout" type="Int64" />
+            <Field name="CrossedLine" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre_sys2.db|||scout" type="Int64" />
+            <Field name="AutoShipHatch" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre_sys2.db|||scout" type="Int64" />
+            <Field name="AutoShipHatchFailures" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre_sys2.db|||scout" type="Int64" />
+            <Field name="AutoShipCargo" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre_sys2.db|||scout" type="Int64" />
+            <Field name="AutoShipCargoFailures" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre_sys2.db|||scout" type="Int64" />
+            <Field name="AutoRocketHatch" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre_sys2.db|||scout" type="Int64" />
+            <Field name="AutoRocketHatchFailures" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre_sys2.db|||scout" type="Int64" />
+            <Field name="AutoRocketCargo" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre_sys2.db|||scout" type="Int64" />
+            <Field name="AutoRocketCargoFailures" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre_sys2.db|||scout" type="Int64" />
+            <Field name="RocketL1Hatch" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre_sys2.db|||scout" type="Int64" />
+            <Field name="RocketL1HatchFailures" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre_sys2.db|||scout" type="Int64" />
+            <Field name="RocketL1Cargo" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre_sys2.db|||scout" type="Int64" />
+            <Field name="RocketL1CargoFailures" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre_sys2.db|||scout" type="Int64" />
+            <Field name="RocketL2Hatch" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre_sys2.db|||scout" type="Int64" />
+            <Field name="RocketL2HatchFailures" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre_sys2.db|||scout" type="Int64" />
+            <Field name="RocketL2Cargo" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre_sys2.db|||scout" type="Int64" />
+            <Field name="RocketL2CargoFailures" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre_sys2.db|||scout" type="Int64" />
+            <Field name="RocketL3Hatch" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre_sys2.db|||scout" type="Int64" />
+            <Field name="RocketL3HatchFailures" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre_sys2.db|||scout" type="Int64" />
+            <Field name="RocketL3Cargo" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre_sys2.db|||scout" type="Int64" />
+            <Field name="RocketL3CargoFailures" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre_sys2.db|||scout" type="Int64" />
+            <Field name="ShipHatch" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre_sys2.db|||scout" type="Int64" />
+            <Field name="ShipHatchFailures" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre_sys2.db|||scout" type="Int64" />
+            <Field name="ShipCargo" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre_sys2.db|||scout" type="Int64" />
+            <Field name="ShipCargoFailures" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre_sys2.db|||scout" type="Int64" />
+            <Field name="ClimbLevel" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre_sys2.db|||scout" type="Int64" />
+            <Field name="ClimbLevelAttempted" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre_sys2.db|||scout" type="Int64" />
+            <Field name="WonMatch" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre_sys2.db|||scout" type="Int64" />
+            <Field name="LiftedOthers" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre_sys2.db|||scout" type="Int64" />
+            <Field name="LiftedOthersAttempted" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre_sys2.db|||scout" type="Int64" />
+            <Field name="Disabled" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre_sys2.db|||scout" type="Int64" />
+            <Field name="DriverRating" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre_sys2.db|||scout" type="Int64" />
+            <Field name="HatchColRating" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre_sys2.db|||scout" type="Int64" />
+            <Field name="HatchDelRating" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre_sys2.db|||scout" type="Int64" />
+            <Field name="CargoColRating" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre_sys2.db|||scout" type="Int64" />
+            <Field name="CargoDelRating" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre_sys2.db|||scout" type="Int64" />
+            <Field name="DefenseRating" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre_sys2.db|||scout" type="Int64" />
+            <Field name="AvoidDefenseRating" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre_sys2.db|||scout" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="419">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="450" y="1554" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="36">D:\mascout\ScoutingCode2019\data_2019tes_pre_sys2.db|||comments</File>
+          <FormatSpecificOptions>
+            <NoProgress>True</NoProgress>
+            <PreSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>data_2019tes_pre_sys2.db
+Table=comments</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="team" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre_sys2.db|||comments" type="Int64" />
+            <Field name="match" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre_sys2.db|||comments" type="Int64" />
+            <Field name="comment" size="1073741823" source="File: D:\mascout\ScoutingCode2019\data_2019tes_pre_sys2.db|||comments" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="420">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="822" y="774" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="key" source="File: (Multiple Sources)" type="Int64" />
+            <Field name="Team" source="(Multiple Sources)" type="Int64" />
+            <Field name="Match" source="(Multiple Sources)" type="Int64" />
+            <Field name="Fouls" source="File: (Multiple Sources)" type="Int64" />
+            <Field name="TechFouls" source="File: (Multiple Sources)" type="Int64" />
+            <Field name="Replay" source="File: (Multiple Sources)" type="Int64" />
+            <Field name="Flag" source="File: (Multiple Sources)" type="Int64" />
+            <Field name="AllianceColor" source="(Multiple Sources)" type="Int64" />
+            <Field name="StartPos" source="(Multiple Sources)" type="Int64" />
+            <Field name="StartLevel" source="(Multiple Sources)" type="Int64" />
+            <Field name="CrossedLine" source="(Multiple Sources)" type="Int64" />
+            <Field name="AutoShipHatch" source="(Multiple Sources)" type="Int64" />
+            <Field name="AutoShipHatchFailures" source="(Multiple Sources)" type="Int64" />
+            <Field name="AutoShipCargo" source="(Multiple Sources)" type="Int64" />
+            <Field name="AutoShipCargoFailures" source="(Multiple Sources)" type="Int64" />
+            <Field name="AutoRocketHatch" source="(Multiple Sources)" type="Int64" />
+            <Field name="AutoRocketHatchFailures" source="(Multiple Sources)" type="Int64" />
+            <Field name="AutoRocketCargo" source="(Multiple Sources)" type="Int64" />
+            <Field name="AutoRocketCargoFailures" source="(Multiple Sources)" type="Int64" />
+            <Field name="RocketL1Hatch" source="(Multiple Sources)" type="Int64" />
+            <Field name="RocketL1HatchFailures" source="(Multiple Sources)" type="Int64" />
+            <Field name="RocketL1Cargo" source="(Multiple Sources)" type="Int64" />
+            <Field name="RocketL1CargoFailures" source="(Multiple Sources)" type="Int64" />
+            <Field name="RocketL2Hatch" source="(Multiple Sources)" type="Int64" />
+            <Field name="RocketL2HatchFailures" source="(Multiple Sources)" type="Int64" />
+            <Field name="RocketL2Cargo" source="(Multiple Sources)" type="Int64" />
+            <Field name="RocketL2CargoFailures" source="(Multiple Sources)" type="Int64" />
+            <Field name="RocketL3Hatch" source="(Multiple Sources)" type="Int64" />
+            <Field name="RocketL3HatchFailures" source="(Multiple Sources)" type="Int64" />
+            <Field name="RocketL3Cargo" source="(Multiple Sources)" type="Int64" />
+            <Field name="RocketL3CargoFailures" source="(Multiple Sources)" type="Int64" />
+            <Field name="ShipHatch" source="(Multiple Sources)" type="Int64" />
+            <Field name="ShipHatchFailures" source="(Multiple Sources)" type="Int64" />
+            <Field name="ShipCargo" source="(Multiple Sources)" type="Int64" />
+            <Field name="ShipCargoFailures" source="(Multiple Sources)" type="Int64" />
+            <Field name="ClimbLevel" source="(Multiple Sources)" type="Int64" />
+            <Field name="ClimbLevelAttempted" source="(Multiple Sources)" type="Int64" />
+            <Field name="WonMatch" source="(Multiple Sources)" type="Int64" />
+            <Field name="LiftedOthers" source="(Multiple Sources)" type="Int64" />
+            <Field name="LiftedOthersAttempted" source="(Multiple Sources)" type="Int64" />
+            <Field name="Disabled" source="(Multiple Sources)" type="Int64" />
+            <Field name="DriverRating" source="(Multiple Sources)" type="Double" />
+            <Field name="HatchColRating" source="(Multiple Sources)" type="Double" />
+            <Field name="HatchDelRating" source="(Multiple Sources)" type="Double" />
+            <Field name="CargoColRating" source="(Multiple Sources)" type="Double" />
+            <Field name="CargoDelRating" source="(Multiple Sources)" type="Double" />
+            <Field name="DefenseRating" source="(Multiple Sources)" type="Double" />
+            <Field name="AvoidDefenseRating" source="(Multiple Sources)" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="421">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="798" y="726" width="100" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Combine all raw data</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="422">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="918" y="774" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="Team" order="Ascending" />
+            <Field field="Match" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Team - Ascending
+Match - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="key" source="File: (Multiple Sources)" type="Int64" />
+            <Field name="Team" source="(Multiple Sources)" type="Int64" />
+            <Field name="Match" source="(Multiple Sources)" type="Int64" />
+            <Field name="Fouls" source="File: (Multiple Sources)" type="Int64" />
+            <Field name="TechFouls" source="File: (Multiple Sources)" type="Int64" />
+            <Field name="Replay" source="File: (Multiple Sources)" type="Int64" />
+            <Field name="Flag" source="File: (Multiple Sources)" type="Int64" />
+            <Field name="AllianceColor" source="(Multiple Sources)" type="Int64" />
+            <Field name="StartPos" source="(Multiple Sources)" type="Int64" />
+            <Field name="StartLevel" source="(Multiple Sources)" type="Int64" />
+            <Field name="CrossedLine" source="(Multiple Sources)" type="Int64" />
+            <Field name="AutoShipHatch" source="(Multiple Sources)" type="Int64" />
+            <Field name="AutoShipHatchFailures" source="(Multiple Sources)" type="Int64" />
+            <Field name="AutoShipCargo" source="(Multiple Sources)" type="Int64" />
+            <Field name="AutoShipCargoFailures" source="(Multiple Sources)" type="Int64" />
+            <Field name="AutoRocketHatch" source="(Multiple Sources)" type="Int64" />
+            <Field name="AutoRocketHatchFailures" source="(Multiple Sources)" type="Int64" />
+            <Field name="AutoRocketCargo" source="(Multiple Sources)" type="Int64" />
+            <Field name="AutoRocketCargoFailures" source="(Multiple Sources)" type="Int64" />
+            <Field name="RocketL1Hatch" source="(Multiple Sources)" type="Int64" />
+            <Field name="RocketL1HatchFailures" source="(Multiple Sources)" type="Int64" />
+            <Field name="RocketL1Cargo" source="(Multiple Sources)" type="Int64" />
+            <Field name="RocketL1CargoFailures" source="(Multiple Sources)" type="Int64" />
+            <Field name="RocketL2Hatch" source="(Multiple Sources)" type="Int64" />
+            <Field name="RocketL2HatchFailures" source="(Multiple Sources)" type="Int64" />
+            <Field name="RocketL2Cargo" source="(Multiple Sources)" type="Int64" />
+            <Field name="RocketL2CargoFailures" source="(Multiple Sources)" type="Int64" />
+            <Field name="RocketL3Hatch" source="(Multiple Sources)" type="Int64" />
+            <Field name="RocketL3HatchFailures" source="(Multiple Sources)" type="Int64" />
+            <Field name="RocketL3Cargo" source="(Multiple Sources)" type="Int64" />
+            <Field name="RocketL3CargoFailures" source="(Multiple Sources)" type="Int64" />
+            <Field name="ShipHatch" source="(Multiple Sources)" type="Int64" />
+            <Field name="ShipHatchFailures" source="(Multiple Sources)" type="Int64" />
+            <Field name="ShipCargo" source="(Multiple Sources)" type="Int64" />
+            <Field name="ShipCargoFailures" source="(Multiple Sources)" type="Int64" />
+            <Field name="ClimbLevel" source="(Multiple Sources)" type="Int64" />
+            <Field name="ClimbLevelAttempted" source="(Multiple Sources)" type="Int64" />
+            <Field name="WonMatch" source="(Multiple Sources)" type="Int64" />
+            <Field name="LiftedOthers" source="(Multiple Sources)" type="Int64" />
+            <Field name="LiftedOthersAttempted" source="(Multiple Sources)" type="Int64" />
+            <Field name="Disabled" source="(Multiple Sources)" type="Int64" />
+            <Field name="DriverRating" source="(Multiple Sources)" type="Double" />
+            <Field name="HatchColRating" source="(Multiple Sources)" type="Double" />
+            <Field name="HatchDelRating" source="(Multiple Sources)" type="Double" />
+            <Field name="CargoColRating" source="(Multiple Sources)" type="Double" />
+            <Field name="CargoDelRating" source="(Multiple Sources)" type="Double" />
+            <Field name="DefenseRating" source="(Multiple Sources)" type="Double" />
+            <Field name="AvoidDefenseRating" source="(Multiple Sources)" type="Double" />
+          </RecordInfo>
+          <SortInfo locale="0">
+            <Field field="Team" order="Ascending" />
+            <Field field="Match" order="Ascending" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="423">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1050" y="774" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\MA\AppData\Local\Temp\Engine_1664_ed5b46f213b14bfe834de314c00e59b1_\Engine_5480_dff5243018a444e7868432e35cd6cdb3_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="424">
+      <GuiSettings>
+        <Position x="990" y="846" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output9">
+          <RecordInfo>
+            <Field name="Count" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="CountRecords.yxmc" />
+    </Node>
+    <Node ToolID="425">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1074" y="846" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\MA\AppData\Local\Temp\Engine_1664_ed5b46f213b14bfe834de314c00e59b1_\Engine_5480_4d1b951e5b5b44df9e2884f49081486e_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
     </Node>
   </Nodes>
   <Connections>
@@ -11364,6 +12006,14 @@ AllianceColor - Ascending</DefaultAnnotationText>
     <Connection>
       <Origin ToolID="9" Connection="Output" />
       <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="420" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="324" Connection="Output" />
+      <Destination ToolID="420" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="11" Connection="Output" />
@@ -11849,6 +12499,22 @@ AllianceColor - Ascending</DefaultAnnotationText>
       <Origin ToolID="388" Connection="Output" />
       <Destination ToolID="324" Connection="Input" />
     </Connection>
+    <Connection name="#11">
+      <Origin ToolID="412" Connection="Output" />
+      <Destination ToolID="324" Connection="Input" />
+    </Connection>
+    <Connection name="#16">
+      <Origin ToolID="413" Connection="Output" />
+      <Destination ToolID="324" Connection="Input" />
+    </Connection>
+    <Connection name="#17">
+      <Origin ToolID="414" Connection="Output" />
+      <Destination ToolID="324" Connection="Input" />
+    </Connection>
+    <Connection name="#18">
+      <Origin ToolID="418" Connection="Output" />
+      <Destination ToolID="324" Connection="Input" />
+    </Connection>
     <Connection>
       <Origin ToolID="331" Connection="Output" />
       <Destination ToolID="332" Connection="Input" />
@@ -11945,6 +12611,22 @@ AllianceColor - Ascending</DefaultAnnotationText>
       <Origin ToolID="397" Connection="Output" />
       <Destination ToolID="339" Connection="Input" />
     </Connection>
+    <Connection name="#11">
+      <Origin ToolID="415" Connection="Output" />
+      <Destination ToolID="339" Connection="Input" />
+    </Connection>
+    <Connection name="#12">
+      <Origin ToolID="416" Connection="Output" />
+      <Destination ToolID="339" Connection="Input" />
+    </Connection>
+    <Connection name="#13">
+      <Origin ToolID="417" Connection="Output" />
+      <Destination ToolID="339" Connection="Input" />
+    </Connection>
+    <Connection name="#14">
+      <Origin ToolID="419" Connection="Output" />
+      <Destination ToolID="339" Connection="Input" />
+    </Connection>
     <Connection>
       <Origin ToolID="356" Connection="Output" />
       <Destination ToolID="357" Connection="Input" />
@@ -11988,6 +12670,22 @@ AllianceColor - Ascending</DefaultAnnotationText>
     <Connection>
       <Origin ToolID="411" Connection="Output" />
       <Destination ToolID="402" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="420" Connection="Output" />
+      <Destination ToolID="422" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="422" Connection="Output" />
+      <Destination ToolID="423" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="422" Connection="Output" />
+      <Destination ToolID="424" Connection="Input8" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="424" Connection="Output9" />
+      <Destination ToolID="425" Connection="Input" />
     </Connection>
   </Connections>
   <Properties>
@@ -12073,6 +12771,9 @@ AllianceColor - Ascending</DefaultAnnotationText>
         <Tool ToolId="401" Selected="False" />
         <Tool ToolId="402" Selected="False" />
         <Tool ToolId="410" Selected="False" />
+        <Tool ToolId="424" Selected="True" />
+        <Tool ToolId="423" Selected="False" />
+        <Tool ToolId="425" Selected="False" />
       </Wiz_OpenOutputTools>
       <Wiz_OutputMessage />
       <Wiz_NoOutputFilesMessage />

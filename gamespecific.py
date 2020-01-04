@@ -9,11 +9,14 @@ SCOUT_FIELDS = {
     "TechFouls": 0,
     "Replay": 0,
     "Flag": 0,
+    "Filler1": 0,
+    "Filler2": 0,
+    "Filler3": 0,
+    "Filler4": 0,
     "AllianceColor": 0,
     "StartPos": 0,
-    "StartLevel": 0,
     "CrossedLine": 0,
-    "AutoShipHatch": 0,
+    "AutoLowerSuccess": 0,
 	"AutoShipHatchFailures": 0,
 	"AutoShipCargo": 0,
 	"AutoShipCargoFailures": 0,
@@ -56,19 +59,19 @@ SCOUT_FIELDS = {
 AVERAGE_FIELDS = {
     "team": 0,
     "apr":0,
-    "RocketL1Hatch": 0,
-    "RocketL1Cargo": 0,
-    "RocketL2Hatch": 0,
-    "RocketL2Cargo": 0
+    "Filler1": 0,
+    "Filler2": 0,
+    "Filler3": 0,
+    "Filler4": 0
 }
 
 #Defines the fields displayed on the charts on the team and compare pages
 CHART_FIELDS = {
     "match": 0,
-    "RocketL1Hatch": 0,
-    "RocketL1Cargo": 0,
-    "RocketL2Hatch": 0,
-    "RocketL2Cargo": 0
+    "Filler1": 0,
+    "Filler2": 0,
+    "Filler3": 0,
+    "Filler4": 0
 }
 
 
@@ -150,18 +153,18 @@ def processSheet(scout):
 #Takes an entry from the Scout database table and generates text for display on the team page. This page has 4 columns, currently used for auto, 2 teleop, and other (like fouls and end game)
 def generateTeamText(e):
     text = {'auto': "", 'teleop1': "", 'teleop2': "", 'other': ""}
-    text['auto'] += 'baseline, ' if e['RocketL1Hatch'] else ''
-    text['auto'] += 'Switch try, ' if e['RocketL1Cargo'] else ''
-    text['auto'] += 'Scale try, ' if e['RocketL2Hatch'] else ''
-    text['auto'] += 'Exchange try, ' if e['RocketL2Cargo'] else ''
+    text['auto'] += 'baseline, ' if e['Filler1'] else ''
+    text['auto'] += 'Switch try, ' if e['Filler2'] else ''
+    text['auto'] += 'Scale try, ' if e['Filler3'] else ''
+    text['auto'] += 'Exchange try, ' if e['Filler4'] else ''
 
     text['teleop1'] += str(
-        e['RocketL1Hatch']) + 'x to scale, ' if e['RocketL1Hatch'] else ''
+        e['Filler1']) + 'x to scale, ' if e['Filler1'] else ''
 
     text['teleop2'] += str(
-        e['RocketL1Cargo']) + 'to switch, ' if e['RocketL1Cargo'] else ''
+        e['Filler1']) + 'to switch, ' if e['Filler1'] else ''
     text['teleop2'] += str(
-        e['RocketL2Hatch']) + 'to opp switch, ' if e['RocketL2Hatch'] else ''
+        e['Filler1']) + 'to opp switch, ' if e['Filler1'] else ''
 
     text['other'] = 'Climb, ' if e['Climb'] else ' '
 
@@ -174,10 +177,10 @@ def generateChartData(e):
     dp = dict(CHART_FIELDS)
     dp["match"] = e['match']
 
-    dp['RocketL1Hatch'] += e['RocketL1Hatch']
-    dp['RocketL1Cargo'] += e['RocketL1Cargo']
-    dp['RocketL2Hatch'] += e['RocketL2Hatch']
-    dp['RocketL2Cargo'] += e['RocketL2Cargo']
+    dp['Filler1'] += e['Filler1']
+    dp['Filler2'] += e['Filler2']
+    dp['Filler3'] += e['Filler3']
+    dp['Filler4'] += e['Filler4']
 
     return dp
 
@@ -252,16 +255,16 @@ def calcTotals(entries):
         sums[key] = []
     #For each entry, add components to the running total if appropriate
     for i, e in enumerate(entries):
-        sums['RocketL1Hatch'].append(e['RocketL1Hatch'])
-        sums['RocketL1Cargo'].append(e['RocketL1Cargo'])
-        sums['RocketL2Hatch'].append(e['RocketL2Hatch'])
-        sums['RocketL2Cargo'].append(e['RocketL2Cargo'])
+        sums['Filler1'].append(e['Filler1'])
+        sums['Filler2'].append(e['Filler2'])
+        sums['Filler3'].append(e['Filler3'])
+        sums['Filler4'].append(e['Filler4'])
 
         if i < 3:
-            lastThree['RocketL1Hatch'] += e['RocketL1Hatch']
-            lastThree['RocketL1Cargo'] += e['RocketL1Cargo']
-            lastThree['RocketL2Hatch'] += e['RocketL2Hatch']
-            lastThree['RocketL2Cargo'] += e['RocketL2Cargo']
+            lastThree['Filler1'] += e['Filler1']
+            lastThree['Filler2'] += e['Filler2']
+            lastThree['Filler3'] += e['Filler3']
+            lastThree['Filler4'] += e['Filler4']
             lastThreeCount += 1
 
     #If there is data, average out the last 3 or less matches

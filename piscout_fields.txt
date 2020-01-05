@@ -1,0 +1,38 @@
+Team
+Match
+Fouls
+TechFouls
+Replay
+Flag
+AllianceColor L10
+StartPos F10
+AutoLowerSuccess T12
+AutoOuterSuccess T11
+AutoInnerSuccess T10
+AutoLowerFailures AC11
+AutoUpperFailures AC10
+LowerSuccess H16
+OuterSuccess H15
+InnerSuccess H14
+LowerFailures H19
+UpperFailures H18
+ClimbAttempted H21
+ClimbSuccess H22
+LiftedOthersAttempted I21
+LiftedOthersSuccess I22
+ParkedAttempted J21
+ParkedSuccess J22
+WheelRotationAttempted L21
+WheelRotationSuccess L22
+WheelPositionAttempted M21
+WheelPositionSuccess M22
+WonMatch R21
+Disabled R22
+DriverRating U21
+IntakeRating U22
+DefenseRating AD21
+AvoidDefenseRating AD22
+
+
+
+

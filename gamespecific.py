@@ -17,42 +17,31 @@ SCOUT_FIELDS = {
     "StartPos": 0,
     "CrossedLine": 0,
     "AutoLowerSuccess": 0,
-	"AutoShipHatchFailures": 0,
-	"AutoShipCargo": 0,
-	"AutoShipCargoFailures": 0,
-    "AutoRocketHatch": 0,
-	"AutoRocketHatchFailures": 0,
-    "AutoRocketCargo": 0,
-	"AutoRocketCargoFailures": 0,
-    "RocketL1Hatch": 0,
-	"RocketL1HatchFailures": 0,
-    "RocketL1Cargo": 0,
-	"RocketL1CargoFailures": 0,
-    "RocketL2Hatch": 0,
-	"RocketL2HatchFailures": 0,
-    "RocketL2Cargo": 0,
-	"RocketL2CargoFailures": 0,
-    "RocketL3Hatch": 0,
-	"RocketL3HatchFailures": 0,
-    "RocketL3Cargo": 0,
-	"RocketL3CargoFailures": 0,
-    "ShipHatch": 0,
-	"ShipHatchFailures": 0,
-    "ShipCargo": 0,
-	"ShipCargoFailures": 0,
-    "ClimbLevel": 0,
-	"ClimbLevelAttempted": 0,
+	"AutoOuterSuccess": 0,
+	"AutoInnerSuccess": 0,
+	"AutoLowerFailures": 0,
+    "AutoUpperFailures": 0,
+	"LowerSuccess": 0,
+    "OuterSuccess": 0,
+	"InnerSuccess": 0,
+    "LowerFailures": 0,
+	"UpperFailures": 0,
+    "ClimbAttempted": 0,
+	"ClimbSuccess": 0,
+    "LiftedOthersAttempted": 0,
+	"LiftedOthersSuccess": 0,
+    "ParkedAttempted": 0,
+	"ParkedSuccess": 0,
+    "WheelRotationAttempted": 0,
+	"WheelRotationSuccess": 0,
+    "WheelPositionAttempted": 0,
+	"WheelPositionSuccess": 0,
     "WonMatch": 0,
-    "LiftedOthers": 0,
-	"LiftedOthersAttempted": 0,
-    "Disabled": 0,
+	"Disabled": 0,
     "DriverRating": 0,
-    "HatchColRating": 0,
-    "HatchDelRating": 0,
-    "CargoColRating": 0,
-    "CargoDelRating": 0,
+	"IntakeRating": 0,
     "DefenseRating": 0,
-    "AvoidDefenseRating": 0
+	"AvoidDefenseRating": 0
 }
 
 #Defines the fields that are stored in the "averages" and similar tables of the database. These are the fields displayed on the home page of the website.
@@ -100,48 +89,35 @@ def processSheet(scout):
 
         scout.set("AllianceColor", scout.rangefield('L-10', 0, 1))
         scout.set("StartPos", scout.rangefield('F-10', 1, 3)-1)
-        scout.set("StartLevel", scout.rangefield('G-12', 1, 2))
-        scout.set("CrossedLine", scout.boolfield('M-12'))
-        scout.set("AutoShipHatch", scout.countfield('T-10', 1, 2))
-        scout.set("AutoShipCargo", scout.countfield('T-11', 1, 2))
-        scout.set("AutoShipHatchFailures", scout.countfield('W-10', 1, 2))
-        scout.set("AutoShipCargoFailures", scout.countfield('W-11', 1, 2))
-        scout.set("AutoRocketHatch", scout.countfield('AE-10', 1, 2))
-        scout.set("AutoRocketCargo", scout.countfield('AE-11', 1, 2))
-        scout.set("AutoRocketHatchFailures", scout.countfield('AH-10', 1, 2))
-        scout.set("AutoRocketCargoFailures", scout.countfield('AH-11', 1, 2))
+        scout.set("CrossedLine", scout.boolfield('H-12'))
+        scout.set("AutoLowerSuccess", scout.countfield('T-12', 1, 5))
+        scout.set("AutoOuterSuccess", scout.countfield('T-11', 1, 5))
+        scout.set("AutoInnerSuccess", scout.countfield('T-10', 1, 5))
+        scout.set("AutoLowerFailures", scout.countfield('AC-11', 1, 5))
+        scout.set("AutoUpperFailures", scout.countfield('AC-10', 1, 5))
+        
+        scout.set("LowerSuccess", scout.countfield('H-16', 1, 28))
+        scout.set("OuterSuccess", scout.countfield('H-15', 1, 28))
+        scout.set("InnerSuccess", scout.countfield('H-14', 1, 28))
+        scout.set("LowerFailures", scout.countfield('H-19', 1, 28))
+        scout.set("UpperFailures", scout.countfield('H-18', 1, 28))
 
-        scout.set("RocketL1Hatch", scout.countfield('H-14', 1, 4))
-        scout.set("RocketL1HatchFailures", scout.countfield('M-14', 1, 6))
-        scout.set("RocketL2Hatch", scout.countfield('H-15', 1, 4))
-        scout.set("RocketL2HatchFailures", scout.countfield('M-15', 1, 6))
-        scout.set("RocketL3Hatch", scout.countfield('H-16', 1, 4))
-        scout.set("RocketL3HatchFailures", scout.countfield('M-16', 1, 6))
+        scout.set("ClimbAttempted", scout.boolfield('H-21'))
+        scout.set("ClimbSuccess", scout.boolfield('H-22'))
+        scout.set("LiftedOthersAttempted", scout.boolfield('I-21'))
+        scout.set("LiftedOthersSuccess", scout.boolfield('I-22'))
+        scout.set("ParkedAttempted", scout.boolfield('J-21'))
+        scout.set("ParkedSuccess", scout.boolfield('J-22'))
+        
+        scout.set("WheelRotationAttempted", scout.boolfield('L-21'))
+        scout.set("WheelRotationSuccess", scout.boolfield('L-22'))
+        scout.set("WheelPositionAttempted", scout.boolfield('M-21'))
+        scout.set("WheelPositionSuccess", scout.boolfield('M-22'))
 
-        scout.set("RocketL1Cargo", scout.countfield('Y-14', 1, 4))
-        scout.set("RocketL1CargoFailures", scout.countfield('AD-14', 1, 6))
-        scout.set("RocketL2Cargo", scout.countfield('Y-15', 1, 4))
-        scout.set("RocketL2CargoFailures", scout.countfield('AD-15', 1, 6))
-        scout.set("RocketL3Cargo", scout.countfield('Y-16', 1, 4))
-        scout.set("RocketL3CargoFailures", scout.countfield('AD-16', 1, 6))
-
-        scout.set("ShipHatch", scout.countfield('F-18', 1, 8))
-        scout.set("ShipHatchFailures", scout.countfield('O-18', 1, 8))
-        scout.set("ShipCargo", scout.countfield('F-19', 1, 8))
-        scout.set("ShipCargoFailures", scout.countfield('O-19', 1, 8))
-
-        scout.set("ClimbLevelAttempted", scout.rangefield('G-21', 1, 3))
-        scout.set("ClimbLevel", scout.rangefield('G-22', 1, 3))
-        scout.set("WonMatch", scout.boolfield('F-24'))
-        scout.set("LiftedOthersAttempted", scout.rangefield('P-21', 2, 3))
-        scout.set("LiftedOthers", scout.rangefield('P-22', 2, 3))
-        scout.set("Disabled", scout.boolfield('F-25'))
-
+        scout.set("WonMatch", scout.boolfield('R-21'))
+        scout.set("Disabled", scout.boolfield('R-22'))
         scout.set("DriverRating", scout.rangefield('U-21', 0, 5))
-        scout.set("HatchColRating", scout.rangefield('U-22', 0, 5))
-        scout.set("HatchDelRating", scout.rangefield('AD-18', 0, 5))
-        scout.set("CargoColRating", scout.rangefield('AD-19', 0, 5))
-        scout.set("CargoDelRating", scout.rangefield('AD-20', 0, 5))
+        scout.set("IntakeRating", scout.rangefield('U-22', 0, 5))
         scout.set("DefenseRating", scout.rangefield('AD-21', 0, 5))
         scout.set("AvoidDefenseRating", scout.rangefield('AD-22', 0, 5))
 

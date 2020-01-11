@@ -8,6 +8,49 @@ cur = conn.cursor()
 cur.execute("SELECT * FROM pit order by Team ")
 Pitscout = cur.fetchall()
 
+name_lookup = {
+    8: {
+        "section": "auto",
+        "value": "can move from initiation line"
+    },
+    9: {
+        "section": "auto",
+        "value": "can deliver upper"
+    },
+    10: {
+        "section": "auto",
+        "value": "can deliver lower"
+    },
+    11: {
+        "section": "shoot_to",
+        "value": "upper goal"
+    },
+    12: {
+        "section": "shoot_to",
+        "value": "lower goal"
+    },
+    13: {
+        "section": "wheel",
+        "value": "can do rotation control"
+    },
+    14: {
+        "section": "wheel",
+        "value": "can do position control"
+    },
+    17: {
+        "section": "shoot_from",
+        "value": "wall"
+    },
+    18: {
+        "section": "shoot_from",
+        "value": "opponent side"
+    },
+    19: {
+        "section": "shoot_from",
+        "value": "own side"
+    }
+}
+
 for row in Pitscout:
     print(row)
 

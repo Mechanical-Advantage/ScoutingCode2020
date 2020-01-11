@@ -50,6 +50,18 @@ name_lookup = {
         "value": "own side"
     }
 }
+lists = {
+    "auto": [],
+    "shoot_to": [],
+    "shoot_from": [],
+    "wheel": []
+}
+# THE LOOKUP
+# if row[column] == 1:
+#     lists[name_lookup[column]["section"]].append(name_lookup[column]["value"])
+#
+# THE JOIN
+# ", ".join(lists[list_name])
 
 for row in Pitscout:
     print(row)

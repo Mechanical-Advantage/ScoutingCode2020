@@ -9,6 +9,7 @@ global_path = "C:\\mascout\\AdvantageScout\\global.db"
 output_path = "C:\\mascout\\TableauInput\\balance.xlsx"
 our_team = 6328
 extra_weight = 23  # weight of bumpers and batteries
+force_center = True
 
 # Connect to db
 conn_data = sql.connect(data_path)
@@ -22,23 +23,25 @@ def run_match(teams):
     team_weights = []
     for team in teams:
         result = cur_data.execute(
-            "SELECT weight FROM pit WHERE team=? ORDER BY time DESC LIMIT 1", (team,)).fetchall()
+            "SELECT weight FROM pit WHERE Team=? ORDER BY Time DESC LIMIT 1", (team,)).fetchall()
         if len(result) == 0:
             print("Could not find weight for", team)
             exit(0)
         else:
             team_weights.append(result[0][0] + extra_weight)
 
-    def get_solution(weights):
+    def get_solution(weights, teams):
         # Calculate centers of mass
         positions = list(itertools.product(range(114), repeat=len(weights)))
         centers = []
         for i in positions:
             valid = True
-            for test in i:
-                if test >= 55 and test < 59:
-                    valid = False
-                    break
+            if force_center and our_team in teams and len(i) == 3:
+                for f in range(len(i)):
+                    if teams[f] == our_team:
+                        if i[f] != 57:
+                            valid = False
+                            break
 
             if valid:
                 total = 0
@@ -68,11 +71,12 @@ def run_match(teams):
     solutions = []
     solutions_teams = []
     solutions_weights = []
-    solutions.append(get_solution(team_weights))
+    solutions.append(get_solution(team_weights, teams))
     solutions_teams.append(teams)
     solutions_weights.append(team_weights)
     for combo in itertools.combinations(range(3), 2):
-        solutions.append(get_solution([team_weights[x] for x in combo]))
+        solutions.append(get_solution([team_weights[x] for x in combo], [
+                         teams[x] for x in combo]))
         solutions_teams.append([teams[x] for x in combo])
         solutions_weights.append([team_weights[x] for x in combo])
     return {"solutions": solutions, "teams": solutions_teams, "weights": solutions_weights}
@@ -97,16 +101,24 @@ worksheet.write("B1", "Height")
 worksheet.write("C1", "Team")
 worksheet.write("D1", "Weight")
 worksheet.write("E1", "Match")
+worksheet.write("F1", "Reach")
+worksheet.write("G1", "RobotHeight")
 row = 0
 for match_number, result in match_results.items():
     for i in range(len(result["solutions"])):
         for x in range(len(result["solutions"][i])):
             row += 1
-            worksheet.write(row, 0, (result["solutions"][i][x] - 56.5) / 12)
+            worksheet.write(row, 0, (result["solutions"][i][x] - 57) / 12)
             worksheet.write(row, 1, 20 - (i * 5))
             worksheet.write(row, 2, result["teams"][i][x])
             worksheet.write(row, 3, result["weights"][i][x])
             worksheet.write(row, 4, match_number)
+            reach = cur_data.execute(
+                "SELECT ClimbHeight FROM pit WHERE Team=? ORDER BY Time DESC LIMIT 1", (result["teams"][i][x],)).fetchall()[0][0]
+            worksheet.write(row, 5, reach)
+            robot_height = cur_data.execute(
+                "SELECT Height FROM pit WHERE Team=? ORDER BY Time DESC LIMIT 1", (result["teams"][i][x],)).fetchall()[0][0]
+            worksheet.write(row, 6, robot_height)
 workbook.close()
 print("Wrote to output file")
 

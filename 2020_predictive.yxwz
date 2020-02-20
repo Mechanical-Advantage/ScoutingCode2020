@@ -1,0 +1,3164 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="114" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="36">C:\mascout\AdvantageScout\data_2020.db|||match</File>
+          <FormatSpecificOptions>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <PreSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>data_2020.db
+Query=match</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Event" size="1073741823" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="V_WString" />
+            <Field name="Team" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="Match" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="DeviceName" size="1073741823" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="V_WString" />
+            <Field name="Version" size="1073741823" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="V_WString" />
+            <Field name="InterfaceType" size="1073741823" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="V_WString" />
+            <Field name="Time" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="UploadTime" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="ScoutName" size="1073741823" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="V_WString" />
+            <Field name="AllianceColor" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="StartPos" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="CrossedLine" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="AutoLowerSuccess" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="AutoOuterSuccess" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="AutoInnerSuccess" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="AutoLowerFailures" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="AutoUpperFailures" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="LowerSuccess" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="OuterSuccess" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="InnerSuccess" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="LowerFailures" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="UpperFailures" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="UpperSecondsBetween" size="1073741823" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="V_WString" />
+            <Field name="ClimbAttempted" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="ClimbSuccess" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="LiftedOthersAttempted" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="LiftedOthersSuccess" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="ParkedAttempted" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="ParkedSuccess" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="WheelRotationAttempted" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="WheelRotationSuccess" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="WheelPositionAttempted" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="WheelPositionSuccess" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="ShootFromWall" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="ShootFromOpponentSide" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="ShootFromOwnSide" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="Points" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="Disabled" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="DriverRating" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="IntakeRating" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="DefenseRating" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="AvoidDefenseRating" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="Comment" size="1073741823" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.CheckBoxGroup.CheckBoxGroup">
+        <Position x="174" y="30" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="186" y="114" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.NumericUpDown.NumericUpDown">
+        <Position x="570" y="18" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="498" y="102" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="618" y="114" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.CheckBoxGroup.CheckBoxGroup">
+        <Position x="270" y="822" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="270" y="906" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
+        <Position x="90" y="762" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
+        <Position x="150" y="762" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="90" y="870" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="126" y="990" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="2" />
+          <Fields>
+            <Field name="AllianceColor" />
+            <Field name="Team" />
+          </Fields>
+          <Data>
+            <r>
+              <c>0</c>
+              <c>6328,6328,6328</c>
+            </r>
+            <r>
+              <c>1</c>
+              <c>6328,6328,6328</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="AllianceColor" source="TextInput:" type="Byte" />
+            <Field name="Team" size="14" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="150" y="870" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="41">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="270" y="498" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="36">C:\mascout\AdvantageScout\global.db|||config</File>
+          <FormatSpecificOptions>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <PreSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>global.db
+Query=config</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="key" size="1073741823" source="File: C:\mascout\AdvantageScout\global.db|||config" type="V_WString" />
+            <Field name="value" size="1073741823" source="File: C:\mascout\AdvantageScout\global.db|||config" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="42">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="354" y="498" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>key</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2020-02-01 16:14:30</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <StartDate>2020-02-01 16:14:30</StartDate>
+              <EndDate>2020-02-01 16:14:30</EndDate>
+              <Operand>event</Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[key] = "event"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="key" size="1073741823" source="File: C:\mascout\AdvantageScout\global.db|||config" type="V_WString" />
+            <Field name="value" size="1073741823" source="File: C:\mascout\AdvantageScout\global.db|||config" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="key" size="1073741823" source="File: C:\mascout\AdvantageScout\global.db|||config" type="V_WString" />
+            <Field name="value" size="1073741823" source="File: C:\mascout\AdvantageScout\global.db|||config" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="43">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="450" y="570" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Allow</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Target_key" selected="False" input="Target_" />
+                <SelectField field="Target_value" selected="True" rename="TargetEvent" input="Target_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="TargetEvent" size="1073741823" source="File: C:\mascout\AdvantageScout\global.db|||config" type="V_WString" />
+            <Field name="Event" size="1073741823" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="V_WString" />
+            <Field name="Team" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="Match" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="DeviceName" size="1073741823" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="V_WString" />
+            <Field name="Version" size="1073741823" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="V_WString" />
+            <Field name="InterfaceType" size="1073741823" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="V_WString" />
+            <Field name="Time" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="UploadTime" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="ScoutName" size="1073741823" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="V_WString" />
+            <Field name="AllianceColor" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="StartPos" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="CrossedLine" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="AutoLowerSuccess" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="AutoOuterSuccess" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="AutoInnerSuccess" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="AutoLowerFailures" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="AutoUpperFailures" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="LowerSuccess" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="OuterSuccess" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="InnerSuccess" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="LowerFailures" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="UpperFailures" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="UpperSecondsBetween" size="1073741823" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="V_WString" />
+            <Field name="ClimbAttempted" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="ClimbSuccess" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="LiftedOthersAttempted" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="LiftedOthersSuccess" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="ParkedAttempted" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="ParkedSuccess" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="WheelRotationAttempted" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="WheelRotationSuccess" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="WheelPositionAttempted" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="WheelPositionSuccess" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="ShootFromWall" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="ShootFromOpponentSide" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="ShootFromOwnSide" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="Points" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="Disabled" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="DriverRating" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="IntakeRating" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="DefenseRating" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="AvoidDefenseRating" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="Comment" size="1073741823" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="44">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="534" y="570" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Event] = [TargetEvent]</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Event] = [TargetEvent]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="TargetEvent" size="1073741823" source="File: C:\mascout\AdvantageScout\global.db|||config" type="V_WString" />
+            <Field name="Event" size="1073741823" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="V_WString" />
+            <Field name="Team" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="Match" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="DeviceName" size="1073741823" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="V_WString" />
+            <Field name="Version" size="1073741823" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="V_WString" />
+            <Field name="InterfaceType" size="1073741823" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="V_WString" />
+            <Field name="Time" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="UploadTime" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="ScoutName" size="1073741823" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="V_WString" />
+            <Field name="AllianceColor" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="StartPos" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="CrossedLine" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="AutoLowerSuccess" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="AutoOuterSuccess" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="AutoInnerSuccess" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="AutoLowerFailures" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="AutoUpperFailures" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="LowerSuccess" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="OuterSuccess" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="InnerSuccess" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="LowerFailures" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="UpperFailures" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="UpperSecondsBetween" size="1073741823" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="V_WString" />
+            <Field name="ClimbAttempted" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="ClimbSuccess" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="LiftedOthersAttempted" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="LiftedOthersSuccess" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="ParkedAttempted" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="ParkedSuccess" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="WheelRotationAttempted" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="WheelRotationSuccess" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="WheelPositionAttempted" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="WheelPositionSuccess" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="ShootFromWall" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="ShootFromOpponentSide" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="ShootFromOwnSide" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="Points" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="Disabled" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="DriverRating" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="IntakeRating" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="DefenseRating" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="AvoidDefenseRating" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="Comment" size="1073741823" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="TargetEvent" size="1073741823" source="File: C:\mascout\AdvantageScout\global.db|||config" type="V_WString" />
+            <Field name="Event" size="1073741823" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="V_WString" />
+            <Field name="Team" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="Match" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="DeviceName" size="1073741823" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="V_WString" />
+            <Field name="Version" size="1073741823" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="V_WString" />
+            <Field name="InterfaceType" size="1073741823" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="V_WString" />
+            <Field name="Time" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="UploadTime" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="ScoutName" size="1073741823" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="V_WString" />
+            <Field name="AllianceColor" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="StartPos" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="CrossedLine" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="AutoLowerSuccess" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="AutoOuterSuccess" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="AutoInnerSuccess" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="AutoLowerFailures" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="AutoUpperFailures" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="LowerSuccess" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="OuterSuccess" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="InnerSuccess" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="LowerFailures" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="UpperFailures" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="UpperSecondsBetween" size="1073741823" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="V_WString" />
+            <Field name="ClimbAttempted" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="ClimbSuccess" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="LiftedOthersAttempted" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="LiftedOthersSuccess" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="ParkedAttempted" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="ParkedSuccess" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="WheelRotationAttempted" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="WheelRotationSuccess" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="WheelPositionAttempted" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="WheelPositionSuccess" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="ShootFromWall" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="ShootFromOpponentSide" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="ShootFromOwnSide" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="Points" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="Disabled" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="DriverRating" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="IntakeRating" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="DefenseRating" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="AvoidDefenseRating" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="Comment" size="1073741823" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="45">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="630" y="570" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Team" action="GroupBy" rename="Team" />
+            <SummarizeField field="CrossedLine" action="Avg" rename="Avg_CrossedLine" />
+            <SummarizeField field="AutoLowerSuccess" action="Avg" rename="Avg_AutoLowerSuccess" />
+            <SummarizeField field="AutoOuterSuccess" action="Avg" rename="Avg_AutoOuterSuccess" />
+            <SummarizeField field="AutoInnerSuccess" action="Avg" rename="Avg_AutoInnerSuccess" />
+            <SummarizeField field="LowerSuccess" action="Avg" rename="Avg_LowerSuccess" />
+            <SummarizeField field="OuterSuccess" action="Avg" rename="Avg_OuterSuccess" />
+            <SummarizeField field="InnerSuccess" action="Avg" rename="Avg_InnerSuccess" />
+            <SummarizeField field="ClimbSuccess" action="Avg" rename="Avg_ClimbSuccess" />
+            <SummarizeField field="LiftedOthersSuccess" action="Avg" rename="Avg_LiftedOthersSuccess" />
+            <SummarizeField field="ParkedSuccess" action="Avg" rename="Avg_ParkedSuccess" />
+            <SummarizeField field="WheelRotationSuccess" action="Avg" rename="Avg_WheelRotationSuccess" />
+            <SummarizeField field="WheelPositionSuccess" action="Avg" rename="Avg_WheelPositionSuccess" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Team" source="Summarize: GroupBy - Team" type="Int64" />
+            <Field name="Avg_CrossedLine" source="Summarize: Avg - CrossedLine" type="Double" />
+            <Field name="Avg_AutoLowerSuccess" source="Summarize: Avg - AutoLowerSuccess" type="Double" />
+            <Field name="Avg_AutoOuterSuccess" source="Summarize: Avg - AutoOuterSuccess" type="Double" />
+            <Field name="Avg_AutoInnerSuccess" source="Summarize: Avg - AutoInnerSuccess" type="Double" />
+            <Field name="Avg_LowerSuccess" source="Summarize: Avg - LowerSuccess" type="Double" />
+            <Field name="Avg_OuterSuccess" source="Summarize: Avg - OuterSuccess" type="Double" />
+            <Field name="Avg_InnerSuccess" source="Summarize: Avg - InnerSuccess" type="Double" />
+            <Field name="Avg_ClimbSuccess" source="Summarize: Avg - ClimbSuccess" type="Double" />
+            <Field name="Avg_LiftedOthersSuccess" source="Summarize: Avg - LiftedOthersSuccess" type="Double" />
+            <Field name="Avg_ParkedSuccess" source="Summarize: Avg - ParkedSuccess" type="Double" />
+            <Field name="Avg_WheelRotationSuccess" source="Summarize: Avg - WheelRotationSuccess" type="Double" />
+            <Field name="Avg_WheelPositionSuccess" source="Summarize: Avg - WheelPositionSuccess" type="Double" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Team" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="57">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.CheckBoxGroup.CheckBoxGroup">
+        <Position x="858" y="474" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="58">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="858" y="558" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="63">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
+        <Position x="1014" y="462" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="64">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="1014" y="534" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="738" y="954" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\mascout\TableauInput\predictive_model.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>predictive_model.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Name" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="Object" size="2147483647" source="R-DATA:SERIAL" type="Blob" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="56">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="928.9999" y="604.9999" width="1267" height="336.0001" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Create Picklist</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="59">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+            <Position x="1170" y="749.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <CartesianMode>Allow</CartesianMode>
+              <SelectConfiguration>
+                <Configuration outputConnection="Output">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Target_Team" selected="True" rename="Team2_Team" input="Target_" />
+                    <SelectField field="Target_Avg_CrossedLine" selected="True" rename="Team2_Avg_CrossedLine" input="Target_" />
+                    <SelectField field="Target_Avg_AutoLowerSuccess" selected="True" rename="Team2_Avg_AutoLowerSuccess" input="Target_" />
+                    <SelectField field="Target_Avg_AutoOuterSuccess" selected="True" rename="Team2_Avg_AutoOuterSuccess" input="Target_" />
+                    <SelectField field="Target_Avg_AutoInnerSuccess" selected="True" rename="Team2_Avg_AutoInnerSuccess" input="Target_" />
+                    <SelectField field="Target_Avg_LowerSuccess" selected="True" rename="Team2_Avg_LowerSuccess" input="Target_" />
+                    <SelectField field="Target_Avg_OuterSuccess" selected="True" rename="Team2_Avg_OuterSuccess" input="Target_" />
+                    <SelectField field="Target_Avg_InnerSuccess" selected="True" rename="Team2_Avg_InnerSuccess" input="Target_" />
+                    <SelectField field="Target_Avg_ClimbSuccess" selected="True" rename="Team2_Avg_ClimbSuccess" input="Target_" />
+                    <SelectField field="Target_Avg_LiftedOthersSuccess" selected="True" rename="Team2_Avg_LiftedOthersSuccess" input="Target_" />
+                    <SelectField field="Target_Avg_ParkedSuccess" selected="True" rename="Team2_Avg_ParkedSuccess" input="Target_" />
+                    <SelectField field="Target_Avg_WheelRotationSuccess" selected="True" rename="Team2_Avg_WheelRotationSuccess" input="Target_" />
+                    <SelectField field="Target_Avg_WheelPositionSuccess" selected="True" rename="Team2_Avg_WheelPositionSuccess" input="Target_" />
+                    <SelectField field="Source_Team" selected="True" rename="Team3_Team" input="Source_" />
+                    <SelectField field="Source_Avg_CrossedLine" selected="True" rename="Team3_Avg_CrossedLine" input="Source_" />
+                    <SelectField field="Source_Avg_AutoLowerSuccess" selected="True" rename="Team3_Avg_AutoLowerSuccess" input="Source_" />
+                    <SelectField field="Source_Avg_AutoOuterSuccess" selected="True" rename="Team3_Avg_AutoOuterSuccess" input="Source_" />
+                    <SelectField field="Source_Avg_AutoInnerSuccess" selected="True" rename="Team3_Avg_AutoInnerSuccess" input="Source_" />
+                    <SelectField field="Source_Avg_LowerSuccess" selected="True" rename="Team3_Avg_LowerSuccess" input="Source_" />
+                    <SelectField field="Source_Avg_OuterSuccess" selected="True" rename="Team3_Avg_OuterSuccess" input="Source_" />
+                    <SelectField field="Source_Avg_InnerSuccess" selected="True" rename="Team3_Avg_InnerSuccess" input="Source_" />
+                    <SelectField field="Source_Avg_ClimbSuccess" selected="True" rename="Team3_Avg_ClimbSuccess" input="Source_" />
+                    <SelectField field="Source_Avg_LiftedOthersSuccess" selected="True" rename="Team3_Avg_LiftedOthersSuccess" input="Source_" />
+                    <SelectField field="Source_Avg_ParkedSuccess" selected="True" rename="Team3_Avg_ParkedSuccess" input="Source_" />
+                    <SelectField field="Source_Avg_WheelRotationSuccess" selected="True" rename="Team3_Avg_WheelRotationSuccess" input="Source_" />
+                    <SelectField field="Source_Avg_WheelPositionSuccess" selected="True" rename="Team3_Avg_WheelPositionSuccess" input="Source_" />
+                    <SelectField field="*Unknown" selected="False" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Team2_Team" source="Summarize: GroupBy - Team" type="Int64" />
+                <Field name="Team2_Avg_CrossedLine" source="Summarize: Avg - CrossedLine" type="Double" />
+                <Field name="Team2_Avg_AutoLowerSuccess" source="Summarize: Avg - AutoLowerSuccess" type="Double" />
+                <Field name="Team2_Avg_AutoOuterSuccess" source="Summarize: Avg - AutoOuterSuccess" type="Double" />
+                <Field name="Team2_Avg_AutoInnerSuccess" source="Summarize: Avg - AutoInnerSuccess" type="Double" />
+                <Field name="Team2_Avg_LowerSuccess" source="Summarize: Avg - LowerSuccess" type="Double" />
+                <Field name="Team2_Avg_OuterSuccess" source="Summarize: Avg - OuterSuccess" type="Double" />
+                <Field name="Team2_Avg_InnerSuccess" source="Summarize: Avg - InnerSuccess" type="Double" />
+                <Field name="Team2_Avg_ClimbSuccess" source="Summarize: Avg - ClimbSuccess" type="Double" />
+                <Field name="Team2_Avg_LiftedOthersSuccess" source="Summarize: Avg - LiftedOthersSuccess" type="Double" />
+                <Field name="Team2_Avg_ParkedSuccess" source="Summarize: Avg - ParkedSuccess" type="Double" />
+                <Field name="Team2_Avg_WheelRotationSuccess" source="Summarize: Avg - WheelRotationSuccess" type="Double" />
+                <Field name="Team2_Avg_WheelPositionSuccess" source="Summarize: Avg - WheelPositionSuccess" type="Double" />
+                <Field name="Team3_Team" source="Summarize: GroupBy - Team" type="Int64" />
+                <Field name="Team3_Avg_CrossedLine" source="Summarize: Avg - CrossedLine" type="Double" />
+                <Field name="Team3_Avg_AutoLowerSuccess" source="Summarize: Avg - AutoLowerSuccess" type="Double" />
+                <Field name="Team3_Avg_AutoOuterSuccess" source="Summarize: Avg - AutoOuterSuccess" type="Double" />
+                <Field name="Team3_Avg_AutoInnerSuccess" source="Summarize: Avg - AutoInnerSuccess" type="Double" />
+                <Field name="Team3_Avg_LowerSuccess" source="Summarize: Avg - LowerSuccess" type="Double" />
+                <Field name="Team3_Avg_OuterSuccess" source="Summarize: Avg - OuterSuccess" type="Double" />
+                <Field name="Team3_Avg_InnerSuccess" source="Summarize: Avg - InnerSuccess" type="Double" />
+                <Field name="Team3_Avg_ClimbSuccess" source="Summarize: Avg - ClimbSuccess" type="Double" />
+                <Field name="Team3_Avg_LiftedOthersSuccess" source="Summarize: Avg - LiftedOthersSuccess" type="Double" />
+                <Field name="Team3_Avg_ParkedSuccess" source="Summarize: Avg - ParkedSuccess" type="Double" />
+                <Field name="Team3_Avg_WheelRotationSuccess" source="Summarize: Avg - WheelRotationSuccess" type="Double" />
+                <Field name="Team3_Avg_WheelPositionSuccess" source="Summarize: Avg - WheelPositionSuccess" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+        </Node>
+        <Node ToolID="61">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="1350" y="750" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>[Team2_Team] != [Team3_Team]</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[Team2_Team] != [Team3_Team]</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="Team1_Team" source="Summarize: GroupBy - Team" type="Int64" />
+                <Field name="Team1_Avg_CrossedLine" source="Summarize: Avg - CrossedLine" type="Double" />
+                <Field name="Team1_Avg_AutoLowerSuccess" source="Summarize: Avg - AutoLowerSuccess" type="Double" />
+                <Field name="Team1_Avg_AutoOuterSuccess" source="Summarize: Avg - AutoOuterSuccess" type="Double" />
+                <Field name="Team1_Avg_AutoInnerSuccess" source="Summarize: Avg - AutoInnerSuccess" type="Double" />
+                <Field name="Team1_Avg_LowerSuccess" source="Summarize: Avg - LowerSuccess" type="Double" />
+                <Field name="Team1_Avg_OuterSuccess" source="Summarize: Avg - OuterSuccess" type="Double" />
+                <Field name="Team1_Avg_InnerSuccess" source="Summarize: Avg - InnerSuccess" type="Double" />
+                <Field name="Team1_Avg_ClimbSuccess" source="Summarize: Avg - ClimbSuccess" type="Double" />
+                <Field name="Team1_Avg_LiftedOthersSuccess" source="Summarize: Avg - LiftedOthersSuccess" type="Double" />
+                <Field name="Team1_Avg_ParkedSuccess" source="Summarize: Avg - ParkedSuccess" type="Double" />
+                <Field name="Team1_Avg_WheelRotationSuccess" source="Summarize: Avg - WheelRotationSuccess" type="Double" />
+                <Field name="Team1_Avg_WheelPositionSuccess" source="Summarize: Avg - WheelPositionSuccess" type="Double" />
+                <Field name="Team2_Team" source="Summarize: GroupBy - Team" type="Int64" />
+                <Field name="Team2_Avg_CrossedLine" source="Summarize: Avg - CrossedLine" type="Double" />
+                <Field name="Team2_Avg_AutoLowerSuccess" source="Summarize: Avg - AutoLowerSuccess" type="Double" />
+                <Field name="Team2_Avg_AutoOuterSuccess" source="Summarize: Avg - AutoOuterSuccess" type="Double" />
+                <Field name="Team2_Avg_AutoInnerSuccess" source="Summarize: Avg - AutoInnerSuccess" type="Double" />
+                <Field name="Team2_Avg_LowerSuccess" source="Summarize: Avg - LowerSuccess" type="Double" />
+                <Field name="Team2_Avg_OuterSuccess" source="Summarize: Avg - OuterSuccess" type="Double" />
+                <Field name="Team2_Avg_InnerSuccess" source="Summarize: Avg - InnerSuccess" type="Double" />
+                <Field name="Team2_Avg_ClimbSuccess" source="Summarize: Avg - ClimbSuccess" type="Double" />
+                <Field name="Team2_Avg_LiftedOthersSuccess" source="Summarize: Avg - LiftedOthersSuccess" type="Double" />
+                <Field name="Team2_Avg_ParkedSuccess" source="Summarize: Avg - ParkedSuccess" type="Double" />
+                <Field name="Team2_Avg_WheelRotationSuccess" source="Summarize: Avg - WheelRotationSuccess" type="Double" />
+                <Field name="Team2_Avg_WheelPositionSuccess" source="Summarize: Avg - WheelPositionSuccess" type="Double" />
+                <Field name="Team3_Team" source="Summarize: GroupBy - Team" type="Int64" />
+                <Field name="Team3_Avg_CrossedLine" source="Summarize: Avg - CrossedLine" type="Double" />
+                <Field name="Team3_Avg_AutoLowerSuccess" source="Summarize: Avg - AutoLowerSuccess" type="Double" />
+                <Field name="Team3_Avg_AutoOuterSuccess" source="Summarize: Avg - AutoOuterSuccess" type="Double" />
+                <Field name="Team3_Avg_AutoInnerSuccess" source="Summarize: Avg - AutoInnerSuccess" type="Double" />
+                <Field name="Team3_Avg_LowerSuccess" source="Summarize: Avg - LowerSuccess" type="Double" />
+                <Field name="Team3_Avg_OuterSuccess" source="Summarize: Avg - OuterSuccess" type="Double" />
+                <Field name="Team3_Avg_InnerSuccess" source="Summarize: Avg - InnerSuccess" type="Double" />
+                <Field name="Team3_Avg_ClimbSuccess" source="Summarize: Avg - ClimbSuccess" type="Double" />
+                <Field name="Team3_Avg_LiftedOthersSuccess" source="Summarize: Avg - LiftedOthersSuccess" type="Double" />
+                <Field name="Team3_Avg_ParkedSuccess" source="Summarize: Avg - ParkedSuccess" type="Double" />
+                <Field name="Team3_Avg_WheelRotationSuccess" source="Summarize: Avg - WheelRotationSuccess" type="Double" />
+                <Field name="Team3_Avg_WheelPositionSuccess" source="Summarize: Avg - WheelPositionSuccess" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="Team1_Team" source="Summarize: GroupBy - Team" type="Int64" />
+                <Field name="Team1_Avg_CrossedLine" source="Summarize: Avg - CrossedLine" type="Double" />
+                <Field name="Team1_Avg_AutoLowerSuccess" source="Summarize: Avg - AutoLowerSuccess" type="Double" />
+                <Field name="Team1_Avg_AutoOuterSuccess" source="Summarize: Avg - AutoOuterSuccess" type="Double" />
+                <Field name="Team1_Avg_AutoInnerSuccess" source="Summarize: Avg - AutoInnerSuccess" type="Double" />
+                <Field name="Team1_Avg_LowerSuccess" source="Summarize: Avg - LowerSuccess" type="Double" />
+                <Field name="Team1_Avg_OuterSuccess" source="Summarize: Avg - OuterSuccess" type="Double" />
+                <Field name="Team1_Avg_InnerSuccess" source="Summarize: Avg - InnerSuccess" type="Double" />
+                <Field name="Team1_Avg_ClimbSuccess" source="Summarize: Avg - ClimbSuccess" type="Double" />
+                <Field name="Team1_Avg_LiftedOthersSuccess" source="Summarize: Avg - LiftedOthersSuccess" type="Double" />
+                <Field name="Team1_Avg_ParkedSuccess" source="Summarize: Avg - ParkedSuccess" type="Double" />
+                <Field name="Team1_Avg_WheelRotationSuccess" source="Summarize: Avg - WheelRotationSuccess" type="Double" />
+                <Field name="Team1_Avg_WheelPositionSuccess" source="Summarize: Avg - WheelPositionSuccess" type="Double" />
+                <Field name="Team2_Team" source="Summarize: GroupBy - Team" type="Int64" />
+                <Field name="Team2_Avg_CrossedLine" source="Summarize: Avg - CrossedLine" type="Double" />
+                <Field name="Team2_Avg_AutoLowerSuccess" source="Summarize: Avg - AutoLowerSuccess" type="Double" />
+                <Field name="Team2_Avg_AutoOuterSuccess" source="Summarize: Avg - AutoOuterSuccess" type="Double" />
+                <Field name="Team2_Avg_AutoInnerSuccess" source="Summarize: Avg - AutoInnerSuccess" type="Double" />
+                <Field name="Team2_Avg_LowerSuccess" source="Summarize: Avg - LowerSuccess" type="Double" />
+                <Field name="Team2_Avg_OuterSuccess" source="Summarize: Avg - OuterSuccess" type="Double" />
+                <Field name="Team2_Avg_InnerSuccess" source="Summarize: Avg - InnerSuccess" type="Double" />
+                <Field name="Team2_Avg_ClimbSuccess" source="Summarize: Avg - ClimbSuccess" type="Double" />
+                <Field name="Team2_Avg_LiftedOthersSuccess" source="Summarize: Avg - LiftedOthersSuccess" type="Double" />
+                <Field name="Team2_Avg_ParkedSuccess" source="Summarize: Avg - ParkedSuccess" type="Double" />
+                <Field name="Team2_Avg_WheelRotationSuccess" source="Summarize: Avg - WheelRotationSuccess" type="Double" />
+                <Field name="Team2_Avg_WheelPositionSuccess" source="Summarize: Avg - WheelPositionSuccess" type="Double" />
+                <Field name="Team3_Team" source="Summarize: GroupBy - Team" type="Int64" />
+                <Field name="Team3_Avg_CrossedLine" source="Summarize: Avg - CrossedLine" type="Double" />
+                <Field name="Team3_Avg_AutoLowerSuccess" source="Summarize: Avg - AutoLowerSuccess" type="Double" />
+                <Field name="Team3_Avg_AutoOuterSuccess" source="Summarize: Avg - AutoOuterSuccess" type="Double" />
+                <Field name="Team3_Avg_AutoInnerSuccess" source="Summarize: Avg - AutoInnerSuccess" type="Double" />
+                <Field name="Team3_Avg_LowerSuccess" source="Summarize: Avg - LowerSuccess" type="Double" />
+                <Field name="Team3_Avg_OuterSuccess" source="Summarize: Avg - OuterSuccess" type="Double" />
+                <Field name="Team3_Avg_InnerSuccess" source="Summarize: Avg - InnerSuccess" type="Double" />
+                <Field name="Team3_Avg_ClimbSuccess" source="Summarize: Avg - ClimbSuccess" type="Double" />
+                <Field name="Team3_Avg_LiftedOthersSuccess" source="Summarize: Avg - LiftedOthersSuccess" type="Double" />
+                <Field name="Team3_Avg_ParkedSuccess" source="Summarize: Avg - ParkedSuccess" type="Double" />
+                <Field name="Team3_Avg_WheelRotationSuccess" source="Summarize: Avg - WheelRotationSuccess" type="Double" />
+                <Field name="Team3_Avg_WheelPositionSuccess" source="Summarize: Avg - WheelPositionSuccess" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="62">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="1446" y="750" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>[Team2_Team] &lt; [Team3_Team]</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[Team2_Team] &lt; [Team3_Team]</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="Team1_Team" source="Summarize: GroupBy - Team" type="Int64" />
+                <Field name="Team1_Avg_CrossedLine" source="Summarize: Avg - CrossedLine" type="Double" />
+                <Field name="Team1_Avg_AutoLowerSuccess" source="Summarize: Avg - AutoLowerSuccess" type="Double" />
+                <Field name="Team1_Avg_AutoOuterSuccess" source="Summarize: Avg - AutoOuterSuccess" type="Double" />
+                <Field name="Team1_Avg_AutoInnerSuccess" source="Summarize: Avg - AutoInnerSuccess" type="Double" />
+                <Field name="Team1_Avg_LowerSuccess" source="Summarize: Avg - LowerSuccess" type="Double" />
+                <Field name="Team1_Avg_OuterSuccess" source="Summarize: Avg - OuterSuccess" type="Double" />
+                <Field name="Team1_Avg_InnerSuccess" source="Summarize: Avg - InnerSuccess" type="Double" />
+                <Field name="Team1_Avg_ClimbSuccess" source="Summarize: Avg - ClimbSuccess" type="Double" />
+                <Field name="Team1_Avg_LiftedOthersSuccess" source="Summarize: Avg - LiftedOthersSuccess" type="Double" />
+                <Field name="Team1_Avg_ParkedSuccess" source="Summarize: Avg - ParkedSuccess" type="Double" />
+                <Field name="Team1_Avg_WheelRotationSuccess" source="Summarize: Avg - WheelRotationSuccess" type="Double" />
+                <Field name="Team1_Avg_WheelPositionSuccess" source="Summarize: Avg - WheelPositionSuccess" type="Double" />
+                <Field name="Team2_Team" source="Summarize: GroupBy - Team" type="Int64" />
+                <Field name="Team2_Avg_CrossedLine" source="Summarize: Avg - CrossedLine" type="Double" />
+                <Field name="Team2_Avg_AutoLowerSuccess" source="Summarize: Avg - AutoLowerSuccess" type="Double" />
+                <Field name="Team2_Avg_AutoOuterSuccess" source="Summarize: Avg - AutoOuterSuccess" type="Double" />
+                <Field name="Team2_Avg_AutoInnerSuccess" source="Summarize: Avg - AutoInnerSuccess" type="Double" />
+                <Field name="Team2_Avg_LowerSuccess" source="Summarize: Avg - LowerSuccess" type="Double" />
+                <Field name="Team2_Avg_OuterSuccess" source="Summarize: Avg - OuterSuccess" type="Double" />
+                <Field name="Team2_Avg_InnerSuccess" source="Summarize: Avg - InnerSuccess" type="Double" />
+                <Field name="Team2_Avg_ClimbSuccess" source="Summarize: Avg - ClimbSuccess" type="Double" />
+                <Field name="Team2_Avg_LiftedOthersSuccess" source="Summarize: Avg - LiftedOthersSuccess" type="Double" />
+                <Field name="Team2_Avg_ParkedSuccess" source="Summarize: Avg - ParkedSuccess" type="Double" />
+                <Field name="Team2_Avg_WheelRotationSuccess" source="Summarize: Avg - WheelRotationSuccess" type="Double" />
+                <Field name="Team2_Avg_WheelPositionSuccess" source="Summarize: Avg - WheelPositionSuccess" type="Double" />
+                <Field name="Team3_Team" source="Summarize: GroupBy - Team" type="Int64" />
+                <Field name="Team3_Avg_CrossedLine" source="Summarize: Avg - CrossedLine" type="Double" />
+                <Field name="Team3_Avg_AutoLowerSuccess" source="Summarize: Avg - AutoLowerSuccess" type="Double" />
+                <Field name="Team3_Avg_AutoOuterSuccess" source="Summarize: Avg - AutoOuterSuccess" type="Double" />
+                <Field name="Team3_Avg_AutoInnerSuccess" source="Summarize: Avg - AutoInnerSuccess" type="Double" />
+                <Field name="Team3_Avg_LowerSuccess" source="Summarize: Avg - LowerSuccess" type="Double" />
+                <Field name="Team3_Avg_OuterSuccess" source="Summarize: Avg - OuterSuccess" type="Double" />
+                <Field name="Team3_Avg_InnerSuccess" source="Summarize: Avg - InnerSuccess" type="Double" />
+                <Field name="Team3_Avg_ClimbSuccess" source="Summarize: Avg - ClimbSuccess" type="Double" />
+                <Field name="Team3_Avg_LiftedOthersSuccess" source="Summarize: Avg - LiftedOthersSuccess" type="Double" />
+                <Field name="Team3_Avg_ParkedSuccess" source="Summarize: Avg - ParkedSuccess" type="Double" />
+                <Field name="Team3_Avg_WheelRotationSuccess" source="Summarize: Avg - WheelRotationSuccess" type="Double" />
+                <Field name="Team3_Avg_WheelPositionSuccess" source="Summarize: Avg - WheelPositionSuccess" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="Team1_Team" source="Summarize: GroupBy - Team" type="Int64" />
+                <Field name="Team1_Avg_CrossedLine" source="Summarize: Avg - CrossedLine" type="Double" />
+                <Field name="Team1_Avg_AutoLowerSuccess" source="Summarize: Avg - AutoLowerSuccess" type="Double" />
+                <Field name="Team1_Avg_AutoOuterSuccess" source="Summarize: Avg - AutoOuterSuccess" type="Double" />
+                <Field name="Team1_Avg_AutoInnerSuccess" source="Summarize: Avg - AutoInnerSuccess" type="Double" />
+                <Field name="Team1_Avg_LowerSuccess" source="Summarize: Avg - LowerSuccess" type="Double" />
+                <Field name="Team1_Avg_OuterSuccess" source="Summarize: Avg - OuterSuccess" type="Double" />
+                <Field name="Team1_Avg_InnerSuccess" source="Summarize: Avg - InnerSuccess" type="Double" />
+                <Field name="Team1_Avg_ClimbSuccess" source="Summarize: Avg - ClimbSuccess" type="Double" />
+                <Field name="Team1_Avg_LiftedOthersSuccess" source="Summarize: Avg - LiftedOthersSuccess" type="Double" />
+                <Field name="Team1_Avg_ParkedSuccess" source="Summarize: Avg - ParkedSuccess" type="Double" />
+                <Field name="Team1_Avg_WheelRotationSuccess" source="Summarize: Avg - WheelRotationSuccess" type="Double" />
+                <Field name="Team1_Avg_WheelPositionSuccess" source="Summarize: Avg - WheelPositionSuccess" type="Double" />
+                <Field name="Team2_Team" source="Summarize: GroupBy - Team" type="Int64" />
+                <Field name="Team2_Avg_CrossedLine" source="Summarize: Avg - CrossedLine" type="Double" />
+                <Field name="Team2_Avg_AutoLowerSuccess" source="Summarize: Avg - AutoLowerSuccess" type="Double" />
+                <Field name="Team2_Avg_AutoOuterSuccess" source="Summarize: Avg - AutoOuterSuccess" type="Double" />
+                <Field name="Team2_Avg_AutoInnerSuccess" source="Summarize: Avg - AutoInnerSuccess" type="Double" />
+                <Field name="Team2_Avg_LowerSuccess" source="Summarize: Avg - LowerSuccess" type="Double" />
+                <Field name="Team2_Avg_OuterSuccess" source="Summarize: Avg - OuterSuccess" type="Double" />
+                <Field name="Team2_Avg_InnerSuccess" source="Summarize: Avg - InnerSuccess" type="Double" />
+                <Field name="Team2_Avg_ClimbSuccess" source="Summarize: Avg - ClimbSuccess" type="Double" />
+                <Field name="Team2_Avg_LiftedOthersSuccess" source="Summarize: Avg - LiftedOthersSuccess" type="Double" />
+                <Field name="Team2_Avg_ParkedSuccess" source="Summarize: Avg - ParkedSuccess" type="Double" />
+                <Field name="Team2_Avg_WheelRotationSuccess" source="Summarize: Avg - WheelRotationSuccess" type="Double" />
+                <Field name="Team2_Avg_WheelPositionSuccess" source="Summarize: Avg - WheelPositionSuccess" type="Double" />
+                <Field name="Team3_Team" source="Summarize: GroupBy - Team" type="Int64" />
+                <Field name="Team3_Avg_CrossedLine" source="Summarize: Avg - CrossedLine" type="Double" />
+                <Field name="Team3_Avg_AutoLowerSuccess" source="Summarize: Avg - AutoLowerSuccess" type="Double" />
+                <Field name="Team3_Avg_AutoOuterSuccess" source="Summarize: Avg - AutoOuterSuccess" type="Double" />
+                <Field name="Team3_Avg_AutoInnerSuccess" source="Summarize: Avg - AutoInnerSuccess" type="Double" />
+                <Field name="Team3_Avg_LowerSuccess" source="Summarize: Avg - LowerSuccess" type="Double" />
+                <Field name="Team3_Avg_OuterSuccess" source="Summarize: Avg - OuterSuccess" type="Double" />
+                <Field name="Team3_Avg_InnerSuccess" source="Summarize: Avg - InnerSuccess" type="Double" />
+                <Field name="Team3_Avg_ClimbSuccess" source="Summarize: Avg - ClimbSuccess" type="Double" />
+                <Field name="Team3_Avg_LiftedOthersSuccess" source="Summarize: Avg - LiftedOthersSuccess" type="Double" />
+                <Field name="Team3_Avg_ParkedSuccess" source="Summarize: Avg - ParkedSuccess" type="Double" />
+                <Field name="Team3_Avg_WheelRotationSuccess" source="Summarize: Avg - WheelRotationSuccess" type="Double" />
+                <Field name="Team3_Avg_WheelPositionSuccess" source="Summarize: Avg - WheelPositionSuccess" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="65">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="953.9999" y="654.0001" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="1" />
+              <Fields>
+                <Field name="Team" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>1</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Team" source="TextInput:" type="Byte" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="66">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+            <Position x="1050" y="654" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Field>Team</Field>
+              <Delimeters value="," />
+              <NumFields value="1" />
+              <Flags value="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field description="TextToColumns: Parsed from Team" name="Team" source="TextToColumns: Parsed from Team" type="Byte" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+        </Node>
+        <Node ToolID="67">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1134" y="653.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Team" selected="True" type="Int64" size="8" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field description="TextToColumns: Parsed from Team" name="Team" source="TextToColumns: Parsed from Team" type="Int64" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="68">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="978" y="750" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="Team" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="Team" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Left_Team" selected="True" input="Left_" />
+                    <SelectField field="Right_Team" selected="False" rename="Right_Team" input="Right_" />
+                    <SelectField field="Right_Avg_CrossedLine" selected="True" input="Right_" />
+                    <SelectField field="Right_Avg_AutoLowerSuccess" selected="True" input="Right_" />
+                    <SelectField field="Right_Avg_AutoOuterSuccess" selected="True" input="Right_" />
+                    <SelectField field="Right_Avg_AutoInnerSuccess" selected="True" input="Right_" />
+                    <SelectField field="Right_Avg_LowerSuccess" selected="True" input="Right_" />
+                    <SelectField field="Right_Avg_OuterSuccess" selected="True" input="Right_" />
+                    <SelectField field="Right_Avg_InnerSuccess" selected="True" input="Right_" />
+                    <SelectField field="Right_Avg_ClimbSuccess" selected="True" input="Right_" />
+                    <SelectField field="Right_Avg_LiftedOthersSuccess" selected="True" input="Right_" />
+                    <SelectField field="Right_Avg_ParkedSuccess" selected="True" input="Right_" />
+                    <SelectField field="Right_Avg_WheelRotationSuccess" selected="True" input="Right_" />
+                    <SelectField field="Right_Avg_WheelPositionSuccess" selected="True" input="Right_" />
+                    <SelectField field="*Unknown" selected="False" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Left">
+              <RecordInfo>
+                <Field description="TextToColumns: Parsed from Team" name="Team" source="TextToColumns: Parsed from Team" type="Int64" />
+              </RecordInfo>
+              <SortInfo noProgress="True">
+                <Field field="Team" />
+              </SortInfo>
+            </MetaInfo>
+            <MetaInfo connection="Join">
+              <RecordInfo>
+                <Field description="TextToColumns: Parsed from Team" name="Team" source="TextToColumns: Parsed from Team" type="Int64" />
+                <Field name="Avg_CrossedLine" source="Summarize: Avg - CrossedLine" type="Double" />
+                <Field name="Avg_AutoLowerSuccess" source="Summarize: Avg - AutoLowerSuccess" type="Double" />
+                <Field name="Avg_AutoOuterSuccess" source="Summarize: Avg - AutoOuterSuccess" type="Double" />
+                <Field name="Avg_AutoInnerSuccess" source="Summarize: Avg - AutoInnerSuccess" type="Double" />
+                <Field name="Avg_LowerSuccess" source="Summarize: Avg - LowerSuccess" type="Double" />
+                <Field name="Avg_OuterSuccess" source="Summarize: Avg - OuterSuccess" type="Double" />
+                <Field name="Avg_InnerSuccess" source="Summarize: Avg - InnerSuccess" type="Double" />
+                <Field name="Avg_ClimbSuccess" source="Summarize: Avg - ClimbSuccess" type="Double" />
+                <Field name="Avg_LiftedOthersSuccess" source="Summarize: Avg - LiftedOthersSuccess" type="Double" />
+                <Field name="Avg_ParkedSuccess" source="Summarize: Avg - ParkedSuccess" type="Double" />
+                <Field name="Avg_WheelRotationSuccess" source="Summarize: Avg - WheelRotationSuccess" type="Double" />
+                <Field name="Avg_WheelPositionSuccess" source="Summarize: Avg - WheelPositionSuccess" type="Double" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="Team" order="" />
+              </SortInfo>
+            </MetaInfo>
+            <MetaInfo connection="Right">
+              <RecordInfo>
+                <Field name="Team" source="Summarize: GroupBy - Team" type="Int64" />
+                <Field name="Avg_CrossedLine" source="Summarize: Avg - CrossedLine" type="Double" />
+                <Field name="Avg_AutoLowerSuccess" source="Summarize: Avg - AutoLowerSuccess" type="Double" />
+                <Field name="Avg_AutoOuterSuccess" source="Summarize: Avg - AutoOuterSuccess" type="Double" />
+                <Field name="Avg_AutoInnerSuccess" source="Summarize: Avg - AutoInnerSuccess" type="Double" />
+                <Field name="Avg_LowerSuccess" source="Summarize: Avg - LowerSuccess" type="Double" />
+                <Field name="Avg_OuterSuccess" source="Summarize: Avg - OuterSuccess" type="Double" />
+                <Field name="Avg_InnerSuccess" source="Summarize: Avg - InnerSuccess" type="Double" />
+                <Field name="Avg_ClimbSuccess" source="Summarize: Avg - ClimbSuccess" type="Double" />
+                <Field name="Avg_LiftedOthersSuccess" source="Summarize: Avg - LiftedOthersSuccess" type="Double" />
+                <Field name="Avg_ParkedSuccess" source="Summarize: Avg - ParkedSuccess" type="Double" />
+                <Field name="Avg_WheelRotationSuccess" source="Summarize: Avg - WheelRotationSuccess" type="Double" />
+                <Field name="Avg_WheelPositionSuccess" source="Summarize: Avg - WheelPositionSuccess" type="Double" />
+              </RecordInfo>
+              <SortInfo noProgress="True">
+                <Field field="Team" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="69">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="1074" y="750.0002" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>!=</Operator>
+                <Field>Team</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2020-02-01 16:46:48</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>6328</Operand>
+                  <StartDate>2020-02-01 16:46:48</StartDate>
+                  <EndDate>2020-02-01 16:46:48</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[Team] != 6328</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="Team" source="Summarize: GroupBy - Team" type="Int64" />
+                <Field name="Avg_CrossedLine" source="Summarize: Avg - CrossedLine" type="Double" />
+                <Field name="Avg_AutoLowerSuccess" source="Summarize: Avg - AutoLowerSuccess" type="Double" />
+                <Field name="Avg_AutoOuterSuccess" source="Summarize: Avg - AutoOuterSuccess" type="Double" />
+                <Field name="Avg_AutoInnerSuccess" source="Summarize: Avg - AutoInnerSuccess" type="Double" />
+                <Field name="Avg_LowerSuccess" source="Summarize: Avg - LowerSuccess" type="Double" />
+                <Field name="Avg_OuterSuccess" source="Summarize: Avg - OuterSuccess" type="Double" />
+                <Field name="Avg_InnerSuccess" source="Summarize: Avg - InnerSuccess" type="Double" />
+                <Field name="Avg_ClimbSuccess" source="Summarize: Avg - ClimbSuccess" type="Double" />
+                <Field name="Avg_LiftedOthersSuccess" source="Summarize: Avg - LiftedOthersSuccess" type="Double" />
+                <Field name="Avg_ParkedSuccess" source="Summarize: Avg - ParkedSuccess" type="Double" />
+                <Field name="Avg_WheelRotationSuccess" source="Summarize: Avg - WheelRotationSuccess" type="Double" />
+                <Field name="Avg_WheelPositionSuccess" source="Summarize: Avg - WheelPositionSuccess" type="Double" />
+              </RecordInfo>
+              <SortInfo noProgress="True">
+                <Field field="Team" />
+              </SortInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="Team" source="Summarize: GroupBy - Team" type="Int64" />
+                <Field name="Avg_CrossedLine" source="Summarize: Avg - CrossedLine" type="Double" />
+                <Field name="Avg_AutoLowerSuccess" source="Summarize: Avg - AutoLowerSuccess" type="Double" />
+                <Field name="Avg_AutoOuterSuccess" source="Summarize: Avg - AutoOuterSuccess" type="Double" />
+                <Field name="Avg_AutoInnerSuccess" source="Summarize: Avg - AutoInnerSuccess" type="Double" />
+                <Field name="Avg_LowerSuccess" source="Summarize: Avg - LowerSuccess" type="Double" />
+                <Field name="Avg_OuterSuccess" source="Summarize: Avg - OuterSuccess" type="Double" />
+                <Field name="Avg_InnerSuccess" source="Summarize: Avg - InnerSuccess" type="Double" />
+                <Field name="Avg_ClimbSuccess" source="Summarize: Avg - ClimbSuccess" type="Double" />
+                <Field name="Avg_LiftedOthersSuccess" source="Summarize: Avg - LiftedOthersSuccess" type="Double" />
+                <Field name="Avg_ParkedSuccess" source="Summarize: Avg - ParkedSuccess" type="Double" />
+                <Field name="Avg_WheelRotationSuccess" source="Summarize: Avg - WheelRotationSuccess" type="Double" />
+                <Field name="Avg_WheelPositionSuccess" source="Summarize: Avg - WheelPositionSuccess" type="Double" />
+              </RecordInfo>
+              <SortInfo noProgress="True">
+                <Field field="Team" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="70">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+            <Position x="1266" y="750" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <CartesianMode>Allow</CartesianMode>
+              <SelectConfiguration>
+                <Configuration outputConnection="Output">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Target_Team" selected="True" rename="Team1_Team" input="Target_" />
+                    <SelectField field="Target_Avg_CrossedLine" selected="True" rename="Team1_Avg_CrossedLine" input="Target_" />
+                    <SelectField field="Target_Avg_AutoLowerSuccess" selected="True" rename="Team1_Avg_AutoLowerSuccess" input="Target_" />
+                    <SelectField field="Target_Avg_AutoOuterSuccess" selected="True" rename="Team1_Avg_AutoOuterSuccess" input="Target_" />
+                    <SelectField field="Target_Avg_AutoInnerSuccess" selected="True" rename="Team1_Avg_AutoInnerSuccess" input="Target_" />
+                    <SelectField field="Target_Avg_LowerSuccess" selected="True" rename="Team1_Avg_LowerSuccess" input="Target_" />
+                    <SelectField field="Target_Avg_OuterSuccess" selected="True" rename="Team1_Avg_OuterSuccess" input="Target_" />
+                    <SelectField field="Target_Avg_InnerSuccess" selected="True" rename="Team1_Avg_InnerSuccess" input="Target_" />
+                    <SelectField field="Target_Avg_ClimbSuccess" selected="True" rename="Team1_Avg_ClimbSuccess" input="Target_" />
+                    <SelectField field="Target_Avg_LiftedOthersSuccess" selected="True" rename="Team1_Avg_LiftedOthersSuccess" input="Target_" />
+                    <SelectField field="Target_Avg_ParkedSuccess" selected="True" rename="Team1_Avg_ParkedSuccess" input="Target_" />
+                    <SelectField field="Target_Avg_WheelRotationSuccess" selected="True" rename="Team1_Avg_WheelRotationSuccess" input="Target_" />
+                    <SelectField field="Target_Avg_WheelPositionSuccess" selected="True" rename="Team1_Avg_WheelPositionSuccess" input="Target_" />
+                    <SelectField field="Source_Team2_Team" selected="True" input="Source_" />
+                    <SelectField field="Source_Team2_Avg_CrossedLine" selected="True" input="Source_" />
+                    <SelectField field="Source_Team2_Avg_AutoLowerSuccess" selected="True" input="Source_" />
+                    <SelectField field="Source_Team2_Avg_AutoOuterSuccess" selected="True" input="Source_" />
+                    <SelectField field="Source_Team2_Avg_AutoInnerSuccess" selected="True" input="Source_" />
+                    <SelectField field="Source_Team2_Avg_LowerSuccess" selected="True" input="Source_" />
+                    <SelectField field="Source_Team2_Avg_OuterSuccess" selected="True" input="Source_" />
+                    <SelectField field="Source_Team2_Avg_InnerSuccess" selected="True" input="Source_" />
+                    <SelectField field="Source_Team2_Avg_ClimbSuccess" selected="True" input="Source_" />
+                    <SelectField field="Source_Team2_Avg_LiftedOthersSuccess" selected="True" input="Source_" />
+                    <SelectField field="Source_Team2_Avg_ParkedSuccess" selected="True" input="Source_" />
+                    <SelectField field="Source_Team2_Avg_WheelRotationSuccess" selected="True" input="Source_" />
+                    <SelectField field="Source_Team2_Avg_WheelPositionSuccess" selected="True" input="Source_" />
+                    <SelectField field="Source_Team3_Team" selected="True" input="Source_" />
+                    <SelectField field="Source_Team3_Avg_CrossedLine" selected="True" input="Source_" />
+                    <SelectField field="Source_Team3_Avg_AutoLowerSuccess" selected="True" input="Source_" />
+                    <SelectField field="Source_Team3_Avg_AutoOuterSuccess" selected="True" input="Source_" />
+                    <SelectField field="Source_Team3_Avg_AutoInnerSuccess" selected="True" input="Source_" />
+                    <SelectField field="Source_Team3_Avg_LowerSuccess" selected="True" input="Source_" />
+                    <SelectField field="Source_Team3_Avg_OuterSuccess" selected="True" input="Source_" />
+                    <SelectField field="Source_Team3_Avg_InnerSuccess" selected="True" input="Source_" />
+                    <SelectField field="Source_Team3_Avg_ClimbSuccess" selected="True" input="Source_" />
+                    <SelectField field="Source_Team3_Avg_LiftedOthersSuccess" selected="True" input="Source_" />
+                    <SelectField field="Source_Team3_Avg_ParkedSuccess" selected="True" input="Source_" />
+                    <SelectField field="Source_Team3_Avg_WheelRotationSuccess" selected="True" input="Source_" />
+                    <SelectField field="Source_Team3_Avg_WheelPositionSuccess" selected="True" input="Source_" />
+                    <SelectField field="*Unknown" selected="False" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Team1_Team" source="Summarize: GroupBy - Team" type="Int64" />
+                <Field name="Team1_Avg_CrossedLine" source="Summarize: Avg - CrossedLine" type="Double" />
+                <Field name="Team1_Avg_AutoLowerSuccess" source="Summarize: Avg - AutoLowerSuccess" type="Double" />
+                <Field name="Team1_Avg_AutoOuterSuccess" source="Summarize: Avg - AutoOuterSuccess" type="Double" />
+                <Field name="Team1_Avg_AutoInnerSuccess" source="Summarize: Avg - AutoInnerSuccess" type="Double" />
+                <Field name="Team1_Avg_LowerSuccess" source="Summarize: Avg - LowerSuccess" type="Double" />
+                <Field name="Team1_Avg_OuterSuccess" source="Summarize: Avg - OuterSuccess" type="Double" />
+                <Field name="Team1_Avg_InnerSuccess" source="Summarize: Avg - InnerSuccess" type="Double" />
+                <Field name="Team1_Avg_ClimbSuccess" source="Summarize: Avg - ClimbSuccess" type="Double" />
+                <Field name="Team1_Avg_LiftedOthersSuccess" source="Summarize: Avg - LiftedOthersSuccess" type="Double" />
+                <Field name="Team1_Avg_ParkedSuccess" source="Summarize: Avg - ParkedSuccess" type="Double" />
+                <Field name="Team1_Avg_WheelRotationSuccess" source="Summarize: Avg - WheelRotationSuccess" type="Double" />
+                <Field name="Team1_Avg_WheelPositionSuccess" source="Summarize: Avg - WheelPositionSuccess" type="Double" />
+                <Field name="Team2_Team" source="Summarize: GroupBy - Team" type="Int64" />
+                <Field name="Team2_Avg_CrossedLine" source="Summarize: Avg - CrossedLine" type="Double" />
+                <Field name="Team2_Avg_AutoLowerSuccess" source="Summarize: Avg - AutoLowerSuccess" type="Double" />
+                <Field name="Team2_Avg_AutoOuterSuccess" source="Summarize: Avg - AutoOuterSuccess" type="Double" />
+                <Field name="Team2_Avg_AutoInnerSuccess" source="Summarize: Avg - AutoInnerSuccess" type="Double" />
+                <Field name="Team2_Avg_LowerSuccess" source="Summarize: Avg - LowerSuccess" type="Double" />
+                <Field name="Team2_Avg_OuterSuccess" source="Summarize: Avg - OuterSuccess" type="Double" />
+                <Field name="Team2_Avg_InnerSuccess" source="Summarize: Avg - InnerSuccess" type="Double" />
+                <Field name="Team2_Avg_ClimbSuccess" source="Summarize: Avg - ClimbSuccess" type="Double" />
+                <Field name="Team2_Avg_LiftedOthersSuccess" source="Summarize: Avg - LiftedOthersSuccess" type="Double" />
+                <Field name="Team2_Avg_ParkedSuccess" source="Summarize: Avg - ParkedSuccess" type="Double" />
+                <Field name="Team2_Avg_WheelRotationSuccess" source="Summarize: Avg - WheelRotationSuccess" type="Double" />
+                <Field name="Team2_Avg_WheelPositionSuccess" source="Summarize: Avg - WheelPositionSuccess" type="Double" />
+                <Field name="Team3_Team" source="Summarize: GroupBy - Team" type="Int64" />
+                <Field name="Team3_Avg_CrossedLine" source="Summarize: Avg - CrossedLine" type="Double" />
+                <Field name="Team3_Avg_AutoLowerSuccess" source="Summarize: Avg - AutoLowerSuccess" type="Double" />
+                <Field name="Team3_Avg_AutoOuterSuccess" source="Summarize: Avg - AutoOuterSuccess" type="Double" />
+                <Field name="Team3_Avg_AutoInnerSuccess" source="Summarize: Avg - AutoInnerSuccess" type="Double" />
+                <Field name="Team3_Avg_LowerSuccess" source="Summarize: Avg - LowerSuccess" type="Double" />
+                <Field name="Team3_Avg_OuterSuccess" source="Summarize: Avg - OuterSuccess" type="Double" />
+                <Field name="Team3_Avg_InnerSuccess" source="Summarize: Avg - InnerSuccess" type="Double" />
+                <Field name="Team3_Avg_ClimbSuccess" source="Summarize: Avg - ClimbSuccess" type="Double" />
+                <Field name="Team3_Avg_LiftedOthersSuccess" source="Summarize: Avg - LiftedOthersSuccess" type="Double" />
+                <Field name="Team3_Avg_ParkedSuccess" source="Summarize: Avg - ParkedSuccess" type="Double" />
+                <Field name="Team3_Avg_WheelRotationSuccess" source="Summarize: Avg - WheelRotationSuccess" type="Double" />
+                <Field name="Team3_Avg_WheelPositionSuccess" source="Summarize: Avg - WheelPositionSuccess" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+        </Node>
+        <Node ToolID="77">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1542" y="750" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[Team1_Avg_CrossedLine] + [Team2_Avg_CrossedLine] + [Team3_Avg_CrossedLine]" field="Sum_CrossedLine" size="8" type="Double" />
+                <FormulaField expression="[Team1_Avg_AutoLowerSuccess] + [Team2_Avg_AutoLowerSuccess] + [Team3_Avg_AutoLowerSuccess]" field="Sum_AutoLowerSuccess" size="8" type="Double" />
+                <FormulaField expression="[Team1_Avg_AutoOuterSuccess] + [Team2_Avg_AutoOuterSuccess] + [Team3_Avg_AutoOuterSuccess]" field="Sum_AutoOuterSuccess" size="8" type="Double" />
+                <FormulaField expression="[Team1_Avg_AutoInnerSuccess] + [Team2_Avg_AutoInnerSuccess] + [Team3_Avg_AutoInnerSuccess]" field="Sum_AutoInnerSuccess" size="8" type="Double" />
+                <FormulaField expression="[Team1_Avg_LowerSuccess] + [Team2_Avg_LowerSuccess] + [Team3_Avg_LowerSuccess]" field="Sum_LowerSuccess" size="8" type="Double" />
+                <FormulaField expression="[Team1_Avg_OuterSuccess] + [Team2_Avg_OuterSuccess] + [Team3_Avg_OuterSuccess]" field="Sum_OuterSuccess" size="8" type="Double" />
+                <FormulaField expression="[Team1_Avg_InnerSuccess] + [Team2_Avg_InnerSuccess] + [Team3_Avg_InnerSuccess]" field="Sum_InnerSuccess" size="8" type="Double" />
+                <FormulaField expression="[Team1_Avg_ClimbSuccess] + [Team2_Avg_ClimbSuccess] + [Team3_Avg_ClimbSuccess]" field="Sum_ClimbSuccess" size="8" type="Double" />
+                <FormulaField expression="[Team1_Avg_LiftedOthersSuccess] + [Team2_Avg_LiftedOthersSuccess] + [Team3_Avg_LiftedOthersSuccess]" field="Sum_LiftedOthersSuccess" size="8" type="Double" />
+                <FormulaField expression="[Team1_Avg_ParkedSuccess] + [Team2_Avg_ParkedSuccess] + [Team3_Avg_ParkedSuccess]" field="Sum_ParkedSuccess" size="8" type="Double" />
+                <FormulaField expression="[Team1_Avg_WheelRotationSuccess] + [Team2_Avg_WheelRotationSuccess] + [Team3_Avg_WheelRotationSuccess]" field="Sum_WheelRotationSuccess" size="8" type="Double" />
+                <FormulaField expression="[Team1_Avg_WheelPositionSuccess] + [Team2_Avg_WheelPositionSuccess] + [Team3_Avg_WheelPositionSuccess]" field="Sum_WheelPositionSuccess" size="8" type="Double" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Sum_CrossedLine = [Team1_Avg_CrossedLine] + [Team2_Avg_CrossedLine] + [Team3_Avg...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Team1_Team" source="Summarize: GroupBy - Team" type="Int64" />
+                <Field name="Team1_Avg_CrossedLine" source="Summarize: Avg - CrossedLine" type="Double" />
+                <Field name="Team1_Avg_AutoLowerSuccess" source="Summarize: Avg - AutoLowerSuccess" type="Double" />
+                <Field name="Team1_Avg_AutoOuterSuccess" source="Summarize: Avg - AutoOuterSuccess" type="Double" />
+                <Field name="Team1_Avg_AutoInnerSuccess" source="Summarize: Avg - AutoInnerSuccess" type="Double" />
+                <Field name="Team1_Avg_LowerSuccess" source="Summarize: Avg - LowerSuccess" type="Double" />
+                <Field name="Team1_Avg_OuterSuccess" source="Summarize: Avg - OuterSuccess" type="Double" />
+                <Field name="Team1_Avg_InnerSuccess" source="Summarize: Avg - InnerSuccess" type="Double" />
+                <Field name="Team1_Avg_ClimbSuccess" source="Summarize: Avg - ClimbSuccess" type="Double" />
+                <Field name="Team1_Avg_LiftedOthersSuccess" source="Summarize: Avg - LiftedOthersSuccess" type="Double" />
+                <Field name="Team1_Avg_ParkedSuccess" source="Summarize: Avg - ParkedSuccess" type="Double" />
+                <Field name="Team1_Avg_WheelRotationSuccess" source="Summarize: Avg - WheelRotationSuccess" type="Double" />
+                <Field name="Team1_Avg_WheelPositionSuccess" source="Summarize: Avg - WheelPositionSuccess" type="Double" />
+                <Field name="Team2_Team" source="Summarize: GroupBy - Team" type="Int64" />
+                <Field name="Team2_Avg_CrossedLine" source="Summarize: Avg - CrossedLine" type="Double" />
+                <Field name="Team2_Avg_AutoLowerSuccess" source="Summarize: Avg - AutoLowerSuccess" type="Double" />
+                <Field name="Team2_Avg_AutoOuterSuccess" source="Summarize: Avg - AutoOuterSuccess" type="Double" />
+                <Field name="Team2_Avg_AutoInnerSuccess" source="Summarize: Avg - AutoInnerSuccess" type="Double" />
+                <Field name="Team2_Avg_LowerSuccess" source="Summarize: Avg - LowerSuccess" type="Double" />
+                <Field name="Team2_Avg_OuterSuccess" source="Summarize: Avg - OuterSuccess" type="Double" />
+                <Field name="Team2_Avg_InnerSuccess" source="Summarize: Avg - InnerSuccess" type="Double" />
+                <Field name="Team2_Avg_ClimbSuccess" source="Summarize: Avg - ClimbSuccess" type="Double" />
+                <Field name="Team2_Avg_LiftedOthersSuccess" source="Summarize: Avg - LiftedOthersSuccess" type="Double" />
+                <Field name="Team2_Avg_ParkedSuccess" source="Summarize: Avg - ParkedSuccess" type="Double" />
+                <Field name="Team2_Avg_WheelRotationSuccess" source="Summarize: Avg - WheelRotationSuccess" type="Double" />
+                <Field name="Team2_Avg_WheelPositionSuccess" source="Summarize: Avg - WheelPositionSuccess" type="Double" />
+                <Field name="Team3_Team" source="Summarize: GroupBy - Team" type="Int64" />
+                <Field name="Team3_Avg_CrossedLine" source="Summarize: Avg - CrossedLine" type="Double" />
+                <Field name="Team3_Avg_AutoLowerSuccess" source="Summarize: Avg - AutoLowerSuccess" type="Double" />
+                <Field name="Team3_Avg_AutoOuterSuccess" source="Summarize: Avg - AutoOuterSuccess" type="Double" />
+                <Field name="Team3_Avg_AutoInnerSuccess" source="Summarize: Avg - AutoInnerSuccess" type="Double" />
+                <Field name="Team3_Avg_LowerSuccess" source="Summarize: Avg - LowerSuccess" type="Double" />
+                <Field name="Team3_Avg_OuterSuccess" source="Summarize: Avg - OuterSuccess" type="Double" />
+                <Field name="Team3_Avg_InnerSuccess" source="Summarize: Avg - InnerSuccess" type="Double" />
+                <Field name="Team3_Avg_ClimbSuccess" source="Summarize: Avg - ClimbSuccess" type="Double" />
+                <Field name="Team3_Avg_LiftedOthersSuccess" source="Summarize: Avg - LiftedOthersSuccess" type="Double" />
+                <Field name="Team3_Avg_ParkedSuccess" source="Summarize: Avg - ParkedSuccess" type="Double" />
+                <Field name="Team3_Avg_WheelRotationSuccess" source="Summarize: Avg - WheelRotationSuccess" type="Double" />
+                <Field name="Team3_Avg_WheelPositionSuccess" source="Summarize: Avg - WheelPositionSuccess" type="Double" />
+                <Field name="Sum_CrossedLine" source="Formula: [Team1_Avg_CrossedLine] + [Tea..." type="Double" />
+                <Field name="Sum_AutoLowerSuccess" source="Formula: [Team1_Avg_AutoLowerSuccess] +..." type="Double" />
+                <Field name="Sum_AutoOuterSuccess" source="Formula: [Team1_Avg_AutoOuterSuccess] +..." type="Double" />
+                <Field name="Sum_AutoInnerSuccess" source="Formula: [Team1_Avg_AutoInnerSuccess] +..." type="Double" />
+                <Field name="Sum_LowerSuccess" source="Formula: [Team1_Avg_LowerSuccess] + [Te..." type="Double" />
+                <Field name="Sum_OuterSuccess" source="Formula: [Team1_Avg_OuterSuccess] + [Te..." type="Double" />
+                <Field name="Sum_InnerSuccess" source="Formula: [Team1_Avg_InnerSuccess] + [Te..." type="Double" />
+                <Field name="Sum_ClimbSuccess" source="Formula: [Team1_Avg_ClimbSuccess] + [Te..." type="Double" />
+                <Field name="Sum_LiftedOthersSuccess" source="Formula: [Team1_Avg_LiftedOthersSuccess..." type="Double" />
+                <Field name="Sum_ParkedSuccess" source="Formula: [Team1_Avg_ParkedSuccess] + [T..." type="Double" />
+                <Field name="Sum_WheelRotationSuccess" source="Formula: [Team1_Avg_WheelRotationSucces..." type="Double" />
+                <Field name="Sum_WheelPositionSuccess" source="Formula: [Team1_Avg_WheelPositionSucces..." type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="79">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1626" y="750" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Team1_Team" selected="True" rename="Team1" />
+                <SelectField field="Team2_Team" selected="True" rename="Team2" />
+                <SelectField field="Team3_Team" selected="True" rename="Team3" />
+                <SelectField field="Sum_CrossedLine" selected="True" />
+                <SelectField field="Sum_AutoLowerSuccess" selected="True" />
+                <SelectField field="Sum_AutoOuterSuccess" selected="True" />
+                <SelectField field="Sum_AutoInnerSuccess" selected="True" />
+                <SelectField field="Sum_LowerSuccess" selected="True" />
+                <SelectField field="Sum_OuterSuccess" selected="True" />
+                <SelectField field="Sum_InnerSuccess" selected="True" />
+                <SelectField field="Sum_ClimbSuccess" selected="True" />
+                <SelectField field="Sum_LiftedOthersSuccess" selected="True" />
+                <SelectField field="Sum_ParkedSuccess" selected="True" />
+                <SelectField field="Sum_WheelRotationSuccess" selected="True" />
+                <SelectField field="Sum_WheelPositionSuccess" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Team1" source="Summarize: GroupBy - Team" type="Int64" />
+                <Field name="Team2" source="Summarize: GroupBy - Team" type="Int64" />
+                <Field name="Team3" source="Summarize: GroupBy - Team" type="Int64" />
+                <Field name="Sum_CrossedLine" source="Formula: [Team1_Avg_CrossedLine] + [Tea..." type="Double" />
+                <Field name="Sum_AutoLowerSuccess" source="Formula: [Team1_Avg_AutoLowerSuccess] +..." type="Double" />
+                <Field name="Sum_AutoOuterSuccess" source="Formula: [Team1_Avg_AutoOuterSuccess] +..." type="Double" />
+                <Field name="Sum_AutoInnerSuccess" source="Formula: [Team1_Avg_AutoInnerSuccess] +..." type="Double" />
+                <Field name="Sum_LowerSuccess" source="Formula: [Team1_Avg_LowerSuccess] + [Te..." type="Double" />
+                <Field name="Sum_OuterSuccess" source="Formula: [Team1_Avg_OuterSuccess] + [Te..." type="Double" />
+                <Field name="Sum_InnerSuccess" source="Formula: [Team1_Avg_InnerSuccess] + [Te..." type="Double" />
+                <Field name="Sum_ClimbSuccess" source="Formula: [Team1_Avg_ClimbSuccess] + [Te..." type="Double" />
+                <Field name="Sum_LiftedOthersSuccess" source="Formula: [Team1_Avg_LiftedOthersSuccess..." type="Double" />
+                <Field name="Sum_ParkedSuccess" source="Formula: [Team1_Avg_ParkedSuccess] + [T..." type="Double" />
+                <Field name="Sum_WheelRotationSuccess" source="Formula: [Team1_Avg_WheelRotationSucces..." type="Double" />
+                <Field name="Sum_WheelPositionSuccess" source="Formula: [Team1_Avg_WheelPositionSucces..." type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="80">
+          <GuiSettings Plugin="Score">
+            <Position x="1722" y="738" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="modelChoice">Local Model</Value>
+              <Value name="score field">Points_Extra</Value>
+              <Value name="is oversampled">False</Value>
+              <Value name="oversampled value">
+              </Value>
+              <Value name="original percent">2</Value>
+              <Value name="log y">False</Value>
+              <Value name="prediction.interval">False</Value>
+              <Value name="interval.level">95</Value>
+              <Value name="append.xdf">False</Value>
+              <Value name="num.records">256000</Value>
+              <Value name="credentials">
+              </Value>
+              <Value name="models">
+              </Value>
+              <Value name="page">
+              </Value>
+              <Value name="errorStatus">
+              </Value>
+              <Value name="modelDetailJSON">
+              </Value>
+              <Value name="modelDetails">{"Name":"","Owner":"","Status":"","Id":"","LastDeployment":"","LastUpdated":"","LatestVersion":"","ActiveVersion":"","NumReplications":"","NumVersions":""}</Value>
+              <Value name="promoteURL">
+              </Value>
+              <Value name="username">
+              </Value>
+              <Value name="model_name">
+              </Value>
+              <Value name="model_owner">
+              </Value>
+              <Value name="apiKey">
+              </Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Team1" source="R-DATA:" type="Double" />
+                <Field name="Team2" source="R-DATA:" type="Double" />
+                <Field name="Team3" source="R-DATA:" type="Double" />
+                <Field name="Sum_CrossedLine" source="R-DATA:" type="Double" />
+                <Field name="Sum_AutoLowerSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_AutoOuterSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_AutoInnerSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_LowerSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_OuterSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_InnerSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_ClimbSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_LiftedOthersSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_ParkedSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_WheelRotationSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_WheelPositionSuccess" source="R-DATA:" type="Double" />
+                <Field name="Points_Extra" source="R-DATA:" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings Macro="Score\Supporting_Macros\score-engine.yxmc" EngineDll="Macro" EngineDllEntryPoint="Score\Supporting_Macros\score-engine.yxmc" />
+        </Node>
+        <Node ToolID="81">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1806" y="738" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[Sum_CrossedLine] * 5 + [Sum_AutoLowerSuccess] * 2 + [Sum_AutoOuterSuccess] * 4 + [Sum_AutoInnerSuccess] * 6 + [Sum_LowerSuccess] + [Sum_OuterSuccess] * 2 + [Sum_InnerSuccess] * 3 + [Sum_ParkedSuccess] * 5 + [Sum_ClimbSuccess] * 25 + [Sum_LiftedOthersSuccess] * 25 + [Sum_WheelRotationSuccess] * 10 + [Sum_WheelPositionSuccess] * 20 + [Points_Extra]" field="Points" size="8" type="Double" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Points = [Sum_CrossedLine] * 5 + [Sum_AutoLowerSuccess] * 2 + [Sum_AutoOuterSucc...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Team1" source="R-DATA:" type="Double" />
+                <Field name="Team2" source="R-DATA:" type="Double" />
+                <Field name="Team3" source="R-DATA:" type="Double" />
+                <Field name="Sum_CrossedLine" source="R-DATA:" type="Double" />
+                <Field name="Sum_AutoLowerSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_AutoOuterSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_AutoInnerSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_LowerSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_OuterSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_InnerSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_ClimbSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_LiftedOthersSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_ParkedSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_WheelRotationSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_WheelPositionSuccess" source="R-DATA:" type="Double" />
+                <Field name="Points_Extra" source="R-DATA:" type="Double" />
+                <Field name="Points" source="Formula: [Sum_CrossedLine] * 5 + [Sum_A..." type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="82">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1890" y="738" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Team1" selected="True" />
+                <SelectField field="Team2" selected="True" />
+                <SelectField field="Team3" selected="True" />
+                <SelectField field="Points" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Team1" source="R-DATA:" type="Double" />
+                <Field name="Team2" source="R-DATA:" type="Double" />
+                <Field name="Team3" source="R-DATA:" type="Double" />
+                <Field name="Points" source="Formula: [Sum_CrossedLine] * 5 + [Sum_A..." type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="83">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="2082" y="738" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File FileFormat="25" MaxRecords="">C:\mascout\TableauInput\picklist.xlsx|||picklist</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <SkipFieldNames>False</SkipFieldNames>
+                <OutputOption>RemoveFile</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>picklist.xlsx
+Query=picklist</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="84">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="1986" y="738" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="0">
+                <Field field="Points" order="Descending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Points - Descending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Team1" source="R-DATA:" type="Double" />
+                <Field name="Team2" source="R-DATA:" type="Double" />
+                <Field name="Team3" source="R-DATA:" type="Double" />
+                <Field name="Points" source="Formula: [Sum_CrossedLine] * 5 + [Sum_A..." type="Double" />
+              </RecordInfo>
+              <SortInfo locale="0">
+                <Field field="Points" order="Descending" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="305.0001" y="1049" width="864.9999" height="241" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Simulate Match</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="47">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="522" y="1098" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="Team" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="Team" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="True" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Right_AllianceColor" selected="True" input="Right_" />
+                    <SelectField field="Left_Team" selected="True" input="Left_" />
+                    <SelectField field="Left_Avg_CrossedLine" selected="True" input="Left_" />
+                    <SelectField field="Left_Avg_AutoLowerSuccess" selected="True" input="Left_" />
+                    <SelectField field="Left_Avg_AutoOuterSuccess" selected="True" input="Left_" />
+                    <SelectField field="Left_Avg_AutoInnerSuccess" selected="True" input="Left_" />
+                    <SelectField field="Left_Avg_LowerSuccess" selected="True" input="Left_" />
+                    <SelectField field="Left_Avg_OuterSuccess" selected="True" input="Left_" />
+                    <SelectField field="Left_Avg_InnerSuccess" selected="True" input="Left_" />
+                    <SelectField field="Left_Avg_ClimbSuccess" selected="True" input="Left_" />
+                    <SelectField field="Left_Avg_LiftedOthersSuccess" selected="True" input="Left_" />
+                    <SelectField field="Left_Avg_ParkedSuccess" selected="True" input="Left_" />
+                    <SelectField field="Left_Avg_WheelRotationSuccess" selected="True" input="Left_" />
+                    <SelectField field="Left_Avg_WheelPositionSuccess" selected="True" input="Left_" />
+                    <SelectField field="Right_Team" selected="False" rename="Right_Team" input="Right_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Left">
+              <RecordInfo>
+                <Field name="Team" source="Summarize: GroupBy - Team" type="Int64" />
+                <Field name="Avg_CrossedLine" source="Summarize: Avg - CrossedLine" type="Double" />
+                <Field name="Avg_AutoLowerSuccess" source="Summarize: Avg - AutoLowerSuccess" type="Double" />
+                <Field name="Avg_AutoOuterSuccess" source="Summarize: Avg - AutoOuterSuccess" type="Double" />
+                <Field name="Avg_AutoInnerSuccess" source="Summarize: Avg - AutoInnerSuccess" type="Double" />
+                <Field name="Avg_LowerSuccess" source="Summarize: Avg - LowerSuccess" type="Double" />
+                <Field name="Avg_OuterSuccess" source="Summarize: Avg - OuterSuccess" type="Double" />
+                <Field name="Avg_InnerSuccess" source="Summarize: Avg - InnerSuccess" type="Double" />
+                <Field name="Avg_ClimbSuccess" source="Summarize: Avg - ClimbSuccess" type="Double" />
+                <Field name="Avg_LiftedOthersSuccess" source="Summarize: Avg - LiftedOthersSuccess" type="Double" />
+                <Field name="Avg_ParkedSuccess" source="Summarize: Avg - ParkedSuccess" type="Double" />
+                <Field name="Avg_WheelRotationSuccess" source="Summarize: Avg - WheelRotationSuccess" type="Double" />
+                <Field name="Avg_WheelPositionSuccess" source="Summarize: Avg - WheelPositionSuccess" type="Double" />
+              </RecordInfo>
+              <SortInfo noProgress="True">
+                <Field field="Team" />
+              </SortInfo>
+            </MetaInfo>
+            <MetaInfo connection="Join">
+              <RecordInfo>
+                <Field name="AllianceColor" source="TextInput:" type="Byte" />
+                <Field name="Team" source="Summarize: GroupBy - Team" type="Int64" />
+                <Field name="Avg_CrossedLine" source="Summarize: Avg - CrossedLine" type="Double" />
+                <Field name="Avg_AutoLowerSuccess" source="Summarize: Avg - AutoLowerSuccess" type="Double" />
+                <Field name="Avg_AutoOuterSuccess" source="Summarize: Avg - AutoOuterSuccess" type="Double" />
+                <Field name="Avg_AutoInnerSuccess" source="Summarize: Avg - AutoInnerSuccess" type="Double" />
+                <Field name="Avg_LowerSuccess" source="Summarize: Avg - LowerSuccess" type="Double" />
+                <Field name="Avg_OuterSuccess" source="Summarize: Avg - OuterSuccess" type="Double" />
+                <Field name="Avg_InnerSuccess" source="Summarize: Avg - InnerSuccess" type="Double" />
+                <Field name="Avg_ClimbSuccess" source="Summarize: Avg - ClimbSuccess" type="Double" />
+                <Field name="Avg_LiftedOthersSuccess" source="Summarize: Avg - LiftedOthersSuccess" type="Double" />
+                <Field name="Avg_ParkedSuccess" source="Summarize: Avg - ParkedSuccess" type="Double" />
+                <Field name="Avg_WheelRotationSuccess" source="Summarize: Avg - WheelRotationSuccess" type="Double" />
+                <Field name="Avg_WheelPositionSuccess" source="Summarize: Avg - WheelPositionSuccess" type="Double" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="Team" order="" />
+              </SortInfo>
+            </MetaInfo>
+            <MetaInfo connection="Right">
+              <RecordInfo>
+                <Field name="AllianceColor" source="TextInput:" type="Byte" />
+                <Field description="TextToColumns: Parsed from Team" name="Team" source="TextToColumns: Parsed from Team" type="Int64" />
+              </RecordInfo>
+              <SortInfo noProgress="True">
+                <Field field="Team" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="38">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+            <Position x="330.0001" y="1206" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Field>Team</Field>
+              <Delimeters value="," />
+              <NumFields value="1" />
+              <Flags value="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="AllianceColor" source="TextInput:" type="Byte" />
+                <Field description="TextToColumns: Parsed from Team" name="Team" size="14" source="TextToColumns: Parsed from Team" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+        </Node>
+        <Node ToolID="49">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="714" y="1098" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="AllianceColor" action="GroupBy" rename="AllianceColor" />
+                <SummarizeField field="Team_Text" action="Concat" rename="Teams">
+                  <Concat_Start />
+                  <Separator><![CDATA[, ]]></Separator>
+                  <Concat_End />
+                </SummarizeField>
+                <SummarizeField field="Avg_CrossedLine" action="Sum" rename="Sum_CrossedLine" />
+                <SummarizeField field="Avg_AutoLowerSuccess" action="Sum" rename="Sum_AutoLowerSuccess" />
+                <SummarizeField field="Avg_AutoOuterSuccess" action="Sum" rename="Sum_AutoOuterSuccess" />
+                <SummarizeField field="Avg_AutoInnerSuccess" action="Sum" rename="Sum_AutoInnerSuccess" />
+                <SummarizeField field="Avg_LowerSuccess" action="Sum" rename="Sum_LowerSuccess" />
+                <SummarizeField field="Avg_OuterSuccess" action="Sum" rename="Sum_OuterSuccess" />
+                <SummarizeField field="Avg_InnerSuccess" action="Sum" rename="Sum_InnerSuccess" />
+                <SummarizeField field="Avg_ClimbSuccess" action="Sum" rename="Sum_ClimbSuccess" />
+                <SummarizeField field="Avg_LiftedOthersSuccess" action="Sum" rename="Sum_LiftedOthersSuccess" />
+                <SummarizeField field="Avg_ParkedSuccess" action="Sum" rename="Sum_ParkedSuccess" />
+                <SummarizeField field="Avg_WheelRotationSuccess" action="Sum" rename="Sum_WheelRotationSuccess" />
+                <SummarizeField field="Avg_WheelPositionSuccess" action="Sum" rename="Sum_WheelPositionSuccess" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="AllianceColor" source="Summarize: GroupBy - AllianceColor" type="Byte" />
+                <Field name="Teams" size="1073741823" source="Summarize: Concat - Team_Text" type="V_WString" />
+                <Field name="Sum_CrossedLine" source="Summarize: Sum - Avg_CrossedLine" type="Double" />
+                <Field name="Sum_AutoLowerSuccess" source="Summarize: Sum - Avg_AutoLowerSuccess" type="Double" />
+                <Field name="Sum_AutoOuterSuccess" source="Summarize: Sum - Avg_AutoOuterSuccess" type="Double" />
+                <Field name="Sum_AutoInnerSuccess" source="Summarize: Sum - Avg_AutoInnerSuccess" type="Double" />
+                <Field name="Sum_LowerSuccess" source="Summarize: Sum - Avg_LowerSuccess" type="Double" />
+                <Field name="Sum_OuterSuccess" source="Summarize: Sum - Avg_OuterSuccess" type="Double" />
+                <Field name="Sum_InnerSuccess" source="Summarize: Sum - Avg_InnerSuccess" type="Double" />
+                <Field name="Sum_ClimbSuccess" source="Summarize: Sum - Avg_ClimbSuccess" type="Double" />
+                <Field name="Sum_LiftedOthersSuccess" source="Summarize: Sum - Avg_LiftedOthersSuccess" type="Double" />
+                <Field name="Sum_ParkedSuccess" source="Summarize: Sum - Avg_ParkedSuccess" type="Double" />
+                <Field name="Sum_WheelRotationSuccess" source="Summarize: Sum - Avg_WheelRotationSuccess" type="Double" />
+                <Field name="Sum_WheelPositionSuccess" source="Summarize: Sum - Avg_WheelPositionSuccess" type="Double" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="AllianceColor" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="50">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="438" y="1206" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="AllianceColor" selected="True" />
+                <SelectField field="Team" selected="True" type="Int64" size="8" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="AllianceColor" source="TextInput:" type="Byte" />
+                <Field description="TextToColumns: Parsed from Team" name="Team" source="TextToColumns: Parsed from Team" type="Int64" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="51">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="906" y="1098" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[Sum_CrossedLine] * 5 + [Sum_AutoLowerSuccess] * 2 + [Sum_AutoOuterSuccess] * 4 + [Sum_AutoInnerSuccess] * 6 + [Sum_LowerSuccess] + [Sum_OuterSuccess] * 2 + [Sum_InnerSuccess] * 3 + [Sum_ParkedSuccess] * 5 + [Sum_ClimbSuccess] * 25 + [Sum_LiftedOthersSuccess] * 25 + [Sum_WheelRotationSuccess] * 10 + [Sum_WheelPositionSuccess] * 20 + [Points_Extra]" field="Points" size="8" type="Double" />
+                <FormulaField expression="IF [AllianceColor] = 0 THEN &quot;Red&quot; ELSE &quot;Blue&quot; ENDIF" field="AllianceColor_Text" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Points = [Sum_CrossedLine] * 5 + [Sum_AutoLowerSuccess] * 2 + [Sum_AutoOuterSucc...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="AllianceColor" source="R-DATA:" type="Int32" />
+                <Field name="Teams" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Sum_CrossedLine" source="R-DATA:" type="Double" />
+                <Field name="Sum_AutoLowerSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_AutoOuterSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_AutoInnerSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_LowerSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_OuterSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_InnerSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_ClimbSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_LiftedOthersSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_ParkedSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_WheelRotationSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_WheelPositionSuccess" source="R-DATA:" type="Double" />
+                <Field name="Points_Extra" source="R-DATA:" type="Double" />
+                <Field name="Points" source="Formula: [Sum_CrossedLine] * 5 + [Sum_A..." type="Double" />
+                <Field name="AllianceColor_Text" size="1073741823" source="Formula: IF [AllianceColor] = 0 THEN &quot;R..." type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="52">
+          <GuiSettings Plugin="Score">
+            <Position x="810" y="1098" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="modelChoice">Local Model</Value>
+              <Value name="score field">Points_Extra</Value>
+              <Value name="is oversampled">False</Value>
+              <Value name="oversampled value">
+              </Value>
+              <Value name="original percent">2</Value>
+              <Value name="log y">False</Value>
+              <Value name="prediction.interval">False</Value>
+              <Value name="interval.level">95</Value>
+              <Value name="append.xdf">False</Value>
+              <Value name="num.records">256000</Value>
+              <Value name="credentials">
+              </Value>
+              <Value name="models">
+              </Value>
+              <Value name="page">
+              </Value>
+              <Value name="errorStatus">
+              </Value>
+              <Value name="modelDetailJSON">
+              </Value>
+              <Value name="modelDetails">{"Name":"","Owner":"","Status":"","Id":"","LastDeployment":"","LastUpdated":"","LatestVersion":"","ActiveVersion":"","NumReplications":"","NumVersions":""}</Value>
+              <Value name="promoteURL">
+              </Value>
+              <Value name="username">
+              </Value>
+              <Value name="model_name">
+              </Value>
+              <Value name="model_owner">
+              </Value>
+              <Value name="apiKey">
+              </Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="AllianceColor" source="R-DATA:" type="Int32" />
+                <Field name="Teams" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Sum_CrossedLine" source="R-DATA:" type="Double" />
+                <Field name="Sum_AutoLowerSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_AutoOuterSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_AutoInnerSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_LowerSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_OuterSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_InnerSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_ClimbSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_LiftedOthersSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_ParkedSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_WheelRotationSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_WheelPositionSuccess" source="R-DATA:" type="Double" />
+                <Field name="Points_Extra" source="R-DATA:" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings Macro="Score\Supporting_Macros\score-engine.yxmc" EngineDll="Macro" EngineDllEntryPoint="Score\Supporting_Macros\score-engine.yxmc" />
+        </Node>
+        <Node ToolID="53">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1002" y="1098" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="AllianceColor" selected="False" />
+                <SelectField field="Sum_CrossedLine" selected="False" />
+                <SelectField field="Sum_AutoLowerSuccess" selected="False" />
+                <SelectField field="Sum_AutoOuterSuccess" selected="False" />
+                <SelectField field="Sum_AutoInnerSuccess" selected="False" />
+                <SelectField field="Sum_LowerSuccess" selected="False" />
+                <SelectField field="Sum_OuterSuccess" selected="False" />
+                <SelectField field="Sum_InnerSuccess" selected="False" />
+                <SelectField field="Sum_ClimbSuccess" selected="False" />
+                <SelectField field="Sum_LiftedOthersSuccess" selected="False" />
+                <SelectField field="Sum_ParkedSuccess" selected="False" />
+                <SelectField field="Sum_WheelRotationSuccess" selected="False" />
+                <SelectField field="Sum_WheelPositionSuccess" selected="False" />
+                <SelectField field="Points_Base" selected="False" />
+                <SelectField field="Points_Extra" selected="False" />
+                <SelectField field="AllianceColor_Text" selected="True" rename="Alliance" />
+                <SelectField field="Teams" selected="True" />
+                <SelectField field="Points" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Alliance" size="1073741823" source="Formula: IF [AllianceColor] = 0 THEN &quot;R..." type="V_WString" />
+                <Field name="Teams" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Points" source="Formula: [Sum_CrossedLine] * 5 + [Sum_A..." type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="54">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1086" y="1098" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_17628_da0b8343561b41b2be4fc95b88af8db8_\Engine_7708_9b8d0da954ae4199aa3a52c9a88428f7_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="55">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="618" y="1098" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[Team]" field="Team_Text" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[Team_Text = [Team]
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="AllianceColor" source="TextInput:" type="Byte" />
+                <Field name="Team" source="Summarize: GroupBy - Team" type="Int64" />
+                <Field name="Avg_CrossedLine" source="Summarize: Avg - CrossedLine" type="Double" />
+                <Field name="Avg_AutoLowerSuccess" source="Summarize: Avg - AutoLowerSuccess" type="Double" />
+                <Field name="Avg_AutoOuterSuccess" source="Summarize: Avg - AutoOuterSuccess" type="Double" />
+                <Field name="Avg_AutoInnerSuccess" source="Summarize: Avg - AutoInnerSuccess" type="Double" />
+                <Field name="Avg_LowerSuccess" source="Summarize: Avg - LowerSuccess" type="Double" />
+                <Field name="Avg_OuterSuccess" source="Summarize: Avg - OuterSuccess" type="Double" />
+                <Field name="Avg_InnerSuccess" source="Summarize: Avg - InnerSuccess" type="Double" />
+                <Field name="Avg_ClimbSuccess" source="Summarize: Avg - ClimbSuccess" type="Double" />
+                <Field name="Avg_LiftedOthersSuccess" source="Summarize: Avg - LiftedOthersSuccess" type="Double" />
+                <Field name="Avg_ParkedSuccess" source="Summarize: Avg - ParkedSuccess" type="Double" />
+                <Field name="Avg_WheelRotationSuccess" source="Summarize: Avg - WheelRotationSuccess" type="Double" />
+                <Field name="Avg_WheelPositionSuccess" source="Summarize: Avg - WheelPositionSuccess" type="Double" />
+                <Field name="Team_Text" size="1073741823" source="Formula: [Team]" type="V_WString" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="Team" order="" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="257" y="209" width="1057" height="249" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Create Model</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="282" y="258.0001" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="Event" action="GroupBy" rename="Event" />
+                <SummarizeField field="Match" action="GroupBy" rename="Match" />
+                <SummarizeField field="AllianceColor" action="GroupBy" rename="AllianceColor" />
+                <SummarizeField field="Team" action="Count" rename="Count_Teams" />
+                <SummarizeField field="CrossedLine" action="Sum" rename="Sum_CrossedLine" />
+                <SummarizeField field="AutoLowerSuccess" action="Sum" rename="Sum_AutoLowerSuccess" />
+                <SummarizeField field="AutoOuterSuccess" action="Sum" rename="Sum_AutoOuterSuccess" />
+                <SummarizeField field="AutoInnerSuccess" action="Sum" rename="Sum_AutoInnerSuccess" />
+                <SummarizeField field="LowerSuccess" action="Sum" rename="Sum_LowerSuccess" />
+                <SummarizeField field="OuterSuccess" action="Sum" rename="Sum_OuterSuccess" />
+                <SummarizeField field="InnerSuccess" action="Sum" rename="Sum_InnerSuccess" />
+                <SummarizeField field="ClimbSuccess" action="Sum" rename="Sum_ClimbSuccess" />
+                <SummarizeField field="LiftedOthersSuccess" action="Sum" rename="Sum_LiftedOthersSuccess" />
+                <SummarizeField field="ParkedSuccess" action="Sum" rename="Sum_ParkedSuccess" />
+                <SummarizeField field="WheelRotationSuccess" action="Sum" rename="Sum_WheelRotationSuccess" />
+                <SummarizeField field="WheelPositionSuccess" action="Sum" rename="Sum_WheelPositionSuccess" />
+                <SummarizeField field="Points" action="Mode" rename="Points_Total" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Event" size="1073741823" source="Summarize: GroupBy - Event" type="V_WString" />
+                <Field name="Match" source="Summarize: GroupBy - Match" type="Int64" />
+                <Field name="AllianceColor" source="Summarize: GroupBy - AllianceColor" type="Int64" />
+                <Field name="Count_Teams" source="Summarize: Count" type="Int64" />
+                <Field name="Sum_CrossedLine" source="Summarize: Sum - CrossedLine" type="Int64" />
+                <Field name="Sum_AutoLowerSuccess" source="Summarize: Sum - AutoLowerSuccess" type="Int64" />
+                <Field name="Sum_AutoOuterSuccess" source="Summarize: Sum - AutoOuterSuccess" type="Int64" />
+                <Field name="Sum_AutoInnerSuccess" source="Summarize: Sum - AutoInnerSuccess" type="Int64" />
+                <Field name="Sum_LowerSuccess" source="Summarize: Sum - LowerSuccess" type="Int64" />
+                <Field name="Sum_OuterSuccess" source="Summarize: Sum - OuterSuccess" type="Int64" />
+                <Field name="Sum_InnerSuccess" source="Summarize: Sum - InnerSuccess" type="Int64" />
+                <Field name="Sum_ClimbSuccess" source="Summarize: Sum - ClimbSuccess" type="Int64" />
+                <Field name="Sum_LiftedOthersSuccess" source="Summarize: Sum - LiftedOthersSuccess" type="Int64" />
+                <Field name="Sum_ParkedSuccess" source="Summarize: Sum - ParkedSuccess" type="Int64" />
+                <Field name="Sum_WheelRotationSuccess" source="Summarize: Sum - WheelRotationSuccess" type="Int64" />
+                <Field name="Sum_WheelPositionSuccess" source="Summarize: Sum - WheelPositionSuccess" type="Int64" />
+                <Field name="Points_Total" source="Summarize: Mode - Points" type="Int64" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="Event" order="Asc" />
+                <Field field="Match" order="Asc" />
+                <Field field="AllianceColor" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="378.0001" y="258" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>=</Operator>
+                <Field>Count_Teams</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2020-02-01 15:32:26</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>3</Operand>
+                  <StartDate>2020-02-01 15:32:26</StartDate>
+                  <EndDate>2020-02-01 15:32:26</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[Count_Teams] = 3</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="Event" size="1073741823" source="Summarize: GroupBy - Event" type="V_WString" />
+                <Field name="Match" source="Summarize: GroupBy - Match" type="Int64" />
+                <Field name="AllianceColor" source="Summarize: GroupBy - AllianceColor" type="Int64" />
+                <Field name="Count_Teams" source="Summarize: Count" type="Int64" />
+                <Field name="Sum_CrossedLine" source="Summarize: Sum - CrossedLine" type="Int64" />
+                <Field name="Sum_AutoLowerSuccess" source="Summarize: Sum - AutoLowerSuccess" type="Int64" />
+                <Field name="Sum_AutoOuterSuccess" source="Summarize: Sum - AutoOuterSuccess" type="Int64" />
+                <Field name="Sum_AutoInnerSuccess" source="Summarize: Sum - AutoInnerSuccess" type="Int64" />
+                <Field name="Sum_LowerSuccess" source="Summarize: Sum - LowerSuccess" type="Int64" />
+                <Field name="Sum_OuterSuccess" source="Summarize: Sum - OuterSuccess" type="Int64" />
+                <Field name="Sum_InnerSuccess" source="Summarize: Sum - InnerSuccess" type="Int64" />
+                <Field name="Sum_ClimbSuccess" source="Summarize: Sum - ClimbSuccess" type="Int64" />
+                <Field name="Sum_LiftedOthersSuccess" source="Summarize: Sum - LiftedOthersSuccess" type="Int64" />
+                <Field name="Sum_ParkedSuccess" source="Summarize: Sum - ParkedSuccess" type="Int64" />
+                <Field name="Sum_WheelRotationSuccess" source="Summarize: Sum - WheelRotationSuccess" type="Int64" />
+                <Field name="Sum_WheelPositionSuccess" source="Summarize: Sum - WheelPositionSuccess" type="Int64" />
+                <Field name="Points_Total" source="Summarize: Mode - Points" type="Int64" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="Event" order="Asc" />
+                <Field field="Match" order="Asc" />
+                <Field field="AllianceColor" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="Event" size="1073741823" source="Summarize: GroupBy - Event" type="V_WString" />
+                <Field name="Match" source="Summarize: GroupBy - Match" type="Int64" />
+                <Field name="AllianceColor" source="Summarize: GroupBy - AllianceColor" type="Int64" />
+                <Field name="Count_Teams" source="Summarize: Count" type="Int64" />
+                <Field name="Sum_CrossedLine" source="Summarize: Sum - CrossedLine" type="Int64" />
+                <Field name="Sum_AutoLowerSuccess" source="Summarize: Sum - AutoLowerSuccess" type="Int64" />
+                <Field name="Sum_AutoOuterSuccess" source="Summarize: Sum - AutoOuterSuccess" type="Int64" />
+                <Field name="Sum_AutoInnerSuccess" source="Summarize: Sum - AutoInnerSuccess" type="Int64" />
+                <Field name="Sum_LowerSuccess" source="Summarize: Sum - LowerSuccess" type="Int64" />
+                <Field name="Sum_OuterSuccess" source="Summarize: Sum - OuterSuccess" type="Int64" />
+                <Field name="Sum_InnerSuccess" source="Summarize: Sum - InnerSuccess" type="Int64" />
+                <Field name="Sum_ClimbSuccess" source="Summarize: Sum - ClimbSuccess" type="Int64" />
+                <Field name="Sum_LiftedOthersSuccess" source="Summarize: Sum - LiftedOthersSuccess" type="Int64" />
+                <Field name="Sum_ParkedSuccess" source="Summarize: Sum - ParkedSuccess" type="Int64" />
+                <Field name="Sum_WheelRotationSuccess" source="Summarize: Sum - WheelRotationSuccess" type="Int64" />
+                <Field name="Sum_WheelPositionSuccess" source="Summarize: Sum - WheelPositionSuccess" type="Int64" />
+                <Field name="Points_Total" source="Summarize: Mode - Points" type="Int64" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="Event" order="Asc" />
+                <Field field="Match" order="Asc" />
+                <Field field="AllianceColor" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="486" y="258" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[Sum_CrossedLine] * 5 + [Sum_AutoLowerSuccess] * 2 + [Sum_AutoOuterSuccess] * 4 + [Sum_AutoInnerSuccess] * 6 + [Sum_LowerSuccess] + [Sum_OuterSuccess] * 2 + [Sum_InnerSuccess] * 3 + [Sum_ParkedSuccess] * 5 + [Sum_ClimbSuccess] * 25 + [Sum_LiftedOthersSuccess] * 25 + [Sum_WheelRotationSuccess] * 10 + [Sum_WheelPositionSuccess] * 20" field="Points_Base" size="8" type="Int64" />
+                <FormulaField expression="[Points_Total] - [Points_Base]" field="Points_Extra" size="8" type="Int64" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Points_Base = [Sum_CrossedLine] * 5 + [Sum_AutoLowerSuccess] * 2 + [Sum_AutoOute...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Event" size="1073741823" source="Summarize: GroupBy - Event" type="V_WString" />
+                <Field name="Match" source="Summarize: GroupBy - Match" type="Int64" />
+                <Field name="AllianceColor" source="Summarize: GroupBy - AllianceColor" type="Int64" />
+                <Field name="Count_Teams" source="Summarize: Count" type="Int64" />
+                <Field name="Sum_CrossedLine" source="Summarize: Sum - CrossedLine" type="Int64" />
+                <Field name="Sum_AutoLowerSuccess" source="Summarize: Sum - AutoLowerSuccess" type="Int64" />
+                <Field name="Sum_AutoOuterSuccess" source="Summarize: Sum - AutoOuterSuccess" type="Int64" />
+                <Field name="Sum_AutoInnerSuccess" source="Summarize: Sum - AutoInnerSuccess" type="Int64" />
+                <Field name="Sum_LowerSuccess" source="Summarize: Sum - LowerSuccess" type="Int64" />
+                <Field name="Sum_OuterSuccess" source="Summarize: Sum - OuterSuccess" type="Int64" />
+                <Field name="Sum_InnerSuccess" source="Summarize: Sum - InnerSuccess" type="Int64" />
+                <Field name="Sum_ClimbSuccess" source="Summarize: Sum - ClimbSuccess" type="Int64" />
+                <Field name="Sum_LiftedOthersSuccess" source="Summarize: Sum - LiftedOthersSuccess" type="Int64" />
+                <Field name="Sum_ParkedSuccess" source="Summarize: Sum - ParkedSuccess" type="Int64" />
+                <Field name="Sum_WheelRotationSuccess" source="Summarize: Sum - WheelRotationSuccess" type="Int64" />
+                <Field name="Sum_WheelPositionSuccess" source="Summarize: Sum - WheelPositionSuccess" type="Int64" />
+                <Field name="Points_Total" source="Summarize: Mode - Points" type="Int64" />
+                <Field name="Points_Base" source="Formula: [Sum_CrossedLine] * 5 + [Sum_A..." type="Int64" />
+                <Field name="Points_Extra" source="Formula: [Points_Total] - [Points_Base]" type="Int64" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="Event" order="Asc" />
+                <Field field="Match" order="Asc" />
+                <Field field="AllianceColor" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="11">
+          <GuiSettings Plugin="Linear_Regression">
+            <Position x="774" y="258" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="curPage">Home</Value>
+              <Value name="curTab">advanced</Value>
+              <Value name="standardize_pred">True</Value>
+              <Value name="internal_cv">True</Value>
+              <Value name="display_graphs">True</Value>
+              <Value name="set_seed_internal_cv">True</Value>
+              <Value name="set_seed_external_cv">True</Value>
+              <Value name="lambda_1se">True</Value>
+              <Value name="lambda_min">False</Value>
+              <Value name="Model Name">Linear_Regression_11</Value>
+              <Value name="Y Var">Points_Extra</Value>
+              <Value name="X Vars">Sum_ClimbSuccess,Sum_LiftedOthersSuccess</Value>
+              <Value name="Omit Constant">False</Value>
+              <Value name="Use Weights">False</Value>
+              <Value name="Weight Vec" />
+              <Value name="regularization">False</Value>
+              <Value name="alpha">0.5</Value>
+              <Value name="nfolds">5</Value>
+              <Value name="lambda">lambda_1se</Value>
+              <Value name="seed_internal_cv">1</Value>
+              <Value name="lambda_no_cv">0.5</Value>
+              <Value name="external_cv">False</Value>
+              <Value name="nfolds_external">5</Value>
+              <Value name="numberTrials">3</Value>
+              <Value name="external_seed_value">1</Value>
+              <Value name="graph.resolution">1x</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Linear_Regression_11</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Name" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Object" size="2147483647" source="R-DATA:SERIAL" type="Blob" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="Reports">
+              <RecordInfo>
+                <Field name="Desc" size="64" source="Formula: (Multiple Sources)" type="V_String" />
+                <Field name="Report" size="1073741823" source="Report: (Multiple Sources)" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="Interactive Report">
+              <RecordInfo>
+                <Field name="Text" size="2147483647" source="Report:Text:" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings Macro="Linear_Regression/Supporting_Macros/Linear_Regression.yxmc" EngineDll="Macro" EngineDllEntryPoint="Linear_Regression/Supporting_Macros/Linear_Regression.yxmc" />
+        </Node>
+        <Node ToolID="13">
+          <GuiSettings>
+            <Position x="606" y="258" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="estimation pct">80</Value>
+              <Value name="validation pct">20</Value>
+              <Value name="rand seed">1</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Estimation">
+              <RecordInfo>
+                <Field name="Event" size="1073741823" source="Summarize: GroupBy - Event" type="V_WString" />
+                <Field name="Match" source="Summarize: GroupBy - Match" type="Int64" />
+                <Field name="AllianceColor" source="Summarize: GroupBy - AllianceColor" type="Int64" />
+                <Field name="Count_Teams" source="Summarize: Count" type="Int64" />
+                <Field name="Sum_CrossedLine" source="Summarize: Sum - CrossedLine" type="Int64" />
+                <Field name="Sum_AutoLowerSuccess" source="Summarize: Sum - AutoLowerSuccess" type="Int64" />
+                <Field name="Sum_AutoOuterSuccess" source="Summarize: Sum - AutoOuterSuccess" type="Int64" />
+                <Field name="Sum_AutoInnerSuccess" source="Summarize: Sum - AutoInnerSuccess" type="Int64" />
+                <Field name="Sum_LowerSuccess" source="Summarize: Sum - LowerSuccess" type="Int64" />
+                <Field name="Sum_OuterSuccess" source="Summarize: Sum - OuterSuccess" type="Int64" />
+                <Field name="Sum_InnerSuccess" source="Summarize: Sum - InnerSuccess" type="Int64" />
+                <Field name="Sum_ClimbSuccess" source="Summarize: Sum - ClimbSuccess" type="Int64" />
+                <Field name="Sum_LiftedOthersSuccess" source="Summarize: Sum - LiftedOthersSuccess" type="Int64" />
+                <Field name="Sum_ParkedSuccess" source="Summarize: Sum - ParkedSuccess" type="Int64" />
+                <Field name="Sum_WheelRotationSuccess" source="Summarize: Sum - WheelRotationSuccess" type="Int64" />
+                <Field name="Sum_WheelPositionSuccess" source="Summarize: Sum - WheelPositionSuccess" type="Int64" />
+                <Field name="Points_Total" source="Summarize: Mode - Points" type="Int64" />
+                <Field name="Points_Base" source="Formula: [Sum_CrossedLine] * 5 + [Sum_A..." type="Int64" />
+                <Field name="Points_Extra" source="Formula: [Points_Total] - [Points_Base]" type="Int64" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="Validation">
+              <RecordInfo>
+                <Field name="Event" size="1073741823" source="Summarize: GroupBy - Event" type="V_WString" />
+                <Field name="Match" source="Summarize: GroupBy - Match" type="Int64" />
+                <Field name="AllianceColor" source="Summarize: GroupBy - AllianceColor" type="Int64" />
+                <Field name="Count_Teams" source="Summarize: Count" type="Int64" />
+                <Field name="Sum_CrossedLine" source="Summarize: Sum - CrossedLine" type="Int64" />
+                <Field name="Sum_AutoLowerSuccess" source="Summarize: Sum - AutoLowerSuccess" type="Int64" />
+                <Field name="Sum_AutoOuterSuccess" source="Summarize: Sum - AutoOuterSuccess" type="Int64" />
+                <Field name="Sum_AutoInnerSuccess" source="Summarize: Sum - AutoInnerSuccess" type="Int64" />
+                <Field name="Sum_LowerSuccess" source="Summarize: Sum - LowerSuccess" type="Int64" />
+                <Field name="Sum_OuterSuccess" source="Summarize: Sum - OuterSuccess" type="Int64" />
+                <Field name="Sum_InnerSuccess" source="Summarize: Sum - InnerSuccess" type="Int64" />
+                <Field name="Sum_ClimbSuccess" source="Summarize: Sum - ClimbSuccess" type="Int64" />
+                <Field name="Sum_LiftedOthersSuccess" source="Summarize: Sum - LiftedOthersSuccess" type="Int64" />
+                <Field name="Sum_ParkedSuccess" source="Summarize: Sum - ParkedSuccess" type="Int64" />
+                <Field name="Sum_WheelRotationSuccess" source="Summarize: Sum - WheelRotationSuccess" type="Int64" />
+                <Field name="Sum_WheelPositionSuccess" source="Summarize: Sum - WheelPositionSuccess" type="Int64" />
+                <Field name="Points_Total" source="Summarize: Mode - Points" type="Int64" />
+                <Field name="Points_Base" source="Formula: [Sum_CrossedLine] * 5 + [Sum_A..." type="Int64" />
+                <Field name="Points_Extra" source="Formula: [Points_Total] - [Points_Base]" type="Int64" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="Holdout">
+              <RecordInfo>
+                <Field name="Event" size="1073741823" source="Summarize: GroupBy - Event" type="V_WString" />
+                <Field name="Match" source="Summarize: GroupBy - Match" type="Int64" />
+                <Field name="AllianceColor" source="Summarize: GroupBy - AllianceColor" type="Int64" />
+                <Field name="Count_Teams" source="Summarize: Count" type="Int64" />
+                <Field name="Sum_CrossedLine" source="Summarize: Sum - CrossedLine" type="Int64" />
+                <Field name="Sum_AutoLowerSuccess" source="Summarize: Sum - AutoLowerSuccess" type="Int64" />
+                <Field name="Sum_AutoOuterSuccess" source="Summarize: Sum - AutoOuterSuccess" type="Int64" />
+                <Field name="Sum_AutoInnerSuccess" source="Summarize: Sum - AutoInnerSuccess" type="Int64" />
+                <Field name="Sum_LowerSuccess" source="Summarize: Sum - LowerSuccess" type="Int64" />
+                <Field name="Sum_OuterSuccess" source="Summarize: Sum - OuterSuccess" type="Int64" />
+                <Field name="Sum_InnerSuccess" source="Summarize: Sum - InnerSuccess" type="Int64" />
+                <Field name="Sum_ClimbSuccess" source="Summarize: Sum - ClimbSuccess" type="Int64" />
+                <Field name="Sum_LiftedOthersSuccess" source="Summarize: Sum - LiftedOthersSuccess" type="Int64" />
+                <Field name="Sum_ParkedSuccess" source="Summarize: Sum - ParkedSuccess" type="Int64" />
+                <Field name="Sum_WheelRotationSuccess" source="Summarize: Sum - WheelRotationSuccess" type="Int64" />
+                <Field name="Sum_WheelPositionSuccess" source="Summarize: Sum - WheelPositionSuccess" type="Int64" />
+                <Field name="Points_Total" source="Summarize: Mode - Points" type="Int64" />
+                <Field name="Points_Base" source="Formula: [Sum_CrossedLine] * 5 + [Sum_A..." type="Int64" />
+                <Field name="Points_Extra" source="Formula: [Points_Total] - [Points_Base]" type="Int64" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\Create_Samples.yxmc" />
+        </Node>
+        <Node ToolID="14">
+          <GuiSettings Plugin="Score">
+            <Position x="942" y="258" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="modelChoice">Local Model</Value>
+              <Value name="score field">Points_ExtraPredicted</Value>
+              <Value name="is oversampled">False</Value>
+              <Value name="oversampled value">
+              </Value>
+              <Value name="original percent">2</Value>
+              <Value name="log y">False</Value>
+              <Value name="prediction.interval">False</Value>
+              <Value name="interval.level">95</Value>
+              <Value name="append.xdf">False</Value>
+              <Value name="num.records">256000</Value>
+              <Value name="credentials">
+              </Value>
+              <Value name="models">
+              </Value>
+              <Value name="page">
+              </Value>
+              <Value name="errorStatus">
+              </Value>
+              <Value name="modelDetailJSON">
+              </Value>
+              <Value name="modelDetails">{"Name":"","Owner":"","Status":"","Id":"","LastDeployment":"","LastUpdated":"","LatestVersion":"","ActiveVersion":"","NumReplications":"","NumVersions":""}</Value>
+              <Value name="promoteURL">
+              </Value>
+              <Value name="username">
+              </Value>
+              <Value name="model_name">
+              </Value>
+              <Value name="model_owner">
+              </Value>
+              <Value name="apiKey">
+              </Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Event" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Match" source="R-DATA:" type="Double" />
+                <Field name="AllianceColor" source="R-DATA:" type="Double" />
+                <Field name="Count_Teams" source="R-DATA:" type="Double" />
+                <Field name="Sum_CrossedLine" source="R-DATA:" type="Double" />
+                <Field name="Sum_AutoLowerSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_AutoOuterSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_AutoInnerSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_LowerSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_OuterSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_InnerSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_ClimbSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_LiftedOthersSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_ParkedSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_WheelRotationSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_WheelPositionSuccess" source="R-DATA:" type="Double" />
+                <Field name="Points_Total" source="R-DATA:" type="Double" />
+                <Field name="Points_Base" source="R-DATA:" type="Double" />
+                <Field name="Points_Extra" source="R-DATA:" type="Double" />
+                <Field name="Points_ExtraPredicted" source="R-DATA:" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings Macro="Score\Supporting_Macros\score-engine.yxmc" EngineDll="Macro" EngineDllEntryPoint="Score\Supporting_Macros\score-engine.yxmc" />
+        </Node>
+        <Node ToolID="22">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1050" y="258" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[Points_ExtraPredicted] - [Points_Extra]" field="Points_ExtraDiff" size="8" type="Double" />
+                <FormulaField expression="ABS([Points_ExtraDiff])" field="Points_ExtraAbs" size="8" type="Double" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Points_ExtraDiff = [Points_ExtraPredicted] - [Points_Extra]
+Points_ExtraAbs = AB...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Event" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Match" source="R-DATA:" type="Double" />
+                <Field name="AllianceColor" source="R-DATA:" type="Double" />
+                <Field name="Count_Teams" source="R-DATA:" type="Double" />
+                <Field name="Sum_CrossedLine" source="R-DATA:" type="Double" />
+                <Field name="Sum_AutoLowerSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_AutoOuterSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_AutoInnerSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_LowerSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_OuterSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_InnerSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_ClimbSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_LiftedOthersSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_ParkedSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_WheelRotationSuccess" source="R-DATA:" type="Double" />
+                <Field name="Sum_WheelPositionSuccess" source="R-DATA:" type="Double" />
+                <Field name="Points_Total" source="R-DATA:" type="Double" />
+                <Field name="Points_Base" source="R-DATA:" type="Double" />
+                <Field name="Points_Extra" source="R-DATA:" type="Double" />
+                <Field name="Points_ExtraPredicted" source="R-DATA:" type="Double" />
+                <Field name="Points_ExtraDiff" source="Formula: [Points_ExtraPredicted] - [Poi..." type="Double" />
+                <Field name="Points_ExtraAbs" source="Formula: ABS([Points_ExtraDiff])" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="23">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="1134" y="258" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="Points_ExtraDiff" action="Avg" rename="Average Points Difference" />
+                <SummarizeField field="Points_ExtraAbs" action="Avg" rename="Average Points Difference (abs)" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Average Points Difference" source="Summarize: Avg - Points_ExtraDiff" type="Double" />
+                <Field name="Average Points Difference (abs)" source="Summarize: Avg - Points_ExtraAbs" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="24">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1230" y="258" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_8596_c8ed7a727f12453b8fd0f27d2dae99d8_\Engine_7708_917bd4986e924b668bac879b23bcf5fa_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="25">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="930" y="342" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File FileFormat="19" MaxRecords="">C:\mascout\TableauInput\predictive_model.yxdb</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <NoSpatialIndex>False</NoSpatialIndex>
+                <SaveSource>True</SaveSource>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>predictive_model.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="43" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="True" />
+      <Destination ToolID="43" Connection="Targets" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="17" Connection="Question" />
+      <Destination ToolID="18" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="18" Connection="Action" />
+      <Destination ToolID="16" Connection="Action" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="19" Connection="Question" />
+      <Destination ToolID="20" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="19" Connection="Question" />
+      <Destination ToolID="21" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="20" Connection="Action" />
+      <Destination ToolID="13" Connection="Action" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="21" Connection="Action" />
+      <Destination ToolID="13" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="27" Connection="Question" />
+      <Destination ToolID="28" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="28" Connection="Action" />
+      <Destination ToolID="29" Connection="Action" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="33" Connection="Question" />
+      <Destination ToolID="35" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="34" Connection="Question" />
+      <Destination ToolID="37" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="35" Connection="Action" />
+      <Destination ToolID="36" Connection="Action" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="37" Connection="Action" />
+      <Destination ToolID="36" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="Output" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Output" />
+      <Destination ToolID="44" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="44" Connection="True" />
+      <Destination ToolID="45" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="45" Connection="Output" />
+      <Destination ToolID="47" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="50" Connection="Output" />
+      <Destination ToolID="47" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="45" Connection="Output" />
+      <Destination ToolID="68" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="67" Connection="Output" />
+      <Destination ToolID="68" Connection="Left" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="57" Connection="Question" />
+      <Destination ToolID="58" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="58" Connection="Action" />
+      <Destination ToolID="56" Connection="Action" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="63" Connection="Question" />
+      <Destination ToolID="64" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="64" Connection="Action" />
+      <Destination ToolID="65" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="52" Connection="Model" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="49" Connection="Output" />
+      <Destination ToolID="52" Connection="Data" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="80" Connection="Model" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="79" Connection="Output" />
+      <Destination ToolID="80" Connection="Data" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="59" Connection="Output" />
+      <Destination ToolID="70" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="69" Connection="False" />
+      <Destination ToolID="70" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="61" Connection="True" />
+      <Destination ToolID="62" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="62" Connection="True" />
+      <Destination ToolID="77" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="65" Connection="Output" />
+      <Destination ToolID="66" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="66" Connection="Output" />
+      <Destination ToolID="67" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="68" Connection="Right" />
+      <Destination ToolID="69" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="69" Connection="True" />
+      <Destination ToolID="59" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="69" Connection="True" />
+      <Destination ToolID="59" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="70" Connection="Output" />
+      <Destination ToolID="61" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="77" Connection="Output" />
+      <Destination ToolID="79" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="80" Connection="Output" />
+      <Destination ToolID="81" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="81" Connection="Output" />
+      <Destination ToolID="82" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="82" Connection="Output" />
+      <Destination ToolID="84" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="84" Connection="Output" />
+      <Destination ToolID="83" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Join" />
+      <Destination ToolID="55" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="50" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="51" Connection="Output" />
+      <Destination ToolID="53" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="52" Connection="Output" />
+      <Destination ToolID="51" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="53" Connection="Output" />
+      <Destination ToolID="54" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="55" Connection="Output" />
+      <Destination ToolID="49" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="True" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="14" Connection="Model" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Validation" />
+      <Destination ToolID="14" Connection="Data" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Estimation" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Check Box (17)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Numeric Up Down (19)</Name>
+        <Value />
+        <IsNumeric value="True" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Check Box (27)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Text Box (33)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Text Box (34)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Check Box (57)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Text Box (63)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>2020_predictive</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions>
+        <NoCondition>
+          <Type>NoCondition</Type>
+          <Description>(Always Run)</Description>
+          <True>
+            <Action>
+              <Type>UpdateValueFormula</Type>
+              <Description />
+              <ToolId value="18" />
+              <Expression>if [#1] then "False" else "True" endif</Expression>
+              <Destination>16/Disabled/@value</Destination>
+              <Mode>Expression</Mode>
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="20" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>13/Value[@name='validation pct']</Destination>
+            </Action>
+            <Action>
+              <Type>UpdateValueFormula</Type>
+              <Description />
+              <ToolId value="21" />
+              <Expression>100 - ToNumber([#1])</Expression>
+              <Destination>13/Value[@name='estimation pct']</Destination>
+              <Mode>Expression</Mode>
+            </Action>
+            <Action>
+              <Type>UpdateValueFormula</Type>
+              <Description />
+              <ToolId value="28" />
+              <Expression>if [#1] then "False" else "True" endif</Expression>
+              <Destination>29/Disabled/@value</Destination>
+              <Mode>Expression</Mode>
+            </Action>
+            <Action>
+              <Type>Dynamic</Type>
+              <Description />
+              <ToolId value="35" />
+              <Expression>{{INPUT}}</Expression>
+              <Destination>36/Data/r[1]/c[2]</Destination>
+              <Mapping>Update Cell</Mapping>
+              <Mode>Expression</Mode>
+              <DynamicConfiguration>row	1
+column	2</DynamicConfiguration>
+              <DefaultConfiguration value="False" />
+            </Action>
+            <Action>
+              <Type>Dynamic</Type>
+              <Description />
+              <ToolId value="37" />
+              <Expression>{{INPUT}}</Expression>
+              <Destination>36/Data/r[2]/c[2]</Destination>
+              <Mapping>Update Cell</Mapping>
+              <Mode>Expression</Mode>
+              <DynamicConfiguration>row	2
+column	2</DynamicConfiguration>
+              <DefaultConfiguration value="False" />
+            </Action>
+            <Action>
+              <Type>UpdateValueFormula</Type>
+              <Description />
+              <ToolId value="58" />
+              <Expression>if [#1] then "False" else "True" endif</Expression>
+              <Destination>29/Disabled/@value</Destination>
+              <Mode>Expression</Mode>
+            </Action>
+            <Action>
+              <Type>Dynamic</Type>
+              <Description />
+              <ToolId value="64" />
+              <Expression>{{INPUT}}</Expression>
+              <Destination>65/Data/r[1]/c[1]</Destination>
+              <Mapping>Update Cell</Mapping>
+              <Mode>Expression</Mode>
+              <DynamicConfiguration>row	1
+column	1</DynamicConfiguration>
+              <DefaultConfiguration value="True" />
+            </Action>
+          </True>
+        </NoCondition>
+      </Actions>
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (1)</Name>
+          <ToolId value="1" />
+          <Questions>
+            <Question>
+              <Type>BooleanGroup</Type>
+              <Description>Generate New Model</Description>
+              <Name>Check Box (17)</Name>
+              <ToolId value="17" />
+              <Questions>
+                <Question>
+                  <Type>NumericUpDown</Type>
+                  <Description>% data reserved for testing</Description>
+                  <Name>Numeric Up Down (19)</Name>
+                  <ToolId value="19" />
+                  <Minimum value="1" />
+                  <Maximum value="99" />
+                  <Increment value="1" />
+                  <Default value="25" />
+                  <Decimals value="0" />
+                </Question>
+              </Questions>
+              <Default value="False" />
+              <Collapsable value="True" />
+            </Question>
+            <Question>
+              <Type>BooleanGroup</Type>
+              <Description>Simulate Match</Description>
+              <Name>Check Box (27)</Name>
+              <ToolId value="27" />
+              <Questions>
+                <Question>
+                  <Type>TextBox</Type>
+                  <Description>Red</Description>
+                  <Name>Text Box (33)</Name>
+                  <ToolId value="33" />
+                  <Default>6328,6328,6328</Default>
+                  <Password value="False" />
+                  <Multiline value="False" />
+                  <Hidden value="False" />
+                </Question>
+                <Question>
+                  <Type>TextBox</Type>
+                  <Description>Blue</Description>
+                  <Name>Text Box (34)</Name>
+                  <ToolId value="34" />
+                  <Default>6328,6328,6328</Default>
+                  <Password value="False" />
+                  <Multiline value="False" />
+                  <Hidden value="False" />
+                </Question>
+              </Questions>
+              <Default value="False" />
+              <Collapsable value="True" />
+            </Question>
+            <Question>
+              <Type>BooleanGroup</Type>
+              <Description>Create Picklist</Description>
+              <Name>Check Box (57)</Name>
+              <ToolId value="57" />
+              <Questions>
+                <Question>
+                  <Type>TextBox</Type>
+                  <Description>Do not include:</Description>
+                  <Name>Text Box (63)</Name>
+                  <ToolId value="63" />
+                  <Default />
+                  <Password value="False" />
+                  <Multiline value="False" />
+                  <Hidden value="False" />
+                </Question>
+              </Questions>
+              <Default value="False" />
+              <Collapsable value="True" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Wizard</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="24" Selected="True" />
+        <Tool ToolId="54" Selected="True" />
+        <Tool ToolId="13" Selected="False" />
+        <Tool ToolId="25" Selected="False" />
+        <Tool ToolId="83" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>

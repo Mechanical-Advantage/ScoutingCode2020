@@ -3,7 +3,7 @@
   <Nodes>
     <Node ToolID="2">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="54" y="246" />
+        <Position x="54" y="306" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -73,7 +73,7 @@ Query=match</DefaultAnnotationText>
     </Node>
     <Node ToolID="4">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="54" y="54" />
+        <Position x="54" y="114" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -102,7 +102,7 @@ Query=config</DefaultAnnotationText>
     </Node>
     <Node ToolID="6">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="150" y="54" />
+        <Position x="150" y="114" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -133,7 +133,7 @@ Query=config</DefaultAnnotationText>
     </Node>
     <Node ToolID="9">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
-        <Position x="270" y="234" />
+        <Position x="270" y="294" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -160,7 +160,7 @@ Query=config</DefaultAnnotationText>
     </Node>
     <Node ToolID="11">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="750" y="150" />
+        <Position x="786" y="210" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -220,7 +220,7 @@ Query=config</DefaultAnnotationText>
     </Node>
     <Node ToolID="13">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="654" y="150" />
+        <Position x="690" y="210" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -235,7 +235,7 @@ Query=config</DefaultAnnotationText>
             <FormulaField expression="IF [LowerAttempts] = 0 THEN Null() ELSE [LowerSuccess] ENDIF" field="LowerSuccess" size="8" type="Int64" />
             <FormulaField expression="IF [UpperAttempts] = 0 THEN Null() ELSE [OuterSuccess] ENDIF" field="OuterSuccess" size="8" type="Int64" />
             <FormulaField expression="IF [UpperAttempts] = 0 THEN Null() ELSE [InnerSuccess] ENDIF" field="InnerSuccess" size="8" type="Int64" />
-            <FormulaField expression="&quot;-&quot; + IF [PreScouting] == 0 THEN &quot;M&quot; + toString([Match]) ELSE &quot;PRE&quot; ENDIF + &quot;: &quot; + [Comment]" field="Comment" size="1073741823" type="V_WString" />
+            <FormulaField expression="&quot;-&quot; + IF [PreScouting] == 0 THEN &quot;M&quot; + toString([Match]) ELSE &quot;PRE&quot; ENDIF + &quot;: &quot; + IF [Disabled] == 1 THEN &quot;(disabled) &quot; ELSE &quot;&quot; ENDIF + [Comment]" field="Comment" size="1073741823" type="V_WString" />
           </FormulaFields>
         </Configuration>
         <Annotation DisplayMode="0">
@@ -249,17 +249,17 @@ AutoUpperAttempts =...</DefaultAnnotationText>
     </Node>
     <Node ToolID="15">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="846" y="150" />
+        <Position x="882" y="210" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <FormulaFields>
-            <FormulaField expression="([Sum_AutoLowerSuccess] / [Sum_AutoLowerAttempts]) * 100" field="AutoLowerAccuracy" size="8" type="Int64" />
-            <FormulaField expression="(([Sum_AutoOuterSuccess] + [Sum_AutoInnerSuccess]) / [Sum_AutoUpperAttempts]) * 100" field="AutoUpperAccuracy" size="8" type="Int64" />
-            <FormulaField expression="([Sum_AutoInnerSuccess] / ([Sum_AutoInnerSuccess] + [Sum_AutoOuterSuccess])) * 100" field="AutoInnerAccuracy" size="8" type="Int64" />
-            <FormulaField expression="([Sum_LowerSuccess] / [Sum_LowerAttempts]) * 100" field="LowerAccuracy" size="8" type="Int64" />
-            <FormulaField expression="(([Sum_OuterSuccess] + [Sum_InnerSuccess]) / [Sum_UpperAttempts]) * 100" field="UpperAccuracy" size="8" type="Int64" />
-            <FormulaField expression="([Sum_InnerSuccess] / ([Sum_InnerSuccess] + [Sum_OuterSuccess])) * 100" field="InnerAccuracy" size="8" type="Int64" />
+            <FormulaField expression="([Sum_AutoLowerSuccess] / [Sum_AutoLowerAttempts]) * 100" field="AutoLowerAccuracy" size="8" type="Double" />
+            <FormulaField expression="(([Sum_AutoOuterSuccess] + [Sum_AutoInnerSuccess]) / [Sum_AutoUpperAttempts]) * 100" field="AutoUpperAccuracy" size="8" type="Double" />
+            <FormulaField expression="([Sum_AutoInnerSuccess] / ([Sum_AutoInnerSuccess] + [Sum_AutoOuterSuccess])) * 100" field="AutoInnerAccuracy" size="8" type="Double" />
+            <FormulaField expression="([Sum_LowerSuccess] / [Sum_LowerAttempts]) * 100" field="LowerAccuracy" size="8" type="Double" />
+            <FormulaField expression="(([Sum_OuterSuccess] + [Sum_InnerSuccess]) / [Sum_UpperAttempts]) * 100" field="UpperAccuracy" size="8" type="Double" />
+            <FormulaField expression="([Sum_InnerSuccess] / ([Sum_InnerSuccess] + [Sum_OuterSuccess])) * 100" field="InnerAccuracy" size="8" type="Double" />
           </FormulaFields>
         </Configuration>
         <Annotation DisplayMode="0">
@@ -273,7 +273,7 @@ Aut...</DefaultAnnotationText>
     </Node>
     <Node ToolID="16">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="942" y="150" />
+        <Position x="978" y="210" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -328,7 +328,7 @@ Aut...</DefaultAnnotationText>
     </Node>
     <Node ToolID="17">
       <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
-        <Position x="762" y="342" />
+        <Position x="762" y="402" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -347,7 +347,7 @@ Aut...</DefaultAnnotationText>
     </Node>
     <Node ToolID="19">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="954" y="342" />
+        <Position x="954" y="402" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -368,7 +368,7 @@ Aut...</DefaultAnnotationText>
     </Node>
     <Node ToolID="21">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="858" y="342" />
+        <Position x="858" y="402" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -389,7 +389,7 @@ Aut...</DefaultAnnotationText>
     </Node>
     <Node ToolID="22">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-        <Position x="1134" y="234" />
+        <Position x="1134" y="294" />
       </GuiSettings>
       <Properties>
         <Configuration joinByRecordPos="False">
@@ -409,6 +409,7 @@ Aut...</DefaultAnnotationText>
                 <SelectField field="Left_PreScouting" selected="True" input="Left_" />
                 <SelectField field="Left_Team" selected="True" input="Left_" />
                 <SelectField field="Left_MatchCount" selected="True" input="Left_" />
+                <SelectField field="Left_Avg_CrossedLine" selected="False" input="Left_" />
                 <SelectField field="Left_Sum_CrossedLine" selected="True" input="Left_" />
                 <SelectField field="Left_Avg_AutoLowerSuccess" selected="True" input="Left_" />
                 <SelectField field="Left_Avg_AutoOuterSuccess" selected="True" input="Left_" />
@@ -460,7 +461,7 @@ Aut...</DefaultAnnotationText>
     </Node>
     <Node ToolID="23">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-        <Position x="1926" y="234" />
+        <Position x="1926" y="294" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -483,11 +484,11 @@ Query=summary</DefaultAnnotationText>
     </Node>
     <Node ToolID="24">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="1914" y="174" />
+        <Position x="1926" y="234" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_16152_28af3bff83634c0aa1e16f8a01a59400_\Engine_5068_f840fc8989ef4cd8a5cec87a75d84457_.yxdb</TempFile>
+          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_12248_e40776e9e4ce4209aec778c477388c72_\Engine_13276_75a7bdfdb6ab4572aeef11a3fd648639_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -511,7 +512,7 @@ Query=summary</DefaultAnnotationText>
     </Node>
     <Node ToolID="25">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
-        <Position x="438" y="234" />
+        <Position x="414" y="294" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -531,7 +532,7 @@ Query=summary</DefaultAnnotationText>
     </Node>
     <Node ToolID="26">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
-        <Position x="354" y="234" />
+        <Position x="342" y="294" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -549,7 +550,7 @@ Query=summary</DefaultAnnotationText>
     </Node>
     <Node ToolID="27">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="258" y="546" />
+        <Position x="198" y="594" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -580,7 +581,7 @@ Query=summary</DefaultAnnotationText>
     </Node>
     <Node ToolID="28">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="174" y="546" />
+        <Position x="114" y="594" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -599,11 +600,11 @@ Query=summary</DefaultAnnotationText>
     </Node>
     <Node ToolID="29">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="354" y="546" />
+        <Position x="294" y="594" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_16152_28af3bff83634c0aa1e16f8a01a59400_\Engine_5068_c9eeb764e8c547dbbaddd33d1aa44132_.yxdb</TempFile>
+          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_12248_e40776e9e4ce4209aec778c477388c72_\Engine_13276_fa4d35866172420f9f1e147fae978979_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -627,7 +628,7 @@ Query=summary</DefaultAnnotationText>
     </Node>
     <Node ToolID="30">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="174" y="462" />
+        <Position x="114" y="510" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -647,7 +648,7 @@ Query=summary</DefaultAnnotationText>
     </Node>
     <Node ToolID="31">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="258" y="462" />
+        <Position x="198" y="510" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -678,11 +679,11 @@ Query=summary</DefaultAnnotationText>
     </Node>
     <Node ToolID="32">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="354" y="462" />
+        <Position x="294" y="510" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_16152_28af3bff83634c0aa1e16f8a01a59400_\Engine_5068_fa3970d198994c24972570ca7243a76c_.yxdb</TempFile>
+          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_12248_e40776e9e4ce4209aec778c477388c72_\Engine_13276_4e2cdcba1dbe4fcbb8377e8adc2cb6b2_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -706,7 +707,7 @@ Query=summary</DefaultAnnotationText>
     </Node>
     <Node ToolID="33">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="174" y="378" />
+        <Position x="114" y="426" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -727,7 +728,7 @@ Query=summary</DefaultAnnotationText>
     </Node>
     <Node ToolID="34">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="258" y="378" />
+        <Position x="198" y="426" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -758,11 +759,11 @@ Query=summary</DefaultAnnotationText>
     </Node>
     <Node ToolID="35">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="354" y="378" />
+        <Position x="294" y="426" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_16152_28af3bff83634c0aa1e16f8a01a59400_\Engine_5068_f76ebde3abdf44faa87a11b7b05a8532_.yxdb</TempFile>
+          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_12248_e40776e9e4ce4209aec778c477388c72_\Engine_13276_a0a572706653415186bcb36bab056541_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -786,7 +787,7 @@ Query=summary</DefaultAnnotationText>
     </Node>
     <Node ToolID="36">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="54" y="162" />
+        <Position x="54" y="222" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -814,6 +815,7 @@ Query=pit</DefaultAnnotationText>
             <Field name="UploadTime" source="File: C:\mascout\AdvantageScout\data_2020.db|||pit" type="Int64" />
             <Field name="ScoutName" size="1073741823" source="File: C:\mascout\AdvantageScout\data_2020.db|||pit" type="V_WString" />
             <Field name="DriveTrain" size="1073741823" source="File: C:\mascout\AdvantageScout\data_2020.db|||pit" type="V_WString" />
+            <Field name="TopSpeed" source="File: C:\mascout\AdvantageScout\data_2020.db|||pit" type="Int64" />
             <Field name="Weight" source="File: C:\mascout\AdvantageScout\data_2020.db|||pit" type="Int64" />
             <Field name="Height" source="File: C:\mascout\AdvantageScout\data_2020.db|||pit" type="Int64" />
             <Field name="CanMove" source="File: C:\mascout\AdvantageScout\data_2020.db|||pit" type="Int64" />
@@ -839,7 +841,7 @@ Query=pit</DefaultAnnotationText>
     </Node>
     <Node ToolID="37">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
-        <Position x="270" y="150" />
+        <Position x="270" y="210" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -866,7 +868,7 @@ Query=pit</DefaultAnnotationText>
     </Node>
     <Node ToolID="38">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="378" y="150" />
+        <Position x="378" y="210" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -883,7 +885,7 @@ Query=pit</DefaultAnnotationText>
     </Node>
     <Node ToolID="40">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-        <Position x="1650" y="234" />
+        <Position x="1650" y="294" />
       </GuiSettings>
       <Properties>
         <Configuration joinByRecordPos="False">
@@ -1016,7 +1018,7 @@ Query=pit</DefaultAnnotationText>
     </Node>
     <Node ToolID="43">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="798" y="450" />
+        <Position x="882" y="510" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1048,7 +1050,7 @@ Query=pit</DefaultAnnotationText>
     </Node>
     <Node ToolID="44">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="798" y="570" />
+        <Position x="882" y="630" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1080,7 +1082,7 @@ Query=pit</DefaultAnnotationText>
     </Node>
     <Node ToolID="45">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="666" y="450" />
+        <Position x="786" y="510" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1149,7 +1151,7 @@ Query=pit</DefaultAnnotationText>
     </Node>
     <Node ToolID="47">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="1062" y="450" />
+        <Position x="1062" y="510" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1179,7 +1181,7 @@ Query=pit</DefaultAnnotationText>
     </Node>
     <Node ToolID="48">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="942" y="450" />
+        <Position x="978" y="510" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1200,7 +1202,7 @@ Auto = 1
     </Node>
     <Node ToolID="50">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="1062" y="570" />
+        <Position x="1062" y="630" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1230,7 +1232,7 @@ Auto = 1
     </Node>
     <Node ToolID="51">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="942" y="570" />
+        <Position x="978" y="630" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1251,7 +1253,7 @@ Auto = 1
     </Node>
     <Node ToolID="53">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
-        <Position x="1230" y="450" />
+        <Position x="1230" y="510" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1270,7 +1272,7 @@ Auto = 1
     </Node>
     <Node ToolID="54">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="798" y="690" />
+        <Position x="882" y="750" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1302,7 +1304,7 @@ Auto = 1
     </Node>
     <Node ToolID="55">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="1062" y="690" />
+        <Position x="1062" y="750" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1332,7 +1334,7 @@ Auto = 1
     </Node>
     <Node ToolID="56">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="942" y="690" />
+        <Position x="978" y="750" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1353,7 +1355,7 @@ Auto = 1
     </Node>
     <Node ToolID="57">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="798" y="810" />
+        <Position x="882" y="870" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1385,7 +1387,7 @@ Auto = 1
     </Node>
     <Node ToolID="58">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="798" y="930" />
+        <Position x="882" y="990" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1417,13 +1419,14 @@ Auto = 1
     </Node>
     <Node ToolID="59">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="1062" y="810" />
+        <Position x="1062" y="870" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <OrderChanged value="True" />
           <CommaDecimal value="False" />
           <SelectFields>
+            <SelectField field="PreScouting" selected="False" />
             <SelectField field="Team" selected="True" />
             <SelectField field="Auto" selected="True" />
             <SelectField field="Position" selected="True" />
@@ -1433,7 +1436,6 @@ Auto = 1
             <SelectField field="LowerSuccess" selected="True" rename="Value" />
             <SelectField field="OuterSuccess" selected="False" />
             <SelectField field="InnerSuccess" selected="False" />
-            <SelectField field="PreScouting" selected="False" />
             <SelectField field="*Unknown" selected="False" />
           </SelectFields>
         </Configuration>
@@ -1447,7 +1449,7 @@ Auto = 1
     </Node>
     <Node ToolID="60">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="942" y="810" />
+        <Position x="978" y="870" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1468,13 +1470,14 @@ Auto = 0
     </Node>
     <Node ToolID="61">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="1062" y="930" />
+        <Position x="1062" y="990" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <OrderChanged value="True" />
           <CommaDecimal value="False" />
           <SelectFields>
+            <SelectField field="PreScouting" selected="False" />
             <SelectField field="Team" selected="True" />
             <SelectField field="Auto" selected="True" />
             <SelectField field="Position" selected="True" />
@@ -1497,7 +1500,7 @@ Auto = 0
     </Node>
     <Node ToolID="62">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="942" y="930" />
+        <Position x="978" y="990" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1518,7 +1521,7 @@ Auto = 0
     </Node>
     <Node ToolID="63">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="798" y="1050" />
+        <Position x="882" y="1110" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1550,13 +1553,14 @@ Auto = 0
     </Node>
     <Node ToolID="64">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="1062" y="1050" />
+        <Position x="1062" y="1110" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <OrderChanged value="True" />
           <CommaDecimal value="False" />
           <SelectFields>
+            <SelectField field="PreScouting" selected="False" />
             <SelectField field="Team" selected="True" />
             <SelectField field="Auto" selected="True" />
             <SelectField field="Position" selected="True" />
@@ -1579,7 +1583,7 @@ Auto = 0
     </Node>
     <Node ToolID="65">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="942" y="1050" />
+        <Position x="978" y="1110" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1600,7 +1604,7 @@ Auto = 0
     </Node>
     <Node ToolID="67">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-        <Position x="1362" y="450" />
+        <Position x="1998" y="462" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1621,41 +1625,13 @@ Query=scores</DefaultAnnotationText>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
     </Node>
-    <Node ToolID="68">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="1362" y="378" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_16152_28af3bff83634c0aa1e16f8a01a59400_\Engine_5068_631c590d69454f49a423b979aabb69bb_.yxdb</TempFile>
-          <TempFileDataProfiling />
-          <Layout>
-            <ViewMode>Single</ViewMode>
-            <ViewSize value="100" />
-            <View1>
-              <DefaultTab>Profile</DefaultTab>
-              <Hints>
-                <Table />
-              </Hints>
-            </View1>
-            <View2 />
-          </Layout>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
-    </Node>
     <Node ToolID="69">
       <GuiSettings>
-        <Position x="1830" y="234" />
+        <Position x="1830" y="294" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Value name="List Box (11)">"DriveTrain","Weight","Height","MatchCount","AvgNo0_DriverRating","AvgNo0_IntakeRating","AvgNo0_DefenseRating","AvgNo0_AvoidDefenseRating","Pre_MatchCount","Pre_AvgNo0_DriverRating","Pre_AvgNo0_IntakeRating","Pre_AvgNo0_DefenseRating","Pre_AvgNo0_AvoidDefenseRating"</Value>
+          <Value name="List Box (11)">"DriveTrain","Weight","Height","MatchCount","Sum_CrossedLine","Avg_UpperSecondsBetween","Median_UpperSecondsBetween","Sum_WheelRotationAttempted","Sum_WheelRotationSuccess","Sum_WheelPositionAttempted","Sum_WheelPositionSuccess","Sum_ClimbAttempted","Sum_ClimbSuccess","Sum_LiftedOthersAttempted","Sum_LiftedOthersSuccess","Sum_ParkedAttempted","Sum_ParkedSuccess","Sum_ShootFromWall","Sum_ShootFromOpponentSide","Sum_ShootFromOwnSide","Sum_Disabled","AvgNo0_DriverRating","AvgNo0_IntakeRating","AvgNo0_DefenseRating","AvgNo0_AvoidDefenseRating","AutoLowerAccuracy","AutoUpperAccuracy","AutoInnerAccuracy","LowerAccuracy","UpperAccuracy","InnerAccuracy","Comment","Pre_MatchCount","Pre_Sum_CrossedLine","Pre_Avg_UpperSecondsBetween","Pre_Median_UpperSecondsBetween","Pre_Sum_WheelRotationAttempted","Pre_Sum_WheelRotationSuccess","Pre_Sum_WheelPositionAttempted","Pre_Sum_WheelPositionSuccess","Pre_Sum_ClimbAttempted","Pre_Sum_ClimbSuccess","Pre_Sum_LiftedOthersAttempted","Pre_Sum_LiftedOthersSuccess","Pre_Sum_ParkedAttempted","Pre_Sum_ParkedSuccess","Pre_Sum_ShootFromWall","Pre_Sum_ShootFromOpponentSide","Pre_Sum_ShootFromOwnSide","Pre_Sum_Disabled","Pre_AvgNo0_DriverRating","Pre_AvgNo0_IntakeRating","Pre_AvgNo0_DefenseRating","Pre_AvgNo0_AvoidDefenseRating","Pre_AutoLowerAccuracy","Pre_AutoUpperAccuracy","Pre_AutoInnerAccuracy","Pre_LowerAccuracy","Pre_UpperAccuracy","Pre_InnerAccuracy","Pre_Comment"</Value>
           <Value name="Check Box (84)">True</Value>
           <Value name="Check Box (117)">True</Value>
           <Value name="Check Box (15)">True</Value>
@@ -1672,15 +1648,12 @@ Query=scores</DefaultAnnotationText>
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
       </Properties>
       <EngineSettings Macro="Cleanse.yxmc" />
     </Node>
     <Node ToolID="70">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="546" y="234" />
+        <Position x="570" y="294" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1699,7 +1672,7 @@ Query=scores</DefaultAnnotationText>
     </Node>
     <Node ToolID="71">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="54" y="390" />
+        <Position x="570" y="414" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1714,9 +1687,9 @@ Query=scores</DefaultAnnotationText>
               <PeriodType>
               </PeriodType>
               <PeriodCount>0</PeriodCount>
+              <Operand>0</Operand>
               <StartDate>2020-01-25 18:01:54</StartDate>
               <EndDate>2020-01-25 18:01:54</EndDate>
-              <Operand>0</Operand>
             </Operands>
           </Simple>
         </Configuration>
@@ -1730,7 +1703,7 @@ Query=scores</DefaultAnnotationText>
     </Node>
     <Node ToolID="72">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="1242" y="234" />
+        <Position x="1242" y="294" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1761,7 +1734,7 @@ Query=scores</DefaultAnnotationText>
     </Node>
     <Node ToolID="73">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-        <Position x="1458" y="234" />
+        <Position x="1458" y="294" />
       </GuiSettings>
       <Properties>
         <Configuration joinByRecordPos="False">
@@ -1862,11 +1835,11 @@ Query=scores</DefaultAnnotationText>
     </Node>
     <Node ToolID="75">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
-        <Position x="1746" y="234" />
+        <Position x="1746" y="294" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_ErrorMode>Ignore</ByName_ErrorMode>
           <ByName_OutputMode>All</ByName_OutputMode>
           <Mode>ByName</Mode>
           <SetOutputOrder value="False" />
@@ -1881,11 +1854,11 @@ Query=scores</DefaultAnnotationText>
     </Node>
     <Node ToolID="76">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
-        <Position x="1554" y="234" />
+        <Position x="1554" y="294" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_ErrorMode>Ignore</ByName_ErrorMode>
           <ByName_OutputMode>All</ByName_OutputMode>
           <Mode>ByName</Mode>
           <SetOutputOrder value="False" />
@@ -1900,7 +1873,7 @@ Query=scores</DefaultAnnotationText>
     </Node>
     <Node ToolID="78">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="1338" y="198" />
+        <Position x="1338" y="258" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1956,7 +1929,7 @@ Query=scores</DefaultAnnotationText>
     </Node>
     <Node ToolID="79">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="1338" y="258" />
+        <Position x="1338" y="318" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2009,6 +1982,711 @@ Query=scores</DefaultAnnotationText>
         </Annotation>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="80">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="498" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="Match" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Match - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="81">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1374" y="630" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Team" action="GroupBy" rename="Team" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="84">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="1482" y="546" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="2" />
+          <Fields>
+            <Field name="Auto" />
+          </Fields>
+          <Data>
+            <r>
+              <c>1</c>
+            </r>
+            <r>
+              <c>0</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="85">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="1398" y="546" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="6" />
+          <Fields>
+            <Field name="Position" />
+          </Fields>
+          <Data>
+            <r>
+              <c>Lower</c>
+            </r>
+            <r>
+              <c>Outer</c>
+            </r>
+            <r>
+              <c>Inner</c>
+            </r>
+            <r>
+              <c>Pre Lower</c>
+            </r>
+            <r>
+              <c>Pre Outer</c>
+            </r>
+            <r>
+              <c>Pre Inner</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="91">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="1482" y="630" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Allow</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Source_Team" selected="True" input="Source_" />
+                <SelectField field="Target_Position" selected="True" input="Target_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="92">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="1566" y="630" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Allow</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Source_Team" selected="True" input="Source_" />
+                <SelectField field="Target_Auto" selected="True" input="Target_" />
+                <SelectField field="Source_Position" selected="True" input="Source_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="94">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1650" y="630" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="0" field="Value" size="8" type="Int64" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Value = 0
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="98">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1878" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="99">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1998" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_12248_e40776e9e4ce4209aec778c477388c72_\Engine_13276_963253bb0cac4d1bba731ba9970c24c7_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="100">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1770" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Team" />
+            <Field field="Auto" />
+            <Field field="Position" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Team" />
+            <Field field="Auto" />
+            <Field field="Position" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Team" selected="False" rename="Right_Team" input="Right_" />
+                <SelectField field="Right_Auto" selected="False" rename="Right_Auto" input="Right_" />
+                <SelectField field="Right_Position" selected="False" rename="Right_Position" input="Right_" />
+                <SelectField field="Right_Value" selected="False" rename="Right_Value" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="101">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="102" y="774" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Team" action="GroupBy" rename="Team" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="103">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="234" y="774" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Team" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Team" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_PreScouting" selected="False" input="Left_" />
+                <SelectField field="Left_Team" selected="True" input="Left_" />
+                <SelectField field="Left_MatchCount" selected="True" input="Left_" />
+                <SelectField field="Left_Avg_CrossedLine" selected="False" input="Left_" />
+                <SelectField field="Left_Sum_CrossedLine" selected="True" input="Left_" />
+                <SelectField field="Left_Avg_AutoLowerSuccess" selected="True" input="Left_" />
+                <SelectField field="Left_Avg_AutoOuterSuccess" selected="True" input="Left_" />
+                <SelectField field="Left_Avg_AutoInnerSuccess" selected="True" input="Left_" />
+                <SelectField field="Left_Avg_LowerSuccess" selected="True" input="Left_" />
+                <SelectField field="Left_Avg_OuterSuccess" selected="True" input="Left_" />
+                <SelectField field="Left_Avg_InnerSuccess" selected="True" input="Left_" />
+                <SelectField field="Left_Avg_UpperSecondsBetween" selected="False" input="Left_" />
+                <SelectField field="Left_Median_UpperSecondsBetween" selected="False" input="Left_" />
+                <SelectField field="Left_Sum_WheelRotationAttempted" selected="False" input="Left_" />
+                <SelectField field="Left_Sum_WheelRotationSuccess" selected="True" input="Left_" />
+                <SelectField field="Left_Sum_WheelPositionAttempted" selected="False" input="Left_" />
+                <SelectField field="Left_Sum_WheelPositionSuccess" selected="True" input="Left_" />
+                <SelectField field="Left_Sum_ClimbAttempted" selected="False" input="Left_" />
+                <SelectField field="Left_Sum_ClimbSuccess" selected="True" input="Left_" />
+                <SelectField field="Left_Sum_LiftedOthersAttempted" selected="False" input="Left_" />
+                <SelectField field="Left_Sum_LiftedOthersSuccess" selected="True" input="Left_" />
+                <SelectField field="Left_Sum_ParkedAttempted" selected="False" input="Left_" />
+                <SelectField field="Left_Sum_ParkedSuccess" selected="True" input="Left_" />
+                <SelectField field="Left_Sum_ShootFromWall" selected="False" input="Left_" />
+                <SelectField field="Left_Sum_ShootFromOpponentSide" selected="False" input="Left_" />
+                <SelectField field="Left_Sum_ShootFromOwnSide" selected="False" input="Left_" />
+                <SelectField field="Left_Sum_Disabled" selected="False" input="Left_" />
+                <SelectField field="Left_AvgNo0_DriverRating" selected="False" input="Left_" />
+                <SelectField field="Left_AvgNo0_IntakeRating" selected="False" input="Left_" />
+                <SelectField field="Left_AvgNo0_DefenseRating" selected="False" input="Left_" />
+                <SelectField field="Left_AvgNo0_AvoidDefenseRating" selected="False" input="Left_" />
+                <SelectField field="Left_AutoLowerAccuracy" selected="False" input="Left_" />
+                <SelectField field="Left_AutoUpperAccuracy" selected="False" input="Left_" />
+                <SelectField field="Left_AutoInnerAccuracy" selected="False" input="Left_" />
+                <SelectField field="Left_LowerAccuracy" selected="False" input="Left_" />
+                <SelectField field="Left_UpperAccuracy" selected="False" input="Left_" />
+                <SelectField field="Left_InnerAccuracy" selected="False" input="Left_" />
+                <SelectField field="Left_Comment" selected="False" input="Left_" />
+                <SelectField field="Right_Team" selected="False" rename="Right_Team" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="104">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="102" y="714" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>PreScouting</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2020-02-19 20:54:04</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>0</Operand>
+              <StartDate>2020-02-19 20:54:04</StartDate>
+              <EndDate>2020-02-19 20:54:04</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[PreScouting] = 0</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="106">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="330" y="774" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="([Sum_CrossedLine] / [MatchCount]) * 5" field="CrossedLine" size="8" type="Double" />
+            <FormulaField expression="[Avg_AutoLowerSuccess] * 2" field="AutoLower" size="8" type="Double" />
+            <FormulaField expression="[Avg_AutoOuterSuccess] * 4" field="AutoOuter" size="8" type="Double" />
+            <FormulaField expression="[Avg_AutoInnerSuccess] * 6" field="AutoInner" size="8" type="Double" />
+            <FormulaField expression="[Avg_LowerSuccess]" field="Lower" size="8" type="Double" />
+            <FormulaField expression="[Avg_OuterSuccess] * 2" field="Outer" size="8" type="Double" />
+            <FormulaField expression="[Avg_InnerSuccess] * 3" field="Inner" size="8" type="Double" />
+            <FormulaField expression="([Sum_WheelRotationSuccess] / [MatchCount]) * 10" field="WheelRotation" size="8" type="Double" />
+            <FormulaField expression="([Sum_WheelPositionSuccess] / [MatchCount]) * 20" field="WheelPosition" size="8" type="Double" />
+            <FormulaField expression="([Sum_ClimbSuccess] / [MatchCount]) * 25" field="Climb" size="8" type="Double" />
+            <FormulaField expression="([Sum_ParkedSuccess] / [MatchCount]) * 5" field="Park" size="8" type="Double" />
+            <FormulaField expression="([Sum_LiftedOthersSuccess] / [MatchCount]) * 25" field="LiftedOthers" size="8" type="Double" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>CrossedLine = ([Sum_CrossedLine] / [MatchCount]) * 5
+AutoLower = [Avg_AutoLowerS...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="107">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="546" y="774" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Team" selected="True" />
+            <SelectField field="MatchCount" selected="False" />
+            <SelectField field="Sum_CrossedLine" selected="False" />
+            <SelectField field="Avg_AutoLowerSuccess" selected="False" />
+            <SelectField field="Avg_AutoOuterSuccess" selected="False" />
+            <SelectField field="Avg_AutoInnerSuccess" selected="False" />
+            <SelectField field="Avg_LowerSuccess" selected="False" />
+            <SelectField field="Avg_OuterSuccess" selected="False" />
+            <SelectField field="Avg_InnerSuccess" selected="False" />
+            <SelectField field="Sum_WheelRotationSuccess" selected="False" />
+            <SelectField field="Sum_WheelPositionSuccess" selected="False" />
+            <SelectField field="Sum_ClimbSuccess" selected="False" />
+            <SelectField field="Sum_LiftedOthersSuccess" selected="False" />
+            <SelectField field="Sum_ParkedSuccess" selected="False" />
+            <SelectField field="Total" selected="True" />
+            <SelectField field="CrossedLine" selected="True" />
+            <SelectField field="AutoLower" selected="True" />
+            <SelectField field="AutoOuter" selected="True" />
+            <SelectField field="AutoInner" selected="True" />
+            <SelectField field="Lower" selected="True" />
+            <SelectField field="Outer" selected="True" />
+            <SelectField field="Inner" selected="True" />
+            <SelectField field="WheelRotation" selected="True" />
+            <SelectField field="WheelPosition" selected="True" />
+            <SelectField field="Climb" selected="True" />
+            <SelectField field="Park" selected="True" />
+            <SelectField field="LiftedOthers" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="109">
+      <GuiSettings>
+        <Position x="402" y="774" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="List Box (11)">"CrossedLine","AutoLower","AutoOuter","AutoInner","Lower","Outer","Inner","WheelRotation","WheelPosition","Climb","Park","LiftedOthers"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="110">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="462" y="774" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[CrossedLine] + [AutoLower] + [AutoOuter] + [AutoInner] + [Lower] + [Outer] + [Inner] + [WheelRotation] + [WheelPosition] + [Climb] + [Park] + [LiftedOthers]" field="Total" size="8" type="Double" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Total = [CrossedLine] + [AutoLower] + [AutoOuter] + [AutoInner] + [Lower] + [Out...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="111">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="726" y="774" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="25" MaxRecords="">C:\mascout\TableauInput\points_comparison.xlsx|||points</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>RemoveFile</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>points_comparison.xlsx
+Query=points</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="112">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="726" y="714" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_12248_e40776e9e4ce4209aec778c477388c72_\Engine_13276_70b7cc7460404d7ca870cb5809906a83_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="113">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+        <Position x="630" y="774" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ErrorWarn>Warn</ErrorWarn>
+          <KeyFields>
+            <Field field="Team" />
+          </KeyFields>
+          <DataFields>
+            <Field field="Team" selected="False" />
+            <Field field="Total" selected="True" />
+            <Field field="CrossedLine" selected="True" />
+            <Field field="AutoLower" selected="True" />
+            <Field field="AutoOuter" selected="True" />
+            <Field field="AutoInner" selected="True" />
+            <Field field="Lower" selected="True" />
+            <Field field="Outer" selected="True" />
+            <Field field="Inner" selected="True" />
+            <Field field="WheelRotation" selected="True" />
+            <Field field="WheelPosition" selected="True" />
+            <Field field="Climb" selected="True" />
+            <Field field="Park" selected="True" />
+            <Field field="LiftedOthers" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </DataFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+    </Node>
+    <Node ToolID="114">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="414" y="666" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Total" action="Percentile" rename="Percentile_Total">
+              <Percentile value="0.5" />
+            </SummarizeField>
+            <SummarizeField field="CrossedLine" action="Percentile" rename="Percentile_CrossedLine">
+              <Percentile value="0.5" />
+            </SummarizeField>
+            <SummarizeField field="AutoLower" action="Percentile" rename="Percentile_AutoLower">
+              <Percentile value="0.5" />
+            </SummarizeField>
+            <SummarizeField field="AutoOuter" action="Percentile" rename="Percentile_AutoOuter">
+              <Percentile value="0.5" />
+            </SummarizeField>
+            <SummarizeField field="AutoInner" action="Percentile" rename="Percentile_AutoInner">
+              <Percentile value="0.5" />
+            </SummarizeField>
+            <SummarizeField field="Lower" action="Percentile" rename="Percentile_Lower">
+              <Percentile value="0.5" />
+            </SummarizeField>
+            <SummarizeField field="Outer" action="Percentile" rename="Percentile_Outer">
+              <Percentile value="0.5" />
+            </SummarizeField>
+            <SummarizeField field="Inner" action="Percentile" rename="Percentile_Inner">
+              <Percentile value="0.5" />
+            </SummarizeField>
+            <SummarizeField field="WheelRotation" action="Percentile" rename="Percentile_WheelRotation">
+              <Percentile value="0.5" />
+            </SummarizeField>
+            <SummarizeField field="WheelPosition" action="Percentile" rename="Percentile_WheelPosition">
+              <Percentile value="0.5" />
+            </SummarizeField>
+            <SummarizeField field="Climb" action="Percentile" rename="Percentile_Climb">
+              <Percentile value="0.5" />
+            </SummarizeField>
+            <SummarizeField field="Park" action="Percentile" rename="Percentile_Park">
+              <Percentile value="0.5" />
+            </SummarizeField>
+            <SummarizeField field="LiftedOthers" action="Percentile" rename="Percentile_LiftedOthers">
+              <Percentile value="0.5" />
+            </SummarizeField>
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="115">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="510" y="666" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_12248_e40776e9e4ce4209aec778c477388c72_\Engine_13276_f63e844a4c014cd087a9166134901b51_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="116">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="618" y="702" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_12248_e40776e9e4ce4209aec778c477388c72_\Engine_13276_76542b0289d947508071dbef0031cbc3_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
     </Node>
   </Nodes>
   <Connections>
@@ -2072,9 +2750,13 @@ Query=scores</DefaultAnnotationText>
       <Origin ToolID="22" Connection="Join" />
       <Destination ToolID="72" Connection="Input" />
     </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="22" Connection="Join" />
+      <Destination ToolID="104" Connection="Input" />
+    </Connection>
     <Connection>
       <Origin ToolID="25" Connection="Unique" />
-      <Destination ToolID="70" Connection="Input" />
+      <Destination ToolID="80" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="26" Connection="Output" />
@@ -2198,11 +2880,15 @@ Query=scores</DefaultAnnotationText>
     </Connection>
     <Connection>
       <Origin ToolID="53" Connection="Output" />
-      <Destination ToolID="67" Connection="Input" />
+      <Destination ToolID="81" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="53" Connection="Output" />
-      <Destination ToolID="68" Connection="Input" />
+      <Destination ToolID="100" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="94" Connection="Output" />
+      <Destination ToolID="100" Connection="Right" />
     </Connection>
     <Connection>
       <Origin ToolID="54" Connection="True" />
@@ -2252,21 +2938,25 @@ Query=scores</DefaultAnnotationText>
       <Origin ToolID="70" Connection="Output" />
       <Destination ToolID="17" Connection="Input" />
     </Connection>
-    <Connection Wireless="True">
+    <Connection>
       <Origin ToolID="70" Connection="Output" />
       <Destination ToolID="71" Connection="Input" />
     </Connection>
-    <Connection>
+    <Connection Wireless="True">
       <Origin ToolID="71" Connection="True" />
       <Destination ToolID="33" Connection="Input" />
     </Connection>
-    <Connection>
+    <Connection Wireless="True">
       <Origin ToolID="71" Connection="True" />
       <Destination ToolID="30" Connection="Input" />
     </Connection>
-    <Connection>
+    <Connection Wireless="True">
       <Origin ToolID="71" Connection="True" />
       <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="71" Connection="True" />
+      <Destination ToolID="101" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="72" Connection="True" />
@@ -2299,6 +2989,94 @@ Query=scores</DefaultAnnotationText>
     <Connection>
       <Origin ToolID="79" Connection="Output" />
       <Destination ToolID="73" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="80" Connection="Output" />
+      <Destination ToolID="70" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="81" Connection="Output" />
+      <Destination ToolID="91" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="85" Connection="Output" />
+      <Destination ToolID="91" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="84" Connection="Output" />
+      <Destination ToolID="92" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="91" Connection="Output" />
+      <Destination ToolID="92" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="92" Connection="Output" />
+      <Destination ToolID="94" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="98" Connection="Output" />
+      <Destination ToolID="99" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="98" Connection="Output" />
+      <Destination ToolID="67" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="100" Connection="Join" />
+      <Destination ToolID="98" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="100" Connection="Right" />
+      <Destination ToolID="98" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="101" Connection="Output" />
+      <Destination ToolID="103" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="104" Connection="True" />
+      <Destination ToolID="103" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="103" Connection="Join" />
+      <Destination ToolID="106" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="106" Connection="Output" />
+      <Destination ToolID="109" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="107" Connection="Output" />
+      <Destination ToolID="113" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="107" Connection="Output" />
+      <Destination ToolID="114" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="107" Connection="Output" />
+      <Destination ToolID="116" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="109" Connection="Output26" />
+      <Destination ToolID="110" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="110" Connection="Output" />
+      <Destination ToolID="107" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="113" Connection="Output" />
+      <Destination ToolID="111" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="113" Connection="Output" />
+      <Destination ToolID="112" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="114" Connection="Output" />
+      <Destination ToolID="115" Connection="Input" />
     </Connection>
   </Connections>
   <Properties>

@@ -1,0 +1,296 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.4">
+  <Nodes>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="1" />
+          <Fields>
+            <Field name="bot1   " />
+            <Field name="bot2" />
+            <Field name="bot3" />
+          </Fields>
+          <Data>
+            <r>
+              <c>1</c>
+              <c>2</c>
+              <c>3</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="162" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="bot1   " selected="True" type="Int64" size="8" />
+            <SelectField field="bot2" selected="True" type="Int64" size="8" />
+            <SelectField field="bot3" selected="True" type="Int64" size="8" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxRPluginGui.R">
+        <Position x="162" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <RScript><![CDATA[df <- read.Alteryx("#1", mode="data.frame")
+targ <- read.Alteryx("#2", mode="list")
+
+df[!2] <- as.numeric(df[!2])
+targ <- as.numeric(targ)
+
+# Notes: "target function": function that calculates our target....
+# targ = Sum(NewPayment * Volume)
+#      = Sum(OrigPayment * PctAdjust * Volume)
+#      = Sum(OrigPayment * Volume * (IF Exists(GroupAdjust) THEN GroupAdjust ELSE GroupProportion*Change)) 
+#      = f(x) 
+# f(x) - targ = 0 : find root in x ("Change") and we have our answer.
+
+# target function
+f <- function(x) {
+  dfSum <- 0
+  for (i in 1:nrow(df)) {
+    dfSum = dfSum + (df[i,1] * df[i,3] * if(is.na(df[i,7])) df[i,11]*x else df[i,7])
+  }
+  dfSum - targ
+}
+
+# solve (or optimize)...
+s <- uniroot(f, lower=-100, upper=100)
+
+write.Alteryx(s, 1)
+]]></RScript>
+          <UseFullUpdate value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output1">
+          <RecordInfo>
+            <Field name="root" source="R-DATA:" type="Double" />
+            <Field name="f.root" source="R-DATA:" type="Double" />
+            <Field name="iter" source="R-DATA:" type="Int32" />
+            <Field name="init.it" source="R-DATA:" type="Int32" />
+            <Field name="estim.prec" source="R-DATA:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxRPluginEngine.dll" EngineDllEntryPoint="AlteryxR" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxRPluginGui.R">
+        <Position x="342" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <RScript>require(stats)
+weights &lt;- read.Alteryx("#1", mode="data.frame")
+
+model &lt;- function(x) {
+	com &lt;- ((weights[1,1]*x[1] + weights[1,2]*x[2] + weights[1,3]*x[3]) / (weights[1,1] + weights[1,2] + weights[1,3])) - 60
+	com
+}
+
+result &lt;- stats::optim(c(0, 0, 0), fn=model)
+write.Alteryx(result, 1)</RScript>
+          <UseFullUpdate value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxRPluginEngine.dll" EngineDllEntryPoint="AlteryxR" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="498" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_11372_1b7e84aae1d649a4aa5a19735a3b8246_\Engine_5308_e5d9c14df32f4ad3b908e3524ed5e7ce_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="Optimization">
+        <Position x="390" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="activePage">landing</Value>
+          <Value name="fieldNames">a,b,c</Value>
+          <Value name="objective">a+b+c</Value>
+          <Value name="constraints">["(a + 2b + 3c)/(a+b+c) &lt; 60"]</Value>
+          <Value name="fieldList">[{"fieldName":"a","type":"Continuous","lowerBound":"1","upperBound":"120"},{"fieldName":"b","type":"Continuous","lowerBound":"1","upperBound":"120"},{"fieldName":"c","type":"Continuous","lowerBound":"1","upperBound":"120"}]</Value>
+          <Value name="selectedTab">1</Value>
+          <Value name="payload">{"fileType":"CPLEX_LP","filePath":"","solver":"glpk","inputMode":"manual","maximize":true,"problemType":"LP"}</Value>
+          <Value name="inputMode">manual</Value>
+          <Value name="problemType">LP</Value>
+          <Value name="solver">glpk</Value>
+          <Value name="maximize">True</Value>
+          <Value name="fileType">CPLEX_LP</Value>
+          <Value name="filePath" isWorkflowDependency="false">
+          </Value>
+          <Value name="constraintMode">conInRow</Value>
+          <Value name="displayFieldMapO">False</Value>
+          <Value name="nameVar" />
+          <Value name="nameCoef" />
+          <Value name="nameLower" />
+          <Value name="nameUpper" />
+          <Value name="nameType" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Manual Input Mode</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Optimization/Supporting_Macros/Optimization.yxmc" EngineDll="Macro" EngineDllEntryPoint="Optimization/Supporting_Macros/Optimization.yxmc" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="486" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_11372_1b7e84aae1d649a4aa5a19735a3b8246_\Engine_5308_2b63699dbcc9475ba372b343067e3142_.yxdb</TempFile>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxRPluginGui.R">
+        <Position x="330" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <RScript>require(rootSolve)
+weights &lt;- read.Alteryx("#1", mode="data.frame")
+
+model &lt;- function(x) {
+  com &lt;- ((weights[1,1]*x[1] + weights[2,1]*x[2] + weights[3,1]*x[3]) / (weights[1,1] + weights[2,1] + weights[3,1])) - 60
+  c(com, 0, 0)
+}
+
+result &lt;- multiroot(f = model, start = c(0, 0, 0))
+write.Alteryx(result, 1)</RScript>
+          <UseFullUpdate value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxRPluginEngine.dll" EngineDllEntryPoint="AlteryxR" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output1" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Simple" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>balance_test</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

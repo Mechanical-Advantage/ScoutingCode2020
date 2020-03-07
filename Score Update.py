@@ -1,9 +1,12 @@
 import tbapy
 import sqlite3 as sql
-conn = sql.connect("data_2020.db")
+conn = sql.connect("c:\\macout\\advantagecout\\data_2020.db")
+conn1 = sql.connect("c:\\mascout\\advantagescout\\global.db")
 cur = conn.cursor()
+cur1 = conn1.cursor()
 tba = tbapy.TBA('aYSnteXRFd60FJ6KkRgbeZbPNf7z5BWJbcizc9lpHHDcB9lDQYWNhgyMDHTzc5kW')
-event = "2020ctnct"
+event = cur1.execute("SELECT value FROM config WHERE key = event").fetchall()[0][0]
+#event = "2020ctnct"
 data = tba.event_matches(event)
 for x in data:
     if x["comp_level"] == "qm":
@@ -19,3 +22,4 @@ for x in data:
 
 conn.commit()
 conn.close()
+conn1.close()

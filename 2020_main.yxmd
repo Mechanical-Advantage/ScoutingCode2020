@@ -488,7 +488,7 @@ Query=summary</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_11184_c6b749aeceac41e9bcfb6ccc85f2e714_\Engine_13276_4aabc86b54f543eda676cb938d843ffe_.yxdb</TempFile>
+          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_696_de9f5c93ad6947d4ab12c3f0293cf0cc_\Engine_7320_020aef8ca48f4f1fb01021fa1ef10e70_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -604,7 +604,7 @@ Query=summary</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_11184_c6b749aeceac41e9bcfb6ccc85f2e714_\Engine_13276_e656ecb709fd4c219ca125c9afc28e14_.yxdb</TempFile>
+          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_696_de9f5c93ad6947d4ab12c3f0293cf0cc_\Engine_7320_073f01199226428b86f07c29287b9aec_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -683,7 +683,7 @@ Query=summary</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_11184_c6b749aeceac41e9bcfb6ccc85f2e714_\Engine_13276_da24aa1c8b204ed39c3495f8f6f11441_.yxdb</TempFile>
+          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_696_de9f5c93ad6947d4ab12c3f0293cf0cc_\Engine_7320_0fae7d6534f04dbea5f6159274cbb5e1_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -763,7 +763,7 @@ Query=summary</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_11184_c6b749aeceac41e9bcfb6ccc85f2e714_\Engine_13276_94fffeacedb4433fb8ad39afcd0e58d9_.yxdb</TempFile>
+          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_696_de9f5c93ad6947d4ab12c3f0293cf0cc_\Engine_7320_abd1e8fc8bcf4c78891575b1f3d454dd_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -2184,7 +2184,7 @@ Query=scores</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_11184_c6b749aeceac41e9bcfb6ccc85f2e714_\Engine_13276_e163913320914dba8ef9849a543aed12_.yxdb</TempFile>
+          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_696_de9f5c93ad6947d4ab12c3f0293cf0cc_\Engine_7320_cdea961ddc0941039670be2f225d71d4_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -2252,6 +2252,19 @@ Query=scores</DefaultAnnotationText>
         <Configuration>
           <SummarizeFields>
             <SummarizeField field="Team" action="GroupBy" rename="Team" />
+            <SummarizeField field="Match" action="Count" rename="MatchCount" />
+            <SummarizeField field="CrossedLine" action="Sum" rename="Sum_CrossedLine" />
+            <SummarizeField field="AutoLowerSuccess" action="Avg" rename="Avg_AutoLowerSuccess" />
+            <SummarizeField field="AutoOuterSuccess" action="Avg" rename="Avg_AutoOuterSuccess" />
+            <SummarizeField field="AutoInnerSuccess" action="Avg" rename="Avg_AutoInnerSuccess" />
+            <SummarizeField field="LowerSuccess" action="Avg" rename="Avg_LowerSuccess" />
+            <SummarizeField field="OuterSuccess" action="Avg" rename="Avg_OuterSuccess" />
+            <SummarizeField field="InnerSuccess" action="Avg" rename="Avg_InnerSuccess" />
+            <SummarizeField field="ClimbSuccess" action="Sum" rename="Sum_ClimbSuccess" />
+            <SummarizeField field="LiftedOthersSuccess" action="Sum" rename="Sum_LiftedOthersSuccess" />
+            <SummarizeField field="ParkedSuccess" action="Sum" rename="Sum_ParkedSuccess" />
+            <SummarizeField field="WheelRotationSuccess" action="Sum" rename="Sum_WheelRotationSuccess" />
+            <SummarizeField field="WheelPositionSuccess" action="Sum" rename="Sum_WheelPositionSuccess" />
           </SummarizeFields>
         </Configuration>
         <Annotation DisplayMode="0">
@@ -2261,106 +2274,6 @@ Query=scores</DefaultAnnotationText>
         </Annotation>
       </Properties>
       <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
-    </Node>
-    <Node ToolID="103">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-        <Position x="234" y="774" />
-      </GuiSettings>
-      <Properties>
-        <Configuration joinByRecordPos="False">
-          <JoinInfo connection="Left">
-            <Field field="Team" />
-          </JoinInfo>
-          <JoinInfo connection="Right">
-            <Field field="Team" />
-          </JoinInfo>
-          <SelectConfiguration>
-            <Configuration outputConnection="Join">
-              <OrderChanged value="True" />
-              <CommaDecimal value="False" />
-              <SelectFields>
-                <SelectField field="Left_PreScouting" selected="False" input="Left_" />
-                <SelectField field="Left_Team" selected="True" input="Left_" />
-                <SelectField field="Left_MatchCount" selected="True" input="Left_" />
-                <SelectField field="Left_Avg_CrossedLine" selected="False" input="Left_" />
-                <SelectField field="Left_Sum_CrossedLine" selected="True" input="Left_" />
-                <SelectField field="Left_Avg_AutoLowerSuccess" selected="True" input="Left_" />
-                <SelectField field="Left_Avg_AutoOuterSuccess" selected="True" input="Left_" />
-                <SelectField field="Left_Avg_AutoInnerSuccess" selected="True" input="Left_" />
-                <SelectField field="Left_Avg_LowerSuccess" selected="True" input="Left_" />
-                <SelectField field="Left_Avg_OuterSuccess" selected="True" input="Left_" />
-                <SelectField field="Left_Avg_InnerSuccess" selected="True" input="Left_" />
-                <SelectField field="Left_Avg_UpperSecondsBetween" selected="False" input="Left_" />
-                <SelectField field="Left_Median_UpperSecondsBetween" selected="False" input="Left_" />
-                <SelectField field="Left_Sum_WheelRotationAttempted" selected="False" input="Left_" />
-                <SelectField field="Left_Sum_WheelRotationSuccess" selected="True" input="Left_" />
-                <SelectField field="Left_Sum_WheelPositionAttempted" selected="False" input="Left_" />
-                <SelectField field="Left_Sum_WheelPositionSuccess" selected="True" input="Left_" />
-                <SelectField field="Left_Sum_ClimbAttempted" selected="False" input="Left_" />
-                <SelectField field="Left_Sum_ClimbSuccess" selected="True" input="Left_" />
-                <SelectField field="Left_Sum_LiftedOthersAttempted" selected="False" input="Left_" />
-                <SelectField field="Left_Sum_LiftedOthersSuccess" selected="True" input="Left_" />
-                <SelectField field="Left_Sum_ParkedAttempted" selected="False" input="Left_" />
-                <SelectField field="Left_Sum_ParkedSuccess" selected="True" input="Left_" />
-                <SelectField field="Left_Sum_ShootFromWall" selected="False" input="Left_" />
-                <SelectField field="Left_Sum_ShootFromOpponentSide" selected="False" input="Left_" />
-                <SelectField field="Left_Sum_ShootFromOwnSide" selected="False" input="Left_" />
-                <SelectField field="Left_Sum_Disabled" selected="False" input="Left_" />
-                <SelectField field="Left_AvgNo0_DriverRating" selected="False" input="Left_" />
-                <SelectField field="Left_AvgNo0_IntakeRating" selected="False" input="Left_" />
-                <SelectField field="Left_AvgNo0_DefenseRating" selected="False" input="Left_" />
-                <SelectField field="Left_AvgNo0_AvoidDefenseRating" selected="False" input="Left_" />
-                <SelectField field="Left_AutoLowerAccuracy" selected="False" input="Left_" />
-                <SelectField field="Left_AutoUpperAccuracy" selected="False" input="Left_" />
-                <SelectField field="Left_AutoInnerAccuracy" selected="False" input="Left_" />
-                <SelectField field="Left_LowerAccuracy" selected="False" input="Left_" />
-                <SelectField field="Left_UpperAccuracy" selected="False" input="Left_" />
-                <SelectField field="Left_InnerAccuracy" selected="False" input="Left_" />
-                <SelectField field="Left_Comment" selected="False" input="Left_" />
-                <SelectField field="Right_Team" selected="False" rename="Right_Team" input="Right_" />
-                <SelectField field="*Unknown" selected="False" />
-              </SelectFields>
-            </Configuration>
-          </SelectConfiguration>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
-    </Node>
-    <Node ToolID="104">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="102" y="714" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Mode>Simple</Mode>
-          <Simple>
-            <Operator>=</Operator>
-            <Field>PreScouting</Field>
-            <Operands>
-              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
-              <DateType>fixed</DateType>
-              <PeriodDate>2020-02-19 20:54:04</PeriodDate>
-              <PeriodType>
-              </PeriodType>
-              <PeriodCount>0</PeriodCount>
-              <Operand>0</Operand>
-              <StartDate>2020-02-19 20:54:04</StartDate>
-              <EndDate>2020-02-19 20:54:04</EndDate>
-            </Operands>
-          </Simple>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText>[PreScouting] = 0</DefaultAnnotationText>
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
     </Node>
     <Node ToolID="106">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
@@ -2381,6 +2294,8 @@ Query=scores</DefaultAnnotationText>
             <FormulaField expression="([Sum_ClimbSuccess] / [MatchCount]) * 25" field="Climb" size="8" type="Double" />
             <FormulaField expression="([Sum_ParkedSuccess] / [MatchCount]) * 5" field="Park" size="8" type="Double" />
             <FormulaField expression="([Sum_LiftedOthersSuccess] / [MatchCount]) * 25" field="LiftedOthers" size="8" type="Double" />
+            <FormulaField expression="[AutoLower] + [AutoOuter] + [AutoInner] + [CrossedLine]" field="Auto" size="8" type="Double" />
+            <FormulaField expression="[AutoOuter] + [AutoInner] + [Outer] + [Inner]" field="Upper" size="8" type="Double" />
           </FormulaFields>
         </Configuration>
         <Annotation DisplayMode="0">
@@ -2428,6 +2343,8 @@ AutoLower = [Avg_AutoLowerS...</DefaultAnnotationText>
             <SelectField field="Climb" selected="True" />
             <SelectField field="Park" selected="True" />
             <SelectField field="LiftedOthers" selected="True" />
+            <SelectField field="Auto" selected="True" />
+            <SelectField field="Upper" selected="True" />
             <SelectField field="*Unknown" selected="False" />
           </SelectFields>
         </Configuration>
@@ -2445,7 +2362,7 @@ AutoLower = [Avg_AutoLowerS...</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Value name="List Box (11)">"CrossedLine","AutoLower","AutoOuter","AutoInner","Lower","Outer","Inner","WheelRotation","WheelPosition","Climb","Park","LiftedOthers"</Value>
+          <Value name="List Box (11)">"CrossedLine","AutoLower","AutoOuter","AutoInner","Lower","Outer","Inner","WheelRotation","WheelPosition","Climb","Park","LiftedOthers","Auto","Upper"</Value>
           <Value name="Check Box (84)">True</Value>
           <Value name="Check Box (117)">True</Value>
           <Value name="Check Box (15)">True</Value>
@@ -2506,9 +2423,6 @@ AutoLower = [Avg_AutoLowerS...</DefaultAnnotationText>
 Query=points</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
     </Node>
@@ -2518,7 +2432,7 @@ Query=points</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_11184_c6b749aeceac41e9bcfb6ccc85f2e714_\Engine_13276_f9923a1fd3e9468dbd882ff0b26a1c22_.yxdb</TempFile>
+          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_696_de9f5c93ad6947d4ab12c3f0293cf0cc_\Engine_7320_4e3497e87c2941cea774e52638aa6339_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -2665,6 +2579,8 @@ ELSEIF [Total]=[Row-1:Total] ...</DefaultAnnotationText>
                 <SelectField field="Target_Climb" selected="True" input="Target_" />
                 <SelectField field="Target_Park" selected="True" input="Target_" />
                 <SelectField field="Target_LiftedOthers" selected="True" input="Target_" />
+                <SelectField field="Target_Auto" selected="True" input="Target_" />
+                <SelectField field="Target_Upper" selected="True" input="Target_" />
                 <SelectField field="Target_RecordID" selected="True" input="Target_" />
                 <SelectField field="Source_Max_RecordID" selected="True" input="Source_" />
                 <SelectField field="*Unknown" selected="False" />
@@ -2788,6 +2704,8 @@ ELSEIF [CrossedLine]=[R...</DefaultAnnotationText>
                 <SelectField field="Target_Climb" selected="True" input="Target_" />
                 <SelectField field="Target_Park" selected="True" input="Target_" />
                 <SelectField field="Target_LiftedOthers" selected="True" input="Target_" />
+                <SelectField field="Target_Auto" selected="True" input="Target_" />
+                <SelectField field="Target_Upper" selected="True" input="Target_" />
                 <SelectField field="Target_RecordID" selected="True" input="Target_" />
                 <SelectField field="Source_Max_RecordID" selected="True" input="Source_" />
                 <SelectField field="*Unknown" selected="False" />
@@ -2955,6 +2873,8 @@ ELSEIF [AutoLower]=[Row-1...</DefaultAnnotationText>
                 <SelectField field="Target_Climb" selected="True" input="Target_" />
                 <SelectField field="Target_Park" selected="True" input="Target_" />
                 <SelectField field="Target_LiftedOthers" selected="True" input="Target_" />
+                <SelectField field="Target_Auto" selected="True" input="Target_" />
+                <SelectField field="Target_Upper" selected="True" input="Target_" />
                 <SelectField field="Target_RecordID" selected="True" input="Target_" />
                 <SelectField field="Source_Max_RecordID" selected="True" input="Source_" />
                 <SelectField field="*Unknown" selected="False" />
@@ -3100,6 +3020,8 @@ ELSEIF [AutoOuter]=[Row-1...</DefaultAnnotationText>
                 <SelectField field="Target_Climb" selected="True" input="Target_" />
                 <SelectField field="Target_Park" selected="True" input="Target_" />
                 <SelectField field="Target_LiftedOthers" selected="True" input="Target_" />
+                <SelectField field="Target_Auto" selected="True" input="Target_" />
+                <SelectField field="Target_Upper" selected="True" input="Target_" />
                 <SelectField field="Target_RecordID" selected="True" input="Target_" />
                 <SelectField field="Source_Max_RecordID" selected="True" input="Source_" />
                 <SelectField field="*Unknown" selected="False" />
@@ -3245,6 +3167,8 @@ ELSEIF [AutoInner]=[Row-1...</DefaultAnnotationText>
                 <SelectField field="Target_Climb" selected="True" input="Target_" />
                 <SelectField field="Target_Park" selected="True" input="Target_" />
                 <SelectField field="Target_LiftedOthers" selected="True" input="Target_" />
+                <SelectField field="Target_Auto" selected="True" input="Target_" />
+                <SelectField field="Target_Upper" selected="True" input="Target_" />
                 <SelectField field="Target_RecordID" selected="True" input="Target_" />
                 <SelectField field="Source_Max_RecordID" selected="True" input="Source_" />
                 <SelectField field="*Unknown" selected="False" />
@@ -3390,6 +3314,8 @@ ELSEIF [Lower]=[Row-1:Lower] ...</DefaultAnnotationText>
                 <SelectField field="Target_Climb" selected="True" input="Target_" />
                 <SelectField field="Target_Park" selected="True" input="Target_" />
                 <SelectField field="Target_LiftedOthers" selected="True" input="Target_" />
+                <SelectField field="Target_Auto" selected="True" input="Target_" />
+                <SelectField field="Target_Upper" selected="True" input="Target_" />
                 <SelectField field="Target_RecordID" selected="True" input="Target_" />
                 <SelectField field="Source_Max_RecordID" selected="True" input="Source_" />
                 <SelectField field="*Unknown" selected="False" />
@@ -3535,6 +3461,8 @@ ELSEIF [Outer]=[Row-1:Outer] ...</DefaultAnnotationText>
                 <SelectField field="Target_Climb" selected="True" input="Target_" />
                 <SelectField field="Target_Park" selected="True" input="Target_" />
                 <SelectField field="Target_LiftedOthers" selected="True" input="Target_" />
+                <SelectField field="Target_Auto" selected="True" input="Target_" />
+                <SelectField field="Target_Upper" selected="True" input="Target_" />
                 <SelectField field="Target_RecordID" selected="True" input="Target_" />
                 <SelectField field="Source_Max_RecordID" selected="True" input="Source_" />
                 <SelectField field="*Unknown" selected="False" />
@@ -3680,6 +3608,8 @@ ELSEIF [Inner]=[Row-1:Inner] ...</DefaultAnnotationText>
                 <SelectField field="Target_Climb" selected="True" input="Target_" />
                 <SelectField field="Target_Park" selected="True" input="Target_" />
                 <SelectField field="Target_LiftedOthers" selected="True" input="Target_" />
+                <SelectField field="Target_Auto" selected="True" input="Target_" />
+                <SelectField field="Target_Upper" selected="True" input="Target_" />
                 <SelectField field="Target_RecordID" selected="True" input="Target_" />
                 <SelectField field="Source_Max_RecordID" selected="True" input="Source_" />
                 <SelectField field="*Unknown" selected="False" />
@@ -3825,6 +3755,8 @@ ELSEIF [WheelRotation...</DefaultAnnotationText>
                 <SelectField field="Target_Climb" selected="True" input="Target_" />
                 <SelectField field="Target_Park" selected="True" input="Target_" />
                 <SelectField field="Target_LiftedOthers" selected="True" input="Target_" />
+                <SelectField field="Target_Auto" selected="True" input="Target_" />
+                <SelectField field="Target_Upper" selected="True" input="Target_" />
                 <SelectField field="Target_RecordID" selected="True" input="Target_" />
                 <SelectField field="Source_Max_RecordID" selected="True" input="Source_" />
                 <SelectField field="*Unknown" selected="False" />
@@ -3970,6 +3902,8 @@ ELSEIF [WheelPosition...</DefaultAnnotationText>
                 <SelectField field="Target_Climb" selected="True" input="Target_" />
                 <SelectField field="Target_Park" selected="True" input="Target_" />
                 <SelectField field="Target_LiftedOthers" selected="True" input="Target_" />
+                <SelectField field="Target_Auto" selected="True" input="Target_" />
+                <SelectField field="Target_Upper" selected="True" input="Target_" />
                 <SelectField field="Target_RecordID" selected="True" input="Target_" />
                 <SelectField field="Source_Max_RecordID" selected="True" input="Source_" />
                 <SelectField field="*Unknown" selected="False" />
@@ -4115,6 +4049,8 @@ ELSEIF [Climb]=[Row-1:Climb] ...</DefaultAnnotationText>
                 <SelectField field="Target_Climb" selected="True" input="Target_" />
                 <SelectField field="Target_Park" selected="True" input="Target_" />
                 <SelectField field="Target_LiftedOthers" selected="True" input="Target_" />
+                <SelectField field="Target_Auto" selected="True" input="Target_" />
+                <SelectField field="Target_Upper" selected="True" input="Target_" />
                 <SelectField field="Target_RecordID" selected="True" input="Target_" />
                 <SelectField field="Source_Max_RecordID" selected="True" input="Source_" />
                 <SelectField field="*Unknown" selected="False" />
@@ -4260,6 +4196,8 @@ ELSEIF [Park]=[Row-1:Park] THE...</DefaultAnnotationText>
                 <SelectField field="Target_Climb" selected="True" input="Target_" />
                 <SelectField field="Target_Park" selected="True" input="Target_" />
                 <SelectField field="Target_LiftedOthers" selected="True" input="Target_" />
+                <SelectField field="Target_Auto" selected="True" input="Target_" />
+                <SelectField field="Target_Upper" selected="True" input="Target_" />
                 <SelectField field="Target_RecordID" selected="True" input="Target_" />
                 <SelectField field="Source_Max_RecordID" selected="True" input="Source_" />
                 <SelectField field="*Unknown" selected="False" />
@@ -4348,14 +4286,14 @@ ELSEIF [Park]=[Row-1:Park] THE...</DefaultAnnotationText>
           <OtherRows>Empty</OtherRows>
           <NumRows value="1" />
           <Expression>IF IsNull([Row-1:LiftedOthers]) THEN 0
-ELSEIF [Park]=[Row-1:LiftedOthers] THEN [Row-1:RecordID]
+ELSEIF [LiftedOthers]=[Row-1:LiftedOthers] THEN [Row-1:RecordID]
 ELSE [Row-1:RecordID]+1 ENDIF</Expression>
           <GroupByFields />
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
           <DefaultAnnotationText>IF IsNull([Row-1:LiftedOthers]) THEN 0
-ELSEIF [Park]=[Row-1:L...</DefaultAnnotationText>
+ELSEIF [LiftedOthers]=...</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
       </Properties>
@@ -4405,6 +4343,8 @@ ELSEIF [Park]=[Row-1:L...</DefaultAnnotationText>
                 <SelectField field="Target_Climb" selected="True" input="Target_" />
                 <SelectField field="Target_Park" selected="True" input="Target_" />
                 <SelectField field="Target_LiftedOthers" selected="True" input="Target_" />
+                <SelectField field="Target_Auto" selected="True" input="Target_" />
+                <SelectField field="Target_Upper" selected="True" input="Target_" />
                 <SelectField field="Target_RecordID" selected="True" input="Target_" />
                 <SelectField field="Source_Max_RecordID" selected="True" input="Source_" />
                 <SelectField field="*Unknown" selected="False" />
@@ -4484,9 +4424,6 @@ ELSEIF [Park]=[Row-1:L...</DefaultAnnotationText>
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
       </Properties>
       <EngineSettings Macro="Cleanse.yxmc" />
     </Node>
@@ -4564,6 +4501,439 @@ ELSEIF [Park]=[Row-1:L...</DefaultAnnotationText>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
     </Node>
+    <Node ToolID="206">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="486" y="510" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Team" selected="True" />
+            <SelectField field="Match" selected="True" />
+            <SelectField field="AllianceColor" selected="True" />
+            <SelectField field="StartPos" selected="True" />
+            <SelectField field="CrossedLine" selected="True" />
+            <SelectField field="AutoLowerSuccess" selected="True" />
+            <SelectField field="AutoOuterSuccess" selected="True" />
+            <SelectField field="AutoInnerSuccess" selected="True" />
+            <SelectField field="AutoLowerFailures" selected="True" />
+            <SelectField field="AutoUpperFailures" selected="True" />
+            <SelectField field="LowerSuccess" selected="True" />
+            <SelectField field="OuterSuccess" selected="True" />
+            <SelectField field="InnerSuccess" selected="True" />
+            <SelectField field="LowerFailures" selected="True" />
+            <SelectField field="UpperFailures" selected="True" />
+            <SelectField field="ClimbAttempted" selected="True" />
+            <SelectField field="ClimbSuccess" selected="True" />
+            <SelectField field="LiftedOthersAttempted" selected="True" />
+            <SelectField field="LiftedOthersSuccess" selected="True" />
+            <SelectField field="ParkedAttempted" selected="True" />
+            <SelectField field="ParkedSuccess" selected="True" />
+            <SelectField field="WheelRotationAttempted" selected="True" />
+            <SelectField field="WheelRotationSuccess" selected="True" />
+            <SelectField field="WheelPositionAttempted" selected="True" />
+            <SelectField field="WheelPositionSuccess" selected="True" />
+            <SelectField field="ShootFromWall" selected="True" />
+            <SelectField field="ShootFromOpponentSide" selected="True" />
+            <SelectField field="ShootFromOwnSide" selected="True" />
+            <SelectField field="Points" selected="True" />
+            <SelectField field="Disabled" selected="True" />
+            <SelectField field="DriverRating" selected="True" />
+            <SelectField field="IntakeRating" selected="True" />
+            <SelectField field="DefenseRating" selected="True" />
+            <SelectField field="AvoidDefenseRating" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="208">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="558" y="510" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="25" MaxRecords="">C:\mascout\TableauInput\ChiefDelphiExport.xlsx|||Sheet1</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>RemoveFile</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>ChiefDelphiExport.xlsx
+Query=Sheet1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="209">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="342" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Team" selected="True" />
+            <SelectField field="DriveTrain" selected="True" />
+            <SelectField field="TopSpeed" selected="True" />
+            <SelectField field="Weight" selected="True" />
+            <SelectField field="Height" selected="True" />
+            <SelectField field="CanMove" selected="True" />
+            <SelectField field="CanAutoDelay" selected="True" />
+            <SelectField field="CanDeliverUpperAuto" selected="True" />
+            <SelectField field="CanDeliverLowerAuto" selected="True" />
+            <SelectField field="CanDeliverUpper" selected="True" />
+            <SelectField field="CanDeliverLower" selected="True" />
+            <SelectField field="CanRotate" selected="True" />
+            <SelectField field="CanPosition" selected="True" />
+            <SelectField field="ClimbHeight" selected="True" rename="MaxReach" />
+            <SelectField field="CanLiftOthers" selected="True" />
+            <SelectField field="ShootFromWall" selected="True" />
+            <SelectField field="ShootFromOpponentSide" selected="True" />
+            <SelectField field="ShootFromOwnSide" selected="True" />
+            <SelectField field="MultipleDriveTeams" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="211">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="450" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="25" MaxRecords="">C:\mascout\TableauInput\ChiefDelphiExportPit.xlsx|||Sheet1</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>RemoveFile</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>ChiefDelphiExportPit.xlsx
+Query=Sheet1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="212">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="822" y="1794" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="Auto" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Auto - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="213">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+        <Position x="918" y="1794" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="False" />
+          <UpdateField_Name>Team</UpdateField_Name>
+          <CreateField_Name>RecordID</CreateField_Name>
+          <CreateField_Type>Int64</CreateField_Type>
+          <CreateField_Size>8</CreateField_Size>
+          <OtherRows>Empty</OtherRows>
+          <NumRows value="1" />
+          <Expression>IF IsNull([Row-1:Auto]) THEN 0
+ELSEIF [Auto]=[Row-1:Auto] THEN [Row-1:RecordID]
+ELSE [Row-1:RecordID]+1 ENDIF</Expression>
+          <GroupByFields />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>IF IsNull([Row-1:Auto]) THEN 0
+ELSEIF [Auto]=[Row-1:Auto] THE...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+    </Node>
+    <Node ToolID="214">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1026" y="1854" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="RecordID" action="Max" rename="Max_RecordID" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="215">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="1134" y="1806" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Target_Team" selected="True" input="Target_" />
+                <SelectField field="Target_Total" selected="True" input="Target_" />
+                <SelectField field="Target_CrossedLine" selected="True" input="Target_" />
+                <SelectField field="Target_AutoLower" selected="True" input="Target_" />
+                <SelectField field="Target_AutoOuter" selected="True" input="Target_" />
+                <SelectField field="Target_AutoInner" selected="True" input="Target_" />
+                <SelectField field="Target_Lower" selected="True" input="Target_" />
+                <SelectField field="Target_Outer" selected="True" input="Target_" />
+                <SelectField field="Target_Inner" selected="True" input="Target_" />
+                <SelectField field="Target_WheelRotation" selected="True" input="Target_" />
+                <SelectField field="Target_WheelPosition" selected="True" input="Target_" />
+                <SelectField field="Target_Climb" selected="True" input="Target_" />
+                <SelectField field="Target_Park" selected="True" input="Target_" />
+                <SelectField field="Target_LiftedOthers" selected="True" input="Target_" />
+                <SelectField field="Target_Auto" selected="True" input="Target_" />
+                <SelectField field="Target_Upper" selected="True" input="Target_" />
+                <SelectField field="Target_RecordID" selected="True" input="Target_" />
+                <SelectField field="Source_Max_RecordID" selected="True" input="Source_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="216">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1230" y="1806" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[RecordID] / [Max_RecordID] * 100" field="Auto" size="8" type="Double" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Auto = [RecordID] / [Max_RecordID] * 100
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="217">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1314" y="1806" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="RecordID" selected="False" />
+            <SelectField field="Max_RecordID" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="218">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="822" y="1914" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="Upper" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Upper - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="219">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+        <Position x="918" y="1914" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="False" />
+          <UpdateField_Name>Team</UpdateField_Name>
+          <CreateField_Name>RecordID</CreateField_Name>
+          <CreateField_Type>Int64</CreateField_Type>
+          <CreateField_Size>8</CreateField_Size>
+          <OtherRows>Empty</OtherRows>
+          <NumRows value="1" />
+          <Expression>IF IsNull([Row-1:Upper]) THEN 0
+ELSEIF [Upper]=[Row-1:Upper] THEN [Row-1:RecordID]
+ELSE [Row-1:RecordID]+1 ENDIF</Expression>
+          <GroupByFields />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>IF IsNull([Row-1:Upper]) THEN 0
+ELSEIF [Upper]=[Row-1:Upper] ...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+    </Node>
+    <Node ToolID="220">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1026" y="1974" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="RecordID" action="Max" rename="Max_RecordID" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="221">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="1134" y="1926" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Target_Team" selected="True" input="Target_" />
+                <SelectField field="Target_Total" selected="True" input="Target_" />
+                <SelectField field="Target_CrossedLine" selected="True" input="Target_" />
+                <SelectField field="Target_AutoLower" selected="True" input="Target_" />
+                <SelectField field="Target_AutoOuter" selected="True" input="Target_" />
+                <SelectField field="Target_AutoInner" selected="True" input="Target_" />
+                <SelectField field="Target_Lower" selected="True" input="Target_" />
+                <SelectField field="Target_Outer" selected="True" input="Target_" />
+                <SelectField field="Target_Inner" selected="True" input="Target_" />
+                <SelectField field="Target_WheelRotation" selected="True" input="Target_" />
+                <SelectField field="Target_WheelPosition" selected="True" input="Target_" />
+                <SelectField field="Target_Climb" selected="True" input="Target_" />
+                <SelectField field="Target_Park" selected="True" input="Target_" />
+                <SelectField field="Target_LiftedOthers" selected="True" input="Target_" />
+                <SelectField field="Target_Auto" selected="True" input="Target_" />
+                <SelectField field="Target_Upper" selected="True" input="Target_" />
+                <SelectField field="Target_RecordID" selected="True" input="Target_" />
+                <SelectField field="Source_Max_RecordID" selected="True" input="Source_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="222">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1230" y="1926" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[RecordID] / [Max_RecordID] * 100" field="Upper" size="8" type="Double" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Upper = [RecordID] / [Max_RecordID] * 100
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="223">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1314" y="1926" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="RecordID" selected="False" />
+            <SelectField field="Max_RecordID" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
   </Nodes>
   <Connections>
     <Connection>
@@ -4626,10 +4996,6 @@ ELSEIF [Park]=[Row-1:L...</DefaultAnnotationText>
       <Origin ToolID="22" Connection="Join" />
       <Destination ToolID="72" Connection="Input" />
     </Connection>
-    <Connection Wireless="True">
-      <Origin ToolID="22" Connection="Join" />
-      <Destination ToolID="104" Connection="Input" />
-    </Connection>
     <Connection>
       <Origin ToolID="25" Connection="Unique" />
       <Destination ToolID="80" Connection="Input" />
@@ -4669,6 +5035,10 @@ ELSEIF [Park]=[Row-1:L...</DefaultAnnotationText>
     <Connection>
       <Origin ToolID="38" Connection="True" />
       <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="True" />
+      <Destination ToolID="209" Connection="Input" />
     </Connection>
     <Connection name="#1">
       <Origin ToolID="40" Connection="Left" />
@@ -4835,6 +5205,10 @@ ELSEIF [Park]=[Row-1:L...</DefaultAnnotationText>
       <Destination ToolID="101" Connection="Input" />
     </Connection>
     <Connection>
+      <Origin ToolID="71" Connection="True" />
+      <Destination ToolID="206" Connection="Input" />
+    </Connection>
+    <Connection>
       <Origin ToolID="72" Connection="True" />
       <Destination ToolID="78" Connection="Input" />
     </Connection>
@@ -4908,14 +5282,6 @@ ELSEIF [Park]=[Row-1:L...</DefaultAnnotationText>
     </Connection>
     <Connection>
       <Origin ToolID="101" Connection="Output" />
-      <Destination ToolID="103" Connection="Right" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="104" Connection="True" />
-      <Destination ToolID="103" Connection="Left" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="103" Connection="Join" />
       <Destination ToolID="106" Connection="Input" />
     </Connection>
     <Connection>
@@ -5308,7 +5674,7 @@ ELSEIF [Park]=[Row-1:L...</DefaultAnnotationText>
     </Connection>
     <Connection>
       <Origin ToolID="197" Connection="Output" />
-      <Destination ToolID="199" Connection="Input2" />
+      <Destination ToolID="212" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="199" Connection="Output26" />
@@ -5321,6 +5687,70 @@ ELSEIF [Park]=[Row-1:L...</DefaultAnnotationText>
     <Connection>
       <Origin ToolID="204" Connection="Join" />
       <Destination ToolID="111" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="206" Connection="Output" />
+      <Destination ToolID="208" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="209" Connection="Output" />
+      <Destination ToolID="211" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="212" Connection="Output" />
+      <Destination ToolID="213" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="213" Connection="Output" />
+      <Destination ToolID="214" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="213" Connection="Output" />
+      <Destination ToolID="215" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="214" Connection="Output" />
+      <Destination ToolID="215" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="215" Connection="Output" />
+      <Destination ToolID="216" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="216" Connection="Output" />
+      <Destination ToolID="217" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="217" Connection="Output" />
+      <Destination ToolID="218" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="218" Connection="Output" />
+      <Destination ToolID="219" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="219" Connection="Output" />
+      <Destination ToolID="220" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="219" Connection="Output" />
+      <Destination ToolID="221" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="220" Connection="Output" />
+      <Destination ToolID="221" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="221" Connection="Output" />
+      <Destination ToolID="222" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="222" Connection="Output" />
+      <Destination ToolID="223" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="223" Connection="Output" />
+      <Destination ToolID="199" Connection="Input2" />
     </Connection>
   </Connections>
   <Properties>

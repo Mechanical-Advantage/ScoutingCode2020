@@ -1,0 +1,874 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20194.19.1010.1202                               -->
+<workbook original-version='18.1' source-build='2019.4.0 (20194.19.1010.1202)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='TargetTeam' datatype='integer' default-format='n0;-0' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='78'>
+        <calculation class='tableau' formula='78' />
+      </column>
+    </datasource>
+    <datasource caption='Sheet1 (ChiefDelphiExport)' inline='true' name='federated.1mvyzgc00zwq6y14lo9iq0dqbkjs' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='ChiefDelphiExport' name='excel-direct.1lmmio01y4ns1016cqio70uo657x'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/mascout/TableauInput/ChiefDelphiExport.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1lmmio01y4ns1016cqio70uo657x' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:AH457:no:A1:AH457:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Team' ordinal='0' />
+            <column datatype='integer' name='Match' ordinal='1' />
+            <column datatype='integer' name='AllianceColor' ordinal='2' />
+            <column datatype='integer' name='StartPos' ordinal='3' />
+            <column datatype='integer' name='CrossedLine' ordinal='4' />
+            <column datatype='integer' name='AutoLowerSuccess' ordinal='5' />
+            <column datatype='integer' name='AutoOuterSuccess' ordinal='6' />
+            <column datatype='integer' name='AutoInnerSuccess' ordinal='7' />
+            <column datatype='integer' name='AutoLowerFailures' ordinal='8' />
+            <column datatype='integer' name='AutoUpperFailures' ordinal='9' />
+            <column datatype='integer' name='LowerSuccess' ordinal='10' />
+            <column datatype='integer' name='OuterSuccess' ordinal='11' />
+            <column datatype='integer' name='InnerSuccess' ordinal='12' />
+            <column datatype='integer' name='LowerFailures' ordinal='13' />
+            <column datatype='integer' name='UpperFailures' ordinal='14' />
+            <column datatype='integer' name='ClimbAttempted' ordinal='15' />
+            <column datatype='integer' name='ClimbSuccess' ordinal='16' />
+            <column datatype='integer' name='LiftedOthersAttempted' ordinal='17' />
+            <column datatype='integer' name='LiftedOthersSuccess' ordinal='18' />
+            <column datatype='integer' name='ParkedAttempted' ordinal='19' />
+            <column datatype='integer' name='ParkedSuccess' ordinal='20' />
+            <column datatype='integer' name='WheelRotationAttempted' ordinal='21' />
+            <column datatype='integer' name='WheelRotationSuccess' ordinal='22' />
+            <column datatype='integer' name='WheelPositionAttempted' ordinal='23' />
+            <column datatype='integer' name='WheelPositionSuccess' ordinal='24' />
+            <column datatype='integer' name='ShootFromWall' ordinal='25' />
+            <column datatype='integer' name='ShootFromOpponentSide' ordinal='26' />
+            <column datatype='integer' name='ShootFromOwnSide' ordinal='27' />
+            <column datatype='integer' name='Points' ordinal='28' />
+            <column datatype='integer' name='Disabled' ordinal='29' />
+            <column datatype='integer' name='DriverRating' ordinal='30' />
+            <column datatype='integer' name='IntakeRating' ordinal='31' />
+            <column datatype='integer' name='DefenseRating' ordinal='32' />
+            <column datatype='integer' name='AvoidDefenseRating' ordinal='33' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Team</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Team]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Team</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Match</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Match]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Match</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AllianceColor</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AllianceColor]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>AllianceColor</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StartPos</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[StartPos]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>StartPos</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CrossedLine</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CrossedLine]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>CrossedLine</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AutoLowerSuccess</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AutoLowerSuccess]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>AutoLowerSuccess</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AutoOuterSuccess</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AutoOuterSuccess]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>AutoOuterSuccess</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AutoInnerSuccess</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AutoInnerSuccess]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>AutoInnerSuccess</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AutoLowerFailures</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AutoLowerFailures]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>AutoLowerFailures</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AutoUpperFailures</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AutoUpperFailures]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>AutoUpperFailures</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LowerSuccess</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[LowerSuccess]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>LowerSuccess</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OuterSuccess</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[OuterSuccess]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>OuterSuccess</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>InnerSuccess</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[InnerSuccess]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>InnerSuccess</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LowerFailures</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[LowerFailures]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>LowerFailures</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>UpperFailures</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[UpperFailures]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>UpperFailures</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ClimbAttempted</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ClimbAttempted]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>ClimbAttempted</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ClimbSuccess</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ClimbSuccess]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>ClimbSuccess</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LiftedOthersAttempted</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[LiftedOthersAttempted]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>LiftedOthersAttempted</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LiftedOthersSuccess</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[LiftedOthersSuccess]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>LiftedOthersSuccess</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ParkedAttempted</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ParkedAttempted]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>ParkedAttempted</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ParkedSuccess</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ParkedSuccess]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>ParkedSuccess</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WheelRotationAttempted</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[WheelRotationAttempted]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>WheelRotationAttempted</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WheelRotationSuccess</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[WheelRotationSuccess]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>WheelRotationSuccess</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WheelPositionAttempted</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[WheelPositionAttempted]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>WheelPositionAttempted</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WheelPositionSuccess</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[WheelPositionSuccess]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>WheelPositionSuccess</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ShootFromWall</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ShootFromWall]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>ShootFromWall</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ShootFromOpponentSide</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ShootFromOpponentSide]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>ShootFromOpponentSide</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ShootFromOwnSide</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ShootFromOwnSide]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>ShootFromOwnSide</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Points</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Points]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Points</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Disabled</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Disabled]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Disabled</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DriverRating</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DriverRating]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>DriverRating</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IntakeRating</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[IntakeRating]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>IntakeRating</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DefenseRating</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DefenseRating]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>DefenseRating</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AvoidDefenseRating</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AvoidDefenseRating]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>AvoidDefenseRating</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>2</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:AH457:no:A1:AH457:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Alliance Color' datatype='integer' name='[AllianceColor]' role='measure' type='quantitative' />
+      <column caption='Auto Inner Success' datatype='integer' name='[AutoInnerSuccess]' role='measure' type='quantitative' />
+      <column caption='Auto Lower Failures' datatype='integer' name='[AutoLowerFailures]' role='measure' type='quantitative' />
+      <column caption='Auto Lower Success' datatype='integer' name='[AutoLowerSuccess]' role='measure' type='quantitative' />
+      <column caption='Auto Outer Success' datatype='integer' name='[AutoOuterSuccess]' role='measure' type='quantitative' />
+      <column caption='Auto Upper Failures' datatype='integer' name='[AutoUpperFailures]' role='measure' type='quantitative' />
+      <column caption='Avoid Defense Rating' datatype='integer' name='[AvoidDefenseRating]' role='measure' type='quantitative' />
+      <column caption='UpperPoints' datatype='integer' name='[Calculation_994451117274611712]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[InnerSuccess] * 3 + [OuterSuccess] * 2 + [AutoInnerSuccess] * 6 + [AutoOuterSuccess] * 4' />
+      </column>
+      <column aggregation='CountD' caption='ClimbStatus' datatype='string' default-role='measure' default-type='quantitative' name='[Calculation_994451117284077569]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [ClimbAttempted] = 0 THEN &quot;Not attempted&quot; ELSE IF [ClimbSuccess] = 1 THEN &quot;Succeeded&quot; ELSE &quot;Failed attempt&quot; END END' />
+      </column>
+      <column caption='ClimbDot' datatype='integer' name='[Calculation_994451117284589570]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Climb Attempted' datatype='integer' name='[ClimbAttempted]' role='measure' type='quantitative' />
+      <column caption='Climb Success' datatype='integer' name='[ClimbSuccess]' role='measure' type='quantitative' />
+      <column caption='Crossed Line' datatype='integer' name='[CrossedLine]' role='measure' type='quantitative' />
+      <column caption='Defense Rating' datatype='integer' name='[DefenseRating]' role='measure' type='quantitative' />
+      <column caption='Driver Rating' datatype='integer' name='[DriverRating]' role='measure' type='quantitative' />
+      <column caption='Inner Success' datatype='integer' name='[InnerSuccess]' role='measure' type='quantitative' />
+      <column caption='Intake Rating' datatype='integer' name='[IntakeRating]' role='measure' type='quantitative' />
+      <column caption='Lifted Others Attempted' datatype='integer' name='[LiftedOthersAttempted]' role='measure' type='quantitative' />
+      <column caption='Lifted Others Success' datatype='integer' name='[LiftedOthersSuccess]' role='measure' type='quantitative' />
+      <column caption='Lower Failures' datatype='integer' name='[LowerFailures]' role='measure' type='quantitative' />
+      <column caption='Lower Success' datatype='integer' name='[LowerSuccess]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='integer' name='[Match]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Outer Success' datatype='integer' name='[OuterSuccess]' role='measure' type='quantitative' />
+      <column caption='Parked Attempted' datatype='integer' name='[ParkedAttempted]' role='measure' type='quantitative' />
+      <column caption='Parked Success' datatype='integer' name='[ParkedSuccess]' role='measure' type='quantitative' />
+      <column caption='Shoot From Opponent Side' datatype='integer' name='[ShootFromOpponentSide]' role='measure' type='quantitative' />
+      <column caption='Shoot From Own Side' datatype='integer' name='[ShootFromOwnSide]' role='measure' type='quantitative' />
+      <column caption='Shoot From Wall' datatype='integer' name='[ShootFromWall]' role='measure' type='quantitative' />
+      <column caption='Start Pos' datatype='integer' name='[StartPos]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='integer' name='[Team]' role='dimension' type='ordinal' />
+      <column caption='Upper Failures' datatype='integer' name='[UpperFailures]' role='measure' type='quantitative' />
+      <column caption='Wheel Position Attempted' datatype='integer' name='[WheelPositionAttempted]' role='measure' type='quantitative' />
+      <column caption='Wheel Position Success' datatype='integer' name='[WheelPositionSuccess]' role='measure' type='quantitative' />
+      <column caption='Wheel Rotation Attempted' datatype='integer' name='[WheelRotationAttempted]' role='measure' type='quantitative' />
+      <column caption='Wheel Rotation Success' datatype='integer' name='[WheelRotationSuccess]' role='measure' type='quantitative' />
+      <column-instance column='[Calculation_994451117284077569]' derivation='Attribute' name='[attr:Calculation_994451117284077569:nk]' pivot='key' type='nominal' />
+      <column-instance column='[ClimbAttempted]' derivation='Sum' name='[sum:ClimbAttempted:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[ClimbSuccess]' derivation='Sum' name='[sum:ClimbSuccess:qk]' pivot='key' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.112069' measure-ordering='alphabetic' measure-percentage='0.847701' parameter-percentage='0.0402299' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1mvyzgc00zwq6y14lo9iq0dqbkjs].[sum:ClimbAttempted:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1mvyzgc00zwq6y14lo9iq0dqbkjs].[sum:ClimbSuccess:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[attr:Calculation_994451117284077569:nk]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>&quot;Succeeded&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Not attempted&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Failed attempt&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (ChiefDelphiExport)' name='federated.1mvyzgc00zwq6y14lo9iq0dqbkjs' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1mvyzgc00zwq6y14lo9iq0dqbkjs'>
+            <column caption='Auto Inner Success' datatype='integer' name='[AutoInnerSuccess]' role='measure' type='quantitative' />
+            <column caption='Auto Outer Success' datatype='integer' name='[AutoOuterSuccess]' role='measure' type='quantitative' />
+            <column caption='UpperPoints' datatype='integer' name='[Calculation_994451117274611712]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[InnerSuccess] * 3 + [OuterSuccess] * 2 + [AutoInnerSuccess] * 6 + [AutoOuterSuccess] * 4' />
+            </column>
+            <column aggregation='CountD' caption='ClimbStatus' datatype='string' default-role='measure' default-type='quantitative' name='[Calculation_994451117284077569]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [ClimbAttempted] = 0 THEN &quot;Not attempted&quot; ELSE IF [ClimbSuccess] = 1 THEN &quot;Succeeded&quot; ELSE &quot;Failed attempt&quot; END END' />
+            </column>
+            <column caption='ClimbDot' datatype='integer' name='[Calculation_994451117284589570]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column caption='Climb Attempted' datatype='integer' name='[ClimbAttempted]' role='measure' type='quantitative' />
+            <column caption='Climb Success' datatype='integer' name='[ClimbSuccess]' role='measure' type='quantitative' />
+            <column caption='Inner Success' datatype='integer' name='[InnerSuccess]' role='measure' type='quantitative' />
+            <column aggregation='Sum' datatype='integer' name='[Match]' role='dimension' type='ordinal' />
+            <column caption='Outer Success' datatype='integer' name='[OuterSuccess]' role='measure' type='quantitative' />
+            <column aggregation='Sum' datatype='integer' name='[Team]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_994451117284077569]' derivation='Attribute' name='[attr:Calculation_994451117284077569:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_994451117274611712]' derivation='None' name='[none:Calculation_994451117274611712:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Match]' derivation='None' name='[none:Match:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Team]' derivation='None' name='[none:Team:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_994451117284589570]' derivation='Sum' name='[sum:Calculation_994451117284589570:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1mvyzgc00zwq6y14lo9iq0dqbkjs].[none:Calculation_994451117274611712:qk]' field-type='quantitative' min='0' range-type='fixedmin' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.1mvyzgc00zwq6y14lo9iq0dqbkjs].[sum:Calculation_994451117284589570:qk]' scope='rows' value='Climb' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='8.308629035949707' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1mvyzgc00zwq6y14lo9iq0dqbkjs].[none:Calculation_994451117274611712:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='8.308629035949707' />
+                <format attr='shape' value='circle' />
+                <format attr='mark-color' value='#edc948' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1mvyzgc00zwq6y14lo9iq0dqbkjs].[sum:Calculation_994451117284589570:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1mvyzgc00zwq6y14lo9iq0dqbkjs].[attr:Calculation_994451117284077569:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='3.966850757598877' />
+                <format attr='shape' value=':filled/triangle' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1mvyzgc00zwq6y14lo9iq0dqbkjs].[none:Calculation_994451117274611712:qk] + [federated.1mvyzgc00zwq6y14lo9iq0dqbkjs].[sum:Calculation_994451117284589570:qk])</rows>
+        <cols>[federated.1mvyzgc00zwq6y14lo9iq0dqbkjs].[none:Match:ok]</cols>
+        <pages>
+          <column>[federated.1mvyzgc00zwq6y14lo9iq0dqbkjs].[none:Team:ok]</column>
+        </pages>
+        <page-trail-options enabled='true' />
+      </table>
+      <simple-id uuid='{FF7D0D4F-42BA-4988-B2B7-DC65EA4D612A}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='type_in' param='[Parameters].[Parameter 1]' type='parameter' />
+            <card type='currpage' />
+            <card pane-specification-id='5' param='[federated.1mvyzgc00zwq6y14lo9iq0dqbkjs].[attr:Calculation_994451117284077569:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <current-page>
+          <multibucket>
+            <bucket>2590</bucket>
+          </multibucket>
+        </current-page>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1mvyzgc00zwq6y14lo9iq0dqbkjs].[attr:Calculation_994451117284077569:nk]</field>
+            <field>[federated.1mvyzgc00zwq6y14lo9iq0dqbkjs].[none:Match:ok]</field>
+            <field>[federated.1mvyzgc00zwq6y14lo9iq0dqbkjs].[none:Team:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{58776BA5-CAEF-4FD9-A8C7-F23CB4B217EF}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      rmb9FN99DzebrZpu9d+qy77Au3dOkjO+rMc3AJ29e3jjjTf40QvfQflsvYTCYaLR6Pw+wunB
+      97Ac/w/Vx8NnGMunFy3IGRundM7/BVeWReHo0SXvC5wfPsuoz5sLc8P8J8nzS5rfSnCLRfTj
+      J/yfVAr98Fso216Rvg3b4NjNw0D1ikmhONZ/GNOuXiEtlavrX+7fVHWkKBw6vKpHhApmgXdu
+      H1swzTcAk+khLn16mfOXrxF6hINAupUnrIV9/1Uci5O3j/mOAkop9JMnUVYFwmHff8anl7HT
+      iwfoQaZtzh3e0kK+9YS0ECduHVmRnb2lKH10Zm7NuMhyW0NDmNdX5pj5peQFxguji75nY/k0
+      l1IXv1EfSilK73+Ap+uLLmPlzl2s/ls1Wqqvr+fDgVPoZmHBsmrK55OpPIeJ8Qma2jtpbUp8
+      7cwn9QmKlr7o87FwjG3tOwhpC/OmlMJOp1GVh39JFenqItza+rV1AFQci3Q+9dDNrpCmsa19
+      J7Fw7JHmuRLs8XG8cvmhbcJt7UQ2d9a87yl9Et0qPLRNS7yV7pYty+5DKYUzPoFnfM0ytm8i
+      0tmx7H6WUs94YQzDXliPbwCECAo5GU4EmgRABJoEQASaBEAEmgRABJoEQASaBEAEmgRABJoE
+      QASaBEAEmgRABJoEQASaBEAEmgRABJoEQASaBEAEmgRABJoEQASaBEAEmgRABJoEQASaBEAE
+      mgRABJoEQASaBEAEmgRABJoEQASaBEAEmgRABJoEQASaBEAEmgRABJoEQASaBEAE2rICMJke
+      5uqVz5h92L1UhVgHlhWAouny7LP7yU5U3+NWiPVkWQGIhz2uXe2nqbO91vUIsaqWdZfIr/6J
+      pj3CjYSFWKMi9/+j6/pD7637dZRSVWHwm7aUtt9k2mr1U+++oXoltJGW0U8t66nZfYLX2hu0
+      mn0/2E89+95oy+inlvXU7DCoX+GapuG5DvnC3OhS1At4D1lIvZDHdjwso0zZMBedp2WWKRkm
+      AKZhwCLtlOeSzxdQCsqlIlbFWWSeUNQLVGz3a/s2ykWKZQPluRT0ou+yzy23TS4/t7ylYmHR
+      vu8vt1VxQCmMhy23UUYvlVFKoRfyuN4ia0LPIZebe75U1B+y3HOvkWlWcO0KpbKxaDtN0zAM
+      A6U8CvnF+9Y0Dbti4bgeKA/DtBZtd/955bkUCgUWXRN/8bp4rk2+oMMX9Tw4P9epkM1msV2P
+      UlHHcb1F3+9CLkfJML/cBFopuWyGbGaGSRVBxeKEpvM8tmdHVTvbKJIr6BTGpmhvijE9k+eZ
+      bz1L2GeemZkZpqazHHhiLx+dvshrr/+IqE+7fG6WQj7D1MQUesWmb+cO4rHmqnaOZZDNF8in
+      0rimhYfGs99+3qdvRVHXSSbHadvURETzKJg72N5VPU+jVEKfnWQq00Ii5pHLjfLM009Uz9G1
+      0XWdqeFR9mzr4NP+JD986fs+S6MoFgskh0fp6N5E2XTZuauRSLh6HWYaZYr5aUZHx3E8D4Dn
+      nnnSd57p4btMlzSawjaOq9i9/0kaY9VLbhRmOfvpTV747tPkCznGp/Ps37ezeo6ey80rF2nb
+      /izRyjTj2Qrffd6vbxhPDZPKlOlsDKGijSSaWgj5vOGZyTT9I9N0t8aIRSFv7GLnlpaqdsND
+      g4RijYQck9FsGQ2NJx7fU9XOM7LcuJtm/+N7Vv6LsIZYFDvUQEMkws49uwh5tm+7aEOCsp5n
+      +/YdhPDo2NLj++EHCOGxqXsL/VevgOaRzRd92yXiMUpWiEatQrypkbGxMd924VgDVrHA1m3b
+      UHi4SuG/YagRDWu4SuGoCLv27MQq6L7zbGxsYDZXpLmlCbtcomfbdv9licRwK2VC4RBXb9zC
+      MQqULMe371g0QsXzyGXzNMTDjI1P+s6zoSFBPq+TaGzArpgQ8n+breIsg6lpMpkZwrEEWzva
+      MR2/vuHK1WvgmFheiKJeZtu2Ht926cFb6JbL5NgIt4fGyM7O4HnVL6ZXKXJzIEU+myGb11GV
+      Ehmf91E5JtdvDWLoOTylkS+axKP+y7O1txfNK3F3cJLenTuJhTzfdkSb2dHTTjqVXvkRIJlM
+      oUUTtHZ3cOfadbq3Vq81AApTaXRbo83QSacn2LRlGx5+22gO6fQEbV1bee77LzKRStHRVr0G
+      nu87FKV5y1am76Vo6+zybWfMTjBruCTKJvFYjLBaLHoe2VyBhniM9uY4164O0Lf/Kd+WuWyO
+      WDyBlZ9mRjeJNhuwqXqtZVtlSqZLLNbAS6+8RiqVoinu97YostkciXicnm3dTE5O09XT6du3
+      ns8RisbRNIjHokRiMd928eZOXnvlD0mlJ8Epk84WeXKrf1BfeOlV0qkUlfwUFQ8M06Q5UT3f
+      HY89xZbeWbJmnC2dTaRSKUKh6s2QUKyZP/rRq6RSKSI4ZHIlehLxqnZapIFXX5t7XTS3gofC
+      Z3YAGOUSZcNh174dJO/009bpH1LHqVAsFmlsbub/Ad6Gai2B9WqRAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>

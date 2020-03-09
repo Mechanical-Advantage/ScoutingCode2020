@@ -146,7 +146,7 @@ for row in Pitscout:
     pdf.cell(40, 10, 'Max Reach: ' + str(row[17]))
     pdf.cell(50, 10, 'Can Lift Others: ' + canliftoutput)
     pdf.cell(40, 10, 'Multiple Drive Teams: ' + multipledriveteamoutput, ln=1)
-    pdf.cell(40, 10, 'Auto Delay/How?: ' + row[12], ln=1)
+    pdf.cell(40, 10, 'Auto Comment: ' + row[12], ln=1)
     pdf.cell(40, 10, 'Auto Capabilities: ' + ", ".join(lists["auto"]),  ln=1)
     pdf.cell(40, 10, 'Shooting Capabilities: ' +
              ", ".join(lists["shoot_to"]),  ln=1)

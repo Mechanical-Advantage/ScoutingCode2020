@@ -12,43 +12,43 @@ cur = conn.cursor()
 cur.execute("SELECT * FROM pit WHERE Event = ? order by Team", (Event,))
 Pitscout = cur.fetchall()
 name_lookup = {
-    10: {
+    11: {
         "section": "auto",
         "value": "can move from initiation line"
     },
-    12: {
+    13: {
         "section": "auto",
         "value": "can deliver upper"
     },
-    13: {
+    14: {
         "section": "auto",
         "value": "can deliver lower"
     },
-    14: {
+    15: {
         "section": "shoot_to",
         "value": "upper goal"
     },
-    15: {
+    16: {
         "section": "shoot_to",
         "value": "lower goal"
     },
-    16: {
+    17: {
         "section": "wheel",
         "value": "can do rotation control"
     },
-    17: {
+    18: {
         "section": "wheel",
         "value": "can do position control"
     },
-    20: {
+    21: {
         "section": "shoot_from",
         "value": "wall"
     },
-    21: {
+    22: {
         "section": "shoot_from",
         "value": "opponent side"
     },
-    22: {
+    23: {
         "section": "shoot_from",
         "value": "own side"
     }
@@ -130,10 +130,6 @@ for row in Pitscout:
         canliftoutput = "No"
     else:
         canliftoutput = "Yes"
-    if row[24] == 0:
-        multipledriveteamoutput = "No"
-    else:
-        multipledriveteamoutput = "Yes"
 
     pdf.add_page()
     pdf.set_font('Arial', 'B', 30)
@@ -145,7 +141,7 @@ for row in Pitscout:
     pdf.cell(40, 10, 'Height: ' + str(row[10]), ln=1)
     pdf.cell(40, 10, 'Max Reach: ' + str(row[17]))
     pdf.cell(50, 10, 'Can Lift Others: ' + canliftoutput)
-    pdf.cell(40, 10, 'Multiple Drive Teams: ' + multipledriveteamoutput, ln=1)
+    pdf.cell(40, 10, 'Multiple Drive Teams: ' + row[24], ln=1)
     pdf.cell(40, 10, 'Auto Comment: ' + row[12], ln=1)
     pdf.cell(40, 10, 'Auto Capabilities: ' + ", ".join(lists["auto"]),  ln=1)
     pdf.cell(40, 10, 'Shooting Capabilities: ' +

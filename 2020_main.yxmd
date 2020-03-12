@@ -46,6 +46,7 @@ Query=match</DefaultAnnotationText>
             <Field name="LowerFailures" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
             <Field name="UpperFailures" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
             <Field name="UpperSecondsBetween" size="1073741823" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="V_WString" />
+            <Field name="ClimbTime" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
             <Field name="ClimbAttempted" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
             <Field name="ClimbSuccess" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
             <Field name="LiftedOthersAttempted" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
@@ -65,6 +66,7 @@ Query=match</DefaultAnnotationText>
             <Field name="IntakeRating" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
             <Field name="DefenseRating" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
             <Field name="AvoidDefenseRating" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
+            <Field name="SpeedRating" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="Int64" />
             <Field name="Comment" size="1073741823" source="File: C:\mascout\AdvantageScout\data_2020.db|||match" type="V_WString" />
           </RecordInfo>
         </MetaInfo>
@@ -179,6 +181,7 @@ Query=config</DefaultAnnotationText>
             <SummarizeField field="WheelRotationSuccess" action="Sum" rename="Sum_WheelRotationSuccess" />
             <SummarizeField field="WheelPositionAttempted" action="Sum" rename="Sum_WheelPositionAttempted" />
             <SummarizeField field="WheelPositionSuccess" action="Sum" rename="Sum_WheelPositionSuccess" />
+            <SummarizeField field="ClimbTime" action="AvgNo0" rename="AvgNo0_ClimbTime" />
             <SummarizeField field="ClimbAttempted" action="Sum" rename="Sum_ClimbAttempted" />
             <SummarizeField field="ClimbSuccess" action="Sum" rename="Sum_ClimbSuccess" />
             <SummarizeField field="LiftedOthersAttempted" action="Sum" rename="Sum_LiftedOthersAttempted" />
@@ -193,6 +196,7 @@ Query=config</DefaultAnnotationText>
             <SummarizeField field="IntakeRating" action="AvgNo0" rename="AvgNo0_IntakeRating" />
             <SummarizeField field="DefenseRating" action="AvgNo0" rename="AvgNo0_DefenseRating" />
             <SummarizeField field="AvoidDefenseRating" action="AvgNo0" rename="AvgNo0_AvoidDefenseRating" />
+            <SummarizeField field="SpeedRating" action="AvgNo0" rename="AvgNo0_SpeedRating" />
             <SummarizeField field="AutoLowerSuccess" action="Sum" rename="Sum_AutoLowerSuccess" />
             <SummarizeField field="AutoOuterSuccess" action="Sum" rename="Sum_AutoOuterSuccess" />
             <SummarizeField field="AutoInnerSuccess" action="Sum" rename="Sum_AutoInnerSuccess" />
@@ -260,6 +264,8 @@ AutoUpperAttempts =...</DefaultAnnotationText>
             <FormulaField expression="([Sum_LowerSuccess] / [Sum_LowerAttempts]) * 100" field="LowerAccuracy" size="8" type="Double" />
             <FormulaField expression="(([Sum_OuterSuccess] + [Sum_InnerSuccess]) / [Sum_UpperAttempts]) * 100" field="UpperAccuracy" size="8" type="Double" />
             <FormulaField expression="([Sum_InnerSuccess] / ([Sum_InnerSuccess] + [Sum_OuterSuccess])) * 100" field="InnerAccuracy" size="8" type="Double" />
+            <FormulaField expression="[Sum_AutoOuterSuccess] + [Sum_AutoInnerSuccess]" field="Sum_AutoUpperSuccess" size="8" type="Int64" />
+            <FormulaField expression="[Sum_OuterSuccess] + [Sum_InnerSuccess]" field="Sum_UpperSuccess" size="8" type="Int64" />
           </FormulaFields>
         </Configuration>
         <Annotation DisplayMode="0">
@@ -277,7 +283,7 @@ Aut...</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <OrderChanged value="False" />
+          <OrderChanged value="True" />
           <CommaDecimal value="False" />
           <SelectFields>
             <SelectField field="PreScouting" selected="True" />
@@ -294,6 +300,7 @@ Aut...</DefaultAnnotationText>
             <SelectField field="Sum_WheelRotationSuccess" selected="True" />
             <SelectField field="Sum_WheelPositionAttempted" selected="True" />
             <SelectField field="Sum_WheelPositionSuccess" selected="True" />
+            <SelectField field="AvgNo0_ClimbTime" selected="True" />
             <SelectField field="Sum_ClimbAttempted" selected="True" />
             <SelectField field="Sum_ClimbSuccess" selected="True" />
             <SelectField field="Sum_LiftedOthersAttempted" selected="True" />
@@ -308,6 +315,19 @@ Aut...</DefaultAnnotationText>
             <SelectField field="AvgNo0_IntakeRating" selected="True" />
             <SelectField field="AvgNo0_DefenseRating" selected="True" />
             <SelectField field="AvgNo0_AvoidDefenseRating" selected="True" />
+            <SelectField field="AvgNo0_SpeedRating" selected="True" />
+            <SelectField field="Sum_AutoLowerSuccess" selected="True" />
+            <SelectField field="Sum_AutoOuterSuccess" selected="True" />
+            <SelectField field="Sum_AutoInnerSuccess" selected="True" />
+            <SelectField field="Sum_AutoUpperSuccess" selected="True" />
+            <SelectField field="Sum_LowerSuccess" selected="True" />
+            <SelectField field="Sum_OuterSuccess" selected="True" />
+            <SelectField field="Sum_InnerSuccess" selected="True" />
+            <SelectField field="Sum_UpperSuccess" selected="True" />
+            <SelectField field="Sum_AutoLowerAttempts" selected="True" />
+            <SelectField field="Sum_AutoUpperAttempts" selected="True" />
+            <SelectField field="Sum_LowerAttempts" selected="True" />
+            <SelectField field="Sum_UpperAttempts" selected="True" />
             <SelectField field="Comment" selected="True" />
             <SelectField field="AutoLowerAccuracy" selected="True" />
             <SelectField field="AutoUpperAccuracy" selected="True" />
@@ -423,6 +443,7 @@ Aut...</DefaultAnnotationText>
                 <SelectField field="Left_Sum_WheelRotationSuccess" selected="True" input="Left_" />
                 <SelectField field="Left_Sum_WheelPositionAttempted" selected="True" input="Left_" />
                 <SelectField field="Left_Sum_WheelPositionSuccess" selected="True" input="Left_" />
+                <SelectField field="Left_AvgNo0_ClimbTime" selected="True" input="Left_" />
                 <SelectField field="Left_Sum_ClimbAttempted" selected="True" input="Left_" />
                 <SelectField field="Left_Sum_ClimbSuccess" selected="True" input="Left_" />
                 <SelectField field="Left_Sum_LiftedOthersAttempted" selected="True" input="Left_" />
@@ -437,6 +458,7 @@ Aut...</DefaultAnnotationText>
                 <SelectField field="Left_AvgNo0_IntakeRating" selected="True" input="Left_" />
                 <SelectField field="Left_AvgNo0_DefenseRating" selected="True" input="Left_" />
                 <SelectField field="Left_AvgNo0_AvoidDefenseRating" selected="True" input="Left_" />
+                <SelectField field="Left_AvgNo0_SpeedRating" selected="True" input="Left_" />
                 <SelectField field="Left_AutoLowerAccuracy" selected="True" input="Left_" />
                 <SelectField field="Left_AutoUpperAccuracy" selected="True" input="Left_" />
                 <SelectField field="Left_AutoInnerAccuracy" selected="True" input="Left_" />
@@ -446,6 +468,18 @@ Aut...</DefaultAnnotationText>
                 <SelectField field="Right_Team" selected="False" rename="Right_Team" input="Right_" />
                 <SelectField field="Left_Comment" selected="True" input="Left_" />
                 <SelectField field="Right_PreScouting" selected="False" rename="Right_PreScouting" input="Right_" />
+                <SelectField field="Left_Sum_AutoLowerSuccess" selected="True" input="Left_" />
+                <SelectField field="Left_Sum_AutoOuterSuccess" selected="True" input="Left_" />
+                <SelectField field="Left_Sum_AutoInnerSuccess" selected="True" input="Left_" />
+                <SelectField field="Left_Sum_AutoUpperSuccess" selected="True" input="Left_" />
+                <SelectField field="Left_Sum_AutoLowerAttempts" selected="True" input="Left_" />
+                <SelectField field="Left_Sum_AutoUpperAttempts" selected="True" input="Left_" />
+                <SelectField field="Left_Sum_LowerSuccess" selected="True" input="Left_" />
+                <SelectField field="Left_Sum_OuterSuccess" selected="True" input="Left_" />
+                <SelectField field="Left_Sum_InnerSuccess" selected="True" input="Left_" />
+                <SelectField field="Left_Sum_UpperSuccess" selected="True" input="Left_" />
+                <SelectField field="Left_Sum_LowerAttempts" selected="True" input="Left_" />
+                <SelectField field="Left_Sum_UpperAttempts" selected="True" input="Left_" />
                 <SelectField field="*Unknown" selected="True" />
               </SelectFields>
             </Configuration>
@@ -488,7 +522,7 @@ Query=summary</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_696_de9f5c93ad6947d4ab12c3f0293cf0cc_\Engine_7320_020aef8ca48f4f1fb01021fa1ef10e70_.yxdb</TempFile>
+          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_10816_b8714c6cc23e4b9a93251a1968dfeabc_\Engine_2560_8fee5d8227a44a399e13596386e735af_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -604,7 +638,7 @@ Query=summary</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_696_de9f5c93ad6947d4ab12c3f0293cf0cc_\Engine_7320_073f01199226428b86f07c29287b9aec_.yxdb</TempFile>
+          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_10816_b8714c6cc23e4b9a93251a1968dfeabc_\Engine_2560_9c7c7d68fa8f4e408de02a3321659c68_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -683,7 +717,7 @@ Query=summary</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_696_de9f5c93ad6947d4ab12c3f0293cf0cc_\Engine_7320_0fae7d6534f04dbea5f6159274cbb5e1_.yxdb</TempFile>
+          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_10816_b8714c6cc23e4b9a93251a1968dfeabc_\Engine_2560_b42cefcf4e684f338d5c7e184f751d59_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -763,7 +797,7 @@ Query=summary</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_696_de9f5c93ad6947d4ab12c3f0293cf0cc_\Engine_7320_abd1e8fc8bcf4c78891575b1f3d454dd_.yxdb</TempFile>
+          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_10816_b8714c6cc23e4b9a93251a1968dfeabc_\Engine_2560_d409a29f939f466f9885183f2fdbd830_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -831,7 +865,7 @@ Query=pit</DefaultAnnotationText>
             <Field name="ShootFromWall" source="File: C:\mascout\AdvantageScout\data_2020.db|||pit" type="Int64" />
             <Field name="ShootFromOpponentSide" source="File: C:\mascout\AdvantageScout\data_2020.db|||pit" type="Int64" />
             <Field name="ShootFromOwnSide" source="File: C:\mascout\AdvantageScout\data_2020.db|||pit" type="Int64" />
-            <Field name="MultipleDriveTeams" source="File: C:\mascout\AdvantageScout\data_2020.db|||pit" type="Int64" />
+            <Field name="MultipleDriveTeams" size="1073741823" source="File: C:\mascout\AdvantageScout\data_2020.db|||pit" type="V_WString" />
             <Field name="Comment" size="1073741823" source="File: C:\mascout\AdvantageScout\data_2020.db|||pit" type="V_WString" />
             <Field name="Image" size="1073741823" source="File: C:\mascout\AdvantageScout\data_2020.db|||pit" type="V_WString" />
           </RecordInfo>
@@ -920,6 +954,7 @@ Query=pit</DefaultAnnotationText>
                 <SelectField field="Right_Sum_WheelRotationSuccess" selected="True" input="Right_" />
                 <SelectField field="Right_Sum_WheelPositionAttempted" selected="True" input="Right_" />
                 <SelectField field="Right_Sum_WheelPositionSuccess" selected="True" input="Right_" />
+                <SelectField field="Right_AvgNo0_ClimbTime" selected="True" input="Right_" />
                 <SelectField field="Right_Sum_ClimbAttempted" selected="True" input="Right_" />
                 <SelectField field="Right_Sum_ClimbSuccess" selected="True" input="Right_" />
                 <SelectField field="Right_Sum_LiftedOthersAttempted" selected="True" input="Right_" />
@@ -934,6 +969,7 @@ Query=pit</DefaultAnnotationText>
                 <SelectField field="Right_AvgNo0_IntakeRating" selected="True" input="Right_" />
                 <SelectField field="Right_AvgNo0_DefenseRating" selected="True" input="Right_" />
                 <SelectField field="Right_AvgNo0_AvoidDefenseRating" selected="True" input="Right_" />
+                <SelectField field="Right_AvgNo0_SpeedRating" selected="True" input="Right_" />
                 <SelectField field="Right_AutoLowerAccuracy" selected="True" input="Right_" />
                 <SelectField field="Right_AutoUpperAccuracy" selected="True" input="Right_" />
                 <SelectField field="Right_AutoInnerAccuracy" selected="True" input="Right_" />
@@ -955,6 +991,7 @@ Query=pit</DefaultAnnotationText>
                 <SelectField field="Right_Pre_Sum_WheelRotationSuccess" selected="True" input="Right_" />
                 <SelectField field="Right_Pre_Sum_WheelPositionAttempted" selected="True" input="Right_" />
                 <SelectField field="Right_Pre_Sum_WheelPositionSuccess" selected="True" input="Right_" />
+                <SelectField field="Right_Pre_AvgNo0_ClimbTime" selected="True" input="Right_" />
                 <SelectField field="Right_Pre_Sum_ClimbAttempted" selected="True" input="Right_" />
                 <SelectField field="Right_Pre_Sum_ClimbSuccess" selected="True" input="Right_" />
                 <SelectField field="Right_Pre_Sum_LiftedOthersAttempted" selected="True" input="Right_" />
@@ -969,6 +1006,7 @@ Query=pit</DefaultAnnotationText>
                 <SelectField field="Right_Pre_AvgNo0_IntakeRating" selected="True" input="Right_" />
                 <SelectField field="Right_Pre_AvgNo0_DefenseRating" selected="True" input="Right_" />
                 <SelectField field="Right_Pre_AvgNo0_AvoidDefenseRating" selected="True" input="Right_" />
+                <SelectField field="Right_Pre_AvgNo0_SpeedRating" selected="True" input="Right_" />
                 <SelectField field="Right_Pre_AutoLowerAccuracy" selected="True" input="Right_" />
                 <SelectField field="Right_Pre_AutoUpperAccuracy" selected="True" input="Right_" />
                 <SelectField field="Right_Pre_AutoInnerAccuracy" selected="True" input="Right_" />
@@ -979,6 +1017,30 @@ Query=pit</DefaultAnnotationText>
                 <SelectField field="Right_Pre_Sum_ShootFromOpponentsSide" selected="False" input="Right_" />
                 <SelectField field="Right_Pre_Sum_ShootFromOtherSide" selected="False" input="Right_" />
                 <SelectField field="Right_Pre_AvgNo0_IntakeRatting" selected="False" input="Right_" />
+                <SelectField field="Right_Sum_AutoLowerSuccess" selected="True" input="Right_" />
+                <SelectField field="Right_Sum_AutoOuterSuccess" selected="True" input="Right_" />
+                <SelectField field="Right_Sum_AutoInnerSuccess" selected="True" input="Right_" />
+                <SelectField field="Right_Sum_AutoUpperSuccess" selected="True" input="Right_" />
+                <SelectField field="Right_Sum_LowerSuccess" selected="True" input="Right_" />
+                <SelectField field="Right_Sum_OuterSuccess" selected="True" input="Right_" />
+                <SelectField field="Right_Sum_InnerSuccess" selected="True" input="Right_" />
+                <SelectField field="Right_Sum_UpperSuccess" selected="True" input="Right_" />
+                <SelectField field="Right_Pre_Sum_AutoLowerSuccess" selected="True" input="Right_" />
+                <SelectField field="Right_Pre_Sum_AutoOuterSuccess" selected="True" input="Right_" />
+                <SelectField field="Right_Pre_Sum_AutoInnerSuccess" selected="True" input="Right_" />
+                <SelectField field="Right_Pre_Sum_AutoUpperSuccess" selected="True" input="Right_" />
+                <SelectField field="Right_Pre_Sum_LowerSuccess" selected="True" input="Right_" />
+                <SelectField field="Right_Pre_Sum_OuterSuccess" selected="True" input="Right_" />
+                <SelectField field="Right_Pre_Sum_InnerSuccess" selected="True" input="Right_" />
+                <SelectField field="Right_Pre_Sum_UpperSuccess" selected="True" input="Right_" />
+                <SelectField field="Right_Sum_AutoLowerAttempts" selected="True" input="Right_" />
+                <SelectField field="Right_Sum_AutoUpperAttempts" selected="True" input="Right_" />
+                <SelectField field="Right_Sum_LowerAttempts" selected="True" input="Right_" />
+                <SelectField field="Right_Sum_UpperAttempts" selected="True" input="Right_" />
+                <SelectField field="Right_Pre_Sum_AutoLowerAttempts" selected="True" input="Right_" />
+                <SelectField field="Right_Pre_Sum_AutoUpperAttempts" selected="True" input="Right_" />
+                <SelectField field="Right_Pre_Sum_LowerAttempts" selected="True" input="Right_" />
+                <SelectField field="Right_Pre_Sum_UpperAttempts" selected="True" input="Right_" />
                 <SelectField field="*Unknown" selected="False" />
               </SelectFields>
             </Configuration>
@@ -1631,7 +1693,7 @@ Query=scores</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Value name="List Box (11)">"DriveTrain","Weight","Height","MatchCount","Sum_CrossedLine","Avg_UpperSecondsBetween","Median_UpperSecondsBetween","Sum_WheelRotationAttempted","Sum_WheelRotationSuccess","Sum_WheelPositionAttempted","Sum_WheelPositionSuccess","Sum_ClimbAttempted","Sum_ClimbSuccess","Sum_LiftedOthersAttempted","Sum_LiftedOthersSuccess","Sum_ParkedAttempted","Sum_ParkedSuccess","Sum_ShootFromWall","Sum_ShootFromOpponentSide","Sum_ShootFromOwnSide","Sum_Disabled","AvgNo0_DriverRating","AvgNo0_IntakeRating","AvgNo0_DefenseRating","AvgNo0_AvoidDefenseRating","AutoLowerAccuracy","AutoUpperAccuracy","AutoInnerAccuracy","LowerAccuracy","UpperAccuracy","InnerAccuracy","Comment","Pre_MatchCount","Pre_Sum_CrossedLine","Pre_Avg_UpperSecondsBetween","Pre_Median_UpperSecondsBetween","Pre_Sum_WheelRotationAttempted","Pre_Sum_WheelRotationSuccess","Pre_Sum_WheelPositionAttempted","Pre_Sum_WheelPositionSuccess","Pre_Sum_ClimbAttempted","Pre_Sum_ClimbSuccess","Pre_Sum_LiftedOthersAttempted","Pre_Sum_LiftedOthersSuccess","Pre_Sum_ParkedAttempted","Pre_Sum_ParkedSuccess","Pre_Sum_ShootFromWall","Pre_Sum_ShootFromOpponentSide","Pre_Sum_ShootFromOwnSide","Pre_Sum_Disabled","Pre_AvgNo0_DriverRating","Pre_AvgNo0_IntakeRating","Pre_AvgNo0_DefenseRating","Pre_AvgNo0_AvoidDefenseRating","Pre_AutoLowerAccuracy","Pre_AutoUpperAccuracy","Pre_AutoInnerAccuracy","Pre_LowerAccuracy","Pre_UpperAccuracy","Pre_InnerAccuracy","Pre_Comment"</Value>
+          <Value name="List Box (11)">"DriveTrain","Weight","Height","MatchCount","Sum_CrossedLine","Avg_UpperSecondsBetween","Median_UpperSecondsBetween","Sum_WheelRotationAttempted","Sum_WheelRotationSuccess","Sum_WheelPositionAttempted","Sum_WheelPositionSuccess","AvgNo0_ClimbTime","Sum_ClimbAttempted","Sum_ClimbSuccess","Sum_LiftedOthersAttempted","Sum_LiftedOthersSuccess","Sum_ParkedAttempted","Sum_ParkedSuccess","Sum_ShootFromWall","Sum_ShootFromOpponentSide","Sum_ShootFromOwnSide","Sum_Disabled","AvgNo0_DriverRating","AvgNo0_IntakeRating","AvgNo0_DefenseRating","AvgNo0_AvoidDefenseRating","AvgNo0_SpeedRating","AutoLowerAccuracy","AutoUpperAccuracy","AutoInnerAccuracy","LowerAccuracy","UpperAccuracy","InnerAccuracy","Comment","Pre_MatchCount","Pre_Sum_CrossedLine","Pre_Avg_UpperSecondsBetween","Pre_Median_UpperSecondsBetween","Pre_Sum_WheelRotationAttempted","Pre_Sum_WheelRotationSuccess","Pre_Sum_WheelPositionAttempted","Pre_Sum_WheelPositionSuccess","Pre_AvgNo0_ClimbTime","Pre_Sum_ClimbAttempted","Pre_Sum_ClimbSuccess","Pre_Sum_LiftedOthersAttempted","Pre_Sum_LiftedOthersSuccess","Pre_Sum_ParkedAttempted","Pre_Sum_ParkedSuccess","Pre_Sum_ShootFromWall","Pre_Sum_ShootFromOpponentSide","Pre_Sum_ShootFromOwnSide","Pre_Sum_Disabled","Pre_AvgNo0_DriverRating","Pre_AvgNo0_IntakeRating","Pre_AvgNo0_DefenseRating","Pre_AvgNo0_AvoidDefenseRating","Pre_AvgNo0_SpeedRating","Pre_AutoLowerAccuracy","Pre_AutoUpperAccuracy","Pre_AutoInnerAccuracy","Pre_LowerAccuracy","Pre_UpperAccuracy","Pre_InnerAccuracy","Pre_Comment","Sum_AutoLowerSuccess","Sum_AutoOuterSuccess","Sum_AutoInnerSuccess","Sum_AutoUpperSuccess","Sum_LowerSuccess","Sum_OuterSuccess","Sum_InnerSuccess","Sum_UpperSuccess","Pre_Sum_AutoLowerSuccess","Pre_Sum_AutoOuterSuccess","Pre_Sum_AutoInnerSuccess","Pre_Sum_AutoUpperSuccess","Pre_Sum_LowerSuccess","Pre_Sum_OuterSuccess","Pre_Sum_InnerSuccess","Pre_Sum_UpperSuccess","Sum_AutoLowerAttempts","Sum_AutoUpperAttempts","Sum_LowerAttempts","Sum_UpperAttempts","Pre_Sum_AutoLowerAttempts","Pre_Sum_AutoUpperAttempts","Pre_Sum_LowerAttempts","Pre_Sum_UpperAttempts"</Value>
           <Value name="Check Box (84)">True</Value>
           <Value name="Check Box (117)">True</Value>
           <Value name="Check Box (15)">True</Value>
@@ -1764,6 +1826,7 @@ Query=scores</DefaultAnnotationText>
                 <SelectField field="Left_Sum_WheelRotationSuccess" selected="True" input="Left_" />
                 <SelectField field="Left_Sum_WheelPositionAttempted" selected="True" input="Left_" />
                 <SelectField field="Left_Sum_WheelPositionSuccess" selected="True" input="Left_" />
+                <SelectField field="Left_AvgNo0_ClimbTime" selected="True" input="Left_" />
                 <SelectField field="Left_Sum_ClimbAttempted" selected="True" input="Left_" />
                 <SelectField field="Left_Sum_ClimbSuccess" selected="True" input="Left_" />
                 <SelectField field="Left_Sum_LiftedOthersAttempted" selected="True" input="Left_" />
@@ -1778,6 +1841,7 @@ Query=scores</DefaultAnnotationText>
                 <SelectField field="Left_AvgNo0_IntakeRating" selected="True" input="Left_" />
                 <SelectField field="Left_AvgNo0_DefenseRating" selected="True" input="Left_" />
                 <SelectField field="Left_AvgNo0_AvoidDefenseRating" selected="True" input="Left_" />
+                <SelectField field="Left_AvgNo0_SpeedRating" selected="True" input="Left_" />
                 <SelectField field="Left_AutoLowerAccuracy" selected="True" input="Left_" />
                 <SelectField field="Left_AutoUpperAccuracy" selected="True" input="Left_" />
                 <SelectField field="Left_AutoInnerAccuracy" selected="True" input="Left_" />
@@ -1785,6 +1849,18 @@ Query=scores</DefaultAnnotationText>
                 <SelectField field="Left_UpperAccuracy" selected="True" input="Left_" />
                 <SelectField field="Left_InnerAccuracy" selected="True" input="Left_" />
                 <SelectField field="Left_Comment" selected="True" input="Left_" />
+                <SelectField field="Left_Sum_AutoLowerSuccess" selected="True" input="Left_" />
+                <SelectField field="Left_Sum_AutoOuterSuccess" selected="True" input="Left_" />
+                <SelectField field="Left_Sum_AutoInnerSuccess" selected="True" input="Left_" />
+                <SelectField field="Left_Sum_AutoUpperSuccess" selected="True" input="Left_" />
+                <SelectField field="Left_Sum_AutoLowerAttempts" selected="True" input="Left_" />
+                <SelectField field="Left_Sum_AutoUpperAttempts" selected="True" input="Left_" />
+                <SelectField field="Left_Sum_LowerSuccess" selected="True" input="Left_" />
+                <SelectField field="Left_Sum_OuterSuccess" selected="True" input="Left_" />
+                <SelectField field="Left_Sum_InnerSuccess" selected="True" input="Left_" />
+                <SelectField field="Left_Sum_UpperSuccess" selected="True" input="Left_" />
+                <SelectField field="Left_Sum_LowerAttempts" selected="True" input="Left_" />
+                <SelectField field="Left_Sum_UpperAttempts" selected="True" input="Left_" />
                 <SelectField field="Right_Pre_MatchCount" selected="True" input="Right_" />
                 <SelectField field="Right_Pre_Sum_CrossedLine" selected="True" input="Right_" />
                 <SelectField field="Right_Pre_Avg_AutoLowerSuccess" selected="True" input="Right_" />
@@ -1799,6 +1875,7 @@ Query=scores</DefaultAnnotationText>
                 <SelectField field="Right_Pre_Sum_WheelRotationSuccess" selected="True" input="Right_" />
                 <SelectField field="Right_Pre_Sum_WheelPositionAttempted" selected="True" input="Right_" />
                 <SelectField field="Right_Pre_Sum_WheelPositionSuccess" selected="True" input="Right_" />
+                <SelectField field="Right_Pre_AvgNo0_ClimbTime" selected="True" input="Right_" />
                 <SelectField field="Right_Pre_Sum_ClimbAttempted" selected="True" input="Right_" />
                 <SelectField field="Right_Pre_Sum_ClimbSuccess" selected="True" input="Right_" />
                 <SelectField field="Right_Pre_Sum_LiftedOthersAttempted" selected="True" input="Right_" />
@@ -1813,6 +1890,7 @@ Query=scores</DefaultAnnotationText>
                 <SelectField field="Right_Pre_AvgNo0_IntakeRating" selected="True" input="Right_" />
                 <SelectField field="Right_Pre_AvgNo0_DefenseRating" selected="True" input="Right_" />
                 <SelectField field="Right_Pre_AvgNo0_AvoidDefenseRating" selected="True" input="Right_" />
+                <SelectField field="Right_Pre_AvgNo0_SpeedRating" selected="True" input="Right_" />
                 <SelectField field="Right_Pre_AutoLowerAccuracy" selected="True" input="Right_" />
                 <SelectField field="Right_Pre_AutoUpperAccuracy" selected="True" input="Right_" />
                 <SelectField field="Right_Pre_AutoInnerAccuracy" selected="True" input="Right_" />
@@ -1820,6 +1898,18 @@ Query=scores</DefaultAnnotationText>
                 <SelectField field="Right_Pre_UpperAccuracy" selected="True" input="Right_" />
                 <SelectField field="Right_Pre_InnerAccuracy" selected="True" input="Right_" />
                 <SelectField field="Right_Pre_Comment" selected="True" input="Right_" />
+                <SelectField field="Right_Pre_Sum_AutoLowerSuccess" selected="True" input="Right_" />
+                <SelectField field="Right_Pre_Sum_AutoOuterSuccess" selected="True" input="Right_" />
+                <SelectField field="Right_Pre_Sum_AutoInnerSuccess" selected="True" input="Right_" />
+                <SelectField field="Right_Pre_Sum_AutoUpperSuccess" selected="True" input="Right_" />
+                <SelectField field="Right_Pre_Sum_AutoLowerAttempts" selected="True" input="Right_" />
+                <SelectField field="Right_Pre_Sum_AutoUpperAttempts" selected="True" input="Right_" />
+                <SelectField field="Right_Pre_Sum_LowerSuccess" selected="True" input="Right_" />
+                <SelectField field="Right_Pre_Sum_OuterSuccess" selected="True" input="Right_" />
+                <SelectField field="Right_Pre_Sum_InnerSuccess" selected="True" input="Right_" />
+                <SelectField field="Right_Pre_Sum_UpperSuccess" selected="True" input="Right_" />
+                <SelectField field="Right_Pre_Sum_LowerAttempts" selected="True" input="Right_" />
+                <SelectField field="Right_Pre_Sum_UpperAttempts" selected="True" input="Right_" />
                 <SelectField field="*Unknown" selected="False" />
               </SelectFields>
             </Configuration>
@@ -1895,6 +1985,7 @@ Query=scores</DefaultAnnotationText>
             <SelectField field="Sum_WheelRotationSuccess" selected="True" />
             <SelectField field="Sum_WheelPositionAttempted" selected="True" />
             <SelectField field="Sum_WheelPositionSuccess" selected="True" />
+            <SelectField field="AvgNo0_ClimbTime" selected="True" />
             <SelectField field="Sum_ClimbAttempted" selected="True" />
             <SelectField field="Sum_ClimbSuccess" selected="True" />
             <SelectField field="Sum_LiftedOthersAttempted" selected="True" />
@@ -1909,6 +2000,7 @@ Query=scores</DefaultAnnotationText>
             <SelectField field="AvgNo0_IntakeRating" selected="True" />
             <SelectField field="AvgNo0_DefenseRating" selected="True" />
             <SelectField field="AvgNo0_AvoidDefenseRating" selected="True" />
+            <SelectField field="AvgNo0_SpeedRating" selected="True" />
             <SelectField field="AutoLowerAccuracy" selected="True" />
             <SelectField field="AutoUpperAccuracy" selected="True" />
             <SelectField field="AutoInnerAccuracy" selected="True" />
@@ -1916,6 +2008,18 @@ Query=scores</DefaultAnnotationText>
             <SelectField field="UpperAccuracy" selected="True" />
             <SelectField field="InnerAccuracy" selected="True" />
             <SelectField field="Comment" selected="True" />
+            <SelectField field="Sum_AutoLowerSuccess" selected="True" />
+            <SelectField field="Sum_AutoOuterSuccess" selected="True" />
+            <SelectField field="Sum_AutoInnerSuccess" selected="True" />
+            <SelectField field="Sum_AutoUpperSuccess" selected="True" />
+            <SelectField field="Sum_AutoLowerAttempts" selected="True" />
+            <SelectField field="Sum_AutoUpperAttempts" selected="True" />
+            <SelectField field="Sum_LowerSuccess" selected="True" />
+            <SelectField field="Sum_OuterSuccess" selected="True" />
+            <SelectField field="Sum_InnerSuccess" selected="True" />
+            <SelectField field="Sum_UpperSuccess" selected="True" />
+            <SelectField field="Sum_LowerAttempts" selected="True" />
+            <SelectField field="Sum_UpperAttempts" selected="True" />
             <SelectField field="*Unknown" selected="False" />
           </SelectFields>
         </Configuration>
@@ -1951,6 +2055,7 @@ Query=scores</DefaultAnnotationText>
             <SelectField field="Sum_WheelRotationSuccess" selected="True" rename="Pre_Sum_WheelRotationSuccess" />
             <SelectField field="Sum_WheelPositionAttempted" selected="True" rename="Pre_Sum_WheelPositionAttempted" />
             <SelectField field="Sum_WheelPositionSuccess" selected="True" rename="Pre_Sum_WheelPositionSuccess" />
+            <SelectField field="AvgNo0_ClimbTime" selected="True" rename="Pre_AvgNo0_ClimbTime" />
             <SelectField field="Sum_ClimbAttempted" selected="True" rename="Pre_Sum_ClimbAttempted" />
             <SelectField field="Sum_ClimbSuccess" selected="True" rename="Pre_Sum_ClimbSuccess" />
             <SelectField field="Sum_LiftedOthersAttempted" selected="True" rename="Pre_Sum_LiftedOthersAttempted" />
@@ -1965,6 +2070,7 @@ Query=scores</DefaultAnnotationText>
             <SelectField field="AvgNo0_IntakeRating" selected="True" rename="Pre_AvgNo0_IntakeRating" />
             <SelectField field="AvgNo0_DefenseRating" selected="True" rename="Pre_AvgNo0_DefenseRating" />
             <SelectField field="AvgNo0_AvoidDefenseRating" selected="True" rename="Pre_AvgNo0_AvoidDefenseRating" />
+            <SelectField field="AvgNo0_SpeedRating" selected="True" rename="Pre_AvgNo0_SpeedRating" />
             <SelectField field="AutoLowerAccuracy" selected="True" rename="Pre_AutoLowerAccuracy" />
             <SelectField field="AutoUpperAccuracy" selected="True" rename="Pre_AutoUpperAccuracy" />
             <SelectField field="AutoInnerAccuracy" selected="True" rename="Pre_AutoInnerAccuracy" />
@@ -1972,6 +2078,18 @@ Query=scores</DefaultAnnotationText>
             <SelectField field="UpperAccuracy" selected="True" rename="Pre_UpperAccuracy" />
             <SelectField field="InnerAccuracy" selected="True" rename="Pre_InnerAccuracy" />
             <SelectField field="Comment" selected="True" rename="Pre_Comment" />
+            <SelectField field="Sum_AutoLowerSuccess" selected="True" rename="Pre_Sum_AutoLowerSuccess" />
+            <SelectField field="Sum_AutoOuterSuccess" selected="True" rename="Pre_Sum_AutoOuterSuccess" />
+            <SelectField field="Sum_AutoInnerSuccess" selected="True" rename="Pre_Sum_AutoInnerSuccess" />
+            <SelectField field="Sum_AutoUpperSuccess" selected="True" rename="Pre_Sum_AutoUpperSuccess" />
+            <SelectField field="Sum_AutoLowerAttempts" selected="True" rename="Pre_Sum_AutoLowerAttempts" />
+            <SelectField field="Sum_AutoUpperAttempts" selected="True" rename="Pre_Sum_AutoUpperAttempts" />
+            <SelectField field="Sum_LowerSuccess" selected="True" rename="Pre_Sum_LowerSuccess" />
+            <SelectField field="Sum_OuterSuccess" selected="True" rename="Pre_Sum_OuterSuccess" />
+            <SelectField field="Sum_InnerSuccess" selected="True" rename="Pre_Sum_InnerSuccess" />
+            <SelectField field="Sum_UpperSuccess" selected="True" rename="Pre_Sum_UpperSuccess" />
+            <SelectField field="Sum_LowerAttempts" selected="True" rename="Pre_Sum_LowerAttempts" />
+            <SelectField field="Sum_UpperAttempts" selected="True" rename="Pre_Sum_UpperAttempts" />
             <SelectField field="*Unknown" selected="False" />
           </SelectFields>
         </Configuration>
@@ -2184,7 +2302,7 @@ Query=scores</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_696_de9f5c93ad6947d4ab12c3f0293cf0cc_\Engine_7320_cdea961ddc0941039670be2f225d71d4_.yxdb</TempFile>
+          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_10816_b8714c6cc23e4b9a93251a1968dfeabc_\Engine_2560_a20aaeada6054d759dc1ffd4904652ae_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -2379,9 +2497,6 @@ AutoLower = [Avg_AutoLowerS...</DefaultAnnotationText>
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
       </Properties>
       <EngineSettings Macro="Cleanse.yxmc" />
     </Node>
@@ -2432,7 +2547,7 @@ Query=points</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_696_de9f5c93ad6947d4ab12c3f0293cf0cc_\Engine_7320_4e3497e87c2941cea774e52638aa6339_.yxdb</TempFile>
+          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_10816_b8714c6cc23e4b9a93251a1968dfeabc_\Engine_2560_46d256ce281741b09afd84421273c629_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -4525,6 +4640,7 @@ ELSEIF [LiftedOthers]=...</DefaultAnnotationText>
             <SelectField field="InnerSuccess" selected="True" />
             <SelectField field="LowerFailures" selected="True" />
             <SelectField field="UpperFailures" selected="True" />
+            <SelectField field="ClimbTime" selected="True" />
             <SelectField field="ClimbAttempted" selected="True" />
             <SelectField field="ClimbSuccess" selected="True" />
             <SelectField field="LiftedOthersAttempted" selected="True" />
@@ -4544,6 +4660,7 @@ ELSEIF [LiftedOthers]=...</DefaultAnnotationText>
             <SelectField field="IntakeRating" selected="True" />
             <SelectField field="DefenseRating" selected="True" />
             <SelectField field="AvoidDefenseRating" selected="True" />
+            <SelectField field="SpeedRating" selected="True" />
             <SelectField field="*Unknown" selected="False" />
           </SelectFields>
         </Configuration>
@@ -4934,6 +5051,231 @@ ELSEIF [Upper]=[Row-1:Upper] ...</DefaultAnnotationText>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
     </Node>
+    <Node ToolID="225">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1254" y="738" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="5*[CrossedLine]+6*[AutoInnerSuccess]+4*[AutoOuterSuccess]" field="AutoPoints" size="8" type="Int64" />
+            <FormulaField expression="3*[InnerSuccess]+2*[OuterSuccess] " field="TeleopUpperPoints" size="8" type="Int64" />
+            <FormulaField expression="[InnerSuccess]/([OuterSuccess]+[InnerSuccess])*100" field="TeleopInnerAccuracy" size="8" type="Double" />
+            <FormulaField expression="if [ClimbAttempted]=0 then &quot;Not Attempted&quot; else &quot;Attempted&quot; endif" field="ClimbAttemptedText" size="1073741823" type="V_WString" />
+            <FormulaField expression="IF [ParkedAttempted] = 0 THEN &quot;Not Attempted&quot; ELSEIF [ParkedSuccess] = 0 THEN &quot;Attempted But Failed&quot; ELSE &quot;Attempted and Success&quot; ENDIF" field="ParkText" size="1073741823" type="V_WString" />
+            <FormulaField expression="IF [CrossedLine] = 0 THEN &quot;NO&quot; ELSE &quot;YES&quot; ENDIF" field="CrossedLineText" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>AutoPoints = 5*[CrossedLine]+6*[AutoInnerSuccess]+4*[AutoOuterSuccess]
+TeleopUpp...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="226">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1542" y="738" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="TargetEvent" selected="False" />
+            <SelectField field="Event" selected="False" />
+            <SelectField field="Team" selected="True" />
+            <SelectField field="FakeMatch" selected="True" />
+            <SelectField field="Match" selected="True" />
+            <SelectField field="DeviceName" selected="False" />
+            <SelectField field="Version" selected="False" />
+            <SelectField field="InterfaceType" selected="False" />
+            <SelectField field="Time" selected="False" />
+            <SelectField field="UploadTime" selected="False" />
+            <SelectField field="ScoutName" selected="False" />
+            <SelectField field="AllianceColor" selected="False" />
+            <SelectField field="StartPos" selected="False" />
+            <SelectField field="CrossedLine" selected="False" />
+            <SelectField field="AutoLowerSuccess" selected="False" />
+            <SelectField field="AutoOuterSuccess" selected="False" />
+            <SelectField field="AutoInnerSuccess" selected="False" />
+            <SelectField field="AutoLowerFailures" selected="False" />
+            <SelectField field="AutoUpperFailures" selected="False" />
+            <SelectField field="LowerSuccess" selected="False" />
+            <SelectField field="OuterSuccess" selected="False" />
+            <SelectField field="InnerSuccess" selected="False" />
+            <SelectField field="LowerFailures" selected="False" />
+            <SelectField field="UpperFailures" selected="False" />
+            <SelectField field="UpperSecondsBetween" selected="False" />
+            <SelectField field="ClimbTime" selected="True" />
+            <SelectField field="ClimbAttempted" selected="False" />
+            <SelectField field="ClimbSuccess" selected="False" />
+            <SelectField field="LiftedOthersAttempted" selected="False" />
+            <SelectField field="LiftedOthersSuccess" selected="False" />
+            <SelectField field="ParkedAttempted" selected="False" />
+            <SelectField field="ParkedSuccess" selected="False" />
+            <SelectField field="WheelRotationAttempted" selected="False" />
+            <SelectField field="WheelRotationSuccess" selected="False" />
+            <SelectField field="WheelPositionAttempted" selected="False" />
+            <SelectField field="WheelPositionSuccess" selected="False" />
+            <SelectField field="ShootFromWall" selected="False" />
+            <SelectField field="ShootFromOpponentSide" selected="False" />
+            <SelectField field="ShootFromOwnSide" selected="False" />
+            <SelectField field="Points" selected="False" />
+            <SelectField field="Disabled" selected="False" />
+            <SelectField field="DriverRating" selected="False" />
+            <SelectField field="IntakeRating" selected="False" />
+            <SelectField field="DefenseRating" selected="True" />
+            <SelectField field="AvoidDefenseRating" selected="False" />
+            <SelectField field="SpeedRating" selected="False" />
+            <SelectField field="Comment" selected="True" />
+            <SelectField field="PreScouting" selected="False" />
+            <SelectField field="AutoPoints" selected="True" />
+            <SelectField field="TeleopUpperPoints" selected="True" />
+            <SelectField field="TeleopInnerAccuracy" selected="True" />
+            <SelectField field="ClimbAttemptedText" selected="True" />
+            <SelectField field="ParkText" selected="True" />
+            <SelectField field="CrossedLineText" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="227">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1734" y="738" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_10816_b8714c6cc23e4b9a93251a1968dfeabc_\Engine_2560_7676af22a7a14d31aa101ff104b4fea4_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="228">
+      <GuiSettings>
+        <Position x="1638" y="738" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="List Box (11)">"TeleopInnerAccuracy"</Value>
+          <Value name="Check Box (84)">False</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="229">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1734" y="810" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="25" MaxRecords="">C:\mascout\TableauInput\team_comparison.xlsx|||Sheet1</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>RemoveFile</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>team_comparison.xlsx
+Query=Sheet1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="231">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+        <Position x="1446" y="738" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="False" />
+          <UpdateField_Name>TargetEvent</UpdateField_Name>
+          <CreateField_Name>FakeMatch</CreateField_Name>
+          <CreateField_Type>Int64</CreateField_Type>
+          <CreateField_Size>8</CreateField_Size>
+          <OtherRows>Empty</OtherRows>
+          <NumRows value="1" />
+          <Expression>IF IsNull([Row-1:FakeMatch]) THEN 0 ELSEIF [Row-1:Team] != [Team] THEN 0 ELSE [Row-1:FakeMatch]+1 ENDIF</Expression>
+          <GroupByFields />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>IF IsNull([Row-1:FakeMatch]) THEN 0 ELSEIF [Row-1:Team] != [T...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+    </Node>
+    <Node ToolID="232">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="1350" y="738" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="Team" order="Ascending" />
+            <Field field="Match" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Team - Ascending
+Match - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
   </Nodes>
   <Connections>
     <Connection>
@@ -5207,6 +5549,10 @@ ELSEIF [Upper]=[Row-1:Upper] ...</DefaultAnnotationText>
     <Connection>
       <Origin ToolID="71" Connection="True" />
       <Destination ToolID="206" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="71" Connection="True" />
+      <Destination ToolID="225" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="72" Connection="True" />
@@ -5751,6 +6097,30 @@ ELSEIF [Upper]=[Row-1:Upper] ...</DefaultAnnotationText>
     <Connection>
       <Origin ToolID="223" Connection="Output" />
       <Destination ToolID="199" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="225" Connection="Output" />
+      <Destination ToolID="232" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="226" Connection="Output" />
+      <Destination ToolID="228" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="228" Connection="Output26" />
+      <Destination ToolID="227" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="228" Connection="Output26" />
+      <Destination ToolID="229" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="231" Connection="Output" />
+      <Destination ToolID="226" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="232" Connection="Output" />
+      <Destination ToolID="231" Connection="Input" />
     </Connection>
   </Connections>
   <Properties>
